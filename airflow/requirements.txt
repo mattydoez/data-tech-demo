@@ -1,0 +1,5 @@
+apache-airflow==2.1.2
+psycopg2-binary==2.8.6
+Faker==8.10.0
+Flask-Bcrypt==0.7.1
+Flask-Login==0.4.1

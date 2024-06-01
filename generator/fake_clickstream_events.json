@@ -1,0 +1,482 @@
+[
+    {
+        "event_id": "8314cf74-8121-48be-9744-2b57b496880b",
+        "user_id": "53107fb6-1dae-4c71-ba11-7cdb4a11863f",
+        "timestamp": "2024-05-21T12:42:33.429895",
+        "page_visited": "profile",
+        "action": "click",
+        "product_id": null
+    },
+    {
+        "event_id": "bbfde4a8-60a6-4142-bc78-253be7f39c75",
+        "user_id": "6fc3d069-c476-4f9d-854d-74f0066f0762",
+        "timestamp": "2024-05-21T13:13:41.852167",
+        "page_visited": "orders",
+        "action": "visit",
+        "product_id": null
+    },
+    {
+        "event_id": "2cc33601-1341-4063-8455-54463a7750e7",
+        "user_id": "75dd3f7f-05bf-4d10-ab4a-f16dfb98c52e",
+        "timestamp": "2024-05-21T12:31:46.420698",
+        "page_visited": "about",
+        "action": "click",
+        "product_id": null
+    },
+    {
+        "event_id": "44bcd580-e267-46b3-82be-9c4e09facbb1",
+        "user_id": "507c0409-666a-4955-9913-42047d6f0c0c",
+        "timestamp": "2024-05-21T12:34:40.720287",
+        "page_visited": "product",
+        "action": "click",
+        "product_id": null
+    },
+    {
+        "event_id": "8d8d6448-e13a-4f23-b5cc-ba42b2412995",
+        "user_id": "2f0aa596-47d0-4a1d-929a-acffff3095f5",
+        "timestamp": "2024-05-21T12:50:03.276734",
+        "page_visited": "category",
+        "action": "add_to_cart",
+        "product_id": 974
+    },
+    {
+        "event_id": "55f76eb5-90de-4c70-a75f-70ca6cf518ce",
+        "user_id": "31970e38-fca6-4221-8550-b5d89fae5fb6",
+        "timestamp": "2024-05-21T12:21:13.568945",
+        "page_visited": "home",
+        "action": "visit",
+        "product_id": null
+    },
+    {
+        "event_id": "86d821f8-4168-4f57-ad49-c770dca7a8aa",
+        "user_id": "a7b42e71-64e6-4a4f-b8dc-66aed4a140ca",
+        "timestamp": "2024-05-21T12:48:50.234316",
+        "page_visited": "wishlist",
+        "action": "click",
+        "product_id": null
+    },
+    {
+        "event_id": "92ed7b65-8008-41ec-8663-4b2aead8c940",
+        "user_id": "315d4fc8-ba73-4652-8094-c7acff15a423",
+        "timestamp": "2024-05-21T12:22:36.270659",
+        "page_visited": "contact",
+        "action": "visit",
+        "product_id": null
+    },
+    {
+        "event_id": "9a7eafd3-b69f-478c-bda2-44813428e8aa",
+        "user_id": "20063075-020e-48bb-bda9-3a570c891523",
+        "timestamp": "2024-05-21T13:14:02.706881",
+        "page_visited": "category",
+        "action": "add_to_cart",
+        "product_id": 296
+    },
+    {
+        "event_id": "bb3ecd9b-6806-458a-9e85-dd34eb46d91a",
+        "user_id": "6fc3d069-c476-4f9d-854d-74f0066f0762",
+        "timestamp": "2024-05-21T12:32:15.835260",
+        "page_visited": "profile",
+        "action": "visit",
+        "product_id": null
+    },
+    {
+        "event_id": "bb15a3e6-8222-4eb1-bc02-382f2914aaf8",
+        "user_id": "551a3abe-fece-48dc-a63f-67b9c5964966",
+        "timestamp": "2024-05-21T12:35:15.198737",
+        "page_visited": "checkout",
+        "action": "add_to_cart",
+        "product_id": 577
+    },
+    {
+        "event_id": "55643111-800d-474b-bbe1-b93f83581269",
+        "user_id": "f4f6b010-f85c-4797-8fdf-f67081ccf636",
+        "timestamp": "2024-05-21T13:14:45.511067",
+        "page_visited": "contact",
+        "action": "visit",
+        "product_id": null
+    },
+    {
+        "event_id": "5450537e-50bd-47ad-bdef-0fa16133b0bd",
+        "user_id": "9d82b3c7-b6a4-40e2-b250-dd2d7e41c75f",
+        "timestamp": "2024-05-21T12:32:22.017663",
+        "page_visited": "terms",
+        "action": "visit",
+        "product_id": null
+    },
+    {
+        "event_id": "61812311-9a27-460d-99d0-691985091645",
+        "user_id": "6fc3d069-c476-4f9d-854d-74f0066f0762",
+        "timestamp": "2024-05-21T12:47:57.921002",
+        "page_visited": "contact",
+        "action": "visit",
+        "product_id": null
+    },
+    {
+        "event_id": "73907116-9a65-451f-846c-7e1817a6afed",
+        "user_id": "5524ce9d-31b4-4d6c-977a-b30129611fce",
+        "timestamp": "2024-05-21T12:48:24.287529",
+        "page_visited": "home",
+        "action": "visit",
+        "product_id": null
+    },
+    {
+        "event_id": "6f257a10-f473-4051-bb7c-35c0aef68a63",
+        "user_id": "a1e998c8-7a2c-4be5-8310-628ca8d51fb8",
+        "timestamp": "2024-05-21T12:50:13.010573",
+        "page_visited": "orders",
+        "action": "click",
+        "product_id": null
+    },
+    {
+        "event_id": "23cd4d56-5623-4416-9adc-13028c502b38",
+        "user_id": "8b1fa4fd-c042-4164-ab99-57c0950e8879",
+        "timestamp": "2024-05-21T12:55:40.254230",
+        "page_visited": "privacy",
+        "action": "click",
+        "product_id": null
+    },
+    {
+        "event_id": "2230b2d6-11bf-43ed-b301-6d38a24dc515",
+        "user_id": "fa36fbe2-a26b-4a1e-b004-b3c3ccaac199",
+        "timestamp": "2024-05-21T13:08:52.830353",
+        "page_visited": "category",
+        "action": "click",
+        "product_id": null
+    },
+    {
+        "event_id": "811e8103-eb28-41ff-a41d-93b2467f641d",
+        "user_id": "6fc3d069-c476-4f9d-854d-74f0066f0762",
+        "timestamp": "2024-05-21T12:42:23.930731",
+        "page_visited": "search",
+        "action": "visit",
+        "product_id": null
+    },
+    {
+        "event_id": "d4e7cbbd-a2d1-44b4-8a57-69cda2ed099d",
+        "user_id": "262d6111-f91e-48f2-aee3-c056ea46f374",
+        "timestamp": "2024-05-21T12:32:13.173403",
+        "page_visited": "privacy",
+        "action": "visit",
+        "product_id": null
+    },
+    {
+        "event_id": "f26dce77-8a26-450d-bbe8-3e2691379323",
+        "user_id": "31693b5b-3212-49ee-996f-923ec8364235",
+        "timestamp": "2024-05-21T12:21:49.760801",
+        "page_visited": "about",
+        "action": "click",
+        "product_id": null
+    },
+    {
+        "event_id": "c771f25c-2994-4552-8932-bc60d1c6350e",
+        "user_id": "c3d39487-7a95-4e07-a2c5-2704aece4d17",
+        "timestamp": "2024-05-21T13:09:02.754851",
+        "page_visited": "home",
+        "action": "visit",
+        "product_id": null
+    },
+    {
+        "event_id": "90864b8f-1d22-4f27-a24d-2f3000870112",
+        "user_id": "2bf7eac5-fc87-416a-acb4-f3c1ce1e0d6d",
+        "timestamp": "2024-05-21T12:24:54.572652",
+        "page_visited": "home",
+        "action": "visit",
+        "product_id": null
+    },
+    {
+        "event_id": "a2726d4e-5cdd-4f70-9e24-ab7f6189c3ff",
+        "user_id": "163c7e22-d1b4-4a3e-bed0-c0f3ad531677",
+        "timestamp": "2024-05-21T12:40:59.151037",
+        "page_visited": "profile",
+        "action": "visit",
+        "product_id": null
+    },
+    {
+        "event_id": "74669dac-c2ae-4477-9a2f-d72c17c1daa5",
+        "user_id": "fb14402f-7236-4a48-a510-f0db4c81f14e",
+        "timestamp": "2024-05-21T12:26:15.509717",
+        "page_visited": "about",
+        "action": "click",
+        "product_id": null
+    },
+    {
+        "event_id": "cfb7c965-2890-4500-9d00-0251a64f96cc",
+        "user_id": "01d50814-6d7c-4a08-8a40-448f9ba191d4",
+        "timestamp": "2024-05-21T12:19:56.000202",
+        "page_visited": "orders",
+        "action": "visit",
+        "product_id": null
+    },
+    {
+        "event_id": "738a1dcb-88fe-41b5-8df7-2fb0d29eca7e",
+        "user_id": "1000e15c-a890-4e2a-9084-bc78f740af3d",
+        "timestamp": "2024-05-21T12:18:10.362863",
+        "page_visited": "returns",
+        "action": "visit",
+        "product_id": null
+    },
+    {
+        "event_id": "35651213-510a-4b6e-8df1-64820d159be4",
+        "user_id": "53107fb6-1dae-4c71-ba11-7cdb4a11863f",
+        "timestamp": "2024-05-21T12:53:50.137272",
+        "page_visited": "profile",
+        "action": "click",
+        "product_id": null
+    },
+    {
+        "event_id": "6b452bd8-4535-464c-9f48-2f6f04c279ff",
+        "user_id": "6fc3d069-c476-4f9d-854d-74f0066f0762",
+        "timestamp": "2024-05-21T12:46:08.746054",
+        "page_visited": "returns",
+        "action": "click",
+        "product_id": null
+    },
+    {
+        "event_id": "77e85faf-f8c5-4e6b-ae6f-75d6e59dde5c",
+        "user_id": "af5f5a4d-90ab-4569-82ee-9ae445a64f10",
+        "timestamp": "2024-05-21T13:07:15.119983",
+        "page_visited": "contact",
+        "action": "click",
+        "product_id": null
+    },
+    {
+        "event_id": "98244641-379c-488d-8dc3-0f2414dbe58a",
+        "user_id": "d4d85294-0a16-4b90-a333-19b2a60800d0",
+        "timestamp": "2024-05-21T12:53:00.336970",
+        "page_visited": "privacy",
+        "action": "visit",
+        "product_id": null
+    },
+    {
+        "event_id": "87dff48c-6cea-4da0-8ed2-074e5a7ded4b",
+        "user_id": "20063075-020e-48bb-bda9-3a570c891523",
+        "timestamp": "2024-05-21T13:07:23.857194",
+        "page_visited": "terms",
+        "action": "visit",
+        "product_id": null
+    },
+    {
+        "event_id": "c07bcfeb-11ea-4572-b694-ab0964fd38e6",
+        "user_id": "31970e38-fca6-4221-8550-b5d89fae5fb6",
+        "timestamp": "2024-05-21T13:15:10.904337",
+        "page_visited": "terms",
+        "action": "visit",
+        "product_id": null
+    },
+    {
+        "event_id": "e198db80-0bcb-4e3a-a734-4a0fa068da2d",
+        "user_id": "e81c2636-f1b3-49cc-a089-c242f7cc1ff4",
+        "timestamp": "2024-05-21T12:54:11.257028",
+        "page_visited": "wishlist",
+        "action": "click",
+        "product_id": null
+    },
+    {
+        "event_id": "066eb468-49dc-4791-aaf6-c448bdb1ac5c",
+        "user_id": "d93846f1-a65a-4349-a83b-4eaccd45cc61",
+        "timestamp": "2024-05-21T13:12:44.816924",
+        "page_visited": "checkout",
+        "action": "add_to_cart",
+        "product_id": 7
+    },
+    {
+        "event_id": "38764565-efb8-446d-a8df-4fd2c657f507",
+        "user_id": "1601ca68-fa05-4b2a-9cc5-594a21f164c2",
+        "timestamp": "2024-05-21T13:06:15.730088",
+        "page_visited": "terms",
+        "action": "visit",
+        "product_id": null
+    },
+    {
+        "event_id": "19ac65f3-dbf5-4b18-abe0-b60753413f40",
+        "user_id": "2ab7281c-dfd8-4aa7-8b18-72c08da990ff",
+        "timestamp": "2024-05-21T13:07:02.955542",
+        "page_visited": "contact",
+        "action": "visit",
+        "product_id": null
+    },
+    {
+        "event_id": "649c2bdb-49d7-4979-b5c9-37e6c3af0af8",
+        "user_id": "d2928626-6dff-432b-b942-8f14555b750c",
+        "timestamp": "2024-05-21T12:27:26.357522",
+        "page_visited": "search",
+        "action": "click",
+        "product_id": null
+    },
+    {
+        "event_id": "e6cadb43-b252-4e06-a91c-88705d1f1b6a",
+        "user_id": "a2edf85b-57fd-49c1-bec9-7c8c278c8ce3",
+        "timestamp": "2024-05-21T12:31:13.680786",
+        "page_visited": "privacy",
+        "action": "click",
+        "product_id": null
+    },
+    {
+        "event_id": "d17ca1fe-2bc2-4dd6-8623-111317154434",
+        "user_id": "1000e15c-a890-4e2a-9084-bc78f740af3d",
+        "timestamp": "2024-05-21T12:34:59.901801",
+        "page_visited": "wishlist",
+        "action": "click",
+        "product_id": null
+    },
+    {
+        "event_id": "7016f67f-51d2-4b43-b9cc-67a1d5fb3b18",
+        "user_id": "6ee342e3-511a-42f4-9353-63b240d30d61",
+        "timestamp": "2024-05-21T13:05:07.866612",
+        "page_visited": "returns",
+        "action": "click",
+        "product_id": null
+    },
+    {
+        "event_id": "540f263e-c5a4-4556-995d-b2c8416e7c54",
+        "user_id": "fa36fbe2-a26b-4a1e-b004-b3c3ccaac199",
+        "timestamp": "2024-05-21T13:11:46.362082",
+        "page_visited": "home",
+        "action": "visit",
+        "product_id": null
+    },
+    {
+        "event_id": "c514e35b-efa1-4726-8d49-59c5f3510e91",
+        "user_id": "262d6111-f91e-48f2-aee3-c056ea46f374",
+        "timestamp": "2024-05-21T12:49:58.960739",
+        "page_visited": "contact",
+        "action": "click",
+        "product_id": null
+    },
+    {
+        "event_id": "272edd3a-2368-4c81-80e0-bc8cfb4219d6",
+        "user_id": "105dd9db-877e-421d-a460-326edd4aa4e6",
+        "timestamp": "2024-05-21T12:44:44.302192",
+        "page_visited": "profile",
+        "action": "click",
+        "product_id": null
+    },
+    {
+        "event_id": "39bf0762-07f5-4451-aa65-d06134f79097",
+        "user_id": "6fc3d069-c476-4f9d-854d-74f0066f0762",
+        "timestamp": "2024-05-21T13:02:41.627926",
+        "page_visited": "privacy",
+        "action": "visit",
+        "product_id": null
+    },
+    {
+        "event_id": "2848e33d-55a5-4ab1-811a-d882850aee59",
+        "user_id": "b3ea268c-7a4b-454c-aa06-e2407cbfa5d9",
+        "timestamp": "2024-05-21T12:29:59.968441",
+        "page_visited": "cart",
+        "action": "add_to_cart",
+        "product_id": 771
+    },
+    {
+        "event_id": "6ebac598-c879-4f50-9b63-d3053a94ad9d",
+        "user_id": "55161d79-4a80-448c-bf25-07857621c9b7",
+        "timestamp": "2024-05-21T13:02:03.811631",
+        "page_visited": "terms",
+        "action": "visit",
+        "product_id": null
+    },
+    {
+        "event_id": "0d7f0dc8-d319-4821-b177-a2f88d51c7bc",
+        "user_id": "d93846f1-a65a-4349-a83b-4eaccd45cc61",
+        "timestamp": "2024-05-21T12:21:46.736009",
+        "page_visited": "home",
+        "action": "visit",
+        "product_id": null
+    },
+    {
+        "event_id": "4db4cf86-2d36-4626-971c-396cdc41c039",
+        "user_id": "78d6d23a-7ae3-45d2-9ee5-26aa1987e54d",
+        "timestamp": "2024-05-21T13:07:08.213892",
+        "page_visited": "contact",
+        "action": "visit",
+        "product_id": null
+    },
+    {
+        "event_id": "df3099b9-1939-4cd1-b6ff-a2ae0cd4da03",
+        "user_id": "75dd3f7f-05bf-4d10-ab4a-f16dfb98c52e",
+        "timestamp": "2024-05-21T13:08:32.152807",
+        "page_visited": "cart",
+        "action": "click",
+        "product_id": null
+    },
+    {
+        "event_id": "5b97116a-291a-4932-8d5b-5a9ece21c903",
+        "user_id": "3adc5462-cfae-417a-bfdf-73f41f4d347e",
+        "timestamp": "2024-05-21T12:25:52.589148",
+        "page_visited": "checkout",
+        "action": "add_to_cart",
+        "product_id": 163
+    },
+    {
+        "event_id": "fda7e1b8-b4d8-43d0-84c6-9ce3cf10b1c2",
+        "user_id": "78d6d23a-7ae3-45d2-9ee5-26aa1987e54d",
+        "timestamp": "2024-05-21T12:20:18.601728",
+        "page_visited": "returns",
+        "action": "click",
+        "product_id": null
+    },
+    {
+        "event_id": "109b2aa2-cae9-4f5c-b2fc-d05e65733917",
+        "user_id": "6fc3d069-c476-4f9d-854d-74f0066f0762",
+        "timestamp": "2024-05-21T13:01:05.604918",
+        "page_visited": "contact",
+        "action": "click",
+        "product_id": null
+    },
+    {
+        "event_id": "f57ecf2a-dff2-4b9e-bd64-e1f39aef9105",
+        "user_id": "b3ea268c-7a4b-454c-aa06-e2407cbfa5d9",
+        "timestamp": "2024-05-21T12:32:54.980552",
+        "page_visited": "home",
+        "action": "visit",
+        "product_id": null
+    },
+    {
+        "event_id": "07282f7d-cb60-47c0-88be-6fd55df7623e",
+        "user_id": "3adc5462-cfae-417a-bfdf-73f41f4d347e",
+        "timestamp": "2024-05-21T13:01:31.083000",
+        "page_visited": "returns",
+        "action": "visit",
+        "product_id": null
+    },
+    {
+        "event_id": "6073abc1-0284-4cfb-b085-5edcf4cfd940",
+        "user_id": "59c6d4a0-834a-4f50-a997-5817dc38f8f3",
+        "timestamp": "2024-05-21T13:08:09.786936",
+        "page_visited": "returns",
+        "action": "click",
+        "product_id": null
+    },
+    {
+        "event_id": "0848e574-8984-44e6-a1eb-653077db469f",
+        "user_id": "20063075-020e-48bb-bda9-3a570c891523",
+        "timestamp": "2024-05-21T12:22:33.677750",
+        "page_visited": "orders",
+        "action": "click",
+        "product_id": null
+    },
+    {
+        "event_id": "5dcd754f-6d2a-4e50-9ec5-0a9ca326033d",
+        "user_id": "1601ca68-fa05-4b2a-9cc5-594a21f164c2",
+        "timestamp": "2024-05-21T12:46:33.076963",
+        "page_visited": "orders",
+        "action": "click",
+        "product_id": null
+    },
+    {
+        "event_id": "6db97afc-6ee7-41eb-a45e-c11a712a99d3",
+        "user_id": "9b5a86f5-de99-4671-a647-b156a0af5290",
+        "timestamp": "2024-05-21T12:58:59.345920",
+        "page_visited": "category",
+        "action": "add_to_cart",
+        "product_id": 76
+    },
+    {
+        "event_id": "18eded74-182c-4e79-a34c-829b50224245",
+        "user_id": "551a3abe-fece-48dc-a63f-67b9c5964966",
+        "timestamp": "2024-05-21T12:52:40.171319",
+        "page_visited": "profile",
+        "action": "click",
+        "product_id": null
+    }
+]

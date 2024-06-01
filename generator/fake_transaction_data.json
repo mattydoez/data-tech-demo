@@ -1,0 +1,893 @@
+[
+    {
+        "transaction_id": "ab3de72b-3912-4666-bb3c-d76a748d12f5",
+        "timestamp": "2024-05-21T12:54:49.588520",
+        "amount": 72,
+        "product_id": 354,
+        "user_id": "2f0aa596-47d0-4a1d-929a-acffff3095f5",
+        "payment_method": "Visa",
+        "transaction_type": 1
+    },
+    {
+        "transaction_id": "76e82ff7-ac66-438f-a6bd-3dd4fc7748a8",
+        "timestamp": "2024-05-21T13:13:22.378257",
+        "amount": 53,
+        "product_id": 364,
+        "user_id": "d93846f1-a65a-4349-a83b-4eaccd45cc61",
+        "payment_method": "Apple Pay",
+        "transaction_type": 0
+    },
+    {
+        "transaction_id": "01a8ea6e-9fc6-4ca7-8fe8-e6b8fe172507",
+        "timestamp": "2024-05-21T13:01:47.849118",
+        "amount": 25,
+        "product_id": 560,
+        "user_id": "20063075-020e-48bb-bda9-3a570c891523",
+        "payment_method": "Apple Pay",
+        "transaction_type": 2
+    },
+    {
+        "transaction_id": "568c3597-b330-4f7f-9643-a9587da40ab6",
+        "timestamp": "2024-05-21T13:01:02.361841",
+        "amount": 56,
+        "product_id": 240,
+        "user_id": "be013380-eef5-467c-8145-14ad0f2c970e",
+        "payment_method": "Affirm",
+        "transaction_type": 0
+    },
+    {
+        "transaction_id": "bbfe7b61-0261-4c18-8b6b-d808f807674a",
+        "timestamp": "2024-05-21T12:26:17.757529",
+        "amount": 56,
+        "product_id": 163,
+        "user_id": "6fc3d069-c476-4f9d-854d-74f0066f0762",
+        "payment_method": "Mastercard",
+        "transaction_type": 1
+    },
+    {
+        "transaction_id": "f2a0f7c3-90ae-4928-a515-b8e474f7560f",
+        "timestamp": "2024-05-21T12:35:23.994108",
+        "amount": 55,
+        "product_id": 250,
+        "user_id": "6ee342e3-511a-42f4-9353-63b240d30d61",
+        "payment_method": "Affirm",
+        "transaction_type": 0
+    },
+    {
+        "transaction_id": "20297c4a-a05b-4aad-a8e2-cee36cf50b94",
+        "timestamp": "2024-05-21T13:14:20.532484",
+        "amount": 12,
+        "product_id": 209,
+        "user_id": "ea32116b-e2c6-416e-9299-60ed2c554329",
+        "payment_method": "Apple Pay",
+        "transaction_type": 2
+    },
+    {
+        "transaction_id": "8a213432-87b5-4dac-9ec4-b2e335d89c20",
+        "timestamp": "2024-05-21T12:53:18.732531",
+        "amount": 65,
+        "product_id": 70,
+        "user_id": "291057af-8c50-42ee-9092-612c064c40c4",
+        "payment_method": "Affirm",
+        "transaction_type": 1
+    },
+    {
+        "transaction_id": "a8df83a1-e707-4da8-8cf2-d8398dceb64d",
+        "timestamp": "2024-05-21T12:49:27.474826",
+        "amount": 388,
+        "product_id": 905,
+        "user_id": "1601ca68-fa05-4b2a-9cc5-594a21f164c2",
+        "payment_method": "Mastercard",
+        "transaction_type": 2
+    },
+    {
+        "transaction_id": "4f87c180-647c-4b45-9aae-f5e1a65c867d",
+        "timestamp": "2024-05-21T12:55:19.708656",
+        "amount": 98,
+        "product_id": 839,
+        "user_id": "6ee342e3-511a-42f4-9353-63b240d30d61",
+        "payment_method": "Mastercard",
+        "transaction_type": 0
+    },
+    {
+        "transaction_id": "7042d8b9-3812-4a69-a69b-955b91d5b833",
+        "timestamp": "2024-05-21T12:59:45.427302",
+        "amount": 67,
+        "product_id": 103,
+        "user_id": "f4f6b010-f85c-4797-8fdf-f67081ccf636",
+        "payment_method": "Klarna",
+        "transaction_type": 1
+    },
+    {
+        "transaction_id": "09ddad3c-36e2-4eda-8d33-d4480f4edb12",
+        "timestamp": "2024-05-21T12:40:09.937347",
+        "amount": 59,
+        "product_id": 531,
+        "user_id": "d2928626-6dff-432b-b942-8f14555b750c",
+        "payment_method": "Zelle",
+        "transaction_type": 1
+    },
+    {
+        "transaction_id": "edf79334-68cb-483d-8920-d4d5e979f24f",
+        "timestamp": "2024-05-21T12:44:42.494527",
+        "amount": 251,
+        "product_id": 100,
+        "user_id": "75dd3f7f-05bf-4d10-ab4a-f16dfb98c52e",
+        "payment_method": "Zelle",
+        "transaction_type": 2
+    },
+    {
+        "transaction_id": "4a318e73-7aa5-43e1-8e4c-1488046bf828",
+        "timestamp": "2024-05-21T12:26:12.676263",
+        "amount": 16,
+        "product_id": 107,
+        "user_id": "34a2b20f-fcae-4a98-b033-a5ba4c60537b",
+        "payment_method": "Visa",
+        "transaction_type": 1
+    },
+    {
+        "transaction_id": "091b7f20-f842-44ab-aba4-2adc085dbf5f",
+        "timestamp": "2024-05-21T12:32:09.771666",
+        "amount": 312,
+        "product_id": 752,
+        "user_id": "551a3abe-fece-48dc-a63f-67b9c5964966",
+        "payment_method": "Affirm",
+        "transaction_type": 0
+    },
+    {
+        "transaction_id": "174f7dc3-6694-44fe-9113-ce6997047b4d",
+        "timestamp": "2024-05-21T12:45:45.834613",
+        "amount": 14,
+        "product_id": 535,
+        "user_id": "dffdc9eb-2c35-4663-87b7-0628b0381cab",
+        "payment_method": "Visa",
+        "transaction_type": 0
+    },
+    {
+        "transaction_id": "4bbd0bf0-5e75-4b81-8f10-52c5fcfdec11",
+        "timestamp": "2024-05-21T12:41:48.764872",
+        "amount": 10,
+        "product_id": 596,
+        "user_id": "2bf7eac5-fc87-416a-acb4-f3c1ce1e0d6d",
+        "payment_method": "Apple Pay",
+        "transaction_type": 1
+    },
+    {
+        "transaction_id": "111aac1d-e78d-4f67-8666-d5099c90bbf8",
+        "timestamp": "2024-05-21T12:33:25.124638",
+        "amount": 294,
+        "product_id": 710,
+        "user_id": "34a2b20f-fcae-4a98-b033-a5ba4c60537b",
+        "payment_method": "Visa",
+        "transaction_type": 0
+    },
+    {
+        "transaction_id": "5a12cea4-a166-4003-88b1-c8ec78a2fb0f",
+        "timestamp": "2024-05-21T13:15:12.415119",
+        "amount": 77,
+        "product_id": 106,
+        "user_id": "a1e998c8-7a2c-4be5-8310-628ca8d51fb8",
+        "payment_method": "Apple Pay",
+        "transaction_type": 1
+    },
+    {
+        "transaction_id": "ad5b74cf-01be-4ad3-be5c-af300c0277b1",
+        "timestamp": "2024-05-21T12:57:15.465431",
+        "amount": 162,
+        "product_id": 567,
+        "user_id": "b2bec8b8-f916-4350-8009-8af30af3955f",
+        "payment_method": "Visa",
+        "transaction_type": 2
+    },
+    {
+        "transaction_id": "62c28c4e-0ca2-4448-a3dc-3ed5de526f95",
+        "timestamp": "2024-05-21T13:02:05.488917",
+        "amount": 46,
+        "product_id": 148,
+        "user_id": "1601ca68-fa05-4b2a-9cc5-594a21f164c2",
+        "payment_method": "Affirm",
+        "transaction_type": 0
+    },
+    {
+        "transaction_id": "04bbc57d-80b2-4d7c-ae65-58ea379c3379",
+        "timestamp": "2024-05-21T12:59:42.173310",
+        "amount": 74,
+        "product_id": 314,
+        "user_id": "53107fb6-1dae-4c71-ba11-7cdb4a11863f",
+        "payment_method": "Apple Pay",
+        "transaction_type": 2
+    },
+    {
+        "transaction_id": "565b9ffb-7478-456d-9e42-ac7c9c092adb",
+        "timestamp": "2024-05-21T12:58:52.161488",
+        "amount": 67,
+        "product_id": 434,
+        "user_id": "78d6d23a-7ae3-45d2-9ee5-26aa1987e54d",
+        "payment_method": "Affirm",
+        "transaction_type": 0
+    },
+    {
+        "transaction_id": "d34cd3c8-7a6d-45cf-997d-0d2debb0b5f2",
+        "timestamp": "2024-05-21T12:43:54.381890",
+        "amount": 83,
+        "product_id": 308,
+        "user_id": "b3ea268c-7a4b-454c-aa06-e2407cbfa5d9",
+        "payment_method": "Visa",
+        "transaction_type": 2
+    },
+    {
+        "transaction_id": "3c836a65-4756-4af0-909f-5f09834f844b",
+        "timestamp": "2024-05-21T13:07:00.999431",
+        "amount": 108,
+        "product_id": 447,
+        "user_id": "aad04e34-8f54-49a7-a62a-834d61c11a61",
+        "payment_method": "Klarna",
+        "transaction_type": 2
+    },
+    {
+        "transaction_id": "abf906f5-57eb-489a-aab3-206ae6a2fff5",
+        "timestamp": "2024-05-21T12:29:44.443683",
+        "amount": 20,
+        "product_id": 958,
+        "user_id": "262d6111-f91e-48f2-aee3-c056ea46f374",
+        "payment_method": "Zelle",
+        "transaction_type": 1
+    },
+    {
+        "transaction_id": "831eb2d4-d5d0-4cdd-bdc5-e974fc42fbf7",
+        "timestamp": "2024-05-21T13:15:05.763448",
+        "amount": 317,
+        "product_id": 920,
+        "user_id": "e069f786-aa18-4113-8af4-780fe6ad4e66",
+        "payment_method": "Visa",
+        "transaction_type": 1
+    },
+    {
+        "transaction_id": "f3ed5316-2f93-4209-9d37-37ceabbb9e63",
+        "timestamp": "2024-05-21T12:38:08.035275",
+        "amount": 29,
+        "product_id": 356,
+        "user_id": "2b484d92-85e1-44ae-a086-d82f9e2ddc1b",
+        "payment_method": "Visa",
+        "transaction_type": 2
+    },
+    {
+        "transaction_id": "021fdc17-b6b1-4150-ba59-e85939d4174f",
+        "timestamp": "2024-05-21T12:23:01.964349",
+        "amount": 99,
+        "product_id": 130,
+        "user_id": "315d4fc8-ba73-4652-8094-c7acff15a423",
+        "payment_method": "Mastercard",
+        "transaction_type": 2
+    },
+    {
+        "transaction_id": "b1a5d2fd-9ca8-4893-859d-82e22d690be5",
+        "timestamp": "2024-05-21T12:49:04.395744",
+        "amount": 46,
+        "product_id": 933,
+        "user_id": "1000e15c-a890-4e2a-9084-bc78f740af3d",
+        "payment_method": "Klarna",
+        "transaction_type": 1
+    },
+    {
+        "transaction_id": "62977d21-df43-407d-97e6-67459a4f7ce3",
+        "timestamp": "2024-05-21T12:51:11.028555",
+        "amount": 57,
+        "product_id": 220,
+        "user_id": "262d6111-f91e-48f2-aee3-c056ea46f374",
+        "payment_method": "Mastercard",
+        "transaction_type": 1
+    },
+    {
+        "transaction_id": "0661f561-982b-4116-b986-649d89971865",
+        "timestamp": "2024-05-21T12:18:27.078618",
+        "amount": 71,
+        "product_id": 16,
+        "user_id": "f5084f57-033d-43c9-8206-0466e3a53ab3",
+        "payment_method": "Mastercard",
+        "transaction_type": 1
+    },
+    {
+        "transaction_id": "3c21ac33-cf2f-46da-80e1-23e06c418d51",
+        "timestamp": "2024-05-21T13:12:41.025977",
+        "amount": 473,
+        "product_id": 686,
+        "user_id": "40108889-8e99-4e00-8908-b2cdba40b7db",
+        "payment_method": "Apple Pay",
+        "transaction_type": 0
+    },
+    {
+        "transaction_id": "3f92c6b0-c842-4ee1-9854-d8ba61fa3605",
+        "timestamp": "2024-05-21T12:23:39.982563",
+        "amount": 34,
+        "product_id": 224,
+        "user_id": "f5599992-9a4f-4587-8212-e879d55e1ef6",
+        "payment_method": "Visa",
+        "transaction_type": 1
+    },
+    {
+        "transaction_id": "308d3953-497f-4156-b5c5-19286307a1b4",
+        "timestamp": "2024-05-21T12:20:47.588715",
+        "amount": 29,
+        "product_id": 915,
+        "user_id": "d2928626-6dff-432b-b942-8f14555b750c",
+        "payment_method": "Affirm",
+        "transaction_type": 1
+    },
+    {
+        "transaction_id": "3b0a1b49-3439-421c-9e03-0ad5314b2e88",
+        "timestamp": "2024-05-21T12:36:31.519308",
+        "amount": 236,
+        "product_id": 135,
+        "user_id": "163c7e22-d1b4-4a3e-bed0-c0f3ad531677",
+        "payment_method": "Visa",
+        "transaction_type": 0
+    },
+    {
+        "transaction_id": "2ac4df0d-a676-4e61-ada7-7f1b3bdc3837",
+        "timestamp": "2024-05-21T13:03:07.524288",
+        "amount": 43,
+        "product_id": 810,
+        "user_id": "55161d79-4a80-448c-bf25-07857621c9b7",
+        "payment_method": "Apple Pay",
+        "transaction_type": 1
+    },
+    {
+        "transaction_id": "a4627328-65fc-4aec-8c9b-5842238da8b9",
+        "timestamp": "2024-05-21T12:25:31.610586",
+        "amount": 23,
+        "product_id": 281,
+        "user_id": "e81c2636-f1b3-49cc-a089-c242f7cc1ff4",
+        "payment_method": "Zelle",
+        "transaction_type": 0
+    },
+    {
+        "transaction_id": "ba724c6d-9908-409b-aba0-4586c1fc124b",
+        "timestamp": "2024-05-21T12:46:26.687662",
+        "amount": 52,
+        "product_id": 574,
+        "user_id": "b2bec8b8-f916-4350-8009-8af30af3955f",
+        "payment_method": "Klarna",
+        "transaction_type": 1
+    },
+    {
+        "transaction_id": "e60de401-ca0a-47d7-b838-752bbd381ebd",
+        "timestamp": "2024-05-21T12:24:09.597564",
+        "amount": 322,
+        "product_id": 644,
+        "user_id": "40108889-8e99-4e00-8908-b2cdba40b7db",
+        "payment_method": "Apple Pay",
+        "transaction_type": 0
+    },
+    {
+        "transaction_id": "c77427bd-1480-4bd4-a0b5-05e31c666115",
+        "timestamp": "2024-05-21T12:20:10.413023",
+        "amount": 404,
+        "product_id": 846,
+        "user_id": "e9ecb985-4b03-4dbc-9606-457df363c0a7",
+        "payment_method": "Zelle",
+        "transaction_type": 2
+    },
+    {
+        "transaction_id": "6b422c22-6971-4c1c-bd27-0724f4c1cf54",
+        "timestamp": "2024-05-21T12:29:37.989170",
+        "amount": 7,
+        "product_id": 146,
+        "user_id": "2f0aa596-47d0-4a1d-929a-acffff3095f5",
+        "payment_method": "Zelle",
+        "transaction_type": 1
+    },
+    {
+        "transaction_id": "506cf440-c5e8-444f-9172-24b6071d9158",
+        "timestamp": "2024-05-21T13:05:17.758600",
+        "amount": 51,
+        "product_id": 750,
+        "user_id": "e9ecb985-4b03-4dbc-9606-457df363c0a7",
+        "payment_method": "Affirm",
+        "transaction_type": 2
+    },
+    {
+        "transaction_id": "00dd7f73-d4f9-42e6-87a5-e23b2cca4368",
+        "timestamp": "2024-05-21T13:02:11.347107",
+        "amount": 10,
+        "product_id": 973,
+        "user_id": "fb14402f-7236-4a48-a510-f0db4c81f14e",
+        "payment_method": "Zelle",
+        "transaction_type": 1
+    },
+    {
+        "transaction_id": "ff358c3f-d0c9-4d9b-8b55-15ccff4bd77c",
+        "timestamp": "2024-05-21T12:47:42.681571",
+        "amount": 57,
+        "product_id": 104,
+        "user_id": "01d50814-6d7c-4a08-8a40-448f9ba191d4",
+        "payment_method": "Visa",
+        "transaction_type": 2
+    },
+    {
+        "transaction_id": "2f75d541-0e50-4841-90dd-8fe7adb785ef",
+        "timestamp": "2024-05-21T12:34:00.667951",
+        "amount": 6,
+        "product_id": 541,
+        "user_id": "2b484d92-85e1-44ae-a086-d82f9e2ddc1b",
+        "payment_method": "Zelle",
+        "transaction_type": 0
+    },
+    {
+        "transaction_id": "22e18a97-566f-430d-8500-cebe24036590",
+        "timestamp": "2024-05-21T12:55:44.547085",
+        "amount": 66,
+        "product_id": 81,
+        "user_id": "78785497-9778-4775-bdbd-ec55ca718b45",
+        "payment_method": "Zelle",
+        "transaction_type": 0
+    },
+    {
+        "transaction_id": "c08317df-079e-4d9a-85c7-d494757ce9cd",
+        "timestamp": "2024-05-21T12:32:58.516337",
+        "amount": 86,
+        "product_id": 404,
+        "user_id": "16718d31-8995-4f57-a00b-636219ddf2dd",
+        "payment_method": "Mastercard",
+        "transaction_type": 1
+    },
+    {
+        "transaction_id": "3cab3065-138c-48e7-8609-4d45ec2c8b71",
+        "timestamp": "2024-05-21T12:27:33.226757",
+        "amount": 221,
+        "product_id": 277,
+        "user_id": "55161d79-4a80-448c-bf25-07857621c9b7",
+        "payment_method": "Zelle",
+        "transaction_type": 0
+    },
+    {
+        "transaction_id": "d8952566-ab6f-417e-80ca-98dff0e51dac",
+        "timestamp": "2024-05-21T12:25:46.707574",
+        "amount": 7,
+        "product_id": 358,
+        "user_id": "2b484d92-85e1-44ae-a086-d82f9e2ddc1b",
+        "payment_method": "Mastercard",
+        "transaction_type": 2
+    },
+    {
+        "transaction_id": "2c250e5a-e171-4f33-af21-75f92160b255",
+        "timestamp": "2024-05-21T12:29:34.040991",
+        "amount": 24,
+        "product_id": 491,
+        "user_id": "8b1fa4fd-c042-4164-ab99-57c0950e8879",
+        "payment_method": "Klarna",
+        "transaction_type": 2
+    },
+    {
+        "transaction_id": "9fa01b0f-148c-4409-bc59-caa3c6c7c933",
+        "timestamp": "2024-05-21T13:09:42.136342",
+        "amount": 58,
+        "product_id": 57,
+        "user_id": "9d82b3c7-b6a4-40e2-b250-dd2d7e41c75f",
+        "payment_method": "Klarna",
+        "transaction_type": 0
+    },
+    {
+        "transaction_id": "eeb2d5f3-e27d-47b5-8188-a79a5048e04b",
+        "timestamp": "2024-05-21T12:29:43.340898",
+        "amount": 87,
+        "product_id": 34,
+        "user_id": "a2edf85b-57fd-49c1-bec9-7c8c278c8ce3",
+        "payment_method": "Affirm",
+        "transaction_type": 2
+    },
+    {
+        "transaction_id": "030f97e5-7008-4b0c-ae13-2bc13ee60491",
+        "timestamp": "2024-05-21T12:44:39.920486",
+        "amount": 137,
+        "product_id": 585,
+        "user_id": "642447e4-e173-4754-b683-2ebccd196dda",
+        "payment_method": "Klarna",
+        "transaction_type": 1
+    },
+    {
+        "transaction_id": "81ebb306-4a93-44d1-a82b-07c0d67166ff",
+        "timestamp": "2024-05-21T12:58:14.143277",
+        "amount": 276,
+        "product_id": 879,
+        "user_id": "d93846f1-a65a-4349-a83b-4eaccd45cc61",
+        "payment_method": "Klarna",
+        "transaction_type": 2
+    },
+    {
+        "transaction_id": "f455be6a-8b19-4e70-b805-75f4f96dc752",
+        "timestamp": "2024-05-21T12:49:37.366613",
+        "amount": 74,
+        "product_id": 72,
+        "user_id": "40108889-8e99-4e00-8908-b2cdba40b7db",
+        "payment_method": "Mastercard",
+        "transaction_type": 2
+    },
+    {
+        "transaction_id": "9255453e-ec66-4086-b52c-4a1bf481cda7",
+        "timestamp": "2024-05-21T12:39:20.621760",
+        "amount": 83,
+        "product_id": 945,
+        "user_id": "c3d39487-7a95-4e07-a2c5-2704aece4d17",
+        "payment_method": "Zelle",
+        "transaction_type": 0
+    },
+    {
+        "transaction_id": "9be0ce18-fdb8-4aff-b859-35e175a9541f",
+        "timestamp": "2024-05-21T12:55:14.140846",
+        "amount": 303,
+        "product_id": 451,
+        "user_id": "d4d85294-0a16-4b90-a333-19b2a60800d0",
+        "payment_method": "Mastercard",
+        "transaction_type": 1
+    },
+    {
+        "transaction_id": "ea67ed8e-f6b4-4455-bd0c-fd4c4de90015",
+        "timestamp": "2024-05-21T12:24:38.186929",
+        "amount": 365,
+        "product_id": 708,
+        "user_id": "f4f6b010-f85c-4797-8fdf-f67081ccf636",
+        "payment_method": "Zelle",
+        "transaction_type": 1
+    },
+    {
+        "transaction_id": "9e42918f-5a6f-401b-9491-0562f0fac7bf",
+        "timestamp": "2024-05-21T12:47:51.670373",
+        "amount": 97,
+        "product_id": 620,
+        "user_id": "dffdc9eb-2c35-4663-87b7-0628b0381cab",
+        "payment_method": "Visa",
+        "transaction_type": 1
+    },
+    {
+        "transaction_id": "3f1326ed-1068-47c2-a182-e2192babd0e9",
+        "timestamp": "2024-05-21T12:52:32.972649",
+        "amount": 64,
+        "product_id": 331,
+        "user_id": "6ee342e3-511a-42f4-9353-63b240d30d61",
+        "payment_method": "Visa",
+        "transaction_type": 0
+    },
+    {
+        "transaction_id": "7028b61c-e3da-4abe-a4b2-a839ee01a963",
+        "timestamp": "2024-05-21T12:57:21.248931",
+        "amount": 185,
+        "product_id": 189,
+        "user_id": "f17f06f5-ecb5-4b3c-a910-4dd019a09941",
+        "payment_method": "Klarna",
+        "transaction_type": 1
+    },
+    {
+        "transaction_id": "831c9f16-3436-41e4-91f6-430236df078b",
+        "timestamp": "2024-05-21T12:44:20.927439",
+        "amount": 45,
+        "product_id": 823,
+        "user_id": "e069f786-aa18-4113-8af4-780fe6ad4e66",
+        "payment_method": "Affirm",
+        "transaction_type": 2
+    },
+    {
+        "transaction_id": "ec6e8658-b530-4c29-bb99-f1b12d2d061b",
+        "timestamp": "2024-05-21T12:20:42.174389",
+        "amount": 39,
+        "product_id": 252,
+        "user_id": "1000e15c-a890-4e2a-9084-bc78f740af3d",
+        "payment_method": "Klarna",
+        "transaction_type": 0
+    },
+    {
+        "transaction_id": "877277e4-f9bb-4f22-81e6-e4af538b2338",
+        "timestamp": "2024-05-21T12:43:49.198424",
+        "amount": 38,
+        "product_id": 274,
+        "user_id": "3adc5462-cfae-417a-bfdf-73f41f4d347e",
+        "payment_method": "Affirm",
+        "transaction_type": 2
+    },
+    {
+        "transaction_id": "2250fdc4-5f34-4e78-b493-8dd94c0168d7",
+        "timestamp": "2024-05-21T12:30:04.501916",
+        "amount": 18,
+        "product_id": 977,
+        "user_id": "3adc5462-cfae-417a-bfdf-73f41f4d347e",
+        "payment_method": "Apple Pay",
+        "transaction_type": 1
+    },
+    {
+        "transaction_id": "51062734-bf5a-40bd-9efd-a6846297f306",
+        "timestamp": "2024-05-21T13:14:32.572337",
+        "amount": 36,
+        "product_id": 823,
+        "user_id": "40108889-8e99-4e00-8908-b2cdba40b7db",
+        "payment_method": "Klarna",
+        "transaction_type": 0
+    },
+    {
+        "transaction_id": "5dd270c1-716b-4bdd-80f8-4024d608b9ab",
+        "timestamp": "2024-05-21T12:30:46.602118",
+        "amount": 57,
+        "product_id": 766,
+        "user_id": "262d6111-f91e-48f2-aee3-c056ea46f374",
+        "payment_method": "Apple Pay",
+        "transaction_type": 2
+    },
+    {
+        "transaction_id": "5a3c255f-7c94-4920-8504-59ca4dbef76e",
+        "timestamp": "2024-05-21T12:33:29.785929",
+        "amount": 86,
+        "product_id": 434,
+        "user_id": "78d6d23a-7ae3-45d2-9ee5-26aa1987e54d",
+        "payment_method": "Visa",
+        "transaction_type": 1
+    },
+    {
+        "transaction_id": "bcaf0ab1-8539-4291-8865-bb60fc73b940",
+        "timestamp": "2024-05-21T13:04:25.948570",
+        "amount": 19,
+        "product_id": 250,
+        "user_id": "fa36fbe2-a26b-4a1e-b004-b3c3ccaac199",
+        "payment_method": "Apple Pay",
+        "transaction_type": 0
+    },
+    {
+        "transaction_id": "81edfaf6-6db4-4e29-a330-ec84b851b31d",
+        "timestamp": "2024-05-21T12:19:05.876396",
+        "amount": 43,
+        "product_id": 709,
+        "user_id": "fa36fbe2-a26b-4a1e-b004-b3c3ccaac199",
+        "payment_method": "Zelle",
+        "transaction_type": 0
+    },
+    {
+        "transaction_id": "0b5d712e-3e19-4fcc-9cd0-966247c7c2d9",
+        "timestamp": "2024-05-21T12:51:42.385898",
+        "amount": 63,
+        "product_id": 646,
+        "user_id": "5524ce9d-31b4-4d6c-977a-b30129611fce",
+        "payment_method": "Visa",
+        "transaction_type": 0
+    },
+    {
+        "transaction_id": "96bf4997-98a6-4876-bb4a-67cf1ace571c",
+        "timestamp": "2024-05-21T12:54:14.413486",
+        "amount": 44,
+        "product_id": 640,
+        "user_id": "9d82b3c7-b6a4-40e2-b250-dd2d7e41c75f",
+        "payment_method": "Klarna",
+        "transaction_type": 2
+    },
+    {
+        "transaction_id": "2cbb9cf6-8c64-4db8-a5d1-2b3869117d6b",
+        "timestamp": "2024-05-21T12:50:53.323308",
+        "amount": 5,
+        "product_id": 626,
+        "user_id": "fb14402f-7236-4a48-a510-f0db4c81f14e",
+        "payment_method": "Zelle",
+        "transaction_type": 0
+    },
+    {
+        "transaction_id": "ed25383f-ec59-4057-83d8-4aa9c0cfa49f",
+        "timestamp": "2024-05-21T13:07:25.603348",
+        "amount": 50,
+        "product_id": 826,
+        "user_id": "2ab7281c-dfd8-4aa7-8b18-72c08da990ff",
+        "payment_method": "Mastercard",
+        "transaction_type": 2
+    },
+    {
+        "transaction_id": "7fba2e93-b9ae-4344-8939-303853c23a5b",
+        "timestamp": "2024-05-21T12:59:06.603797",
+        "amount": 50,
+        "product_id": 845,
+        "user_id": "78785497-9778-4775-bdbd-ec55ca718b45",
+        "payment_method": "Visa",
+        "transaction_type": 2
+    },
+    {
+        "transaction_id": "a450cb92-ba17-485c-8159-4254eaeab73d",
+        "timestamp": "2024-05-21T12:45:35.604997",
+        "amount": 52,
+        "product_id": 929,
+        "user_id": "9d9f992c-adc4-4889-bd2c-819b4dcc5c7d",
+        "payment_method": "Mastercard",
+        "transaction_type": 1
+    },
+    {
+        "transaction_id": "0797e70e-9cf1-4726-b11f-9e77b46d603e",
+        "timestamp": "2024-05-21T12:32:18.287756",
+        "amount": 63,
+        "product_id": 286,
+        "user_id": "6fc3d069-c476-4f9d-854d-74f0066f0762",
+        "payment_method": "Affirm",
+        "transaction_type": 0
+    },
+    {
+        "transaction_id": "48387d21-779b-4d4f-bc1e-9ec4cd72e5bc",
+        "timestamp": "2024-05-21T12:54:42.687002",
+        "amount": 13,
+        "product_id": 74,
+        "user_id": "af5f5a4d-90ab-4569-82ee-9ae445a64f10",
+        "payment_method": "Zelle",
+        "transaction_type": 0
+    },
+    {
+        "transaction_id": "c27ad852-174b-47a1-a347-6c40ad57c3ac",
+        "timestamp": "2024-05-21T12:35:10.302477",
+        "amount": 43,
+        "product_id": 361,
+        "user_id": "9b5a86f5-de99-4671-a647-b156a0af5290",
+        "payment_method": "Klarna",
+        "transaction_type": 1
+    },
+    {
+        "transaction_id": "96b369a9-7b65-474b-84ce-986460ee836c",
+        "timestamp": "2024-05-21T12:34:04.495587",
+        "amount": 51,
+        "product_id": 217,
+        "user_id": "01d50814-6d7c-4a08-8a40-448f9ba191d4",
+        "payment_method": "Zelle",
+        "transaction_type": 0
+    },
+    {
+        "transaction_id": "8dd12a3b-afc9-4be0-b40b-4ae833c60a30",
+        "timestamp": "2024-05-21T12:34:01.829745",
+        "amount": 33,
+        "product_id": 420,
+        "user_id": "6fc3d069-c476-4f9d-854d-74f0066f0762",
+        "payment_method": "Visa",
+        "transaction_type": 1
+    },
+    {
+        "transaction_id": "d61a7da8-198b-4928-97c3-97708d232564",
+        "timestamp": "2024-05-21T12:15:51.163830",
+        "amount": 34,
+        "product_id": 366,
+        "user_id": "31970e38-fca6-4221-8550-b5d89fae5fb6",
+        "payment_method": "Klarna",
+        "transaction_type": 0
+    },
+    {
+        "transaction_id": "946c1ac4-9c43-473f-b609-0b87ac4cc683",
+        "timestamp": "2024-05-21T13:15:24.583423",
+        "amount": 79,
+        "product_id": 166,
+        "user_id": "2f0aa596-47d0-4a1d-929a-acffff3095f5",
+        "payment_method": "Visa",
+        "transaction_type": 1
+    },
+    {
+        "transaction_id": "71403af1-370a-4d63-8177-554434952844",
+        "timestamp": "2024-05-21T12:46:53.341235",
+        "amount": 80,
+        "product_id": 575,
+        "user_id": "ea32116b-e2c6-416e-9299-60ed2c554329",
+        "payment_method": "Apple Pay",
+        "transaction_type": 0
+    },
+    {
+        "transaction_id": "f5cba68b-af3a-4453-9ca9-8dde42bd9241",
+        "timestamp": "2024-05-21T13:03:23.082633",
+        "amount": 62,
+        "product_id": 159,
+        "user_id": "f4f6b010-f85c-4797-8fdf-f67081ccf636",
+        "payment_method": "Mastercard",
+        "transaction_type": 2
+    },
+    {
+        "transaction_id": "ad161b7f-8754-49d0-a035-5352cff1b9ec",
+        "timestamp": "2024-05-21T13:15:02.776520",
+        "amount": 86,
+        "product_id": 582,
+        "user_id": "78d6d23a-7ae3-45d2-9ee5-26aa1987e54d",
+        "payment_method": "Zelle",
+        "transaction_type": 1
+    },
+    {
+        "transaction_id": "13f87921-1da3-4737-8d72-f8c972187619",
+        "timestamp": "2024-05-21T12:35:11.385962",
+        "amount": 78,
+        "product_id": 564,
+        "user_id": "5524ce9d-31b4-4d6c-977a-b30129611fce",
+        "payment_method": "Visa",
+        "transaction_type": 2
+    },
+    {
+        "transaction_id": "09e6d211-7c34-4c1d-931f-43803bffedcd",
+        "timestamp": "2024-05-21T12:17:22.756419",
+        "amount": 31,
+        "product_id": 426,
+        "user_id": "3adc5462-cfae-417a-bfdf-73f41f4d347e",
+        "payment_method": "Zelle",
+        "transaction_type": 0
+    },
+    {
+        "transaction_id": "17a5c6a5-6cb0-42cf-96cc-11c73a81030b",
+        "timestamp": "2024-05-21T12:25:46.924059",
+        "amount": 43,
+        "product_id": 387,
+        "user_id": "105dd9db-877e-421d-a460-326edd4aa4e6",
+        "payment_method": "Zelle",
+        "transaction_type": 2
+    },
+    {
+        "transaction_id": "ad8fc461-b33b-42eb-a7a3-3300ddb53747",
+        "timestamp": "2024-05-21T12:30:33.435437",
+        "amount": 138,
+        "product_id": 483,
+        "user_id": "163c7e22-d1b4-4a3e-bed0-c0f3ad531677",
+        "payment_method": "Visa",
+        "transaction_type": 0
+    },
+    {
+        "transaction_id": "bcf04421-34d2-45b6-860e-47d82c4399de",
+        "timestamp": "2024-05-21T13:15:30.671702",
+        "amount": 66,
+        "product_id": 684,
+        "user_id": "78785497-9778-4775-bdbd-ec55ca718b45",
+        "payment_method": "Zelle",
+        "transaction_type": 0
+    },
+    {
+        "transaction_id": "55ca4677-2dcf-4870-ad16-89fbb93cb079",
+        "timestamp": "2024-05-21T12:17:06.527008",
+        "amount": 15,
+        "product_id": 54,
+        "user_id": "f5599992-9a4f-4587-8212-e879d55e1ef6",
+        "payment_method": "Zelle",
+        "transaction_type": 2
+    },
+    {
+        "transaction_id": "42802d9e-ed60-495d-a5ae-c26a52a23527",
+        "timestamp": "2024-05-21T13:02:49.884513",
+        "amount": 53,
+        "product_id": 401,
+        "user_id": "fb14402f-7236-4a48-a510-f0db4c81f14e",
+        "payment_method": "Zelle",
+        "transaction_type": 0
+    },
+    {
+        "transaction_id": "2a0e11ad-7948-4ce0-b544-a4c9571c6e2d",
+        "timestamp": "2024-05-21T12:16:13.737617",
+        "amount": 22,
+        "product_id": 674,
+        "user_id": "01d50814-6d7c-4a08-8a40-448f9ba191d4",
+        "payment_method": "Apple Pay",
+        "transaction_type": 0
+    },
+    {
+        "transaction_id": "a550a8fb-4837-4774-b56a-f6aa99d9e63b",
+        "timestamp": "2024-05-21T13:11:33.393303",
+        "amount": 55,
+        "product_id": 454,
+        "user_id": "105dd9db-877e-421d-a460-326edd4aa4e6",
+        "payment_method": "Apple Pay",
+        "transaction_type": 1
+    },
+    {
+        "transaction_id": "01f76fa3-4850-4241-a14a-87e89f84ffd4",
+        "timestamp": "2024-05-21T12:17:01.262988",
+        "amount": 9,
+        "product_id": 53,
+        "user_id": "163c7e22-d1b4-4a3e-bed0-c0f3ad531677",
+        "payment_method": "Klarna",
+        "transaction_type": 2
+    },
+    {
+        "transaction_id": "cf9c952a-0977-4047-a57d-0ba5a6aa2f5d",
+        "timestamp": "2024-05-21T12:23:46.491220",
+        "amount": 21,
+        "product_id": 552,
+        "user_id": "40108889-8e99-4e00-8908-b2cdba40b7db",
+        "payment_method": "Visa",
+        "transaction_type": 2
+    },
+    {
+        "transaction_id": "d6f0a7cc-f8b4-4033-b60c-4189c1a959d6",
+        "timestamp": "2024-05-21T12:35:43.057013",
+        "amount": 48,
+        "product_id": 610,
+        "user_id": "f5599992-9a4f-4587-8212-e879d55e1ef6",
+        "payment_method": "Affirm",
+        "transaction_type": 1
+    }
+]
