@@ -1,0 +1,136 @@
+[2024-06-27T22:33:31.659+0000] {local_task_job_runner.py:120} INFO - ::group::Pre task execution logs
+[2024-06-27T22:33:31.669+0000] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: example_dag.generate_and_insert_data scheduled__2023-01-01T02:10:00+00:00 [queued]>
+[2024-06-27T22:33:31.671+0000] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: example_dag.generate_and_insert_data scheduled__2023-01-01T02:10:00+00:00 [queued]>
+[2024-06-27T22:33:31.671+0000] {taskinstance.py:2306} INFO - Starting attempt 1 of 2
+[2024-06-27T22:33:31.675+0000] {taskinstance.py:2330} INFO - Executing <Task(PythonOperator): generate_and_insert_data> on 2023-01-01 02:10:00+00:00
+[2024-06-27T22:33:31.677+0000] {standard_task_runner.py:63} INFO - Started process 418 to run task
+[2024-06-27T22:33:31.678+0000] {standard_task_runner.py:90} INFO - Running: ['airflow', 'tasks', 'run', 'example_dag', 'generate_and_insert_data', 'scheduled__2023-01-01T02:10:00+00:00', '--job-id', '29', '--raw', '--subdir', 'DAGS_FOLDER/example_dag.py', '--cfg-path', '/tmp/tmpfmmfzuxw']
+[2024-06-27T22:33:31.678+0000] {standard_task_runner.py:91} INFO - Job 29: Subtask generate_and_insert_data
+[2024-06-27T22:33:31.695+0000] {task_command.py:426} INFO - Running <TaskInstance: example_dag.generate_and_insert_data scheduled__2023-01-01T02:10:00+00:00 [running]> on host 9174587f6b1d
+[2024-06-27T22:33:31.722+0000] {taskinstance.py:2648} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='airflow' AIRFLOW_CTX_DAG_ID='example_dag' AIRFLOW_CTX_TASK_ID='generate_and_insert_data' AIRFLOW_CTX_EXECUTION_DATE='2023-01-01T02:10:00+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2023-01-01T02:10:00+00:00'
+[2024-06-27T22:33:31.722+0000] {taskinstance.py:430} INFO - ::endgroup::
+[2024-06-27T22:33:31.727+0000] {python.py:237} INFO - Done. Returned value was: None
+[2024-06-27T22:33:31.727+0000] {taskinstance.py:441} INFO - ::group::Post task execution logs
+[2024-06-27T22:33:31.731+0000] {taskinstance.py:1206} INFO - Marking task as SUCCESS. dag_id=example_dag, task_id=generate_and_insert_data, run_id=scheduled__2023-01-01T02:10:00+00:00, execution_date=20230101T021000, start_date=20240627T223331, end_date=20240627T223331
+[2024-06-27T22:33:31.740+0000] {local_task_job_runner.py:240} INFO - Task exited with return code 0
+[2024-06-27T22:33:31.747+0000] {taskinstance.py:3503} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2024-06-27T22:33:31.748+0000] {local_task_job_runner.py:222} INFO - ::endgroup::
+[2024-06-27T22:52:20.845+0000] {local_task_job_runner.py:120} INFO - ::group::Pre task execution logs
+[2024-06-27T22:52:20.855+0000] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: example_dag.generate_and_insert_data scheduled__2023-01-01T02:10:00+00:00 [queued]>
+[2024-06-27T22:52:20.857+0000] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: example_dag.generate_and_insert_data scheduled__2023-01-01T02:10:00+00:00 [queued]>
+[2024-06-27T22:52:20.858+0000] {taskinstance.py:2306} INFO - Starting attempt 1 of 2
+[2024-06-27T22:52:20.862+0000] {taskinstance.py:2330} INFO - Executing <Task(PythonOperator): generate_and_insert_data> on 2023-01-01 02:10:00+00:00
+[2024-06-27T22:52:20.864+0000] {standard_task_runner.py:63} INFO - Started process 418 to run task
+[2024-06-27T22:52:20.865+0000] {standard_task_runner.py:90} INFO - Running: ['airflow', 'tasks', 'run', 'example_dag', 'generate_and_insert_data', 'scheduled__2023-01-01T02:10:00+00:00', '--job-id', '29', '--raw', '--subdir', 'DAGS_FOLDER/example_dag.py', '--cfg-path', '/tmp/tmpppp_nclm']
+[2024-06-27T22:52:20.866+0000] {standard_task_runner.py:91} INFO - Job 29: Subtask generate_and_insert_data
+[2024-06-27T22:52:20.884+0000] {task_command.py:426} INFO - Running <TaskInstance: example_dag.generate_and_insert_data scheduled__2023-01-01T02:10:00+00:00 [running]> on host a70edf9d8581
+[2024-06-27T22:52:20.916+0000] {taskinstance.py:2648} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='airflow' AIRFLOW_CTX_DAG_ID='example_dag' AIRFLOW_CTX_TASK_ID='generate_and_insert_data' AIRFLOW_CTX_EXECUTION_DATE='2023-01-01T02:10:00+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2023-01-01T02:10:00+00:00'
+[2024-06-27T22:52:20.916+0000] {taskinstance.py:430} INFO - ::endgroup::
+[2024-06-27T22:52:20.921+0000] {python.py:237} INFO - Done. Returned value was: None
+[2024-06-27T22:52:20.921+0000] {taskinstance.py:441} INFO - ::group::Post task execution logs
+[2024-06-27T22:52:20.925+0000] {taskinstance.py:1206} INFO - Marking task as SUCCESS. dag_id=example_dag, task_id=generate_and_insert_data, run_id=scheduled__2023-01-01T02:10:00+00:00, execution_date=20230101T021000, start_date=20240627T225220, end_date=20240627T225220
+[2024-06-27T22:52:20.967+0000] {local_task_job_runner.py:240} INFO - Task exited with return code 0
+[2024-06-27T22:52:20.974+0000] {taskinstance.py:3503} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2024-06-27T22:52:20.975+0000] {local_task_job_runner.py:222} INFO - ::endgroup::
+[2024-06-27T23:00:05.420+0000] {local_task_job_runner.py:120} INFO - ::group::Pre task execution logs
+[2024-06-27T23:00:05.430+0000] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: example_dag.generate_and_insert_data scheduled__2023-01-01T02:10:00+00:00 [queued]>
+[2024-06-27T23:00:05.433+0000] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: example_dag.generate_and_insert_data scheduled__2023-01-01T02:10:00+00:00 [queued]>
+[2024-06-27T23:00:05.433+0000] {taskinstance.py:2306} INFO - Starting attempt 1 of 2
+[2024-06-27T23:00:05.437+0000] {taskinstance.py:2330} INFO - Executing <Task(PythonOperator): generate_and_insert_data> on 2023-01-01 02:10:00+00:00
+[2024-06-27T23:00:05.439+0000] {standard_task_runner.py:63} INFO - Started process 418 to run task
+[2024-06-27T23:00:05.440+0000] {standard_task_runner.py:90} INFO - Running: ['airflow', 'tasks', 'run', 'example_dag', 'generate_and_insert_data', 'scheduled__2023-01-01T02:10:00+00:00', '--job-id', '29', '--raw', '--subdir', 'DAGS_FOLDER/example_dag.py', '--cfg-path', '/tmp/tmparnqrme2']
+[2024-06-27T23:00:05.440+0000] {standard_task_runner.py:91} INFO - Job 29: Subtask generate_and_insert_data
+[2024-06-27T23:00:05.457+0000] {task_command.py:426} INFO - Running <TaskInstance: example_dag.generate_and_insert_data scheduled__2023-01-01T02:10:00+00:00 [running]> on host 5cc71d4b298c
+[2024-06-27T23:00:05.486+0000] {taskinstance.py:2648} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='airflow' AIRFLOW_CTX_DAG_ID='example_dag' AIRFLOW_CTX_TASK_ID='generate_and_insert_data' AIRFLOW_CTX_EXECUTION_DATE='2023-01-01T02:10:00+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2023-01-01T02:10:00+00:00'
+[2024-06-27T23:00:05.486+0000] {taskinstance.py:430} INFO - ::endgroup::
+[2024-06-27T23:00:05.490+0000] {python.py:237} INFO - Done. Returned value was: None
+[2024-06-27T23:00:05.490+0000] {taskinstance.py:441} INFO - ::group::Post task execution logs
+[2024-06-27T23:00:05.494+0000] {taskinstance.py:1206} INFO - Marking task as SUCCESS. dag_id=example_dag, task_id=generate_and_insert_data, run_id=scheduled__2023-01-01T02:10:00+00:00, execution_date=20230101T021000, start_date=20240627T230005, end_date=20240627T230005
+[2024-06-27T23:00:05.541+0000] {local_task_job_runner.py:240} INFO - Task exited with return code 0
+[2024-06-27T23:00:05.548+0000] {taskinstance.py:3503} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2024-06-27T23:00:05.548+0000] {local_task_job_runner.py:222} INFO - ::endgroup::
+[2024-06-27T23:09:44.425+0000] {local_task_job_runner.py:120} INFO - ::group::Pre task execution logs
+[2024-06-27T23:09:44.435+0000] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: example_dag.generate_and_insert_data scheduled__2023-01-01T02:10:00+00:00 [queued]>
+[2024-06-27T23:09:44.437+0000] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: example_dag.generate_and_insert_data scheduled__2023-01-01T02:10:00+00:00 [queued]>
+[2024-06-27T23:09:44.438+0000] {taskinstance.py:2306} INFO - Starting attempt 1 of 2
+[2024-06-27T23:09:44.442+0000] {taskinstance.py:2330} INFO - Executing <Task(PythonOperator): generate_and_insert_data> on 2023-01-01 02:10:00+00:00
+[2024-06-27T23:09:44.444+0000] {standard_task_runner.py:63} INFO - Started process 418 to run task
+[2024-06-27T23:09:44.445+0000] {standard_task_runner.py:90} INFO - Running: ['airflow', 'tasks', 'run', 'example_dag', 'generate_and_insert_data', 'scheduled__2023-01-01T02:10:00+00:00', '--job-id', '29', '--raw', '--subdir', 'DAGS_FOLDER/example_dag.py', '--cfg-path', '/tmp/tmptdwz0qhu']
+[2024-06-27T23:09:44.445+0000] {standard_task_runner.py:91} INFO - Job 29: Subtask generate_and_insert_data
+[2024-06-27T23:09:44.462+0000] {task_command.py:426} INFO - Running <TaskInstance: example_dag.generate_and_insert_data scheduled__2023-01-01T02:10:00+00:00 [running]> on host 7147f8a4dc9f
+[2024-06-27T23:09:44.489+0000] {taskinstance.py:2648} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='airflow' AIRFLOW_CTX_DAG_ID='example_dag' AIRFLOW_CTX_TASK_ID='generate_and_insert_data' AIRFLOW_CTX_EXECUTION_DATE='2023-01-01T02:10:00+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2023-01-01T02:10:00+00:00'
+[2024-06-27T23:09:44.490+0000] {taskinstance.py:430} INFO - ::endgroup::
+[2024-06-27T23:09:44.494+0000] {python.py:237} INFO - Done. Returned value was: None
+[2024-06-27T23:09:44.494+0000] {taskinstance.py:441} INFO - ::group::Post task execution logs
+[2024-06-27T23:09:44.498+0000] {taskinstance.py:1206} INFO - Marking task as SUCCESS. dag_id=example_dag, task_id=generate_and_insert_data, run_id=scheduled__2023-01-01T02:10:00+00:00, execution_date=20230101T021000, start_date=20240627T230944, end_date=20240627T230944
+[2024-06-27T23:09:44.504+0000] {local_task_job_runner.py:240} INFO - Task exited with return code 0
+[2024-06-27T23:09:44.509+0000] {taskinstance.py:3503} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2024-06-27T23:09:44.510+0000] {local_task_job_runner.py:222} INFO - ::endgroup::
+[2024-06-27T23:13:22.820+0000] {local_task_job_runner.py:120} INFO - ::group::Pre task execution logs
+[2024-06-27T23:13:22.830+0000] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: example_dag.generate_and_insert_data scheduled__2023-01-01T02:10:00+00:00 [queued]>
+[2024-06-27T23:13:22.832+0000] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: example_dag.generate_and_insert_data scheduled__2023-01-01T02:10:00+00:00 [queued]>
+[2024-06-27T23:13:22.833+0000] {taskinstance.py:2306} INFO - Starting attempt 1 of 2
+[2024-06-27T23:13:22.837+0000] {taskinstance.py:2330} INFO - Executing <Task(PythonOperator): generate_and_insert_data> on 2023-01-01 02:10:00+00:00
+[2024-06-27T23:13:22.838+0000] {standard_task_runner.py:63} INFO - Started process 418 to run task
+[2024-06-27T23:13:22.839+0000] {standard_task_runner.py:90} INFO - Running: ['airflow', 'tasks', 'run', 'example_dag', 'generate_and_insert_data', 'scheduled__2023-01-01T02:10:00+00:00', '--job-id', '29', '--raw', '--subdir', 'DAGS_FOLDER/example_dag.py', '--cfg-path', '/tmp/tmp4_q8tc_3']
+[2024-06-27T23:13:22.840+0000] {standard_task_runner.py:91} INFO - Job 29: Subtask generate_and_insert_data
+[2024-06-27T23:13:22.856+0000] {task_command.py:426} INFO - Running <TaskInstance: example_dag.generate_and_insert_data scheduled__2023-01-01T02:10:00+00:00 [running]> on host 4bd55eb76a74
+[2024-06-27T23:13:22.884+0000] {taskinstance.py:2648} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='airflow' AIRFLOW_CTX_DAG_ID='example_dag' AIRFLOW_CTX_TASK_ID='generate_and_insert_data' AIRFLOW_CTX_EXECUTION_DATE='2023-01-01T02:10:00+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2023-01-01T02:10:00+00:00'
+[2024-06-27T23:13:22.885+0000] {taskinstance.py:430} INFO - ::endgroup::
+[2024-06-27T23:13:22.889+0000] {python.py:237} INFO - Done. Returned value was: None
+[2024-06-27T23:13:22.889+0000] {taskinstance.py:441} INFO - ::group::Post task execution logs
+[2024-06-27T23:13:22.893+0000] {taskinstance.py:1206} INFO - Marking task as SUCCESS. dag_id=example_dag, task_id=generate_and_insert_data, run_id=scheduled__2023-01-01T02:10:00+00:00, execution_date=20230101T021000, start_date=20240627T231322, end_date=20240627T231322
+[2024-06-27T23:13:22.941+0000] {local_task_job_runner.py:240} INFO - Task exited with return code 0
+[2024-06-27T23:13:22.948+0000] {taskinstance.py:3503} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2024-06-27T23:13:22.949+0000] {local_task_job_runner.py:222} INFO - ::endgroup::
+[2024-06-28T18:13:38.801+0000] {local_task_job_runner.py:120} INFO - ::group::Pre task execution logs
+[2024-06-28T18:13:38.811+0000] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: example_dag.generate_and_insert_data scheduled__2023-01-01T02:10:00+00:00 [queued]>
+[2024-06-28T18:13:38.813+0000] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: example_dag.generate_and_insert_data scheduled__2023-01-01T02:10:00+00:00 [queued]>
+[2024-06-28T18:13:38.813+0000] {taskinstance.py:2306} INFO - Starting attempt 1 of 2
+[2024-06-28T18:13:38.818+0000] {taskinstance.py:2330} INFO - Executing <Task(PythonOperator): generate_and_insert_data> on 2023-01-01 02:10:00+00:00
+[2024-06-28T18:13:38.819+0000] {standard_task_runner.py:63} INFO - Started process 418 to run task
+[2024-06-28T18:13:38.820+0000] {standard_task_runner.py:90} INFO - Running: ['airflow', 'tasks', 'run', 'example_dag', 'generate_and_insert_data', 'scheduled__2023-01-01T02:10:00+00:00', '--job-id', '29', '--raw', '--subdir', 'DAGS_FOLDER/example_dag.py', '--cfg-path', '/tmp/tmp84cbd097']
+[2024-06-28T18:13:38.821+0000] {standard_task_runner.py:91} INFO - Job 29: Subtask generate_and_insert_data
+[2024-06-28T18:13:38.837+0000] {task_command.py:426} INFO - Running <TaskInstance: example_dag.generate_and_insert_data scheduled__2023-01-01T02:10:00+00:00 [running]> on host 08cefd381a1f
+[2024-06-28T18:13:38.865+0000] {taskinstance.py:2648} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='airflow' AIRFLOW_CTX_DAG_ID='example_dag' AIRFLOW_CTX_TASK_ID='generate_and_insert_data' AIRFLOW_CTX_EXECUTION_DATE='2023-01-01T02:10:00+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2023-01-01T02:10:00+00:00'
+[2024-06-28T18:13:38.865+0000] {taskinstance.py:430} INFO - ::endgroup::
+[2024-06-28T18:13:38.869+0000] {python.py:237} INFO - Done. Returned value was: None
+[2024-06-28T18:13:38.870+0000] {taskinstance.py:441} INFO - ::group::Post task execution logs
+[2024-06-28T18:13:38.873+0000] {taskinstance.py:1206} INFO - Marking task as SUCCESS. dag_id=example_dag, task_id=generate_and_insert_data, run_id=scheduled__2023-01-01T02:10:00+00:00, execution_date=20230101T021000, start_date=20240628T181338, end_date=20240628T181338
+[2024-06-28T18:13:38.886+0000] {local_task_job_runner.py:240} INFO - Task exited with return code 0
+[2024-06-28T18:13:38.892+0000] {taskinstance.py:3503} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2024-06-28T18:13:38.893+0000] {local_task_job_runner.py:222} INFO - ::endgroup::
+[2024-06-28T18:20:54.596+0000] {local_task_job_runner.py:120} INFO - ::group::Pre task execution logs
+[2024-06-28T18:20:54.607+0000] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: example_dag.generate_and_insert_data scheduled__2023-01-01T02:10:00+00:00 [queued]>
+[2024-06-28T18:20:54.609+0000] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: example_dag.generate_and_insert_data scheduled__2023-01-01T02:10:00+00:00 [queued]>
+[2024-06-28T18:20:54.609+0000] {taskinstance.py:2306} INFO - Starting attempt 1 of 2
+[2024-06-28T18:20:54.613+0000] {taskinstance.py:2330} INFO - Executing <Task(PythonOperator): generate_and_insert_data> on 2023-01-01 02:10:00+00:00
+[2024-06-28T18:20:54.615+0000] {standard_task_runner.py:63} INFO - Started process 418 to run task
+[2024-06-28T18:20:54.616+0000] {standard_task_runner.py:90} INFO - Running: ['airflow', 'tasks', 'run', 'example_dag', 'generate_and_insert_data', 'scheduled__2023-01-01T02:10:00+00:00', '--job-id', '29', '--raw', '--subdir', 'DAGS_FOLDER/example_dag.py', '--cfg-path', '/tmp/tmpvnkanuam']
+[2024-06-28T18:20:54.617+0000] {standard_task_runner.py:91} INFO - Job 29: Subtask generate_and_insert_data
+[2024-06-28T18:20:54.633+0000] {task_command.py:426} INFO - Running <TaskInstance: example_dag.generate_and_insert_data scheduled__2023-01-01T02:10:00+00:00 [running]> on host 6570e5857071
+[2024-06-28T18:20:54.661+0000] {taskinstance.py:2648} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='airflow' AIRFLOW_CTX_DAG_ID='example_dag' AIRFLOW_CTX_TASK_ID='generate_and_insert_data' AIRFLOW_CTX_EXECUTION_DATE='2023-01-01T02:10:00+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2023-01-01T02:10:00+00:00'
+[2024-06-28T18:20:54.662+0000] {taskinstance.py:430} INFO - ::endgroup::
+[2024-06-28T18:20:54.666+0000] {python.py:237} INFO - Done. Returned value was: None
+[2024-06-28T18:20:54.666+0000] {taskinstance.py:441} INFO - ::group::Post task execution logs
+[2024-06-28T18:20:54.670+0000] {taskinstance.py:1206} INFO - Marking task as SUCCESS. dag_id=example_dag, task_id=generate_and_insert_data, run_id=scheduled__2023-01-01T02:10:00+00:00, execution_date=20230101T021000, start_date=20240628T182054, end_date=20240628T182054
+[2024-06-28T18:20:54.677+0000] {local_task_job_runner.py:240} INFO - Task exited with return code 0
+[2024-06-28T18:20:54.683+0000] {taskinstance.py:3503} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2024-06-28T18:20:54.683+0000] {local_task_job_runner.py:222} INFO - ::endgroup::
+[2024-06-28T18:30:56.836+0000] {local_task_job_runner.py:120} INFO - ::group::Pre task execution logs
+[2024-06-28T18:30:56.846+0000] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: example_dag.generate_and_insert_data scheduled__2023-01-01T02:10:00+00:00 [queued]>
+[2024-06-28T18:30:56.848+0000] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: example_dag.generate_and_insert_data scheduled__2023-01-01T02:10:00+00:00 [queued]>
+[2024-06-28T18:30:56.849+0000] {taskinstance.py:2306} INFO - Starting attempt 1 of 2
+[2024-06-28T18:30:56.853+0000] {taskinstance.py:2330} INFO - Executing <Task(PythonOperator): generate_and_insert_data> on 2023-01-01 02:10:00+00:00
+[2024-06-28T18:30:56.855+0000] {standard_task_runner.py:63} INFO - Started process 418 to run task
+[2024-06-28T18:30:56.856+0000] {standard_task_runner.py:90} INFO - Running: ['airflow', 'tasks', 'run', 'example_dag', 'generate_and_insert_data', 'scheduled__2023-01-01T02:10:00+00:00', '--job-id', '29', '--raw', '--subdir', 'DAGS_FOLDER/example_dag.py', '--cfg-path', '/tmp/tmpwiltk_se']
+[2024-06-28T18:30:56.857+0000] {standard_task_runner.py:91} INFO - Job 29: Subtask generate_and_insert_data
+[2024-06-28T18:30:56.874+0000] {task_command.py:426} INFO - Running <TaskInstance: example_dag.generate_and_insert_data scheduled__2023-01-01T02:10:00+00:00 [running]> on host 50bf780463b8
+[2024-06-28T18:30:56.904+0000] {taskinstance.py:2648} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='airflow' AIRFLOW_CTX_DAG_ID='example_dag' AIRFLOW_CTX_TASK_ID='generate_and_insert_data' AIRFLOW_CTX_EXECUTION_DATE='2023-01-01T02:10:00+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2023-01-01T02:10:00+00:00'
+[2024-06-28T18:30:56.904+0000] {taskinstance.py:430} INFO - ::endgroup::
+[2024-06-28T18:30:56.908+0000] {python.py:237} INFO - Done. Returned value was: None
+[2024-06-28T18:30:56.909+0000] {taskinstance.py:441} INFO - ::group::Post task execution logs
+[2024-06-28T18:30:56.913+0000] {taskinstance.py:1206} INFO - Marking task as SUCCESS. dag_id=example_dag, task_id=generate_and_insert_data, run_id=scheduled__2023-01-01T02:10:00+00:00, execution_date=20230101T021000, start_date=20240628T183056, end_date=20240628T183056
+[2024-06-28T18:30:56.959+0000] {local_task_job_runner.py:240} INFO - Task exited with return code 0
+[2024-06-28T18:30:56.966+0000] {taskinstance.py:3503} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2024-06-28T18:30:56.967+0000] {local_task_job_runner.py:222} INFO - ::endgroup::

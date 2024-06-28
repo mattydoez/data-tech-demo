@@ -1,10 +1,10 @@
-# airflow/dags/ecomm_dag.py
 from airflow import DAG
 from airflow.operators.python_operator import PythonOperator
 from datetime import datetime, timedelta
 import subprocess
 import json
 import psycopg2
+import os
 
 default_args = {
     'owner': 'airflow',
@@ -17,84 +17,73 @@ default_args = {
 }
 
 def generate_and_insert_data():
-    # Run the data generation script
-    subprocess.run(["python3", "./generator/ecomm_generator.py"], check=True)
-    
-    # Insert generated data into PostgreSQL database
-    # Assuming ecomm_generator.py writes JSON files to the same directory
-    with open("./generator/fake_users.json", "r") as f:
-        users = json.load(f)
-    with open("./generator/fake_clickstream_events.json", "r") as f:
-        clickstream_events = json.load(f)
-    with open("./generator/fake_transaction_data.json", "r") as f:
-        transaction_data = json.load(f)
-    with open("./generator/fake_google_search_data.json", "r") as f:
-        google_search_data = json.load(f)
-    with open("./generator/fake_email_marketing_data.json", "r") as f:
-        email_marketing_data = json.load(f)
-    with open("./generator/fake_facebook_data.json", "r") as f:
-        facebook_data = json.load(f)
+    try:
+        # Run the data generation script
+        result = subprocess.run(["python3", "/opt/airflow/generator/ecomm_generator.py"], check=True, capture_output=True, text=True)
+        print(result.stdout)
+        print(result.stderr)
+        
+        # Insert generated data into PostgreSQL database
+        insert_data_into_db("/opt/airflow/generator/fake_users.json", "users", insert_user_query)
+        insert_data_into_db("/opt/airflow/generator/fake_clickstream_events.json", "clickstream_events", insert_clickstream_event_query)
+        insert_data_into_db("/opt/airflow/generator/fake_transaction_data.json", "transactions", insert_transaction_query)
+        insert_data_into_db("/opt/airflow/generator/fake_google_search_data.json", "google_search", insert_google_search_query)
+        insert_data_into_db("/opt/airflow/generator/fake_email_marketing_data.json", "email_marketing", insert_email_marketing_query)
+        insert_data_into_db("/opt/airflow/generator/fake_facebook_data.json", "facebook", insert_facebook_query)
+        
+    except subprocess.CalledProcessError as e:
+        print(f"Error in generate_and_insert_data: {e}")
+        print(f"stdout: {e.stdout}")
+        print(f"stderr: {e.stderr}")
+    except Exception as e:
+        print(f"General error in generate_and_insert_data: {e}")
 
-    # Insert data into PostgreSQL
-    conn = psycopg2.connect(
-        dbname="company_db",
-        user="ecomm_company",
-        password="ecomm_company",
-        host="postgres_db",  # Ensure this matches your Docker service name
-        port="5432"
-    )
-    cursor = conn.cursor()
+def insert_data_into_db(file_path, table_name, insert_query):
+    try:
+        with open(file_path, "r") as f:
+            data = json.load(f)
 
-    # Insert users
-    for user in users:
-        cursor.execute(
-            "INSERT INTO users (username, email, address, phone_number, created_at) VALUES (%s, %s, %s, %s, %s)",
-            (user["username"], user["email"], user["address"], user["phone_number"], datetime.now())
+        conn = psycopg2.connect(
+            dbname="company_db",
+            user=os.getenv("POSTGRES_USER"),
+            password=os.getenv("POSTGRES_PASSWORD"),
+            host="company_db",
+            port="5432"
         )
+        cursor = conn.cursor()
+        
+        for record in data:
+            cursor.execute(insert_query, tuple(record.values()))
+        
+        conn.commit()
+        cursor.close()
+        conn.close()
+    except Exception as e:
+        print(f"Error inserting data into {table_name}: {e}")
 
-    # Insert clickstream events
-    for event in clickstream_events:
-        cursor.execute(
-            "INSERT INTO clickstream_events (user_id, timestamp, page_visited, action, product_id, created_at) VALUES (%s, %s, %s, %s, %s, %s)",
-            (event["user_id"], event["timestamp"], event["page_visited"], event["action"], event["product_id"], datetime.now())
-        )
-
-    # Insert transactions
-    for transaction in transaction_data:
-        cursor.execute(
-            "INSERT INTO transactions (timestamp, amount, product_id, user_id, payment_method, transaction_type, created_at) VALUES (%s, %s, %s, %s, %s, %s, %s)",
-            (transaction["timestamp"], transaction["amount"], transaction["product_id"], transaction["user_id"], transaction["payment_method"], transaction["transaction_type"], datetime.now())
-        )
-
-    # Insert Google search data
-    for data in google_search_data:
-        cursor.execute(
-            "INSERT INTO google_search (date, campaign, ad, impressions, clicks, cost, conversions, created_at) VALUES (%s, %s, %s, %s, %s, %s, %s, %s)",
-            (data["date"], data["campaign"], data["ad"], data["impressions"], data["clicks"], data["cost"], data["conversions"], datetime.now())
-        )
-
-    # Insert email marketing data
-    for data in email_marketing_data:
-        cursor.execute(
-            "INSERT INTO email_marketing (date, user_email, campaign, received, opened, subscribed, clicks, bounces, unsubscribed, created_at) VALUES (%s, %s, %s, %s, %s, %s, %s, %s, %s, %s)",
-            (data["date"], data["user_email"], data["campaign"], data["received"], data["opened"], data["subscribed"], data["clicks"], data["bounces"], data["unsubscribed"], datetime.now())
-        )
-
-    # Insert Facebook data
-    for data in facebook_data:
-        cursor.execute(
-            "INSERT INTO facebook (platform, date, campaign, ad_unit, impressions, percent_watched, clicks, cost, conversions, likes, shares, comments, created_at) VALUES (%s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s)",
-            (data["platform"], data["date"], data["campaign"], data["ad_unit"], data["impressions"], data["percent_watched"], data["clicks"], data["cost"], data["conversions"], data["likes"], data["shares"], data["comments"], datetime.now())
-        )
-
-    conn.commit()
-    cursor.close()
-    conn.close()
+insert_user_query = """
+    INSERT INTO users (username, email, address, phone_number, created_at) VALUES (%s, %s, %s, %s, %s)
+"""
+insert_clickstream_event_query = """
+    INSERT INTO clickstream_events (user_id, event_type, event_timestamp) VALUES (%s, %s, %s)
+"""
+insert_transaction_query = """
+    INSERT INTO transactions (transaction_id, product_id, user_id, payment_method, transaction_type, transaction_timestamp) VALUES (%s, %s, %s, %s, %s, %s)
+"""
+insert_google_search_query = """
+    INSERT INTO google_search (date, campaign, ad, impressions, clicks, cost, conversions, created_at) VALUES (%s, %s, %s, %s, %s, %s, %s, %s)
+"""
+insert_email_marketing_query = """
+    INSERT INTO email_marketing (date, user_email, campaign, received, opened, subscribed, clicks, bounces, unsubscribed, created_at) VALUES (%s, %s, %s, %s, %s, %s, %s, %s, %s, %s)
+"""
+insert_facebook_query = """
+    INSERT INTO facebook (platform, date, campaign, ad_unit, impressions, percent_watched, clicks, cost, conversions, likes, shares, comments, created_at) VALUES (%s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s)
+"""
 
 dag = DAG(
     'ecomm_data_pipeline',
     default_args=default_args,
-    description='Generate and insert e-commerce data every 5-10 minutes',
+    description='Generate and insert e-commerce data every 10 minutes',
     schedule_interval=timedelta(minutes=10),
 )
 
