@@ -1,0 +1,3 @@
+[2024-06-28T18:18:49.619+0000] {local_task_job_runner.py:120} INFO - ::group::Pre task execution logs
+[2024-06-28T18:18:49.630+0000] {taskinstance.py:2066} INFO - Dependencies not met for <TaskInstance: ecomm_data_pipeline.generate_and_insert_data scheduled__2023-01-01T18:10:00+00:00 [success]>, dependency 'Task Instance State' FAILED: Task is in the 'success' state.
+[2024-06-28T18:18:49.631+0000] {local_task_job_runner.py:163} INFO - Task is not able to be run

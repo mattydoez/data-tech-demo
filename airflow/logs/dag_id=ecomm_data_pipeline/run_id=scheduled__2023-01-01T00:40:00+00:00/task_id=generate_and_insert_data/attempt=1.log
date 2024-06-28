@@ -1,0 +1,199 @@
+[2024-06-27T22:33:00.916+0000] {local_task_job_runner.py:120} INFO - ::group::Pre task execution logs
+[2024-06-27T22:33:00.926+0000] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: ecomm_data_pipeline.generate_and_insert_data scheduled__2023-01-01T00:40:00+00:00 [queued]>
+[2024-06-27T22:33:00.928+0000] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: ecomm_data_pipeline.generate_and_insert_data scheduled__2023-01-01T00:40:00+00:00 [queued]>
+[2024-06-27T22:33:00.928+0000] {taskinstance.py:2306} INFO - Starting attempt 1 of 2
+[2024-06-27T22:33:00.932+0000] {taskinstance.py:2330} INFO - Executing <Task(PythonOperator): generate_and_insert_data> on 2023-01-01 00:40:00+00:00
+[2024-06-27T22:33:00.934+0000] {standard_task_runner.py:63} INFO - Started process 151 to run task
+[2024-06-27T22:33:00.935+0000] {standard_task_runner.py:90} INFO - Running: ['airflow', 'tasks', 'run', 'ecomm_data_pipeline', 'generate_and_insert_data', 'scheduled__2023-01-01T00:40:00+00:00', '--job-id', '10', '--raw', '--subdir', 'DAGS_FOLDER/ecomm_dag.py', '--cfg-path', '/tmp/tmpwr7o2066']
+[2024-06-27T22:33:00.936+0000] {standard_task_runner.py:91} INFO - Job 10: Subtask generate_and_insert_data
+[2024-06-27T22:33:00.951+0000] {task_command.py:426} INFO - Running <TaskInstance: ecomm_data_pipeline.generate_and_insert_data scheduled__2023-01-01T00:40:00+00:00 [running]> on host 9174587f6b1d
+[2024-06-27T22:33:00.979+0000] {taskinstance.py:2648} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='airflow' AIRFLOW_CTX_DAG_ID='ecomm_data_pipeline' AIRFLOW_CTX_TASK_ID='generate_and_insert_data' AIRFLOW_CTX_EXECUTION_DATE='2023-01-01T00:40:00+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2023-01-01T00:40:00+00:00'
+[2024-06-27T22:33:00.979+0000] {taskinstance.py:430} INFO - ::endgroup::
+[2024-06-27T22:33:01.011+0000] {logging_mixin.py:188} INFO - Error in generate_and_insert_data: Command '['python3', './generator/ecomm_generator.py']' returned non-zero exit status 2.
+[2024-06-27T22:33:01.011+0000] {python.py:237} INFO - Done. Returned value was: None
+[2024-06-27T22:33:01.011+0000] {taskinstance.py:441} INFO - ::group::Post task execution logs
+[2024-06-27T22:33:01.016+0000] {taskinstance.py:1206} INFO - Marking task as SUCCESS. dag_id=ecomm_data_pipeline, task_id=generate_and_insert_data, run_id=scheduled__2023-01-01T00:40:00+00:00, execution_date=20230101T004000, start_date=20240627T223300, end_date=20240627T223301
+[2024-06-27T22:33:01.039+0000] {local_task_job_runner.py:240} INFO - Task exited with return code 0
+[2024-06-27T22:33:01.045+0000] {taskinstance.py:3503} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2024-06-27T22:33:01.046+0000] {local_task_job_runner.py:222} INFO - ::endgroup::
+[2024-06-27T22:51:51.149+0000] {local_task_job_runner.py:120} INFO - ::group::Pre task execution logs
+[2024-06-27T22:51:51.159+0000] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: ecomm_data_pipeline.generate_and_insert_data scheduled__2023-01-01T00:40:00+00:00 [queued]>
+[2024-06-27T22:51:51.161+0000] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: ecomm_data_pipeline.generate_and_insert_data scheduled__2023-01-01T00:40:00+00:00 [queued]>
+[2024-06-27T22:51:51.162+0000] {taskinstance.py:2306} INFO - Starting attempt 1 of 2
+[2024-06-27T22:51:51.166+0000] {taskinstance.py:2330} INFO - Executing <Task(PythonOperator): generate_and_insert_data> on 2023-01-01 00:40:00+00:00
+[2024-06-27T22:51:51.167+0000] {standard_task_runner.py:63} INFO - Started process 151 to run task
+[2024-06-27T22:51:51.168+0000] {standard_task_runner.py:90} INFO - Running: ['airflow', 'tasks', 'run', 'ecomm_data_pipeline', 'generate_and_insert_data', 'scheduled__2023-01-01T00:40:00+00:00', '--job-id', '10', '--raw', '--subdir', 'DAGS_FOLDER/ecomm_dag.py', '--cfg-path', '/tmp/tmpx4l1z5vn']
+[2024-06-27T22:51:51.169+0000] {standard_task_runner.py:91} INFO - Job 10: Subtask generate_and_insert_data
+[2024-06-27T22:51:51.185+0000] {task_command.py:426} INFO - Running <TaskInstance: ecomm_data_pipeline.generate_and_insert_data scheduled__2023-01-01T00:40:00+00:00 [running]> on host a70edf9d8581
+[2024-06-27T22:51:51.212+0000] {taskinstance.py:2648} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='airflow' AIRFLOW_CTX_DAG_ID='ecomm_data_pipeline' AIRFLOW_CTX_TASK_ID='generate_and_insert_data' AIRFLOW_CTX_EXECUTION_DATE='2023-01-01T00:40:00+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2023-01-01T00:40:00+00:00'
+[2024-06-27T22:51:51.212+0000] {taskinstance.py:430} INFO - ::endgroup::
+[2024-06-27T22:51:51.244+0000] {logging_mixin.py:188} INFO - Error in generate_and_insert_data: Command '['python3', './generator/ecomm_generator.py']' returned non-zero exit status 2.
+[2024-06-27T22:51:51.244+0000] {logging_mixin.py:188} INFO - stdout: 
+[2024-06-27T22:51:51.244+0000] {logging_mixin.py:188} INFO - stderr: python3: can't open file '/opt/airflow/./generator/ecomm_generator.py': [Errno 2] No such file or directory
+[2024-06-27T22:51:51.244+0000] {python.py:237} INFO - Done. Returned value was: None
+[2024-06-27T22:51:51.244+0000] {taskinstance.py:441} INFO - ::group::Post task execution logs
+[2024-06-27T22:51:51.249+0000] {taskinstance.py:1206} INFO - Marking task as SUCCESS. dag_id=ecomm_data_pipeline, task_id=generate_and_insert_data, run_id=scheduled__2023-01-01T00:40:00+00:00, execution_date=20230101T004000, start_date=20240627T225151, end_date=20240627T225151
+[2024-06-27T22:51:51.266+0000] {local_task_job_runner.py:240} INFO - Task exited with return code 0
+[2024-06-27T22:51:51.272+0000] {taskinstance.py:3503} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2024-06-27T22:51:51.273+0000] {local_task_job_runner.py:222} INFO - ::endgroup::
+[2024-06-27T22:59:34.471+0000] {local_task_job_runner.py:120} INFO - ::group::Pre task execution logs
+[2024-06-27T22:59:34.481+0000] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: ecomm_data_pipeline.generate_and_insert_data scheduled__2023-01-01T00:40:00+00:00 [queued]>
+[2024-06-27T22:59:34.483+0000] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: ecomm_data_pipeline.generate_and_insert_data scheduled__2023-01-01T00:40:00+00:00 [queued]>
+[2024-06-27T22:59:34.484+0000] {taskinstance.py:2306} INFO - Starting attempt 1 of 2
+[2024-06-27T22:59:34.488+0000] {taskinstance.py:2330} INFO - Executing <Task(PythonOperator): generate_and_insert_data> on 2023-01-01 00:40:00+00:00
+[2024-06-27T22:59:34.489+0000] {standard_task_runner.py:63} INFO - Started process 151 to run task
+[2024-06-27T22:59:34.490+0000] {standard_task_runner.py:90} INFO - Running: ['airflow', 'tasks', 'run', 'ecomm_data_pipeline', 'generate_and_insert_data', 'scheduled__2023-01-01T00:40:00+00:00', '--job-id', '10', '--raw', '--subdir', 'DAGS_FOLDER/ecomm_dag.py', '--cfg-path', '/tmp/tmpfzu44na_']
+[2024-06-27T22:59:34.491+0000] {standard_task_runner.py:91} INFO - Job 10: Subtask generate_and_insert_data
+[2024-06-27T22:59:34.508+0000] {task_command.py:426} INFO - Running <TaskInstance: ecomm_data_pipeline.generate_and_insert_data scheduled__2023-01-01T00:40:00+00:00 [running]> on host 5cc71d4b298c
+[2024-06-27T22:59:34.537+0000] {taskinstance.py:2648} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='airflow' AIRFLOW_CTX_DAG_ID='ecomm_data_pipeline' AIRFLOW_CTX_TASK_ID='generate_and_insert_data' AIRFLOW_CTX_EXECUTION_DATE='2023-01-01T00:40:00+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2023-01-01T00:40:00+00:00'
+[2024-06-27T22:59:34.537+0000] {taskinstance.py:430} INFO - ::endgroup::
+[2024-06-27T22:59:34.593+0000] {logging_mixin.py:188} INFO - Error in generate_and_insert_data: Command '['python3', '/opt/airflow/generator/ecomm_generator.py']' returned non-zero exit status 1.
+[2024-06-27T22:59:34.593+0000] {logging_mixin.py:188} INFO - stdout: 
+[2024-06-27T22:59:34.593+0000] {logging_mixin.py:188} INFO - stderr: Traceback (most recent call last):
+  File "/opt/airflow/generator/ecomm_generator.py", line 4, in <module>
+    from faker import Faker
+ModuleNotFoundError: No module named 'faker'
+[2024-06-27T22:59:34.593+0000] {python.py:237} INFO - Done. Returned value was: None
+[2024-06-27T22:59:34.593+0000] {taskinstance.py:441} INFO - ::group::Post task execution logs
+[2024-06-27T22:59:34.598+0000] {taskinstance.py:1206} INFO - Marking task as SUCCESS. dag_id=ecomm_data_pipeline, task_id=generate_and_insert_data, run_id=scheduled__2023-01-01T00:40:00+00:00, execution_date=20230101T004000, start_date=20240627T225934, end_date=20240627T225934
+[2024-06-27T22:59:34.630+0000] {local_task_job_runner.py:240} INFO - Task exited with return code 0
+[2024-06-27T22:59:34.636+0000] {taskinstance.py:3503} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2024-06-27T22:59:34.637+0000] {local_task_job_runner.py:222} INFO - ::endgroup::
+[2024-06-27T23:09:13.878+0000] {local_task_job_runner.py:120} INFO - ::group::Pre task execution logs
+[2024-06-27T23:09:13.888+0000] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: ecomm_data_pipeline.generate_and_insert_data scheduled__2023-01-01T00:40:00+00:00 [queued]>
+[2024-06-27T23:09:13.890+0000] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: ecomm_data_pipeline.generate_and_insert_data scheduled__2023-01-01T00:40:00+00:00 [queued]>
+[2024-06-27T23:09:13.890+0000] {taskinstance.py:2306} INFO - Starting attempt 1 of 2
+[2024-06-27T23:09:13.894+0000] {taskinstance.py:2330} INFO - Executing <Task(PythonOperator): generate_and_insert_data> on 2023-01-01 00:40:00+00:00
+[2024-06-27T23:09:13.896+0000] {standard_task_runner.py:63} INFO - Started process 151 to run task
+[2024-06-27T23:09:13.897+0000] {standard_task_runner.py:90} INFO - Running: ['airflow', 'tasks', 'run', 'ecomm_data_pipeline', 'generate_and_insert_data', 'scheduled__2023-01-01T00:40:00+00:00', '--job-id', '10', '--raw', '--subdir', 'DAGS_FOLDER/ecomm_dag.py', '--cfg-path', '/tmp/tmp9ydhfhnb']
+[2024-06-27T23:09:13.898+0000] {standard_task_runner.py:91} INFO - Job 10: Subtask generate_and_insert_data
+[2024-06-27T23:09:13.913+0000] {task_command.py:426} INFO - Running <TaskInstance: ecomm_data_pipeline.generate_and_insert_data scheduled__2023-01-01T00:40:00+00:00 [running]> on host 7147f8a4dc9f
+[2024-06-27T23:09:13.941+0000] {taskinstance.py:2648} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='airflow' AIRFLOW_CTX_DAG_ID='ecomm_data_pipeline' AIRFLOW_CTX_TASK_ID='generate_and_insert_data' AIRFLOW_CTX_EXECUTION_DATE='2023-01-01T00:40:00+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2023-01-01T00:40:00+00:00'
+[2024-06-27T23:09:13.941+0000] {taskinstance.py:430} INFO - ::endgroup::
+[2024-06-27T23:09:13.995+0000] {logging_mixin.py:188} INFO - Error in generate_and_insert_data: Command '['python3', '/opt/airflow/generator/ecomm_generator.py']' returned non-zero exit status 1.
+[2024-06-27T23:09:13.995+0000] {logging_mixin.py:188} INFO - stdout: 
+[2024-06-27T23:09:13.995+0000] {logging_mixin.py:188} INFO - stderr: Traceback (most recent call last):
+  File "/opt/airflow/generator/ecomm_generator.py", line 4, in <module>
+    from faker import Faker
+ModuleNotFoundError: No module named 'faker'
+[2024-06-27T23:09:13.995+0000] {python.py:237} INFO - Done. Returned value was: None
+[2024-06-27T23:09:13.996+0000] {taskinstance.py:441} INFO - ::group::Post task execution logs
+[2024-06-27T23:09:14.000+0000] {taskinstance.py:1206} INFO - Marking task as SUCCESS. dag_id=ecomm_data_pipeline, task_id=generate_and_insert_data, run_id=scheduled__2023-01-01T00:40:00+00:00, execution_date=20230101T004000, start_date=20240627T230913, end_date=20240627T230914
+[2024-06-27T23:09:14.044+0000] {local_task_job_runner.py:240} INFO - Task exited with return code 0
+[2024-06-27T23:09:14.051+0000] {taskinstance.py:3503} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2024-06-27T23:09:14.052+0000] {local_task_job_runner.py:222} INFO - ::endgroup::
+[2024-06-27T23:12:51.801+0000] {local_task_job_runner.py:120} INFO - ::group::Pre task execution logs
+[2024-06-27T23:12:51.810+0000] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: ecomm_data_pipeline.generate_and_insert_data scheduled__2023-01-01T00:40:00+00:00 [queued]>
+[2024-06-27T23:12:51.813+0000] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: ecomm_data_pipeline.generate_and_insert_data scheduled__2023-01-01T00:40:00+00:00 [queued]>
+[2024-06-27T23:12:51.813+0000] {taskinstance.py:2306} INFO - Starting attempt 1 of 2
+[2024-06-27T23:12:51.817+0000] {taskinstance.py:2330} INFO - Executing <Task(PythonOperator): generate_and_insert_data> on 2023-01-01 00:40:00+00:00
+[2024-06-27T23:12:51.819+0000] {standard_task_runner.py:63} INFO - Started process 151 to run task
+[2024-06-27T23:12:51.820+0000] {standard_task_runner.py:90} INFO - Running: ['airflow', 'tasks', 'run', 'ecomm_data_pipeline', 'generate_and_insert_data', 'scheduled__2023-01-01T00:40:00+00:00', '--job-id', '10', '--raw', '--subdir', 'DAGS_FOLDER/ecomm_dag.py', '--cfg-path', '/tmp/tmppo6ti86q']
+[2024-06-27T23:12:51.821+0000] {standard_task_runner.py:91} INFO - Job 10: Subtask generate_and_insert_data
+[2024-06-27T23:12:51.836+0000] {task_command.py:426} INFO - Running <TaskInstance: ecomm_data_pipeline.generate_and_insert_data scheduled__2023-01-01T00:40:00+00:00 [running]> on host 4bd55eb76a74
+[2024-06-27T23:12:51.864+0000] {taskinstance.py:2648} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='airflow' AIRFLOW_CTX_DAG_ID='ecomm_data_pipeline' AIRFLOW_CTX_TASK_ID='generate_and_insert_data' AIRFLOW_CTX_EXECUTION_DATE='2023-01-01T00:40:00+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2023-01-01T00:40:00+00:00'
+[2024-06-27T23:12:51.864+0000] {taskinstance.py:430} INFO - ::endgroup::
+[2024-06-27T23:12:51.919+0000] {logging_mixin.py:188} INFO - Error in generate_and_insert_data: Command '['python3', '/opt/airflow/generator/ecomm_generator.py']' returned non-zero exit status 1.
+[2024-06-27T23:12:51.919+0000] {logging_mixin.py:188} INFO - stdout: 
+[2024-06-27T23:12:51.919+0000] {logging_mixin.py:188} INFO - stderr: Traceback (most recent call last):
+  File "/opt/airflow/generator/ecomm_generator.py", line 4, in <module>
+    from faker import Faker
+ModuleNotFoundError: No module named 'faker'
+[2024-06-27T23:12:51.919+0000] {python.py:237} INFO - Done. Returned value was: None
+[2024-06-27T23:12:51.919+0000] {taskinstance.py:441} INFO - ::group::Post task execution logs
+[2024-06-27T23:12:51.924+0000] {taskinstance.py:1206} INFO - Marking task as SUCCESS. dag_id=ecomm_data_pipeline, task_id=generate_and_insert_data, run_id=scheduled__2023-01-01T00:40:00+00:00, execution_date=20230101T004000, start_date=20240627T231251, end_date=20240627T231251
+[2024-06-27T23:12:51.964+0000] {local_task_job_runner.py:240} INFO - Task exited with return code 0
+[2024-06-27T23:12:51.971+0000] {taskinstance.py:3503} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2024-06-27T23:12:51.972+0000] {local_task_job_runner.py:222} INFO - ::endgroup::
+[2024-06-27T23:18:46.082+0000] {local_task_job_runner.py:120} INFO - ::group::Pre task execution logs
+[2024-06-27T23:18:46.092+0000] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: ecomm_data_pipeline.generate_and_insert_data scheduled__2023-01-01T00:40:00+00:00 [queued]>
+[2024-06-27T23:18:46.095+0000] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: ecomm_data_pipeline.generate_and_insert_data scheduled__2023-01-01T00:40:00+00:00 [queued]>
+[2024-06-27T23:18:46.095+0000] {taskinstance.py:2306} INFO - Starting attempt 1 of 2
+[2024-06-27T23:18:46.100+0000] {taskinstance.py:2330} INFO - Executing <Task(PythonOperator): generate_and_insert_data> on 2023-01-01 00:40:00+00:00
+[2024-06-27T23:18:46.101+0000] {standard_task_runner.py:63} INFO - Started process 151 to run task
+[2024-06-27T23:18:46.102+0000] {standard_task_runner.py:90} INFO - Running: ['airflow', 'tasks', 'run', 'ecomm_data_pipeline', 'generate_and_insert_data', 'scheduled__2023-01-01T00:40:00+00:00', '--job-id', '10', '--raw', '--subdir', 'DAGS_FOLDER/ecomm_dag.py', '--cfg-path', '/tmp/tmpqz6h4o_e']
+[2024-06-27T23:18:46.103+0000] {standard_task_runner.py:91} INFO - Job 10: Subtask generate_and_insert_data
+[2024-06-27T23:18:46.120+0000] {task_command.py:426} INFO - Running <TaskInstance: ecomm_data_pipeline.generate_and_insert_data scheduled__2023-01-01T00:40:00+00:00 [running]> on host 73964f870a02
+[2024-06-27T23:18:46.149+0000] {taskinstance.py:2648} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='airflow' AIRFLOW_CTX_DAG_ID='ecomm_data_pipeline' AIRFLOW_CTX_TASK_ID='generate_and_insert_data' AIRFLOW_CTX_EXECUTION_DATE='2023-01-01T00:40:00+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2023-01-01T00:40:00+00:00'
+[2024-06-27T23:18:46.150+0000] {taskinstance.py:430} INFO - ::endgroup::
+[2024-06-27T23:18:46.211+0000] {logging_mixin.py:188} INFO - Error in generate_and_insert_data: Command '['python3', '/opt/airflow/generator/ecomm_generator.py']' returned non-zero exit status 1.
+[2024-06-27T23:18:46.211+0000] {logging_mixin.py:188} INFO - stdout: 
+[2024-06-27T23:18:46.211+0000] {logging_mixin.py:188} INFO - stderr: Traceback (most recent call last):
+  File "/opt/airflow/generator/ecomm_generator.py", line 4, in <module>
+    from faker import Faker
+ModuleNotFoundError: No module named 'faker'
+[2024-06-27T23:18:46.211+0000] {python.py:237} INFO - Done. Returned value was: None
+[2024-06-27T23:18:46.211+0000] {taskinstance.py:441} INFO - ::group::Post task execution logs
+[2024-06-27T23:18:46.217+0000] {taskinstance.py:1206} INFO - Marking task as SUCCESS. dag_id=ecomm_data_pipeline, task_id=generate_and_insert_data, run_id=scheduled__2023-01-01T00:40:00+00:00, execution_date=20230101T004000, start_date=20240627T231846, end_date=20240627T231846
+[2024-06-27T23:18:46.246+0000] {local_task_job_runner.py:240} INFO - Task exited with return code 0
+[2024-06-27T23:18:46.253+0000] {taskinstance.py:3503} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2024-06-27T23:18:46.253+0000] {local_task_job_runner.py:222} INFO - ::endgroup::
+[2024-06-28T18:13:09.362+0000] {local_task_job_runner.py:120} INFO - ::group::Pre task execution logs
+[2024-06-28T18:13:09.372+0000] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: ecomm_data_pipeline.generate_and_insert_data scheduled__2023-01-01T00:40:00+00:00 [queued]>
+[2024-06-28T18:13:09.374+0000] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: ecomm_data_pipeline.generate_and_insert_data scheduled__2023-01-01T00:40:00+00:00 [queued]>
+[2024-06-28T18:13:09.375+0000] {taskinstance.py:2306} INFO - Starting attempt 1 of 2
+[2024-06-28T18:13:09.379+0000] {taskinstance.py:2330} INFO - Executing <Task(PythonOperator): generate_and_insert_data> on 2023-01-01 00:40:00+00:00
+[2024-06-28T18:13:09.380+0000] {standard_task_runner.py:63} INFO - Started process 151 to run task
+[2024-06-28T18:13:09.381+0000] {standard_task_runner.py:90} INFO - Running: ['airflow', 'tasks', 'run', 'ecomm_data_pipeline', 'generate_and_insert_data', 'scheduled__2023-01-01T00:40:00+00:00', '--job-id', '10', '--raw', '--subdir', 'DAGS_FOLDER/ecomm_dag.py', '--cfg-path', '/tmp/tmpn6gedesz']
+[2024-06-28T18:13:09.382+0000] {standard_task_runner.py:91} INFO - Job 10: Subtask generate_and_insert_data
+[2024-06-28T18:13:09.399+0000] {task_command.py:426} INFO - Running <TaskInstance: ecomm_data_pipeline.generate_and_insert_data scheduled__2023-01-01T00:40:00+00:00 [running]> on host 08cefd381a1f
+[2024-06-28T18:13:09.426+0000] {taskinstance.py:2648} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='airflow' AIRFLOW_CTX_DAG_ID='ecomm_data_pipeline' AIRFLOW_CTX_TASK_ID='generate_and_insert_data' AIRFLOW_CTX_EXECUTION_DATE='2023-01-01T00:40:00+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2023-01-01T00:40:00+00:00'
+[2024-06-28T18:13:09.426+0000] {taskinstance.py:430} INFO - ::endgroup::
+[2024-06-28T18:13:09.485+0000] {logging_mixin.py:188} INFO - Error in generate_and_insert_data: Command '['python3', '/opt/airflow/generator/ecomm_generator.py']' returned non-zero exit status 1.
+[2024-06-28T18:13:09.486+0000] {logging_mixin.py:188} INFO - stdout: 
+[2024-06-28T18:13:09.486+0000] {logging_mixin.py:188} INFO - stderr: Traceback (most recent call last):
+  File "/opt/airflow/generator/ecomm_generator.py", line 4, in <module>
+    from faker import Faker
+ModuleNotFoundError: No module named 'faker'
+[2024-06-28T18:13:09.486+0000] {python.py:237} INFO - Done. Returned value was: None
+[2024-06-28T18:13:09.486+0000] {taskinstance.py:441} INFO - ::group::Post task execution logs
+[2024-06-28T18:13:09.491+0000] {taskinstance.py:1206} INFO - Marking task as SUCCESS. dag_id=ecomm_data_pipeline, task_id=generate_and_insert_data, run_id=scheduled__2023-01-01T00:40:00+00:00, execution_date=20230101T004000, start_date=20240628T181309, end_date=20240628T181309
+[2024-06-28T18:13:09.521+0000] {local_task_job_runner.py:240} INFO - Task exited with return code 0
+[2024-06-28T18:13:09.529+0000] {taskinstance.py:3503} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2024-06-28T18:13:09.529+0000] {local_task_job_runner.py:222} INFO - ::endgroup::
+[2024-06-28T18:20:23.755+0000] {local_task_job_runner.py:120} INFO - ::group::Pre task execution logs
+[2024-06-28T18:20:23.765+0000] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: ecomm_data_pipeline.generate_and_insert_data scheduled__2023-01-01T00:40:00+00:00 [queued]>
+[2024-06-28T18:20:23.767+0000] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: ecomm_data_pipeline.generate_and_insert_data scheduled__2023-01-01T00:40:00+00:00 [queued]>
+[2024-06-28T18:20:23.767+0000] {taskinstance.py:2306} INFO - Starting attempt 1 of 2
+[2024-06-28T18:20:23.772+0000] {taskinstance.py:2330} INFO - Executing <Task(PythonOperator): generate_and_insert_data> on 2023-01-01 00:40:00+00:00
+[2024-06-28T18:20:23.773+0000] {standard_task_runner.py:63} INFO - Started process 151 to run task
+[2024-06-28T18:20:23.774+0000] {standard_task_runner.py:90} INFO - Running: ['airflow', 'tasks', 'run', 'ecomm_data_pipeline', 'generate_and_insert_data', 'scheduled__2023-01-01T00:40:00+00:00', '--job-id', '10', '--raw', '--subdir', 'DAGS_FOLDER/ecomm_dag.py', '--cfg-path', '/tmp/tmpnzp51zfw']
+[2024-06-28T18:20:23.775+0000] {standard_task_runner.py:91} INFO - Job 10: Subtask generate_and_insert_data
+[2024-06-28T18:20:23.791+0000] {task_command.py:426} INFO - Running <TaskInstance: ecomm_data_pipeline.generate_and_insert_data scheduled__2023-01-01T00:40:00+00:00 [running]> on host 6570e5857071
+[2024-06-28T18:20:23.819+0000] {taskinstance.py:2648} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='airflow' AIRFLOW_CTX_DAG_ID='ecomm_data_pipeline' AIRFLOW_CTX_TASK_ID='generate_and_insert_data' AIRFLOW_CTX_EXECUTION_DATE='2023-01-01T00:40:00+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2023-01-01T00:40:00+00:00'
+[2024-06-28T18:20:23.819+0000] {taskinstance.py:430} INFO - ::endgroup::
+[2024-06-28T18:20:23.876+0000] {logging_mixin.py:188} INFO - Error in generate_and_insert_data: Command '['python3', '/opt/airflow/generator/ecomm_generator.py']' returned non-zero exit status 1.
+[2024-06-28T18:20:23.876+0000] {logging_mixin.py:188} INFO - stdout: 
+[2024-06-28T18:20:23.876+0000] {logging_mixin.py:188} INFO - stderr: Traceback (most recent call last):
+  File "/opt/airflow/generator/ecomm_generator.py", line 4, in <module>
+    from faker import Faker
+ModuleNotFoundError: No module named 'faker'
+[2024-06-28T18:20:23.876+0000] {python.py:237} INFO - Done. Returned value was: None
+[2024-06-28T18:20:23.876+0000] {taskinstance.py:441} INFO - ::group::Post task execution logs
+[2024-06-28T18:20:23.881+0000] {taskinstance.py:1206} INFO - Marking task as SUCCESS. dag_id=ecomm_data_pipeline, task_id=generate_and_insert_data, run_id=scheduled__2023-01-01T00:40:00+00:00, execution_date=20230101T004000, start_date=20240628T182023, end_date=20240628T182023
+[2024-06-28T18:20:23.924+0000] {local_task_job_runner.py:240} INFO - Task exited with return code 0
+[2024-06-28T18:20:23.931+0000] {taskinstance.py:3503} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2024-06-28T18:20:23.931+0000] {local_task_job_runner.py:222} INFO - ::endgroup::
+[2024-06-28T18:30:25.726+0000] {local_task_job_runner.py:120} INFO - ::group::Pre task execution logs
+[2024-06-28T18:30:25.736+0000] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: ecomm_data_pipeline.generate_and_insert_data scheduled__2023-01-01T00:40:00+00:00 [queued]>
+[2024-06-28T18:30:25.738+0000] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: ecomm_data_pipeline.generate_and_insert_data scheduled__2023-01-01T00:40:00+00:00 [queued]>
+[2024-06-28T18:30:25.738+0000] {taskinstance.py:2306} INFO - Starting attempt 1 of 2
+[2024-06-28T18:30:25.742+0000] {taskinstance.py:2330} INFO - Executing <Task(PythonOperator): generate_and_insert_data> on 2023-01-01 00:40:00+00:00
+[2024-06-28T18:30:25.743+0000] {standard_task_runner.py:63} INFO - Started process 151 to run task
+[2024-06-28T18:30:25.744+0000] {standard_task_runner.py:90} INFO - Running: ['airflow', 'tasks', 'run', 'ecomm_data_pipeline', 'generate_and_insert_data', 'scheduled__2023-01-01T00:40:00+00:00', '--job-id', '10', '--raw', '--subdir', 'DAGS_FOLDER/ecomm_dag.py', '--cfg-path', '/tmp/tmp68lzevrk']
+[2024-06-28T18:30:25.745+0000] {standard_task_runner.py:91} INFO - Job 10: Subtask generate_and_insert_data
+[2024-06-28T18:30:25.761+0000] {task_command.py:426} INFO - Running <TaskInstance: ecomm_data_pipeline.generate_and_insert_data scheduled__2023-01-01T00:40:00+00:00 [running]> on host 50bf780463b8
+[2024-06-28T18:30:25.788+0000] {taskinstance.py:2648} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='airflow' AIRFLOW_CTX_DAG_ID='ecomm_data_pipeline' AIRFLOW_CTX_TASK_ID='generate_and_insert_data' AIRFLOW_CTX_EXECUTION_DATE='2023-01-01T00:40:00+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2023-01-01T00:40:00+00:00'
+[2024-06-28T18:30:25.788+0000] {taskinstance.py:430} INFO - ::endgroup::
+[2024-06-28T18:30:25.844+0000] {logging_mixin.py:188} INFO - Error in generate_and_insert_data: Command '['python3', '/opt/airflow/generator/ecomm_generator.py']' returned non-zero exit status 1.
+[2024-06-28T18:30:25.844+0000] {logging_mixin.py:188} INFO - stdout: 
+[2024-06-28T18:30:25.844+0000] {logging_mixin.py:188} INFO - stderr: Traceback (most recent call last):
+  File "/opt/airflow/generator/ecomm_generator.py", line 4, in <module>
+    from faker import Faker
+ModuleNotFoundError: No module named 'faker'
+[2024-06-28T18:30:25.845+0000] {python.py:237} INFO - Done. Returned value was: None
+[2024-06-28T18:30:25.845+0000] {taskinstance.py:441} INFO - ::group::Post task execution logs
+[2024-06-28T18:30:25.850+0000] {taskinstance.py:1206} INFO - Marking task as SUCCESS. dag_id=ecomm_data_pipeline, task_id=generate_and_insert_data, run_id=scheduled__2023-01-01T00:40:00+00:00, execution_date=20230101T004000, start_date=20240628T183025, end_date=20240628T183025
+[2024-06-28T18:30:25.890+0000] {local_task_job_runner.py:240} INFO - Task exited with return code 0
+[2024-06-28T18:30:25.897+0000] {taskinstance.py:3503} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2024-06-28T18:30:25.898+0000] {local_task_job_runner.py:222} INFO - ::endgroup::
