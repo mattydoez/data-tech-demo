@@ -6,8 +6,18 @@ RUN apt-get update && apt-get install -y \
     build-essential \
     libssl-dev libffi-dev \
     libxml2-dev libxslt1-dev \
+    postgresql-client \
     && apt-get clean \
     && rm -rf /var/lib/apt/lists/*
+
+# Copy the initialization script
+COPY init_superset.sh /app/init_superset.sh
+
+# Copy the Superset config file
+COPY superset_config.py /app/pythonpath/superset_config.py
+
+# Ensure the script is executable
+RUN chmod +x /app/init_superset.sh
 
 # Switch back to the superset user
 USER superset
@@ -16,4 +26,4 @@ USER superset
 EXPOSE 8088
 
 # Command to run the superset server
-CMD ["gunicorn", "--bind", "0.0.0.0:8088", "--access-logfile", "-", "--error-logfile", "-", "--workers", "1", "--worker-class", "gthread", "--threads", "20", "--timeout", "60", "--limit-request-line", "0", "--limit-request-field_size", "0", "superset.app:create_app()"]
+CMD ["/app/init_superset.sh"]
