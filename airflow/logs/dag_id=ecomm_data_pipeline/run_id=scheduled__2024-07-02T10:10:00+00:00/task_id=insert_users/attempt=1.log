@@ -1,0 +1,17 @@
+[2024-07-03T00:25:54.802+0000] {taskinstance.py:1103} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: ecomm_data_pipeline.insert_users scheduled__2024-07-02T10:10:00+00:00 [queued]>
+[2024-07-03T00:25:54.805+0000] {taskinstance.py:1103} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: ecomm_data_pipeline.insert_users scheduled__2024-07-02T10:10:00+00:00 [queued]>
+[2024-07-03T00:25:54.805+0000] {taskinstance.py:1308} INFO - Starting attempt 1 of 2
+[2024-07-03T00:25:54.809+0000] {taskinstance.py:1327} INFO - Executing <Task(PythonOperator): insert_users> on 2024-07-02 10:10:00+00:00
+[2024-07-03T00:25:54.810+0000] {standard_task_runner.py:57} INFO - Started process 114 to run task
+[2024-07-03T00:25:54.811+0000] {standard_task_runner.py:84} INFO - Running: ['airflow', 'tasks', 'run', 'ecomm_data_pipeline', 'insert_users', 'scheduled__2024-07-02T10:10:00+00:00', '--job-id', '255', '--raw', '--subdir', 'DAGS_FOLDER/ecomm_dag.py', '--cfg-path', '/tmp/tmp66e4xgo_']
+[2024-07-03T00:25:54.812+0000] {standard_task_runner.py:85} INFO - Job 255: Subtask insert_users
+[2024-07-03T00:25:54.832+0000] {task_command.py:410} INFO - Running <TaskInstance: ecomm_data_pipeline.insert_users scheduled__2024-07-02T10:10:00+00:00 [running]> on host e25ac14d8d5f
+[2024-07-03T00:25:54.868+0000] {taskinstance.py:1545} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='airflow' AIRFLOW_CTX_DAG_ID='ecomm_data_pipeline' AIRFLOW_CTX_TASK_ID='insert_users' AIRFLOW_CTX_EXECUTION_DATE='2024-07-02T10:10:00+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2024-07-02T10:10:00+00:00'
+[2024-07-03T00:25:54.869+0000] {logging_mixin.py:149} INFO - Inserting data into users from /opt/airflow/generator/fake_users.json...
+[2024-07-03T00:25:54.871+0000] {logging_mixin.py:149} INFO - Error inserting data into users: invalid input syntax for type timestamp: "+1-308-253-2858"
+LINE 3: West Christopherport, WY 02035', '+1-308-253-2858')
+                                         ^
+[2024-07-03T00:25:54.872+0000] {python.py:183} INFO - Done. Returned value was: None
+[2024-07-03T00:25:54.878+0000] {taskinstance.py:1345} INFO - Marking task as SUCCESS. dag_id=ecomm_data_pipeline, task_id=insert_users, execution_date=20240702T101000, start_date=20240703T002554, end_date=20240703T002554
+[2024-07-03T00:25:54.912+0000] {local_task_job_runner.py:225} INFO - Task exited with return code 0
+[2024-07-03T00:25:54.924+0000] {taskinstance.py:2651} INFO - 0 downstream tasks scheduled from follow-on schedule check

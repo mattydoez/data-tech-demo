@@ -1,0 +1,1190 @@
+[2024-07-03T00:08:42.095+0000] {processor.py:157} INFO - Started process (PID=11) to work on /opt/airflow/dags/ecomm_dag.py
+[2024-07-03T00:08:42.096+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/ecomm_dag.py for tasks to queue
+[2024-07-03T00:08:42.096+0000] {logging_mixin.py:149} INFO - [2024-07-03T00:08:42.096+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/ecomm_dag.py
+[2024-07-03T00:08:42.112+0000] {processor.py:836} INFO - DAG(s) dict_keys(['ecomm_data_pipeline']) retrieved from /opt/airflow/dags/ecomm_dag.py
+[2024-07-03T00:08:42.153+0000] {logging_mixin.py:149} INFO - [2024-07-03T00:08:42.153+0000] {dag.py:2726} INFO - Sync 1 DAGs
+[2024-07-03T00:08:42.162+0000] {logging_mixin.py:149} INFO - [2024-07-03T00:08:42.162+0000] {dag.py:3486} INFO - Setting next_dagrun for ecomm_data_pipeline to 2024-07-02T00:40:00+00:00, run_after=2024-07-02T00:50:00+00:00
+[2024-07-03T00:08:42.171+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/ecomm_dag.py took 0.078 seconds
+[2024-07-03T00:09:12.404+0000] {processor.py:157} INFO - Started process (PID=21) to work on /opt/airflow/dags/ecomm_dag.py
+[2024-07-03T00:09:12.404+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/ecomm_dag.py for tasks to queue
+[2024-07-03T00:09:12.405+0000] {logging_mixin.py:149} INFO - [2024-07-03T00:09:12.405+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/ecomm_dag.py
+[2024-07-03T00:09:12.411+0000] {processor.py:836} INFO - DAG(s) dict_keys(['ecomm_data_pipeline']) retrieved from /opt/airflow/dags/ecomm_dag.py
+[2024-07-03T00:09:12.425+0000] {logging_mixin.py:149} INFO - [2024-07-03T00:09:12.425+0000] {dag.py:2726} INFO - Sync 1 DAGs
+[2024-07-03T00:09:12.436+0000] {logging_mixin.py:149} INFO - [2024-07-03T00:09:12.436+0000] {dag.py:3486} INFO - Setting next_dagrun for ecomm_data_pipeline to 2024-07-02T00:40:00+00:00, run_after=2024-07-02T00:50:00+00:00
+[2024-07-03T00:09:12.444+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/ecomm_dag.py took 0.042 seconds
+[2024-07-03T00:09:42.662+0000] {processor.py:157} INFO - Started process (PID=33) to work on /opt/airflow/dags/ecomm_dag.py
+[2024-07-03T00:09:42.663+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/ecomm_dag.py for tasks to queue
+[2024-07-03T00:09:42.664+0000] {logging_mixin.py:149} INFO - [2024-07-03T00:09:42.663+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/ecomm_dag.py
+[2024-07-03T00:09:42.674+0000] {processor.py:836} INFO - DAG(s) dict_keys(['ecomm_data_pipeline']) retrieved from /opt/airflow/dags/ecomm_dag.py
+[2024-07-03T00:09:42.684+0000] {logging_mixin.py:149} INFO - [2024-07-03T00:09:42.684+0000] {dag.py:2726} INFO - Sync 1 DAGs
+[2024-07-03T00:09:42.697+0000] {logging_mixin.py:149} INFO - [2024-07-03T00:09:42.697+0000] {dag.py:3486} INFO - Setting next_dagrun for ecomm_data_pipeline to 2024-07-02T00:30:00+00:00, run_after=2024-07-02T00:40:00+00:00
+[2024-07-03T00:09:42.705+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/ecomm_dag.py took 0.046 seconds
+[2024-07-03T00:10:12.868+0000] {processor.py:157} INFO - Started process (PID=79) to work on /opt/airflow/dags/ecomm_dag.py
+[2024-07-03T00:10:12.870+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/ecomm_dag.py for tasks to queue
+[2024-07-03T00:10:12.870+0000] {logging_mixin.py:149} INFO - [2024-07-03T00:10:12.870+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/ecomm_dag.py
+[2024-07-03T00:10:12.876+0000] {processor.py:836} INFO - DAG(s) dict_keys(['ecomm_data_pipeline']) retrieved from /opt/airflow/dags/ecomm_dag.py
+[2024-07-03T00:10:12.891+0000] {logging_mixin.py:149} INFO - [2024-07-03T00:10:12.891+0000] {dag.py:2726} INFO - Sync 1 DAGs
+[2024-07-03T00:10:12.902+0000] {logging_mixin.py:149} INFO - [2024-07-03T00:10:12.902+0000] {dag.py:3486} INFO - Setting next_dagrun for ecomm_data_pipeline to 2024-07-02T01:00:00+00:00, run_after=2024-07-02T01:10:00+00:00
+[2024-07-03T00:10:12.910+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/ecomm_dag.py took 0.044 seconds
+[2024-07-03T00:10:43.013+0000] {processor.py:157} INFO - Started process (PID=139) to work on /opt/airflow/dags/ecomm_dag.py
+[2024-07-03T00:10:43.014+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/ecomm_dag.py for tasks to queue
+[2024-07-03T00:10:43.015+0000] {logging_mixin.py:149} INFO - [2024-07-03T00:10:43.014+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/ecomm_dag.py
+[2024-07-03T00:10:43.022+0000] {processor.py:836} INFO - DAG(s) dict_keys(['ecomm_data_pipeline']) retrieved from /opt/airflow/dags/ecomm_dag.py
+[2024-07-03T00:10:43.040+0000] {logging_mixin.py:149} INFO - [2024-07-03T00:10:43.040+0000] {dag.py:2726} INFO - Sync 1 DAGs
+[2024-07-03T00:10:43.053+0000] {logging_mixin.py:149} INFO - [2024-07-03T00:10:43.053+0000] {dag.py:3486} INFO - Setting next_dagrun for ecomm_data_pipeline to 2024-07-02T01:30:00+00:00, run_after=2024-07-02T01:40:00+00:00
+[2024-07-03T00:10:43.064+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/ecomm_dag.py took 0.053 seconds
+[2024-07-03T00:11:13.237+0000] {processor.py:157} INFO - Started process (PID=191) to work on /opt/airflow/dags/ecomm_dag.py
+[2024-07-03T00:11:13.238+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/ecomm_dag.py for tasks to queue
+[2024-07-03T00:11:13.238+0000] {logging_mixin.py:149} INFO - [2024-07-03T00:11:13.238+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/ecomm_dag.py
+[2024-07-03T00:11:13.250+0000] {processor.py:836} INFO - DAG(s) dict_keys(['ecomm_data_pipeline']) retrieved from /opt/airflow/dags/ecomm_dag.py
+[2024-07-03T00:11:13.278+0000] {logging_mixin.py:149} INFO - [2024-07-03T00:11:13.278+0000] {dag.py:2726} INFO - Sync 1 DAGs
+[2024-07-03T00:11:13.290+0000] {logging_mixin.py:149} INFO - [2024-07-03T00:11:13.290+0000] {dag.py:3486} INFO - Setting next_dagrun for ecomm_data_pipeline to 2024-07-02T02:10:00+00:00, run_after=2024-07-02T02:20:00+00:00
+[2024-07-03T00:11:13.298+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/ecomm_dag.py took 0.063 seconds
+[2024-07-03T00:11:43.680+0000] {processor.py:157} INFO - Started process (PID=203) to work on /opt/airflow/dags/ecomm_dag.py
+[2024-07-03T00:11:43.681+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/ecomm_dag.py for tasks to queue
+[2024-07-03T00:11:43.682+0000] {logging_mixin.py:149} INFO - [2024-07-03T00:11:43.682+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/ecomm_dag.py
+[2024-07-03T00:11:43.693+0000] {processor.py:836} INFO - DAG(s) dict_keys(['ecomm_data_pipeline']) retrieved from /opt/airflow/dags/ecomm_dag.py
+[2024-07-03T00:11:43.713+0000] {logging_mixin.py:149} INFO - [2024-07-03T00:11:43.713+0000] {dag.py:2726} INFO - Sync 1 DAGs
+[2024-07-03T00:11:43.724+0000] {logging_mixin.py:149} INFO - [2024-07-03T00:11:43.724+0000] {dag.py:3486} INFO - Setting next_dagrun for ecomm_data_pipeline to 2024-07-02T02:10:00+00:00, run_after=2024-07-02T02:20:00+00:00
+[2024-07-03T00:11:43.732+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/ecomm_dag.py took 0.057 seconds
+[2024-07-03T00:12:14.044+0000] {processor.py:157} INFO - Started process (PID=213) to work on /opt/airflow/dags/ecomm_dag.py
+[2024-07-03T00:12:14.045+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/ecomm_dag.py for tasks to queue
+[2024-07-03T00:12:14.046+0000] {logging_mixin.py:149} INFO - [2024-07-03T00:12:14.046+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/ecomm_dag.py
+[2024-07-03T00:12:14.058+0000] {processor.py:836} INFO - DAG(s) dict_keys(['ecomm_data_pipeline']) retrieved from /opt/airflow/dags/ecomm_dag.py
+[2024-07-03T00:12:14.079+0000] {logging_mixin.py:149} INFO - [2024-07-03T00:12:14.079+0000] {dag.py:2726} INFO - Sync 1 DAGs
+[2024-07-03T00:12:14.091+0000] {logging_mixin.py:149} INFO - [2024-07-03T00:12:14.091+0000] {dag.py:3486} INFO - Setting next_dagrun for ecomm_data_pipeline to 2024-07-02T02:10:00+00:00, run_after=2024-07-02T02:20:00+00:00
+[2024-07-03T00:12:14.100+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/ecomm_dag.py took 0.060 seconds
+[2024-07-03T00:12:44.421+0000] {processor.py:157} INFO - Started process (PID=223) to work on /opt/airflow/dags/ecomm_dag.py
+[2024-07-03T00:12:44.422+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/ecomm_dag.py for tasks to queue
+[2024-07-03T00:12:44.424+0000] {logging_mixin.py:149} INFO - [2024-07-03T00:12:44.424+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/ecomm_dag.py
+[2024-07-03T00:12:44.439+0000] {processor.py:836} INFO - DAG(s) dict_keys(['ecomm_data_pipeline']) retrieved from /opt/airflow/dags/ecomm_dag.py
+[2024-07-03T00:12:44.468+0000] {logging_mixin.py:149} INFO - [2024-07-03T00:12:44.468+0000] {dag.py:2726} INFO - Sync 1 DAGs
+[2024-07-03T00:12:44.487+0000] {logging_mixin.py:149} INFO - [2024-07-03T00:12:44.487+0000] {dag.py:3486} INFO - Setting next_dagrun for ecomm_data_pipeline to 2024-07-02T02:10:00+00:00, run_after=2024-07-02T02:20:00+00:00
+[2024-07-03T00:12:44.499+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/ecomm_dag.py took 0.082 seconds
+[2024-07-03T00:13:14.746+0000] {processor.py:157} INFO - Started process (PID=239) to work on /opt/airflow/dags/ecomm_dag.py
+[2024-07-03T00:13:14.747+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/ecomm_dag.py for tasks to queue
+[2024-07-03T00:13:14.747+0000] {logging_mixin.py:149} INFO - [2024-07-03T00:13:14.747+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/ecomm_dag.py
+[2024-07-03T00:13:14.754+0000] {processor.py:836} INFO - DAG(s) dict_keys(['ecomm_data_pipeline']) retrieved from /opt/airflow/dags/ecomm_dag.py
+[2024-07-03T00:13:14.770+0000] {logging_mixin.py:149} INFO - [2024-07-03T00:13:14.770+0000] {dag.py:2726} INFO - Sync 1 DAGs
+[2024-07-03T00:13:14.782+0000] {logging_mixin.py:149} INFO - [2024-07-03T00:13:14.782+0000] {dag.py:3486} INFO - Setting next_dagrun for ecomm_data_pipeline to 2024-07-02T02:30:00+00:00, run_after=2024-07-02T02:40:00+00:00
+[2024-07-03T00:13:14.791+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/ecomm_dag.py took 0.047 seconds
+[2024-07-03T00:13:45.100+0000] {processor.py:157} INFO - Started process (PID=261) to work on /opt/airflow/dags/ecomm_dag.py
+[2024-07-03T00:13:45.101+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/ecomm_dag.py for tasks to queue
+[2024-07-03T00:13:45.102+0000] {logging_mixin.py:149} INFO - [2024-07-03T00:13:45.102+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/ecomm_dag.py
+[2024-07-03T00:13:45.111+0000] {processor.py:836} INFO - DAG(s) dict_keys(['ecomm_data_pipeline']) retrieved from /opt/airflow/dags/ecomm_dag.py
+[2024-07-03T00:13:45.131+0000] {logging_mixin.py:149} INFO - [2024-07-03T00:13:45.131+0000] {dag.py:2726} INFO - Sync 1 DAGs
+[2024-07-03T00:13:45.142+0000] {logging_mixin.py:149} INFO - [2024-07-03T00:13:45.142+0000] {dag.py:3486} INFO - Setting next_dagrun for ecomm_data_pipeline to 2024-07-02T02:30:00+00:00, run_after=2024-07-02T02:40:00+00:00
+[2024-07-03T00:13:45.150+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/ecomm_dag.py took 0.054 seconds
+[2024-07-03T00:14:15.461+0000] {processor.py:157} INFO - Started process (PID=271) to work on /opt/airflow/dags/ecomm_dag.py
+[2024-07-03T00:14:15.463+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/ecomm_dag.py for tasks to queue
+[2024-07-03T00:14:15.464+0000] {logging_mixin.py:149} INFO - [2024-07-03T00:14:15.464+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/ecomm_dag.py
+[2024-07-03T00:14:15.473+0000] {processor.py:836} INFO - DAG(s) dict_keys(['ecomm_data_pipeline']) retrieved from /opt/airflow/dags/ecomm_dag.py
+[2024-07-03T00:14:15.492+0000] {logging_mixin.py:149} INFO - [2024-07-03T00:14:15.491+0000] {dag.py:2726} INFO - Sync 1 DAGs
+[2024-07-03T00:14:15.503+0000] {logging_mixin.py:149} INFO - [2024-07-03T00:14:15.503+0000] {dag.py:3486} INFO - Setting next_dagrun for ecomm_data_pipeline to 2024-07-02T02:30:00+00:00, run_after=2024-07-02T02:40:00+00:00
+[2024-07-03T00:14:15.581+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/ecomm_dag.py took 0.123 seconds
+[2024-07-03T00:14:34.689+0000] {processor.py:157} INFO - Started process (PID=281) to work on /opt/airflow/dags/ecomm_dag.py
+[2024-07-03T00:14:34.690+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/ecomm_dag.py for tasks to queue
+[2024-07-03T00:14:34.691+0000] {logging_mixin.py:149} INFO - [2024-07-03T00:14:34.691+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/ecomm_dag.py
+[2024-07-03T00:14:34.708+0000] {processor.py:836} INFO - DAG(s) dict_keys(['ecomm_data_pipeline']) retrieved from /opt/airflow/dags/ecomm_dag.py
+[2024-07-03T00:14:34.730+0000] {logging_mixin.py:149} INFO - [2024-07-03T00:14:34.730+0000] {dag.py:2726} INFO - Sync 1 DAGs
+[2024-07-03T00:14:34.793+0000] {logging_mixin.py:149} INFO - [2024-07-03T00:14:34.793+0000] {dag.py:3486} INFO - Setting next_dagrun for ecomm_data_pipeline to 2024-07-02T02:30:00+00:00, run_after=2024-07-02T02:40:00+00:00
+[2024-07-03T00:14:34.801+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/ecomm_dag.py took 0.117 seconds
+[2024-07-03T00:15:05.031+0000] {processor.py:157} INFO - Started process (PID=315) to work on /opt/airflow/dags/ecomm_dag.py
+[2024-07-03T00:15:05.032+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/ecomm_dag.py for tasks to queue
+[2024-07-03T00:15:05.032+0000] {logging_mixin.py:149} INFO - [2024-07-03T00:15:05.032+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/ecomm_dag.py
+[2024-07-03T00:15:05.046+0000] {processor.py:836} INFO - DAG(s) dict_keys(['ecomm_data_pipeline']) retrieved from /opt/airflow/dags/ecomm_dag.py
+[2024-07-03T00:15:05.071+0000] {logging_mixin.py:149} INFO - [2024-07-03T00:15:05.070+0000] {dag.py:2726} INFO - Sync 1 DAGs
+[2024-07-03T00:15:05.179+0000] {logging_mixin.py:149} INFO - [2024-07-03T00:15:05.179+0000] {dag.py:3486} INFO - Setting next_dagrun for ecomm_data_pipeline to 2024-07-02T03:00:00+00:00, run_after=2024-07-02T03:10:00+00:00
+[2024-07-03T00:15:05.187+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/ecomm_dag.py took 0.158 seconds
+[2024-07-03T00:15:35.365+0000] {processor.py:157} INFO - Started process (PID=373) to work on /opt/airflow/dags/ecomm_dag.py
+[2024-07-03T00:15:35.366+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/ecomm_dag.py for tasks to queue
+[2024-07-03T00:15:35.366+0000] {logging_mixin.py:149} INFO - [2024-07-03T00:15:35.366+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/ecomm_dag.py
+[2024-07-03T00:15:35.372+0000] {processor.py:836} INFO - DAG(s) dict_keys(['ecomm_data_pipeline']) retrieved from /opt/airflow/dags/ecomm_dag.py
+[2024-07-03T00:15:35.444+0000] {logging_mixin.py:149} INFO - [2024-07-03T00:15:35.444+0000] {dag.py:2726} INFO - Sync 1 DAGs
+[2024-07-03T00:15:35.454+0000] {logging_mixin.py:149} INFO - [2024-07-03T00:15:35.454+0000] {dag.py:3486} INFO - Setting next_dagrun for ecomm_data_pipeline to 2024-07-02T03:30:00+00:00, run_after=2024-07-02T03:40:00+00:00
+[2024-07-03T00:15:35.461+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/ecomm_dag.py took 0.098 seconds
+[2024-07-03T00:16:05.743+0000] {processor.py:157} INFO - Started process (PID=404) to work on /opt/airflow/dags/ecomm_dag.py
+[2024-07-03T00:16:05.745+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/ecomm_dag.py for tasks to queue
+[2024-07-03T00:16:05.745+0000] {logging_mixin.py:149} INFO - [2024-07-03T00:16:05.745+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/ecomm_dag.py
+[2024-07-03T00:16:05.747+0000] {logging_mixin.py:149} INFO - [2024-07-03T00:16:05.747+0000] {dagbag.py:327} INFO - File /opt/airflow/dags/ecomm_dag.py assumed to contain no DAGs. Skipping.
+[2024-07-03T00:16:05.747+0000] {processor.py:838} WARNING - No viable dags retrieved from /opt/airflow/dags/ecomm_dag.py
+[2024-07-03T00:16:05.763+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/ecomm_dag.py took 0.024 seconds
+[2024-07-03T00:16:36.212+0000] {processor.py:157} INFO - Started process (PID=414) to work on /opt/airflow/dags/ecomm_dag.py
+[2024-07-03T00:16:36.213+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/ecomm_dag.py for tasks to queue
+[2024-07-03T00:16:36.214+0000] {logging_mixin.py:149} INFO - [2024-07-03T00:16:36.214+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/ecomm_dag.py
+[2024-07-03T00:16:36.227+0000] {processor.py:836} INFO - DAG(s) dict_keys(['ecomm_data_pipeline']) retrieved from /opt/airflow/dags/ecomm_dag.py
+[2024-07-03T00:16:36.248+0000] {logging_mixin.py:149} INFO - [2024-07-03T00:16:36.248+0000] {dag.py:2726} INFO - Sync 1 DAGs
+[2024-07-03T00:16:36.260+0000] {logging_mixin.py:149} INFO - [2024-07-03T00:16:36.260+0000] {dag.py:3486} INFO - Setting next_dagrun for ecomm_data_pipeline to 2024-07-02T03:40:00+00:00, run_after=2024-07-02T03:50:00+00:00
+[2024-07-03T00:16:36.268+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/ecomm_dag.py took 0.059 seconds
+[2024-07-03T00:17:06.610+0000] {processor.py:157} INFO - Started process (PID=424) to work on /opt/airflow/dags/ecomm_dag.py
+[2024-07-03T00:17:06.611+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/ecomm_dag.py for tasks to queue
+[2024-07-03T00:17:06.612+0000] {logging_mixin.py:149} INFO - [2024-07-03T00:17:06.612+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/ecomm_dag.py
+[2024-07-03T00:17:06.623+0000] {processor.py:836} INFO - DAG(s) dict_keys(['ecomm_data_pipeline']) retrieved from /opt/airflow/dags/ecomm_dag.py
+[2024-07-03T00:17:06.642+0000] {logging_mixin.py:149} INFO - [2024-07-03T00:17:06.642+0000] {dag.py:2726} INFO - Sync 1 DAGs
+[2024-07-03T00:17:06.656+0000] {logging_mixin.py:149} INFO - [2024-07-03T00:17:06.656+0000] {dag.py:3486} INFO - Setting next_dagrun for ecomm_data_pipeline to 2024-07-02T03:40:00+00:00, run_after=2024-07-02T03:50:00+00:00
+[2024-07-03T00:17:06.663+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/ecomm_dag.py took 0.056 seconds
+[2024-07-03T00:17:36.968+0000] {processor.py:157} INFO - Started process (PID=434) to work on /opt/airflow/dags/ecomm_dag.py
+[2024-07-03T00:17:36.970+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/ecomm_dag.py for tasks to queue
+[2024-07-03T00:17:36.970+0000] {logging_mixin.py:149} INFO - [2024-07-03T00:17:36.970+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/ecomm_dag.py
+[2024-07-03T00:17:36.983+0000] {processor.py:836} INFO - DAG(s) dict_keys(['ecomm_data_pipeline']) retrieved from /opt/airflow/dags/ecomm_dag.py
+[2024-07-03T00:17:37.003+0000] {logging_mixin.py:149} INFO - [2024-07-03T00:17:37.003+0000] {dag.py:2726} INFO - Sync 1 DAGs
+[2024-07-03T00:17:37.016+0000] {logging_mixin.py:149} INFO - [2024-07-03T00:17:37.016+0000] {dag.py:3486} INFO - Setting next_dagrun for ecomm_data_pipeline to 2024-07-02T03:40:00+00:00, run_after=2024-07-02T03:50:00+00:00
+[2024-07-03T00:17:37.026+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/ecomm_dag.py took 0.061 seconds
+[2024-07-03T00:18:07.370+0000] {processor.py:157} INFO - Started process (PID=444) to work on /opt/airflow/dags/ecomm_dag.py
+[2024-07-03T00:18:07.371+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/ecomm_dag.py for tasks to queue
+[2024-07-03T00:18:07.372+0000] {logging_mixin.py:149} INFO - [2024-07-03T00:18:07.371+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/ecomm_dag.py
+[2024-07-03T00:18:07.381+0000] {processor.py:836} INFO - DAG(s) dict_keys(['ecomm_data_pipeline']) retrieved from /opt/airflow/dags/ecomm_dag.py
+[2024-07-03T00:18:07.400+0000] {logging_mixin.py:149} INFO - [2024-07-03T00:18:07.400+0000] {dag.py:2726} INFO - Sync 1 DAGs
+[2024-07-03T00:18:07.411+0000] {logging_mixin.py:149} INFO - [2024-07-03T00:18:07.411+0000] {dag.py:3486} INFO - Setting next_dagrun for ecomm_data_pipeline to 2024-07-02T03:40:00+00:00, run_after=2024-07-02T03:50:00+00:00
+[2024-07-03T00:18:07.419+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/ecomm_dag.py took 0.052 seconds
+[2024-07-03T00:18:37.713+0000] {processor.py:157} INFO - Started process (PID=454) to work on /opt/airflow/dags/ecomm_dag.py
+[2024-07-03T00:18:37.713+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/ecomm_dag.py for tasks to queue
+[2024-07-03T00:18:37.714+0000] {logging_mixin.py:149} INFO - [2024-07-03T00:18:37.714+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/ecomm_dag.py
+[2024-07-03T00:18:37.722+0000] {processor.py:836} INFO - DAG(s) dict_keys(['ecomm_data_pipeline']) retrieved from /opt/airflow/dags/ecomm_dag.py
+[2024-07-03T00:18:37.740+0000] {logging_mixin.py:149} INFO - [2024-07-03T00:18:37.740+0000] {dag.py:2726} INFO - Sync 1 DAGs
+[2024-07-03T00:18:37.752+0000] {logging_mixin.py:149} INFO - [2024-07-03T00:18:37.752+0000] {dag.py:3486} INFO - Setting next_dagrun for ecomm_data_pipeline to 2024-07-02T03:40:00+00:00, run_after=2024-07-02T03:50:00+00:00
+[2024-07-03T00:18:37.761+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/ecomm_dag.py took 0.050 seconds
+[2024-07-03T00:19:08.066+0000] {processor.py:157} INFO - Started process (PID=464) to work on /opt/airflow/dags/ecomm_dag.py
+[2024-07-03T00:19:08.067+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/ecomm_dag.py for tasks to queue
+[2024-07-03T00:19:08.068+0000] {logging_mixin.py:149} INFO - [2024-07-03T00:19:08.068+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/ecomm_dag.py
+[2024-07-03T00:19:08.078+0000] {processor.py:836} INFO - DAG(s) dict_keys(['ecomm_data_pipeline']) retrieved from /opt/airflow/dags/ecomm_dag.py
+[2024-07-03T00:19:08.097+0000] {logging_mixin.py:149} INFO - [2024-07-03T00:19:08.097+0000] {dag.py:2726} INFO - Sync 1 DAGs
+[2024-07-03T00:19:08.109+0000] {logging_mixin.py:149} INFO - [2024-07-03T00:19:08.109+0000] {dag.py:3486} INFO - Setting next_dagrun for ecomm_data_pipeline to 2024-07-02T03:40:00+00:00, run_after=2024-07-02T03:50:00+00:00
+[2024-07-03T00:19:08.118+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/ecomm_dag.py took 0.054 seconds
+[2024-07-03T00:19:38.443+0000] {processor.py:157} INFO - Started process (PID=474) to work on /opt/airflow/dags/ecomm_dag.py
+[2024-07-03T00:19:38.444+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/ecomm_dag.py for tasks to queue
+[2024-07-03T00:19:38.445+0000] {logging_mixin.py:149} INFO - [2024-07-03T00:19:38.444+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/ecomm_dag.py
+[2024-07-03T00:19:38.457+0000] {processor.py:836} INFO - DAG(s) dict_keys(['ecomm_data_pipeline']) retrieved from /opt/airflow/dags/ecomm_dag.py
+[2024-07-03T00:19:38.480+0000] {logging_mixin.py:149} INFO - [2024-07-03T00:19:38.479+0000] {dag.py:2726} INFO - Sync 1 DAGs
+[2024-07-03T00:19:38.491+0000] {logging_mixin.py:149} INFO - [2024-07-03T00:19:38.491+0000] {dag.py:3486} INFO - Setting next_dagrun for ecomm_data_pipeline to 2024-07-02T03:40:00+00:00, run_after=2024-07-02T03:50:00+00:00
+[2024-07-03T00:19:38.499+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/ecomm_dag.py took 0.060 seconds
+[2024-07-03T00:20:08.720+0000] {processor.py:157} INFO - Started process (PID=517) to work on /opt/airflow/dags/ecomm_dag.py
+[2024-07-03T00:20:08.721+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/ecomm_dag.py for tasks to queue
+[2024-07-03T00:20:08.722+0000] {logging_mixin.py:149} INFO - [2024-07-03T00:20:08.722+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/ecomm_dag.py
+[2024-07-03T00:20:08.734+0000] {processor.py:836} INFO - DAG(s) dict_keys(['ecomm_data_pipeline']) retrieved from /opt/airflow/dags/ecomm_dag.py
+[2024-07-03T00:20:08.755+0000] {logging_mixin.py:149} INFO - [2024-07-03T00:20:08.755+0000] {dag.py:2726} INFO - Sync 1 DAGs
+[2024-07-03T00:20:08.767+0000] {logging_mixin.py:149} INFO - [2024-07-03T00:20:08.767+0000] {dag.py:3486} INFO - Setting next_dagrun for ecomm_data_pipeline to 2024-07-02T04:10:00+00:00, run_after=2024-07-02T04:20:00+00:00
+[2024-07-03T00:20:08.775+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/ecomm_dag.py took 0.059 seconds
+[2024-07-03T00:20:39.122+0000] {processor.py:157} INFO - Started process (PID=527) to work on /opt/airflow/dags/ecomm_dag.py
+[2024-07-03T00:20:39.123+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/ecomm_dag.py for tasks to queue
+[2024-07-03T00:20:39.124+0000] {logging_mixin.py:149} INFO - [2024-07-03T00:20:39.124+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/ecomm_dag.py
+[2024-07-03T00:20:39.135+0000] {processor.py:836} INFO - DAG(s) dict_keys(['ecomm_data_pipeline']) retrieved from /opt/airflow/dags/ecomm_dag.py
+[2024-07-03T00:20:39.156+0000] {logging_mixin.py:149} INFO - [2024-07-03T00:20:39.156+0000] {dag.py:2726} INFO - Sync 1 DAGs
+[2024-07-03T00:20:39.168+0000] {logging_mixin.py:149} INFO - [2024-07-03T00:20:39.167+0000] {dag.py:3486} INFO - Setting next_dagrun for ecomm_data_pipeline to 2024-07-02T04:10:00+00:00, run_after=2024-07-02T04:20:00+00:00
+[2024-07-03T00:20:39.176+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/ecomm_dag.py took 0.057 seconds
+[2024-07-03T00:21:09.508+0000] {processor.py:157} INFO - Started process (PID=537) to work on /opt/airflow/dags/ecomm_dag.py
+[2024-07-03T00:21:09.508+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/ecomm_dag.py for tasks to queue
+[2024-07-03T00:21:09.509+0000] {logging_mixin.py:149} INFO - [2024-07-03T00:21:09.509+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/ecomm_dag.py
+[2024-07-03T00:21:09.520+0000] {processor.py:836} INFO - DAG(s) dict_keys(['ecomm_data_pipeline']) retrieved from /opt/airflow/dags/ecomm_dag.py
+[2024-07-03T00:21:09.541+0000] {logging_mixin.py:149} INFO - [2024-07-03T00:21:09.541+0000] {dag.py:2726} INFO - Sync 1 DAGs
+[2024-07-03T00:21:09.553+0000] {logging_mixin.py:149} INFO - [2024-07-03T00:21:09.553+0000] {dag.py:3486} INFO - Setting next_dagrun for ecomm_data_pipeline to 2024-07-02T04:10:00+00:00, run_after=2024-07-02T04:20:00+00:00
+[2024-07-03T00:21:09.561+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/ecomm_dag.py took 0.057 seconds
+[2024-07-03T00:21:39.871+0000] {processor.py:157} INFO - Started process (PID=547) to work on /opt/airflow/dags/ecomm_dag.py
+[2024-07-03T00:21:39.872+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/ecomm_dag.py for tasks to queue
+[2024-07-03T00:21:39.873+0000] {logging_mixin.py:149} INFO - [2024-07-03T00:21:39.872+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/ecomm_dag.py
+[2024-07-03T00:21:39.883+0000] {processor.py:836} INFO - DAG(s) dict_keys(['ecomm_data_pipeline']) retrieved from /opt/airflow/dags/ecomm_dag.py
+[2024-07-03T00:21:39.903+0000] {logging_mixin.py:149} INFO - [2024-07-03T00:21:39.903+0000] {dag.py:2726} INFO - Sync 1 DAGs
+[2024-07-03T00:21:39.914+0000] {logging_mixin.py:149} INFO - [2024-07-03T00:21:39.914+0000] {dag.py:3486} INFO - Setting next_dagrun for ecomm_data_pipeline to 2024-07-02T04:10:00+00:00, run_after=2024-07-02T04:20:00+00:00
+[2024-07-03T00:21:39.922+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/ecomm_dag.py took 0.054 seconds
+[2024-07-03T00:22:09.217+0000] {processor.py:157} INFO - Started process (PID=557) to work on /opt/airflow/dags/ecomm_dag.py
+[2024-07-03T00:22:09.218+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/ecomm_dag.py for tasks to queue
+[2024-07-03T00:22:09.219+0000] {logging_mixin.py:149} INFO - [2024-07-03T00:22:09.219+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/ecomm_dag.py
+[2024-07-03T00:22:09.232+0000] {processor.py:836} INFO - DAG(s) dict_keys(['ecomm_data_pipeline']) retrieved from /opt/airflow/dags/ecomm_dag.py
+[2024-07-03T00:22:09.252+0000] {logging_mixin.py:149} INFO - [2024-07-03T00:22:09.252+0000] {dag.py:2726} INFO - Sync 1 DAGs
+[2024-07-03T00:22:09.264+0000] {logging_mixin.py:149} INFO - [2024-07-03T00:22:09.264+0000] {dag.py:3486} INFO - Setting next_dagrun for ecomm_data_pipeline to 2024-07-02T04:10:00+00:00, run_after=2024-07-02T04:20:00+00:00
+[2024-07-03T00:22:09.272+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/ecomm_dag.py took 0.058 seconds
+[2024-07-03T00:22:39.617+0000] {processor.py:157} INFO - Started process (PID=567) to work on /opt/airflow/dags/ecomm_dag.py
+[2024-07-03T00:22:39.618+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/ecomm_dag.py for tasks to queue
+[2024-07-03T00:22:39.619+0000] {logging_mixin.py:149} INFO - [2024-07-03T00:22:39.619+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/ecomm_dag.py
+[2024-07-03T00:22:39.632+0000] {processor.py:836} INFO - DAG(s) dict_keys(['ecomm_data_pipeline']) retrieved from /opt/airflow/dags/ecomm_dag.py
+[2024-07-03T00:22:39.653+0000] {logging_mixin.py:149} INFO - [2024-07-03T00:22:39.653+0000] {dag.py:2726} INFO - Sync 1 DAGs
+[2024-07-03T00:22:39.666+0000] {logging_mixin.py:149} INFO - [2024-07-03T00:22:39.666+0000] {dag.py:3486} INFO - Setting next_dagrun for ecomm_data_pipeline to 2024-07-02T04:10:00+00:00, run_after=2024-07-02T04:20:00+00:00
+[2024-07-03T00:22:39.674+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/ecomm_dag.py took 0.061 seconds
+[2024-07-03T00:22:49.738+0000] {processor.py:157} INFO - Started process (PID=568) to work on /opt/airflow/dags/ecomm_dag.py
+[2024-07-03T00:22:49.739+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/ecomm_dag.py for tasks to queue
+[2024-07-03T00:22:49.740+0000] {logging_mixin.py:149} INFO - [2024-07-03T00:22:49.740+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/ecomm_dag.py
+[2024-07-03T00:22:49.745+0000] {logging_mixin.py:149} INFO - [2024-07-03T00:22:49.744+0000] {dagbag.py:350} ERROR - Failed to import: /opt/airflow/dags/ecomm_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.9/site-packages/airflow/models/dagbag.py", line 346, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 846, in exec_module
+  File "<frozen importlib._bootstrap_external>", line 983, in get_code
+  File "<frozen importlib._bootstrap_external>", line 913, in source_to_code
+  File "<frozen importlib._bootstrap>", line 228, in _call_with_frames_removed
+  File "/opt/airflow/dags/ecomm_dag.py", line 101
+    schedule_interval=timedelta(minutes=),
+                                        ^
+SyntaxError: invalid syntax
+[2024-07-03T00:22:49.746+0000] {processor.py:838} WARNING - No viable dags retrieved from /opt/airflow/dags/ecomm_dag.py
+[2024-07-03T00:22:49.764+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/ecomm_dag.py took 0.029 seconds
+[2024-07-03T00:22:56.872+0000] {processor.py:157} INFO - Started process (PID=570) to work on /opt/airflow/dags/ecomm_dag.py
+[2024-07-03T00:22:56.873+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/ecomm_dag.py for tasks to queue
+[2024-07-03T00:22:56.874+0000] {logging_mixin.py:149} INFO - [2024-07-03T00:22:56.874+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/ecomm_dag.py
+[2024-07-03T00:22:56.889+0000] {processor.py:836} INFO - DAG(s) dict_keys(['ecomm_data_pipeline']) retrieved from /opt/airflow/dags/ecomm_dag.py
+[2024-07-03T00:22:56.922+0000] {logging_mixin.py:149} INFO - [2024-07-03T00:22:56.922+0000] {dag.py:2726} INFO - Sync 1 DAGs
+[2024-07-03T00:22:56.932+0000] {logging_mixin.py:149} INFO - [2024-07-03T00:22:56.932+0000] {dag.py:3486} INFO - Setting next_dagrun for ecomm_data_pipeline to 2024-07-02T04:10:00+00:00, run_after=2024-07-02T05:40:00+00:00
+[2024-07-03T00:22:56.941+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/ecomm_dag.py took 0.073 seconds
+[2024-07-03T00:24:09.884+0000] {processor.py:157} INFO - Started process (PID=10) to work on /opt/airflow/dags/ecomm_dag.py
+[2024-07-03T00:24:09.886+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/ecomm_dag.py for tasks to queue
+[2024-07-03T00:24:09.886+0000] {logging_mixin.py:149} INFO - [2024-07-03T00:24:09.886+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/ecomm_dag.py
+[2024-07-03T00:24:09.901+0000] {processor.py:836} INFO - DAG(s) dict_keys(['ecomm_data_pipeline']) retrieved from /opt/airflow/dags/ecomm_dag.py
+[2024-07-03T00:24:09.941+0000] {logging_mixin.py:149} INFO - [2024-07-03T00:24:09.941+0000] {dag.py:2726} INFO - Sync 1 DAGs
+[2024-07-03T00:24:09.951+0000] {logging_mixin.py:149} INFO - [2024-07-03T00:24:09.951+0000] {dag.py:3486} INFO - Setting next_dagrun for ecomm_data_pipeline to 2024-07-02T04:10:00+00:00, run_after=2024-07-02T05:40:00+00:00
+[2024-07-03T00:24:09.960+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/ecomm_dag.py took 0.078 seconds
+[2024-07-03T00:24:40.180+0000] {processor.py:157} INFO - Started process (PID=21) to work on /opt/airflow/dags/ecomm_dag.py
+[2024-07-03T00:24:40.181+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/ecomm_dag.py for tasks to queue
+[2024-07-03T00:24:40.181+0000] {logging_mixin.py:149} INFO - [2024-07-03T00:24:40.181+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/ecomm_dag.py
+[2024-07-03T00:24:40.190+0000] {processor.py:836} INFO - DAG(s) dict_keys(['ecomm_data_pipeline']) retrieved from /opt/airflow/dags/ecomm_dag.py
+[2024-07-03T00:24:40.208+0000] {logging_mixin.py:149} INFO - [2024-07-03T00:24:40.208+0000] {dag.py:2726} INFO - Sync 1 DAGs
+[2024-07-03T00:24:40.221+0000] {logging_mixin.py:149} INFO - [2024-07-03T00:24:40.221+0000] {dag.py:3486} INFO - Setting next_dagrun for ecomm_data_pipeline to 2024-07-02T04:10:00+00:00, run_after=2024-07-02T05:40:00+00:00
+[2024-07-03T00:24:40.229+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/ecomm_dag.py took 0.052 seconds
+[2024-07-03T00:25:10.467+0000] {processor.py:157} INFO - Started process (PID=32) to work on /opt/airflow/dags/ecomm_dag.py
+[2024-07-03T00:25:10.468+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/ecomm_dag.py for tasks to queue
+[2024-07-03T00:25:10.468+0000] {logging_mixin.py:149} INFO - [2024-07-03T00:25:10.468+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/ecomm_dag.py
+[2024-07-03T00:25:10.479+0000] {processor.py:836} INFO - DAG(s) dict_keys(['ecomm_data_pipeline']) retrieved from /opt/airflow/dags/ecomm_dag.py
+[2024-07-03T00:25:10.489+0000] {logging_mixin.py:149} INFO - [2024-07-03T00:25:10.489+0000] {dag.py:2726} INFO - Sync 1 DAGs
+[2024-07-03T00:25:10.504+0000] {logging_mixin.py:149} INFO - [2024-07-03T00:25:10.504+0000] {dag.py:3486} INFO - Setting next_dagrun for ecomm_data_pipeline to 2024-07-02T05:40:00+00:00, run_after=2024-07-02T07:10:00+00:00
+[2024-07-03T00:25:10.513+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/ecomm_dag.py took 0.049 seconds
+[2024-07-03T00:25:40.619+0000] {processor.py:157} INFO - Started process (PID=89) to work on /opt/airflow/dags/ecomm_dag.py
+[2024-07-03T00:25:40.619+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/ecomm_dag.py for tasks to queue
+[2024-07-03T00:25:40.620+0000] {logging_mixin.py:149} INFO - [2024-07-03T00:25:40.619+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/ecomm_dag.py
+[2024-07-03T00:25:40.626+0000] {processor.py:836} INFO - DAG(s) dict_keys(['ecomm_data_pipeline']) retrieved from /opt/airflow/dags/ecomm_dag.py
+[2024-07-03T00:25:40.642+0000] {logging_mixin.py:149} INFO - [2024-07-03T00:25:40.642+0000] {dag.py:2726} INFO - Sync 1 DAGs
+[2024-07-03T00:25:40.653+0000] {logging_mixin.py:149} INFO - [2024-07-03T00:25:40.653+0000] {dag.py:3486} INFO - Setting next_dagrun for ecomm_data_pipeline to 2024-07-02T10:10:00+00:00, run_after=2024-07-02T11:40:00+00:00
+[2024-07-03T00:25:40.662+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/ecomm_dag.py took 0.045 seconds
+[2024-07-03T00:26:10.812+0000] {processor.py:157} INFO - Started process (PID=148) to work on /opt/airflow/dags/ecomm_dag.py
+[2024-07-03T00:26:10.812+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/ecomm_dag.py for tasks to queue
+[2024-07-03T00:26:10.813+0000] {logging_mixin.py:149} INFO - [2024-07-03T00:26:10.813+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/ecomm_dag.py
+[2024-07-03T00:26:10.819+0000] {processor.py:836} INFO - DAG(s) dict_keys(['ecomm_data_pipeline']) retrieved from /opt/airflow/dags/ecomm_dag.py
+[2024-07-03T00:26:10.834+0000] {logging_mixin.py:149} INFO - [2024-07-03T00:26:10.834+0000] {dag.py:2726} INFO - Sync 1 DAGs
+[2024-07-03T00:26:10.845+0000] {logging_mixin.py:149} INFO - [2024-07-03T00:26:10.845+0000] {dag.py:3486} INFO - Setting next_dagrun for ecomm_data_pipeline to 2024-07-02T16:10:00+00:00, run_after=2024-07-02T17:40:00+00:00
+[2024-07-03T00:26:10.854+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/ecomm_dag.py took 0.044 seconds
+[2024-07-03T00:26:40.981+0000] {processor.py:157} INFO - Started process (PID=197) to work on /opt/airflow/dags/ecomm_dag.py
+[2024-07-03T00:26:40.982+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/ecomm_dag.py for tasks to queue
+[2024-07-03T00:26:40.982+0000] {logging_mixin.py:149} INFO - [2024-07-03T00:26:40.982+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/ecomm_dag.py
+[2024-07-03T00:26:40.988+0000] {processor.py:836} INFO - DAG(s) dict_keys(['ecomm_data_pipeline']) retrieved from /opt/airflow/dags/ecomm_dag.py
+[2024-07-03T00:26:41.002+0000] {logging_mixin.py:149} INFO - [2024-07-03T00:26:41.002+0000] {dag.py:2726} INFO - Sync 1 DAGs
+[2024-07-03T00:26:41.013+0000] {logging_mixin.py:149} INFO - [2024-07-03T00:26:41.013+0000] {dag.py:3486} INFO - Setting next_dagrun for ecomm_data_pipeline to 2024-07-02T20:40:00+00:00, run_after=2024-07-02T22:10:00+00:00
+[2024-07-03T00:26:41.023+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/ecomm_dag.py took 0.043 seconds
+[2024-07-03T00:27:11.140+0000] {processor.py:157} INFO - Started process (PID=253) to work on /opt/airflow/dags/ecomm_dag.py
+[2024-07-03T00:27:11.140+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/ecomm_dag.py for tasks to queue
+[2024-07-03T00:27:11.141+0000] {logging_mixin.py:149} INFO - [2024-07-03T00:27:11.141+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/ecomm_dag.py
+[2024-07-03T00:27:11.148+0000] {processor.py:836} INFO - DAG(s) dict_keys(['ecomm_data_pipeline']) retrieved from /opt/airflow/dags/ecomm_dag.py
+[2024-07-03T00:27:11.164+0000] {logging_mixin.py:149} INFO - [2024-07-03T00:27:11.164+0000] {dag.py:2726} INFO - Sync 1 DAGs
+[2024-07-03T00:27:11.175+0000] {logging_mixin.py:149} INFO - [2024-07-03T00:27:11.175+0000] {dag.py:3486} INFO - Setting next_dagrun for ecomm_data_pipeline to 2024-07-02T23:40:00+00:00, run_after=2024-07-03T01:10:00+00:00
+[2024-07-03T00:27:11.183+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/ecomm_dag.py took 0.045 seconds
+[2024-07-03T00:27:41.568+0000] {processor.py:157} INFO - Started process (PID=268) to work on /opt/airflow/dags/ecomm_dag.py
+[2024-07-03T00:27:41.569+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/ecomm_dag.py for tasks to queue
+[2024-07-03T00:27:41.570+0000] {logging_mixin.py:149} INFO - [2024-07-03T00:27:41.569+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/ecomm_dag.py
+[2024-07-03T00:27:41.584+0000] {processor.py:836} INFO - DAG(s) dict_keys(['ecomm_data_pipeline']) retrieved from /opt/airflow/dags/ecomm_dag.py
+[2024-07-03T00:27:41.606+0000] {logging_mixin.py:149} INFO - [2024-07-03T00:27:41.606+0000] {dag.py:2726} INFO - Sync 1 DAGs
+[2024-07-03T00:27:41.619+0000] {logging_mixin.py:149} INFO - [2024-07-03T00:27:41.619+0000] {dag.py:3486} INFO - Setting next_dagrun for ecomm_data_pipeline to 2024-07-02T23:40:00+00:00, run_after=2024-07-03T01:10:00+00:00
+[2024-07-03T00:27:41.629+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/ecomm_dag.py took 0.067 seconds
+[2024-07-03T00:28:11.940+0000] {processor.py:157} INFO - Started process (PID=278) to work on /opt/airflow/dags/ecomm_dag.py
+[2024-07-03T00:28:11.941+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/ecomm_dag.py for tasks to queue
+[2024-07-03T00:28:11.941+0000] {logging_mixin.py:149} INFO - [2024-07-03T00:28:11.941+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/ecomm_dag.py
+[2024-07-03T00:28:11.953+0000] {processor.py:836} INFO - DAG(s) dict_keys(['ecomm_data_pipeline']) retrieved from /opt/airflow/dags/ecomm_dag.py
+[2024-07-03T00:28:11.973+0000] {logging_mixin.py:149} INFO - [2024-07-03T00:28:11.973+0000] {dag.py:2726} INFO - Sync 1 DAGs
+[2024-07-03T00:28:11.986+0000] {logging_mixin.py:149} INFO - [2024-07-03T00:28:11.986+0000] {dag.py:3486} INFO - Setting next_dagrun for ecomm_data_pipeline to 2024-07-02T23:40:00+00:00, run_after=2024-07-03T01:10:00+00:00
+[2024-07-03T00:28:11.994+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/ecomm_dag.py took 0.059 seconds
+[2024-07-03T00:28:42.317+0000] {processor.py:157} INFO - Started process (PID=288) to work on /opt/airflow/dags/ecomm_dag.py
+[2024-07-03T00:28:42.318+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/ecomm_dag.py for tasks to queue
+[2024-07-03T00:28:42.319+0000] {logging_mixin.py:149} INFO - [2024-07-03T00:28:42.319+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/ecomm_dag.py
+[2024-07-03T00:28:42.329+0000] {processor.py:836} INFO - DAG(s) dict_keys(['ecomm_data_pipeline']) retrieved from /opt/airflow/dags/ecomm_dag.py
+[2024-07-03T00:28:42.349+0000] {logging_mixin.py:149} INFO - [2024-07-03T00:28:42.349+0000] {dag.py:2726} INFO - Sync 1 DAGs
+[2024-07-03T00:28:42.361+0000] {logging_mixin.py:149} INFO - [2024-07-03T00:28:42.361+0000] {dag.py:3486} INFO - Setting next_dagrun for ecomm_data_pipeline to 2024-07-02T23:40:00+00:00, run_after=2024-07-03T01:10:00+00:00
+[2024-07-03T00:28:42.369+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/ecomm_dag.py took 0.056 seconds
+[2024-07-03T00:29:12.720+0000] {processor.py:157} INFO - Started process (PID=298) to work on /opt/airflow/dags/ecomm_dag.py
+[2024-07-03T00:29:12.721+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/ecomm_dag.py for tasks to queue
+[2024-07-03T00:29:12.722+0000] {logging_mixin.py:149} INFO - [2024-07-03T00:29:12.722+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/ecomm_dag.py
+[2024-07-03T00:29:12.732+0000] {processor.py:836} INFO - DAG(s) dict_keys(['ecomm_data_pipeline']) retrieved from /opt/airflow/dags/ecomm_dag.py
+[2024-07-03T00:29:12.752+0000] {logging_mixin.py:149} INFO - [2024-07-03T00:29:12.752+0000] {dag.py:2726} INFO - Sync 1 DAGs
+[2024-07-03T00:29:12.767+0000] {logging_mixin.py:149} INFO - [2024-07-03T00:29:12.767+0000] {dag.py:3486} INFO - Setting next_dagrun for ecomm_data_pipeline to 2024-07-02T23:40:00+00:00, run_after=2024-07-03T01:10:00+00:00
+[2024-07-03T00:29:12.778+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/ecomm_dag.py took 0.062 seconds
+[2024-07-03T00:29:43.064+0000] {processor.py:157} INFO - Started process (PID=308) to work on /opt/airflow/dags/ecomm_dag.py
+[2024-07-03T00:29:43.066+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/ecomm_dag.py for tasks to queue
+[2024-07-03T00:29:43.066+0000] {logging_mixin.py:149} INFO - [2024-07-03T00:29:43.066+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/ecomm_dag.py
+[2024-07-03T00:29:43.076+0000] {processor.py:836} INFO - DAG(s) dict_keys(['ecomm_data_pipeline']) retrieved from /opt/airflow/dags/ecomm_dag.py
+[2024-07-03T00:29:43.095+0000] {logging_mixin.py:149} INFO - [2024-07-03T00:29:43.095+0000] {dag.py:2726} INFO - Sync 1 DAGs
+[2024-07-03T00:29:43.107+0000] {logging_mixin.py:149} INFO - [2024-07-03T00:29:43.107+0000] {dag.py:3486} INFO - Setting next_dagrun for ecomm_data_pipeline to 2024-07-02T23:40:00+00:00, run_after=2024-07-03T01:10:00+00:00
+[2024-07-03T00:29:43.199+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/ecomm_dag.py took 0.139 seconds
+[2024-07-03T00:30:13.439+0000] {processor.py:157} INFO - Started process (PID=318) to work on /opt/airflow/dags/ecomm_dag.py
+[2024-07-03T00:30:13.440+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/ecomm_dag.py for tasks to queue
+[2024-07-03T00:30:13.441+0000] {logging_mixin.py:149} INFO - [2024-07-03T00:30:13.441+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/ecomm_dag.py
+[2024-07-03T00:30:13.451+0000] {processor.py:836} INFO - DAG(s) dict_keys(['ecomm_data_pipeline']) retrieved from /opt/airflow/dags/ecomm_dag.py
+[2024-07-03T00:30:13.471+0000] {logging_mixin.py:149} INFO - [2024-07-03T00:30:13.471+0000] {dag.py:2726} INFO - Sync 1 DAGs
+[2024-07-03T00:30:13.540+0000] {logging_mixin.py:149} INFO - [2024-07-03T00:30:13.540+0000] {dag.py:3486} INFO - Setting next_dagrun for ecomm_data_pipeline to 2024-07-02T23:40:00+00:00, run_after=2024-07-03T01:10:00+00:00
+[2024-07-03T00:30:13.549+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/ecomm_dag.py took 0.113 seconds
+[2024-07-03T00:30:43.826+0000] {processor.py:157} INFO - Started process (PID=328) to work on /opt/airflow/dags/ecomm_dag.py
+[2024-07-03T00:30:43.828+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/ecomm_dag.py for tasks to queue
+[2024-07-03T00:30:43.829+0000] {logging_mixin.py:149} INFO - [2024-07-03T00:30:43.829+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/ecomm_dag.py
+[2024-07-03T00:30:43.838+0000] {processor.py:836} INFO - DAG(s) dict_keys(['ecomm_data_pipeline']) retrieved from /opt/airflow/dags/ecomm_dag.py
+[2024-07-03T00:30:43.914+0000] {logging_mixin.py:149} INFO - [2024-07-03T00:30:43.914+0000] {dag.py:2726} INFO - Sync 1 DAGs
+[2024-07-03T00:30:43.923+0000] {logging_mixin.py:149} INFO - [2024-07-03T00:30:43.923+0000] {dag.py:3486} INFO - Setting next_dagrun for ecomm_data_pipeline to 2024-07-02T23:40:00+00:00, run_after=2024-07-03T01:10:00+00:00
+[2024-07-03T00:30:43.936+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/ecomm_dag.py took 0.114 seconds
+[2024-07-03T00:31:14.147+0000] {processor.py:157} INFO - Started process (PID=338) to work on /opt/airflow/dags/ecomm_dag.py
+[2024-07-03T00:31:14.148+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/ecomm_dag.py for tasks to queue
+[2024-07-03T00:31:14.149+0000] {logging_mixin.py:149} INFO - [2024-07-03T00:31:14.149+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/ecomm_dag.py
+[2024-07-03T00:31:14.159+0000] {processor.py:836} INFO - DAG(s) dict_keys(['ecomm_data_pipeline']) retrieved from /opt/airflow/dags/ecomm_dag.py
+[2024-07-03T00:31:14.236+0000] {logging_mixin.py:149} INFO - [2024-07-03T00:31:14.236+0000] {dag.py:2726} INFO - Sync 1 DAGs
+[2024-07-03T00:31:14.245+0000] {logging_mixin.py:149} INFO - [2024-07-03T00:31:14.245+0000] {dag.py:3486} INFO - Setting next_dagrun for ecomm_data_pipeline to 2024-07-02T23:40:00+00:00, run_after=2024-07-03T01:10:00+00:00
+[2024-07-03T00:31:14.252+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/ecomm_dag.py took 0.109 seconds
+[2024-07-03T00:31:44.633+0000] {processor.py:157} INFO - Started process (PID=348) to work on /opt/airflow/dags/ecomm_dag.py
+[2024-07-03T00:31:44.634+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/ecomm_dag.py for tasks to queue
+[2024-07-03T00:31:44.634+0000] {logging_mixin.py:149} INFO - [2024-07-03T00:31:44.634+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/ecomm_dag.py
+[2024-07-03T00:31:44.640+0000] {processor.py:836} INFO - DAG(s) dict_keys(['ecomm_data_pipeline']) retrieved from /opt/airflow/dags/ecomm_dag.py
+[2024-07-03T00:31:44.653+0000] {logging_mixin.py:149} INFO - [2024-07-03T00:31:44.653+0000] {dag.py:2726} INFO - Sync 1 DAGs
+[2024-07-03T00:31:44.664+0000] {logging_mixin.py:149} INFO - [2024-07-03T00:31:44.664+0000] {dag.py:3486} INFO - Setting next_dagrun for ecomm_data_pipeline to 2024-07-02T23:40:00+00:00, run_after=2024-07-03T01:10:00+00:00
+[2024-07-03T00:31:44.672+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/ecomm_dag.py took 0.040 seconds
+[2024-07-03T00:32:15.001+0000] {processor.py:157} INFO - Started process (PID=358) to work on /opt/airflow/dags/ecomm_dag.py
+[2024-07-03T00:32:15.001+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/ecomm_dag.py for tasks to queue
+[2024-07-03T00:32:15.002+0000] {logging_mixin.py:149} INFO - [2024-07-03T00:32:15.002+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/ecomm_dag.py
+[2024-07-03T00:32:15.011+0000] {processor.py:836} INFO - DAG(s) dict_keys(['ecomm_data_pipeline']) retrieved from /opt/airflow/dags/ecomm_dag.py
+[2024-07-03T00:32:15.029+0000] {logging_mixin.py:149} INFO - [2024-07-03T00:32:15.029+0000] {dag.py:2726} INFO - Sync 1 DAGs
+[2024-07-03T00:32:15.045+0000] {logging_mixin.py:149} INFO - [2024-07-03T00:32:15.044+0000] {dag.py:3486} INFO - Setting next_dagrun for ecomm_data_pipeline to 2024-07-02T23:40:00+00:00, run_after=2024-07-03T01:10:00+00:00
+[2024-07-03T00:32:15.057+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/ecomm_dag.py took 0.060 seconds
+[2024-07-03T00:32:45.365+0000] {processor.py:157} INFO - Started process (PID=368) to work on /opt/airflow/dags/ecomm_dag.py
+[2024-07-03T00:32:45.366+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/ecomm_dag.py for tasks to queue
+[2024-07-03T00:32:45.367+0000] {logging_mixin.py:149} INFO - [2024-07-03T00:32:45.367+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/ecomm_dag.py
+[2024-07-03T00:32:45.377+0000] {processor.py:836} INFO - DAG(s) dict_keys(['ecomm_data_pipeline']) retrieved from /opt/airflow/dags/ecomm_dag.py
+[2024-07-03T00:32:45.396+0000] {logging_mixin.py:149} INFO - [2024-07-03T00:32:45.396+0000] {dag.py:2726} INFO - Sync 1 DAGs
+[2024-07-03T00:32:45.407+0000] {logging_mixin.py:149} INFO - [2024-07-03T00:32:45.407+0000] {dag.py:3486} INFO - Setting next_dagrun for ecomm_data_pipeline to 2024-07-02T23:40:00+00:00, run_after=2024-07-03T01:10:00+00:00
+[2024-07-03T00:32:45.416+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/ecomm_dag.py took 0.054 seconds
+[2024-07-03T00:33:15.756+0000] {processor.py:157} INFO - Started process (PID=378) to work on /opt/airflow/dags/ecomm_dag.py
+[2024-07-03T00:33:15.756+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/ecomm_dag.py for tasks to queue
+[2024-07-03T00:33:15.757+0000] {logging_mixin.py:149} INFO - [2024-07-03T00:33:15.757+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/ecomm_dag.py
+[2024-07-03T00:33:15.766+0000] {processor.py:836} INFO - DAG(s) dict_keys(['ecomm_data_pipeline']) retrieved from /opt/airflow/dags/ecomm_dag.py
+[2024-07-03T00:33:15.785+0000] {logging_mixin.py:149} INFO - [2024-07-03T00:33:15.785+0000] {dag.py:2726} INFO - Sync 1 DAGs
+[2024-07-03T00:33:15.797+0000] {logging_mixin.py:149} INFO - [2024-07-03T00:33:15.796+0000] {dag.py:3486} INFO - Setting next_dagrun for ecomm_data_pipeline to 2024-07-02T23:40:00+00:00, run_after=2024-07-03T01:10:00+00:00
+[2024-07-03T00:33:15.804+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/ecomm_dag.py took 0.052 seconds
+[2024-07-03T00:33:46.130+0000] {processor.py:157} INFO - Started process (PID=388) to work on /opt/airflow/dags/ecomm_dag.py
+[2024-07-03T00:33:46.131+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/ecomm_dag.py for tasks to queue
+[2024-07-03T00:33:46.133+0000] {logging_mixin.py:149} INFO - [2024-07-03T00:33:46.133+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/ecomm_dag.py
+[2024-07-03T00:33:46.144+0000] {processor.py:836} INFO - DAG(s) dict_keys(['ecomm_data_pipeline']) retrieved from /opt/airflow/dags/ecomm_dag.py
+[2024-07-03T00:33:46.163+0000] {logging_mixin.py:149} INFO - [2024-07-03T00:33:46.163+0000] {dag.py:2726} INFO - Sync 1 DAGs
+[2024-07-03T00:33:46.175+0000] {logging_mixin.py:149} INFO - [2024-07-03T00:33:46.175+0000] {dag.py:3486} INFO - Setting next_dagrun for ecomm_data_pipeline to 2024-07-02T23:40:00+00:00, run_after=2024-07-03T01:10:00+00:00
+[2024-07-03T00:33:46.184+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/ecomm_dag.py took 0.059 seconds
+[2024-07-03T00:34:16.539+0000] {processor.py:157} INFO - Started process (PID=398) to work on /opt/airflow/dags/ecomm_dag.py
+[2024-07-03T00:34:16.540+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/ecomm_dag.py for tasks to queue
+[2024-07-03T00:34:16.540+0000] {logging_mixin.py:149} INFO - [2024-07-03T00:34:16.540+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/ecomm_dag.py
+[2024-07-03T00:34:16.550+0000] {processor.py:836} INFO - DAG(s) dict_keys(['ecomm_data_pipeline']) retrieved from /opt/airflow/dags/ecomm_dag.py
+[2024-07-03T00:34:16.568+0000] {logging_mixin.py:149} INFO - [2024-07-03T00:34:16.568+0000] {dag.py:2726} INFO - Sync 1 DAGs
+[2024-07-03T00:34:16.581+0000] {logging_mixin.py:149} INFO - [2024-07-03T00:34:16.580+0000] {dag.py:3486} INFO - Setting next_dagrun for ecomm_data_pipeline to 2024-07-02T23:40:00+00:00, run_after=2024-07-03T01:10:00+00:00
+[2024-07-03T00:34:16.589+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/ecomm_dag.py took 0.054 seconds
+[2024-07-03T00:34:46.923+0000] {processor.py:157} INFO - Started process (PID=408) to work on /opt/airflow/dags/ecomm_dag.py
+[2024-07-03T00:34:46.924+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/ecomm_dag.py for tasks to queue
+[2024-07-03T00:34:46.925+0000] {logging_mixin.py:149} INFO - [2024-07-03T00:34:46.925+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/ecomm_dag.py
+[2024-07-03T00:34:46.935+0000] {processor.py:836} INFO - DAG(s) dict_keys(['ecomm_data_pipeline']) retrieved from /opt/airflow/dags/ecomm_dag.py
+[2024-07-03T00:34:46.955+0000] {logging_mixin.py:149} INFO - [2024-07-03T00:34:46.955+0000] {dag.py:2726} INFO - Sync 1 DAGs
+[2024-07-03T00:34:46.967+0000] {logging_mixin.py:149} INFO - [2024-07-03T00:34:46.967+0000] {dag.py:3486} INFO - Setting next_dagrun for ecomm_data_pipeline to 2024-07-02T23:40:00+00:00, run_after=2024-07-03T01:10:00+00:00
+[2024-07-03T00:34:46.975+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/ecomm_dag.py took 0.057 seconds
+[2024-07-03T00:35:17.278+0000] {processor.py:157} INFO - Started process (PID=418) to work on /opt/airflow/dags/ecomm_dag.py
+[2024-07-03T00:35:17.279+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/ecomm_dag.py for tasks to queue
+[2024-07-03T00:35:17.280+0000] {logging_mixin.py:149} INFO - [2024-07-03T00:35:17.280+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/ecomm_dag.py
+[2024-07-03T00:35:17.293+0000] {processor.py:836} INFO - DAG(s) dict_keys(['ecomm_data_pipeline']) retrieved from /opt/airflow/dags/ecomm_dag.py
+[2024-07-03T00:35:17.312+0000] {logging_mixin.py:149} INFO - [2024-07-03T00:35:17.312+0000] {dag.py:2726} INFO - Sync 1 DAGs
+[2024-07-03T00:35:17.326+0000] {logging_mixin.py:149} INFO - [2024-07-03T00:35:17.326+0000] {dag.py:3486} INFO - Setting next_dagrun for ecomm_data_pipeline to 2024-07-02T23:40:00+00:00, run_after=2024-07-03T01:10:00+00:00
+[2024-07-03T00:35:17.335+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/ecomm_dag.py took 0.063 seconds
+[2024-07-03T00:35:47.625+0000] {processor.py:157} INFO - Started process (PID=428) to work on /opt/airflow/dags/ecomm_dag.py
+[2024-07-03T00:35:47.626+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/ecomm_dag.py for tasks to queue
+[2024-07-03T00:35:47.627+0000] {logging_mixin.py:149} INFO - [2024-07-03T00:35:47.627+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/ecomm_dag.py
+[2024-07-03T00:35:47.636+0000] {processor.py:836} INFO - DAG(s) dict_keys(['ecomm_data_pipeline']) retrieved from /opt/airflow/dags/ecomm_dag.py
+[2024-07-03T00:35:47.655+0000] {logging_mixin.py:149} INFO - [2024-07-03T00:35:47.655+0000] {dag.py:2726} INFO - Sync 1 DAGs
+[2024-07-03T00:35:47.667+0000] {logging_mixin.py:149} INFO - [2024-07-03T00:35:47.666+0000] {dag.py:3486} INFO - Setting next_dagrun for ecomm_data_pipeline to 2024-07-02T23:40:00+00:00, run_after=2024-07-03T01:10:00+00:00
+[2024-07-03T00:35:47.675+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/ecomm_dag.py took 0.053 seconds
+[2024-07-03T00:36:17.980+0000] {processor.py:157} INFO - Started process (PID=438) to work on /opt/airflow/dags/ecomm_dag.py
+[2024-07-03T00:36:17.981+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/ecomm_dag.py for tasks to queue
+[2024-07-03T00:36:17.981+0000] {logging_mixin.py:149} INFO - [2024-07-03T00:36:17.981+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/ecomm_dag.py
+[2024-07-03T00:36:17.990+0000] {processor.py:836} INFO - DAG(s) dict_keys(['ecomm_data_pipeline']) retrieved from /opt/airflow/dags/ecomm_dag.py
+[2024-07-03T00:36:18.007+0000] {logging_mixin.py:149} INFO - [2024-07-03T00:36:18.007+0000] {dag.py:2726} INFO - Sync 1 DAGs
+[2024-07-03T00:36:18.019+0000] {logging_mixin.py:149} INFO - [2024-07-03T00:36:18.019+0000] {dag.py:3486} INFO - Setting next_dagrun for ecomm_data_pipeline to 2024-07-02T23:40:00+00:00, run_after=2024-07-03T01:10:00+00:00
+[2024-07-03T00:36:18.027+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/ecomm_dag.py took 0.050 seconds
+[2024-07-03T00:36:48.337+0000] {processor.py:157} INFO - Started process (PID=448) to work on /opt/airflow/dags/ecomm_dag.py
+[2024-07-03T00:36:48.338+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/ecomm_dag.py for tasks to queue
+[2024-07-03T00:36:48.339+0000] {logging_mixin.py:149} INFO - [2024-07-03T00:36:48.339+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/ecomm_dag.py
+[2024-07-03T00:36:48.348+0000] {processor.py:836} INFO - DAG(s) dict_keys(['ecomm_data_pipeline']) retrieved from /opt/airflow/dags/ecomm_dag.py
+[2024-07-03T00:36:48.367+0000] {logging_mixin.py:149} INFO - [2024-07-03T00:36:48.367+0000] {dag.py:2726} INFO - Sync 1 DAGs
+[2024-07-03T00:36:48.378+0000] {logging_mixin.py:149} INFO - [2024-07-03T00:36:48.378+0000] {dag.py:3486} INFO - Setting next_dagrun for ecomm_data_pipeline to 2024-07-02T23:40:00+00:00, run_after=2024-07-03T01:10:00+00:00
+[2024-07-03T00:36:48.387+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/ecomm_dag.py took 0.054 seconds
+[2024-07-03T00:37:18.722+0000] {processor.py:157} INFO - Started process (PID=458) to work on /opt/airflow/dags/ecomm_dag.py
+[2024-07-03T00:37:18.725+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/ecomm_dag.py for tasks to queue
+[2024-07-03T00:37:18.726+0000] {logging_mixin.py:149} INFO - [2024-07-03T00:37:18.725+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/ecomm_dag.py
+[2024-07-03T00:37:18.737+0000] {processor.py:836} INFO - DAG(s) dict_keys(['ecomm_data_pipeline']) retrieved from /opt/airflow/dags/ecomm_dag.py
+[2024-07-03T00:37:18.755+0000] {logging_mixin.py:149} INFO - [2024-07-03T00:37:18.755+0000] {dag.py:2726} INFO - Sync 1 DAGs
+[2024-07-03T00:37:18.768+0000] {logging_mixin.py:149} INFO - [2024-07-03T00:37:18.767+0000] {dag.py:3486} INFO - Setting next_dagrun for ecomm_data_pipeline to 2024-07-02T23:40:00+00:00, run_after=2024-07-03T01:10:00+00:00
+[2024-07-03T00:37:18.776+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/ecomm_dag.py took 0.057 seconds
+[2024-07-03T00:37:47.040+0000] {processor.py:157} INFO - Started process (PID=468) to work on /opt/airflow/dags/ecomm_dag.py
+[2024-07-03T00:37:47.041+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/ecomm_dag.py for tasks to queue
+[2024-07-03T00:37:47.042+0000] {logging_mixin.py:149} INFO - [2024-07-03T00:37:47.042+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/ecomm_dag.py
+[2024-07-03T00:37:47.056+0000] {processor.py:836} INFO - DAG(s) dict_keys(['ecomm_data_pipeline']) retrieved from /opt/airflow/dags/ecomm_dag.py
+[2024-07-03T00:37:47.090+0000] {logging_mixin.py:149} INFO - [2024-07-03T00:37:47.090+0000] {dag.py:2726} INFO - Sync 1 DAGs
+[2024-07-03T00:37:47.100+0000] {logging_mixin.py:149} INFO - [2024-07-03T00:37:47.100+0000] {dag.py:3486} INFO - Setting next_dagrun for ecomm_data_pipeline to 2024-07-02T23:40:00+00:00, run_after=2024-07-03T01:10:00+00:00
+[2024-07-03T00:37:47.108+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/ecomm_dag.py took 0.071 seconds
+[2024-07-03T00:38:17.383+0000] {processor.py:157} INFO - Started process (PID=493) to work on /opt/airflow/dags/ecomm_dag.py
+[2024-07-03T00:38:17.384+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/ecomm_dag.py for tasks to queue
+[2024-07-03T00:38:17.384+0000] {logging_mixin.py:149} INFO - [2024-07-03T00:38:17.384+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/ecomm_dag.py
+[2024-07-03T00:38:17.395+0000] {processor.py:836} INFO - DAG(s) dict_keys(['ecomm_data_pipeline']) retrieved from /opt/airflow/dags/ecomm_dag.py
+[2024-07-03T00:38:17.417+0000] {logging_mixin.py:149} INFO - [2024-07-03T00:38:17.417+0000] {dag.py:2726} INFO - Sync 1 DAGs
+[2024-07-03T00:38:17.428+0000] {logging_mixin.py:149} INFO - [2024-07-03T00:38:17.428+0000] {dag.py:3486} INFO - Setting next_dagrun for ecomm_data_pipeline to 2024-07-02T23:40:00+00:00, run_after=2024-07-03T01:10:00+00:00
+[2024-07-03T00:38:17.436+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/ecomm_dag.py took 0.056 seconds
+[2024-07-03T00:38:47.745+0000] {processor.py:157} INFO - Started process (PID=503) to work on /opt/airflow/dags/ecomm_dag.py
+[2024-07-03T00:38:47.746+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/ecomm_dag.py for tasks to queue
+[2024-07-03T00:38:47.747+0000] {logging_mixin.py:149} INFO - [2024-07-03T00:38:47.747+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/ecomm_dag.py
+[2024-07-03T00:38:47.761+0000] {processor.py:836} INFO - DAG(s) dict_keys(['ecomm_data_pipeline']) retrieved from /opt/airflow/dags/ecomm_dag.py
+[2024-07-03T00:38:47.783+0000] {logging_mixin.py:149} INFO - [2024-07-03T00:38:47.783+0000] {dag.py:2726} INFO - Sync 1 DAGs
+[2024-07-03T00:38:47.796+0000] {logging_mixin.py:149} INFO - [2024-07-03T00:38:47.796+0000] {dag.py:3486} INFO - Setting next_dagrun for ecomm_data_pipeline to 2024-07-02T23:40:00+00:00, run_after=2024-07-03T01:10:00+00:00
+[2024-07-03T00:38:47.803+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/ecomm_dag.py took 0.063 seconds
+[2024-07-03T00:39:18.193+0000] {processor.py:157} INFO - Started process (PID=513) to work on /opt/airflow/dags/ecomm_dag.py
+[2024-07-03T00:39:18.194+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/ecomm_dag.py for tasks to queue
+[2024-07-03T00:39:18.195+0000] {logging_mixin.py:149} INFO - [2024-07-03T00:39:18.195+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/ecomm_dag.py
+[2024-07-03T00:39:18.209+0000] {processor.py:836} INFO - DAG(s) dict_keys(['ecomm_data_pipeline']) retrieved from /opt/airflow/dags/ecomm_dag.py
+[2024-07-03T00:39:18.233+0000] {logging_mixin.py:149} INFO - [2024-07-03T00:39:18.233+0000] {dag.py:2726} INFO - Sync 1 DAGs
+[2024-07-03T00:39:18.247+0000] {logging_mixin.py:149} INFO - [2024-07-03T00:39:18.247+0000] {dag.py:3486} INFO - Setting next_dagrun for ecomm_data_pipeline to 2024-07-02T23:40:00+00:00, run_after=2024-07-03T01:10:00+00:00
+[2024-07-03T00:39:18.256+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/ecomm_dag.py took 0.066 seconds
+[2024-07-03T00:39:26.343+0000] {processor.py:157} INFO - Started process (PID=515) to work on /opt/airflow/dags/ecomm_dag.py
+[2024-07-03T00:39:26.344+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/ecomm_dag.py for tasks to queue
+[2024-07-03T00:39:26.345+0000] {logging_mixin.py:149} INFO - [2024-07-03T00:39:26.345+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/ecomm_dag.py
+[2024-07-03T00:39:26.358+0000] {processor.py:836} INFO - DAG(s) dict_keys(['ecomm_data_pipeline']) retrieved from /opt/airflow/dags/ecomm_dag.py
+[2024-07-03T00:39:26.393+0000] {logging_mixin.py:149} INFO - [2024-07-03T00:39:26.393+0000] {dag.py:2726} INFO - Sync 1 DAGs
+[2024-07-03T00:39:26.404+0000] {logging_mixin.py:149} INFO - [2024-07-03T00:39:26.404+0000] {dag.py:3486} INFO - Setting next_dagrun for ecomm_data_pipeline to 2024-07-02T23:40:00+00:00, run_after=2024-07-03T01:10:00+00:00
+[2024-07-03T00:39:26.413+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/ecomm_dag.py took 0.073 seconds
+[2024-07-03T00:39:56.738+0000] {processor.py:157} INFO - Started process (PID=525) to work on /opt/airflow/dags/ecomm_dag.py
+[2024-07-03T00:39:56.739+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/ecomm_dag.py for tasks to queue
+[2024-07-03T00:39:56.740+0000] {logging_mixin.py:149} INFO - [2024-07-03T00:39:56.740+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/ecomm_dag.py
+[2024-07-03T00:39:56.751+0000] {processor.py:836} INFO - DAG(s) dict_keys(['ecomm_data_pipeline']) retrieved from /opt/airflow/dags/ecomm_dag.py
+[2024-07-03T00:39:56.770+0000] {logging_mixin.py:149} INFO - [2024-07-03T00:39:56.770+0000] {dag.py:2726} INFO - Sync 1 DAGs
+[2024-07-03T00:39:56.781+0000] {logging_mixin.py:149} INFO - [2024-07-03T00:39:56.781+0000] {dag.py:3486} INFO - Setting next_dagrun for ecomm_data_pipeline to 2024-07-02T23:40:00+00:00, run_after=2024-07-03T01:10:00+00:00
+[2024-07-03T00:39:56.790+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/ecomm_dag.py took 0.055 seconds
+[2024-07-03T00:40:27.138+0000] {processor.py:157} INFO - Started process (PID=535) to work on /opt/airflow/dags/ecomm_dag.py
+[2024-07-03T00:40:27.139+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/ecomm_dag.py for tasks to queue
+[2024-07-03T00:40:27.140+0000] {logging_mixin.py:149} INFO - [2024-07-03T00:40:27.140+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/ecomm_dag.py
+[2024-07-03T00:40:27.152+0000] {processor.py:836} INFO - DAG(s) dict_keys(['ecomm_data_pipeline']) retrieved from /opt/airflow/dags/ecomm_dag.py
+[2024-07-03T00:40:27.172+0000] {logging_mixin.py:149} INFO - [2024-07-03T00:40:27.172+0000] {dag.py:2726} INFO - Sync 1 DAGs
+[2024-07-03T00:40:27.185+0000] {logging_mixin.py:149} INFO - [2024-07-03T00:40:27.185+0000] {dag.py:3486} INFO - Setting next_dagrun for ecomm_data_pipeline to 2024-07-02T23:40:00+00:00, run_after=2024-07-03T01:10:00+00:00
+[2024-07-03T00:40:27.193+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/ecomm_dag.py took 0.059 seconds
+[2024-07-03T00:40:57.505+0000] {processor.py:157} INFO - Started process (PID=545) to work on /opt/airflow/dags/ecomm_dag.py
+[2024-07-03T00:40:57.506+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/ecomm_dag.py for tasks to queue
+[2024-07-03T00:40:57.506+0000] {logging_mixin.py:149} INFO - [2024-07-03T00:40:57.506+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/ecomm_dag.py
+[2024-07-03T00:40:57.518+0000] {processor.py:836} INFO - DAG(s) dict_keys(['ecomm_data_pipeline']) retrieved from /opt/airflow/dags/ecomm_dag.py
+[2024-07-03T00:40:57.538+0000] {logging_mixin.py:149} INFO - [2024-07-03T00:40:57.538+0000] {dag.py:2726} INFO - Sync 1 DAGs
+[2024-07-03T00:40:57.549+0000] {logging_mixin.py:149} INFO - [2024-07-03T00:40:57.549+0000] {dag.py:3486} INFO - Setting next_dagrun for ecomm_data_pipeline to 2024-07-02T23:40:00+00:00, run_after=2024-07-03T01:10:00+00:00
+[2024-07-03T00:40:57.556+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/ecomm_dag.py took 0.055 seconds
+[2024-07-03T00:41:27.857+0000] {processor.py:157} INFO - Started process (PID=555) to work on /opt/airflow/dags/ecomm_dag.py
+[2024-07-03T00:41:27.858+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/ecomm_dag.py for tasks to queue
+[2024-07-03T00:41:27.859+0000] {logging_mixin.py:149} INFO - [2024-07-03T00:41:27.859+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/ecomm_dag.py
+[2024-07-03T00:41:27.871+0000] {processor.py:836} INFO - DAG(s) dict_keys(['ecomm_data_pipeline']) retrieved from /opt/airflow/dags/ecomm_dag.py
+[2024-07-03T00:41:27.893+0000] {logging_mixin.py:149} INFO - [2024-07-03T00:41:27.892+0000] {dag.py:2726} INFO - Sync 1 DAGs
+[2024-07-03T00:41:27.906+0000] {logging_mixin.py:149} INFO - [2024-07-03T00:41:27.906+0000] {dag.py:3486} INFO - Setting next_dagrun for ecomm_data_pipeline to 2024-07-02T23:40:00+00:00, run_after=2024-07-03T01:10:00+00:00
+[2024-07-03T00:41:27.915+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/ecomm_dag.py took 0.061 seconds
+[2024-07-03T00:41:58.232+0000] {processor.py:157} INFO - Started process (PID=565) to work on /opt/airflow/dags/ecomm_dag.py
+[2024-07-03T00:41:58.233+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/ecomm_dag.py for tasks to queue
+[2024-07-03T00:41:58.233+0000] {logging_mixin.py:149} INFO - [2024-07-03T00:41:58.233+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/ecomm_dag.py
+[2024-07-03T00:41:58.242+0000] {processor.py:836} INFO - DAG(s) dict_keys(['ecomm_data_pipeline']) retrieved from /opt/airflow/dags/ecomm_dag.py
+[2024-07-03T00:41:58.258+0000] {logging_mixin.py:149} INFO - [2024-07-03T00:41:58.258+0000] {dag.py:2726} INFO - Sync 1 DAGs
+[2024-07-03T00:41:58.269+0000] {logging_mixin.py:149} INFO - [2024-07-03T00:41:58.269+0000] {dag.py:3486} INFO - Setting next_dagrun for ecomm_data_pipeline to 2024-07-02T23:40:00+00:00, run_after=2024-07-03T01:10:00+00:00
+[2024-07-03T00:41:58.277+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/ecomm_dag.py took 0.047 seconds
+[2024-07-03T00:42:28.667+0000] {processor.py:157} INFO - Started process (PID=575) to work on /opt/airflow/dags/ecomm_dag.py
+[2024-07-03T00:42:28.668+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/ecomm_dag.py for tasks to queue
+[2024-07-03T00:42:28.669+0000] {logging_mixin.py:149} INFO - [2024-07-03T00:42:28.669+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/ecomm_dag.py
+[2024-07-03T00:42:28.681+0000] {processor.py:836} INFO - DAG(s) dict_keys(['ecomm_data_pipeline']) retrieved from /opt/airflow/dags/ecomm_dag.py
+[2024-07-03T00:42:28.699+0000] {logging_mixin.py:149} INFO - [2024-07-03T00:42:28.699+0000] {dag.py:2726} INFO - Sync 1 DAGs
+[2024-07-03T00:42:28.711+0000] {logging_mixin.py:149} INFO - [2024-07-03T00:42:28.711+0000] {dag.py:3486} INFO - Setting next_dagrun for ecomm_data_pipeline to 2024-07-02T23:40:00+00:00, run_after=2024-07-03T01:10:00+00:00
+[2024-07-03T00:42:28.719+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/ecomm_dag.py took 0.056 seconds
+[2024-07-03T00:42:59.070+0000] {processor.py:157} INFO - Started process (PID=585) to work on /opt/airflow/dags/ecomm_dag.py
+[2024-07-03T00:42:59.071+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/ecomm_dag.py for tasks to queue
+[2024-07-03T00:42:59.071+0000] {logging_mixin.py:149} INFO - [2024-07-03T00:42:59.071+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/ecomm_dag.py
+[2024-07-03T00:42:59.080+0000] {processor.py:836} INFO - DAG(s) dict_keys(['ecomm_data_pipeline']) retrieved from /opt/airflow/dags/ecomm_dag.py
+[2024-07-03T00:42:59.102+0000] {logging_mixin.py:149} INFO - [2024-07-03T00:42:59.102+0000] {dag.py:2726} INFO - Sync 1 DAGs
+[2024-07-03T00:42:59.114+0000] {logging_mixin.py:149} INFO - [2024-07-03T00:42:59.114+0000] {dag.py:3486} INFO - Setting next_dagrun for ecomm_data_pipeline to 2024-07-02T23:40:00+00:00, run_after=2024-07-03T01:10:00+00:00
+[2024-07-03T00:42:59.123+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/ecomm_dag.py took 0.055 seconds
+[2024-07-03T00:43:22.357+0000] {processor.py:157} INFO - Started process (PID=594) to work on /opt/airflow/dags/ecomm_dag.py
+[2024-07-03T00:43:22.358+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/ecomm_dag.py for tasks to queue
+[2024-07-03T00:43:22.359+0000] {logging_mixin.py:149} INFO - [2024-07-03T00:43:22.359+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/ecomm_dag.py
+[2024-07-03T00:43:22.364+0000] {logging_mixin.py:149} INFO - [2024-07-03T00:43:22.363+0000] {dagbag.py:350} ERROR - Failed to import: /opt/airflow/dags/ecomm_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.9/site-packages/airflow/models/dagbag.py", line 346, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 846, in exec_module
+  File "<frozen importlib._bootstrap_external>", line 983, in get_code
+  File "<frozen importlib._bootstrap_external>", line 913, in source_to_code
+  File "<frozen importlib._bootstrap>", line 228, in _call_with_frames_removed
+  File "/opt/airflow/dags/ecomm_dag.py", line 83
+    INSERT INTO clickstream_events (user_id, event_type, event_timestamp) VALUES (%s, %s, %s)
+IndentationError: unexpected indent
+[2024-07-03T00:43:22.364+0000] {processor.py:838} WARNING - No viable dags retrieved from /opt/airflow/dags/ecomm_dag.py
+[2024-07-03T00:43:22.381+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/ecomm_dag.py took 0.027 seconds
+[2024-07-03T00:43:28.441+0000] {processor.py:157} INFO - Started process (PID=596) to work on /opt/airflow/dags/ecomm_dag.py
+[2024-07-03T00:43:28.442+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/ecomm_dag.py for tasks to queue
+[2024-07-03T00:43:28.443+0000] {logging_mixin.py:149} INFO - [2024-07-03T00:43:28.443+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/ecomm_dag.py
+[2024-07-03T00:43:28.451+0000] {processor.py:836} INFO - DAG(s) dict_keys(['ecomm_data_pipeline']) retrieved from /opt/airflow/dags/ecomm_dag.py
+[2024-07-03T00:43:28.469+0000] {logging_mixin.py:149} INFO - [2024-07-03T00:43:28.469+0000] {dag.py:2726} INFO - Sync 1 DAGs
+[2024-07-03T00:43:28.480+0000] {logging_mixin.py:149} INFO - [2024-07-03T00:43:28.480+0000] {dag.py:3486} INFO - Setting next_dagrun for ecomm_data_pipeline to 2024-07-02T23:40:00+00:00, run_after=2024-07-03T01:10:00+00:00
+[2024-07-03T00:43:28.489+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/ecomm_dag.py took 0.050 seconds
+[2024-07-03T00:43:58.808+0000] {processor.py:157} INFO - Started process (PID=606) to work on /opt/airflow/dags/ecomm_dag.py
+[2024-07-03T00:43:58.809+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/ecomm_dag.py for tasks to queue
+[2024-07-03T00:43:58.810+0000] {logging_mixin.py:149} INFO - [2024-07-03T00:43:58.810+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/ecomm_dag.py
+[2024-07-03T00:43:58.821+0000] {processor.py:836} INFO - DAG(s) dict_keys(['ecomm_data_pipeline']) retrieved from /opt/airflow/dags/ecomm_dag.py
+[2024-07-03T00:43:58.838+0000] {logging_mixin.py:149} INFO - [2024-07-03T00:43:58.838+0000] {dag.py:2726} INFO - Sync 1 DAGs
+[2024-07-03T00:43:58.849+0000] {logging_mixin.py:149} INFO - [2024-07-03T00:43:58.849+0000] {dag.py:3486} INFO - Setting next_dagrun for ecomm_data_pipeline to 2024-07-02T23:40:00+00:00, run_after=2024-07-03T01:10:00+00:00
+[2024-07-03T00:43:58.857+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/ecomm_dag.py took 0.051 seconds
+[2024-07-03T00:44:29.227+0000] {processor.py:157} INFO - Started process (PID=616) to work on /opt/airflow/dags/ecomm_dag.py
+[2024-07-03T00:44:29.228+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/ecomm_dag.py for tasks to queue
+[2024-07-03T00:44:29.229+0000] {logging_mixin.py:149} INFO - [2024-07-03T00:44:29.229+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/ecomm_dag.py
+[2024-07-03T00:44:29.240+0000] {processor.py:836} INFO - DAG(s) dict_keys(['ecomm_data_pipeline']) retrieved from /opt/airflow/dags/ecomm_dag.py
+[2024-07-03T00:44:29.260+0000] {logging_mixin.py:149} INFO - [2024-07-03T00:44:29.260+0000] {dag.py:2726} INFO - Sync 1 DAGs
+[2024-07-03T00:44:29.272+0000] {logging_mixin.py:149} INFO - [2024-07-03T00:44:29.272+0000] {dag.py:3486} INFO - Setting next_dagrun for ecomm_data_pipeline to 2024-07-02T23:40:00+00:00, run_after=2024-07-03T01:10:00+00:00
+[2024-07-03T00:44:29.280+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/ecomm_dag.py took 0.057 seconds
+[2024-07-03T00:44:59.601+0000] {processor.py:157} INFO - Started process (PID=626) to work on /opt/airflow/dags/ecomm_dag.py
+[2024-07-03T00:44:59.602+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/ecomm_dag.py for tasks to queue
+[2024-07-03T00:44:59.603+0000] {logging_mixin.py:149} INFO - [2024-07-03T00:44:59.603+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/ecomm_dag.py
+[2024-07-03T00:44:59.614+0000] {processor.py:836} INFO - DAG(s) dict_keys(['ecomm_data_pipeline']) retrieved from /opt/airflow/dags/ecomm_dag.py
+[2024-07-03T00:44:59.637+0000] {logging_mixin.py:149} INFO - [2024-07-03T00:44:59.637+0000] {dag.py:2726} INFO - Sync 1 DAGs
+[2024-07-03T00:44:59.650+0000] {logging_mixin.py:149} INFO - [2024-07-03T00:44:59.650+0000] {dag.py:3486} INFO - Setting next_dagrun for ecomm_data_pipeline to 2024-07-02T23:40:00+00:00, run_after=2024-07-03T01:10:00+00:00
+[2024-07-03T00:44:59.660+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/ecomm_dag.py took 0.062 seconds
+[2024-07-03T00:46:44.542+0000] {processor.py:157} INFO - Started process (PID=11) to work on /opt/airflow/dags/ecomm_dag.py
+[2024-07-03T00:46:44.543+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/ecomm_dag.py for tasks to queue
+[2024-07-03T00:46:44.543+0000] {logging_mixin.py:149} INFO - [2024-07-03T00:46:44.543+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/ecomm_dag.py
+[2024-07-03T00:46:44.558+0000] {processor.py:836} INFO - DAG(s) dict_keys(['ecomm_data_pipeline']) retrieved from /opt/airflow/dags/ecomm_dag.py
+[2024-07-03T00:46:44.597+0000] {logging_mixin.py:149} INFO - [2024-07-03T00:46:44.597+0000] {dag.py:2726} INFO - Sync 1 DAGs
+[2024-07-03T00:46:44.607+0000] {logging_mixin.py:149} INFO - [2024-07-03T00:46:44.607+0000] {dag.py:3486} INFO - Setting next_dagrun for ecomm_data_pipeline to 2024-07-02T23:40:00+00:00, run_after=2024-07-03T01:10:00+00:00
+[2024-07-03T00:46:44.616+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/ecomm_dag.py took 0.076 seconds
+[2024-07-03T00:47:14.810+0000] {processor.py:157} INFO - Started process (PID=21) to work on /opt/airflow/dags/ecomm_dag.py
+[2024-07-03T00:47:14.810+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/ecomm_dag.py for tasks to queue
+[2024-07-03T00:47:14.811+0000] {logging_mixin.py:149} INFO - [2024-07-03T00:47:14.810+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/ecomm_dag.py
+[2024-07-03T00:47:14.818+0000] {processor.py:836} INFO - DAG(s) dict_keys(['ecomm_data_pipeline']) retrieved from /opt/airflow/dags/ecomm_dag.py
+[2024-07-03T00:47:14.836+0000] {logging_mixin.py:149} INFO - [2024-07-03T00:47:14.836+0000] {dag.py:2726} INFO - Sync 1 DAGs
+[2024-07-03T00:47:14.848+0000] {logging_mixin.py:149} INFO - [2024-07-03T00:47:14.848+0000] {dag.py:3486} INFO - Setting next_dagrun for ecomm_data_pipeline to 2024-07-02T23:40:00+00:00, run_after=2024-07-03T01:10:00+00:00
+[2024-07-03T00:47:14.856+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/ecomm_dag.py took 0.048 seconds
+[2024-07-03T00:47:45.073+0000] {processor.py:157} INFO - Started process (PID=31) to work on /opt/airflow/dags/ecomm_dag.py
+[2024-07-03T00:47:45.074+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/ecomm_dag.py for tasks to queue
+[2024-07-03T00:47:45.075+0000] {logging_mixin.py:149} INFO - [2024-07-03T00:47:45.075+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/ecomm_dag.py
+[2024-07-03T00:47:45.089+0000] {processor.py:836} INFO - DAG(s) dict_keys(['ecomm_data_pipeline']) retrieved from /opt/airflow/dags/ecomm_dag.py
+[2024-07-03T00:47:45.101+0000] {logging_mixin.py:149} INFO - [2024-07-03T00:47:45.101+0000] {dag.py:2726} INFO - Sync 1 DAGs
+[2024-07-03T00:47:45.116+0000] {logging_mixin.py:149} INFO - [2024-07-03T00:47:45.116+0000] {dag.py:3486} INFO - Setting next_dagrun for ecomm_data_pipeline to 2024-07-02T23:40:00+00:00, run_after=2024-07-03T01:10:00+00:00
+[2024-07-03T00:47:45.127+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/ecomm_dag.py took 0.056 seconds
+[2024-07-03T00:48:15.345+0000] {processor.py:157} INFO - Started process (PID=41) to work on /opt/airflow/dags/ecomm_dag.py
+[2024-07-03T00:48:15.345+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/ecomm_dag.py for tasks to queue
+[2024-07-03T00:48:15.346+0000] {logging_mixin.py:149} INFO - [2024-07-03T00:48:15.346+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/ecomm_dag.py
+[2024-07-03T00:48:15.351+0000] {processor.py:836} INFO - DAG(s) dict_keys(['ecomm_data_pipeline']) retrieved from /opt/airflow/dags/ecomm_dag.py
+[2024-07-03T00:48:15.366+0000] {logging_mixin.py:149} INFO - [2024-07-03T00:48:15.366+0000] {dag.py:2726} INFO - Sync 1 DAGs
+[2024-07-03T00:48:15.377+0000] {logging_mixin.py:149} INFO - [2024-07-03T00:48:15.377+0000] {dag.py:3486} INFO - Setting next_dagrun for ecomm_data_pipeline to 2024-07-02T20:40:00+00:00, run_after=2024-07-02T22:10:00+00:00
+[2024-07-03T00:48:15.386+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/ecomm_dag.py took 0.042 seconds
+[2024-07-03T00:48:45.612+0000] {processor.py:157} INFO - Started process (PID=81) to work on /opt/airflow/dags/ecomm_dag.py
+[2024-07-03T00:48:45.614+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/ecomm_dag.py for tasks to queue
+[2024-07-03T00:48:45.614+0000] {logging_mixin.py:149} INFO - [2024-07-03T00:48:45.614+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/ecomm_dag.py
+[2024-07-03T00:48:45.620+0000] {processor.py:836} INFO - DAG(s) dict_keys(['ecomm_data_pipeline']) retrieved from /opt/airflow/dags/ecomm_dag.py
+[2024-07-03T00:48:45.636+0000] {logging_mixin.py:149} INFO - [2024-07-03T00:48:45.636+0000] {dag.py:2726} INFO - Sync 1 DAGs
+[2024-07-03T00:48:45.647+0000] {logging_mixin.py:149} INFO - [2024-07-03T00:48:45.646+0000] {dag.py:3486} INFO - Setting next_dagrun for ecomm_data_pipeline to 2024-07-02T23:40:00+00:00, run_after=2024-07-03T01:10:00+00:00
+[2024-07-03T00:48:45.654+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/ecomm_dag.py took 0.044 seconds
+[2024-07-03T00:49:15.884+0000] {processor.py:157} INFO - Started process (PID=83) to work on /opt/airflow/dags/ecomm_dag.py
+[2024-07-03T00:49:15.884+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/ecomm_dag.py for tasks to queue
+[2024-07-03T00:49:15.886+0000] {logging_mixin.py:149} INFO - [2024-07-03T00:49:15.886+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/ecomm_dag.py
+[2024-07-03T00:49:15.900+0000] {processor.py:836} INFO - DAG(s) dict_keys(['ecomm_data_pipeline']) retrieved from /opt/airflow/dags/ecomm_dag.py
+[2024-07-03T00:49:15.924+0000] {logging_mixin.py:149} INFO - [2024-07-03T00:49:15.924+0000] {dag.py:2726} INFO - Sync 1 DAGs
+[2024-07-03T00:49:15.940+0000] {logging_mixin.py:149} INFO - [2024-07-03T00:49:15.940+0000] {dag.py:3486} INFO - Setting next_dagrun for ecomm_data_pipeline to 2024-07-02T23:40:00+00:00, run_after=2024-07-03T01:10:00+00:00
+[2024-07-03T00:49:15.952+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/ecomm_dag.py took 0.073 seconds
+[2024-07-03T00:49:46.187+0000] {processor.py:157} INFO - Started process (PID=93) to work on /opt/airflow/dags/ecomm_dag.py
+[2024-07-03T00:49:46.188+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/ecomm_dag.py for tasks to queue
+[2024-07-03T00:49:46.188+0000] {logging_mixin.py:149} INFO - [2024-07-03T00:49:46.188+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/ecomm_dag.py
+[2024-07-03T00:49:46.202+0000] {processor.py:836} INFO - DAG(s) dict_keys(['ecomm_data_pipeline']) retrieved from /opt/airflow/dags/ecomm_dag.py
+[2024-07-03T00:49:46.225+0000] {logging_mixin.py:149} INFO - [2024-07-03T00:49:46.225+0000] {dag.py:2726} INFO - Sync 1 DAGs
+[2024-07-03T00:49:46.240+0000] {logging_mixin.py:149} INFO - [2024-07-03T00:49:46.240+0000] {dag.py:3486} INFO - Setting next_dagrun for ecomm_data_pipeline to 2024-07-02T23:40:00+00:00, run_after=2024-07-03T01:10:00+00:00
+[2024-07-03T00:49:46.250+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/ecomm_dag.py took 0.067 seconds
+[2024-07-03T00:50:16.547+0000] {processor.py:157} INFO - Started process (PID=103) to work on /opt/airflow/dags/ecomm_dag.py
+[2024-07-03T00:50:16.547+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/ecomm_dag.py for tasks to queue
+[2024-07-03T00:50:16.548+0000] {logging_mixin.py:149} INFO - [2024-07-03T00:50:16.548+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/ecomm_dag.py
+[2024-07-03T00:50:16.556+0000] {processor.py:836} INFO - DAG(s) dict_keys(['ecomm_data_pipeline']) retrieved from /opt/airflow/dags/ecomm_dag.py
+[2024-07-03T00:50:16.576+0000] {logging_mixin.py:149} INFO - [2024-07-03T00:50:16.576+0000] {dag.py:2726} INFO - Sync 1 DAGs
+[2024-07-03T00:50:16.590+0000] {logging_mixin.py:149} INFO - [2024-07-03T00:50:16.589+0000] {dag.py:3486} INFO - Setting next_dagrun for ecomm_data_pipeline to 2024-07-02T23:40:00+00:00, run_after=2024-07-03T01:10:00+00:00
+[2024-07-03T00:50:16.600+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/ecomm_dag.py took 0.056 seconds
+[2024-07-03T00:50:46.848+0000] {processor.py:157} INFO - Started process (PID=113) to work on /opt/airflow/dags/ecomm_dag.py
+[2024-07-03T00:50:46.849+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/ecomm_dag.py for tasks to queue
+[2024-07-03T00:50:46.850+0000] {logging_mixin.py:149} INFO - [2024-07-03T00:50:46.850+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/ecomm_dag.py
+[2024-07-03T00:50:46.859+0000] {processor.py:836} INFO - DAG(s) dict_keys(['ecomm_data_pipeline']) retrieved from /opt/airflow/dags/ecomm_dag.py
+[2024-07-03T00:50:46.876+0000] {logging_mixin.py:149} INFO - [2024-07-03T00:50:46.876+0000] {dag.py:2726} INFO - Sync 1 DAGs
+[2024-07-03T00:50:46.888+0000] {logging_mixin.py:149} INFO - [2024-07-03T00:50:46.888+0000] {dag.py:3486} INFO - Setting next_dagrun for ecomm_data_pipeline to 2024-07-02T23:40:00+00:00, run_after=2024-07-03T01:10:00+00:00
+[2024-07-03T00:50:46.896+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/ecomm_dag.py took 0.051 seconds
+[2024-07-03T00:51:17.212+0000] {processor.py:157} INFO - Started process (PID=123) to work on /opt/airflow/dags/ecomm_dag.py
+[2024-07-03T00:51:17.214+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/ecomm_dag.py for tasks to queue
+[2024-07-03T00:51:17.215+0000] {logging_mixin.py:149} INFO - [2024-07-03T00:51:17.215+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/ecomm_dag.py
+[2024-07-03T00:51:17.226+0000] {processor.py:836} INFO - DAG(s) dict_keys(['ecomm_data_pipeline']) retrieved from /opt/airflow/dags/ecomm_dag.py
+[2024-07-03T00:51:17.245+0000] {logging_mixin.py:149} INFO - [2024-07-03T00:51:17.245+0000] {dag.py:2726} INFO - Sync 1 DAGs
+[2024-07-03T00:51:17.261+0000] {logging_mixin.py:149} INFO - [2024-07-03T00:51:17.261+0000] {dag.py:3486} INFO - Setting next_dagrun for ecomm_data_pipeline to 2024-07-02T23:40:00+00:00, run_after=2024-07-03T01:10:00+00:00
+[2024-07-03T00:51:17.270+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/ecomm_dag.py took 0.063 seconds
+[2024-07-03T00:51:47.631+0000] {processor.py:157} INFO - Started process (PID=133) to work on /opt/airflow/dags/ecomm_dag.py
+[2024-07-03T00:51:47.632+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/ecomm_dag.py for tasks to queue
+[2024-07-03T00:51:47.632+0000] {logging_mixin.py:149} INFO - [2024-07-03T00:51:47.632+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/ecomm_dag.py
+[2024-07-03T00:51:47.640+0000] {processor.py:836} INFO - DAG(s) dict_keys(['ecomm_data_pipeline']) retrieved from /opt/airflow/dags/ecomm_dag.py
+[2024-07-03T00:51:47.657+0000] {logging_mixin.py:149} INFO - [2024-07-03T00:51:47.657+0000] {dag.py:2726} INFO - Sync 1 DAGs
+[2024-07-03T00:51:47.670+0000] {logging_mixin.py:149} INFO - [2024-07-03T00:51:47.669+0000] {dag.py:3486} INFO - Setting next_dagrun for ecomm_data_pipeline to 2024-07-02T23:40:00+00:00, run_after=2024-07-03T01:10:00+00:00
+[2024-07-03T00:51:47.679+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/ecomm_dag.py took 0.051 seconds
+[2024-07-03T00:52:17.979+0000] {processor.py:157} INFO - Started process (PID=143) to work on /opt/airflow/dags/ecomm_dag.py
+[2024-07-03T00:52:17.980+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/ecomm_dag.py for tasks to queue
+[2024-07-03T00:52:17.980+0000] {logging_mixin.py:149} INFO - [2024-07-03T00:52:17.980+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/ecomm_dag.py
+[2024-07-03T00:52:17.989+0000] {processor.py:836} INFO - DAG(s) dict_keys(['ecomm_data_pipeline']) retrieved from /opt/airflow/dags/ecomm_dag.py
+[2024-07-03T00:52:18.008+0000] {logging_mixin.py:149} INFO - [2024-07-03T00:52:18.008+0000] {dag.py:2726} INFO - Sync 1 DAGs
+[2024-07-03T00:52:18.019+0000] {logging_mixin.py:149} INFO - [2024-07-03T00:52:18.019+0000] {dag.py:3486} INFO - Setting next_dagrun for ecomm_data_pipeline to 2024-07-02T23:40:00+00:00, run_after=2024-07-03T01:10:00+00:00
+[2024-07-03T00:52:18.098+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/ecomm_dag.py took 0.123 seconds
+[2024-07-03T00:52:48.362+0000] {processor.py:157} INFO - Started process (PID=153) to work on /opt/airflow/dags/ecomm_dag.py
+[2024-07-03T00:52:48.363+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/ecomm_dag.py for tasks to queue
+[2024-07-03T00:52:48.364+0000] {logging_mixin.py:149} INFO - [2024-07-03T00:52:48.364+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/ecomm_dag.py
+[2024-07-03T00:52:48.374+0000] {processor.py:836} INFO - DAG(s) dict_keys(['ecomm_data_pipeline']) retrieved from /opt/airflow/dags/ecomm_dag.py
+[2024-07-03T00:52:48.395+0000] {logging_mixin.py:149} INFO - [2024-07-03T00:52:48.395+0000] {dag.py:2726} INFO - Sync 1 DAGs
+[2024-07-03T00:52:48.468+0000] {logging_mixin.py:149} INFO - [2024-07-03T00:52:48.468+0000] {dag.py:3486} INFO - Setting next_dagrun for ecomm_data_pipeline to 2024-07-02T23:40:00+00:00, run_after=2024-07-03T01:10:00+00:00
+[2024-07-03T00:52:48.476+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/ecomm_dag.py took 0.119 seconds
+[2024-07-03T00:52:52.538+0000] {processor.py:157} INFO - Started process (PID=155) to work on /opt/airflow/dags/ecomm_dag.py
+[2024-07-03T00:52:52.539+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/ecomm_dag.py for tasks to queue
+[2024-07-03T00:52:52.540+0000] {logging_mixin.py:149} INFO - [2024-07-03T00:52:52.540+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/ecomm_dag.py
+[2024-07-03T00:52:52.554+0000] {processor.py:836} INFO - DAG(s) dict_keys(['ecomm_data_pipeline']) retrieved from /opt/airflow/dags/ecomm_dag.py
+[2024-07-03T00:52:52.632+0000] {logging_mixin.py:149} INFO - [2024-07-03T00:52:52.632+0000] {dag.py:2726} INFO - Sync 1 DAGs
+[2024-07-03T00:52:52.641+0000] {logging_mixin.py:149} INFO - [2024-07-03T00:52:52.640+0000] {dag.py:3486} INFO - Setting next_dagrun for ecomm_data_pipeline to 2024-07-02T23:40:00+00:00, run_after=2024-07-03T01:10:00+00:00
+[2024-07-03T00:52:52.649+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/ecomm_dag.py took 0.114 seconds
+[2024-07-03T00:52:55.579+0000] {processor.py:157} INFO - Started process (PID=164) to work on /opt/airflow/dags/ecomm_dag.py
+[2024-07-03T00:52:55.580+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/ecomm_dag.py for tasks to queue
+[2024-07-03T00:52:55.580+0000] {logging_mixin.py:149} INFO - [2024-07-03T00:52:55.580+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/ecomm_dag.py
+[2024-07-03T00:52:55.585+0000] {logging_mixin.py:149} INFO - [2024-07-03T00:52:55.585+0000] {dagbag.py:350} ERROR - Failed to import: /opt/airflow/dags/ecomm_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.9/site-packages/airflow/models/dagbag.py", line 346, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 846, in exec_module
+  File "<frozen importlib._bootstrap_external>", line 983, in get_code
+  File "<frozen importlib._bootstrap_external>", line 913, in source_to_code
+  File "<frozen importlib._bootstrap>", line 228, in _call_with_frames_removed
+  File "/opt/airflow/dags/ecomm_dag.py", line 116
+    generate_data_task >> [insert_users_task
+                                            ^
+SyntaxError: unexpected EOF while parsing
+[2024-07-03T00:52:55.586+0000] {processor.py:838} WARNING - No viable dags retrieved from /opt/airflow/dags/ecomm_dag.py
+[2024-07-03T00:52:55.604+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/ecomm_dag.py took 0.028 seconds
+[2024-07-03T00:52:57.616+0000] {processor.py:157} INFO - Started process (PID=165) to work on /opt/airflow/dags/ecomm_dag.py
+[2024-07-03T00:52:57.617+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/ecomm_dag.py for tasks to queue
+[2024-07-03T00:52:57.618+0000] {logging_mixin.py:149} INFO - [2024-07-03T00:52:57.618+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/ecomm_dag.py
+[2024-07-03T00:52:57.631+0000] {processor.py:836} INFO - DAG(s) dict_keys(['ecomm_data_pipeline']) retrieved from /opt/airflow/dags/ecomm_dag.py
+[2024-07-03T00:52:57.643+0000] {logging_mixin.py:149} INFO - [2024-07-03T00:52:57.643+0000] {dag.py:2726} INFO - Sync 1 DAGs
+[2024-07-03T00:52:57.709+0000] {logging_mixin.py:149} INFO - [2024-07-03T00:52:57.709+0000] {dag.py:3486} INFO - Setting next_dagrun for ecomm_data_pipeline to 2024-07-02T23:40:00+00:00, run_after=2024-07-03T01:10:00+00:00
+[2024-07-03T00:52:57.717+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/ecomm_dag.py took 0.104 seconds
+[2024-07-03T00:53:27.978+0000] {processor.py:157} INFO - Started process (PID=175) to work on /opt/airflow/dags/ecomm_dag.py
+[2024-07-03T00:53:27.979+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/ecomm_dag.py for tasks to queue
+[2024-07-03T00:53:27.980+0000] {logging_mixin.py:149} INFO - [2024-07-03T00:53:27.980+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/ecomm_dag.py
+[2024-07-03T00:53:27.992+0000] {processor.py:836} INFO - DAG(s) dict_keys(['ecomm_data_pipeline']) retrieved from /opt/airflow/dags/ecomm_dag.py
+[2024-07-03T00:53:28.064+0000] {logging_mixin.py:149} INFO - [2024-07-03T00:53:28.064+0000] {dag.py:2726} INFO - Sync 1 DAGs
+[2024-07-03T00:53:28.073+0000] {logging_mixin.py:149} INFO - [2024-07-03T00:53:28.073+0000] {dag.py:3486} INFO - Setting next_dagrun for ecomm_data_pipeline to 2024-07-02T23:40:00+00:00, run_after=2024-07-03T01:10:00+00:00
+[2024-07-03T00:53:28.081+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/ecomm_dag.py took 0.107 seconds
+[2024-07-03T00:53:58.410+0000] {processor.py:157} INFO - Started process (PID=192) to work on /opt/airflow/dags/ecomm_dag.py
+[2024-07-03T00:53:58.411+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/ecomm_dag.py for tasks to queue
+[2024-07-03T00:53:58.411+0000] {logging_mixin.py:149} INFO - [2024-07-03T00:53:58.411+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/ecomm_dag.py
+[2024-07-03T00:53:58.417+0000] {processor.py:836} INFO - DAG(s) dict_keys(['ecomm_data_pipeline']) retrieved from /opt/airflow/dags/ecomm_dag.py
+[2024-07-03T00:53:58.434+0000] {logging_mixin.py:149} INFO - [2024-07-03T00:53:58.434+0000] {dag.py:2726} INFO - Sync 1 DAGs
+[2024-07-03T00:53:58.446+0000] {logging_mixin.py:149} INFO - [2024-07-03T00:53:58.446+0000] {dag.py:3486} INFO - Setting next_dagrun for ecomm_data_pipeline to 2024-07-02T23:40:00+00:00, run_after=2024-07-03T01:10:00+00:00
+[2024-07-03T00:53:58.456+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/ecomm_dag.py took 0.047 seconds
+[2024-07-03T00:54:28.833+0000] {processor.py:157} INFO - Started process (PID=202) to work on /opt/airflow/dags/ecomm_dag.py
+[2024-07-03T00:54:28.834+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/ecomm_dag.py for tasks to queue
+[2024-07-03T00:54:28.835+0000] {logging_mixin.py:149} INFO - [2024-07-03T00:54:28.835+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/ecomm_dag.py
+[2024-07-03T00:54:28.846+0000] {processor.py:836} INFO - DAG(s) dict_keys(['ecomm_data_pipeline']) retrieved from /opt/airflow/dags/ecomm_dag.py
+[2024-07-03T00:54:28.866+0000] {logging_mixin.py:149} INFO - [2024-07-03T00:54:28.866+0000] {dag.py:2726} INFO - Sync 1 DAGs
+[2024-07-03T00:54:28.877+0000] {logging_mixin.py:149} INFO - [2024-07-03T00:54:28.877+0000] {dag.py:3486} INFO - Setting next_dagrun for ecomm_data_pipeline to 2024-07-02T23:40:00+00:00, run_after=2024-07-03T01:10:00+00:00
+[2024-07-03T00:54:28.885+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/ecomm_dag.py took 0.055 seconds
+[2024-07-03T00:55:56.839+0000] {processor.py:157} INFO - Started process (PID=11) to work on /opt/airflow/dags/ecomm_dag.py
+[2024-07-03T00:55:56.840+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/ecomm_dag.py for tasks to queue
+[2024-07-03T00:55:56.841+0000] {logging_mixin.py:149} INFO - [2024-07-03T00:55:56.841+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/ecomm_dag.py
+[2024-07-03T00:55:56.853+0000] {processor.py:836} INFO - DAG(s) dict_keys(['ecomm_data_pipeline']) retrieved from /opt/airflow/dags/ecomm_dag.py
+[2024-07-03T00:55:56.891+0000] {logging_mixin.py:149} INFO - [2024-07-03T00:55:56.890+0000] {dag.py:2726} INFO - Sync 1 DAGs
+[2024-07-03T00:55:56.903+0000] {logging_mixin.py:149} INFO - [2024-07-03T00:55:56.903+0000] {dag.py:3486} INFO - Setting next_dagrun for ecomm_data_pipeline to 2024-07-02T20:40:00+00:00, run_after=2024-07-02T22:10:00+00:00
+[2024-07-03T00:55:56.912+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/ecomm_dag.py took 0.075 seconds
+[2024-07-03T00:56:27.208+0000] {processor.py:157} INFO - Started process (PID=21) to work on /opt/airflow/dags/ecomm_dag.py
+[2024-07-03T00:56:27.209+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/ecomm_dag.py for tasks to queue
+[2024-07-03T00:56:27.210+0000] {logging_mixin.py:149} INFO - [2024-07-03T00:56:27.209+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/ecomm_dag.py
+[2024-07-03T00:56:27.218+0000] {processor.py:836} INFO - DAG(s) dict_keys(['ecomm_data_pipeline']) retrieved from /opt/airflow/dags/ecomm_dag.py
+[2024-07-03T00:56:27.237+0000] {logging_mixin.py:149} INFO - [2024-07-03T00:56:27.237+0000] {dag.py:2726} INFO - Sync 1 DAGs
+[2024-07-03T00:56:27.250+0000] {logging_mixin.py:149} INFO - [2024-07-03T00:56:27.250+0000] {dag.py:3486} INFO - Setting next_dagrun for ecomm_data_pipeline to 2024-07-02T20:40:00+00:00, run_after=2024-07-02T22:10:00+00:00
+[2024-07-03T00:56:27.260+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/ecomm_dag.py took 0.053 seconds
+[2024-07-03T00:56:57.458+0000] {processor.py:157} INFO - Started process (PID=41) to work on /opt/airflow/dags/ecomm_dag.py
+[2024-07-03T00:56:57.459+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/ecomm_dag.py for tasks to queue
+[2024-07-03T00:56:57.459+0000] {logging_mixin.py:149} INFO - [2024-07-03T00:56:57.459+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/ecomm_dag.py
+[2024-07-03T00:56:57.468+0000] {processor.py:836} INFO - DAG(s) dict_keys(['ecomm_data_pipeline']) retrieved from /opt/airflow/dags/ecomm_dag.py
+[2024-07-03T00:56:57.477+0000] {logging_mixin.py:149} INFO - [2024-07-03T00:56:57.477+0000] {dag.py:2726} INFO - Sync 1 DAGs
+[2024-07-03T00:56:57.489+0000] {logging_mixin.py:149} INFO - [2024-07-03T00:56:57.489+0000] {dag.py:3486} INFO - Setting next_dagrun for ecomm_data_pipeline to 2024-07-02T23:40:00+00:00, run_after=2024-07-03T01:10:00+00:00
+[2024-07-03T00:56:57.496+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/ecomm_dag.py took 0.041 seconds
+[2024-07-03T00:57:27.770+0000] {processor.py:157} INFO - Started process (PID=50) to work on /opt/airflow/dags/ecomm_dag.py
+[2024-07-03T00:57:27.771+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/ecomm_dag.py for tasks to queue
+[2024-07-03T00:57:27.772+0000] {logging_mixin.py:149} INFO - [2024-07-03T00:57:27.771+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/ecomm_dag.py
+[2024-07-03T00:57:27.782+0000] {processor.py:836} INFO - DAG(s) dict_keys(['ecomm_data_pipeline']) retrieved from /opt/airflow/dags/ecomm_dag.py
+[2024-07-03T00:57:27.801+0000] {logging_mixin.py:149} INFO - [2024-07-03T00:57:27.801+0000] {dag.py:2726} INFO - Sync 1 DAGs
+[2024-07-03T00:57:27.814+0000] {logging_mixin.py:149} INFO - [2024-07-03T00:57:27.814+0000] {dag.py:3486} INFO - Setting next_dagrun for ecomm_data_pipeline to 2024-07-02T23:40:00+00:00, run_after=2024-07-03T01:10:00+00:00
+[2024-07-03T00:57:27.823+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/ecomm_dag.py took 0.057 seconds
+[2024-07-03T00:57:58.086+0000] {processor.py:157} INFO - Started process (PID=60) to work on /opt/airflow/dags/ecomm_dag.py
+[2024-07-03T00:57:58.087+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/ecomm_dag.py for tasks to queue
+[2024-07-03T00:57:58.087+0000] {logging_mixin.py:149} INFO - [2024-07-03T00:57:58.087+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/ecomm_dag.py
+[2024-07-03T00:57:58.095+0000] {processor.py:836} INFO - DAG(s) dict_keys(['ecomm_data_pipeline']) retrieved from /opt/airflow/dags/ecomm_dag.py
+[2024-07-03T00:57:58.114+0000] {logging_mixin.py:149} INFO - [2024-07-03T00:57:58.114+0000] {dag.py:2726} INFO - Sync 1 DAGs
+[2024-07-03T00:57:58.129+0000] {logging_mixin.py:149} INFO - [2024-07-03T00:57:58.129+0000] {dag.py:3486} INFO - Setting next_dagrun for ecomm_data_pipeline to 2024-07-02T23:40:00+00:00, run_after=2024-07-03T01:10:00+00:00
+[2024-07-03T00:57:58.140+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/ecomm_dag.py took 0.056 seconds
+[2024-07-03T00:58:28.396+0000] {processor.py:157} INFO - Started process (PID=70) to work on /opt/airflow/dags/ecomm_dag.py
+[2024-07-03T00:58:28.397+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/ecomm_dag.py for tasks to queue
+[2024-07-03T00:58:28.397+0000] {logging_mixin.py:149} INFO - [2024-07-03T00:58:28.397+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/ecomm_dag.py
+[2024-07-03T00:58:28.405+0000] {processor.py:836} INFO - DAG(s) dict_keys(['ecomm_data_pipeline']) retrieved from /opt/airflow/dags/ecomm_dag.py
+[2024-07-03T00:58:28.421+0000] {logging_mixin.py:149} INFO - [2024-07-03T00:58:28.421+0000] {dag.py:2726} INFO - Sync 1 DAGs
+[2024-07-03T00:58:28.433+0000] {logging_mixin.py:149} INFO - [2024-07-03T00:58:28.432+0000] {dag.py:3486} INFO - Setting next_dagrun for ecomm_data_pipeline to 2024-07-02T23:40:00+00:00, run_after=2024-07-03T01:10:00+00:00
+[2024-07-03T00:58:28.440+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/ecomm_dag.py took 0.047 seconds
+[2024-07-03T00:58:58.714+0000] {processor.py:157} INFO - Started process (PID=72) to work on /opt/airflow/dags/ecomm_dag.py
+[2024-07-03T00:58:58.715+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/ecomm_dag.py for tasks to queue
+[2024-07-03T00:58:58.716+0000] {logging_mixin.py:149} INFO - [2024-07-03T00:58:58.716+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/ecomm_dag.py
+[2024-07-03T00:58:58.727+0000] {processor.py:836} INFO - DAG(s) dict_keys(['ecomm_data_pipeline']) retrieved from /opt/airflow/dags/ecomm_dag.py
+[2024-07-03T00:58:58.747+0000] {logging_mixin.py:149} INFO - [2024-07-03T00:58:58.747+0000] {dag.py:2726} INFO - Sync 1 DAGs
+[2024-07-03T00:58:58.759+0000] {logging_mixin.py:149} INFO - [2024-07-03T00:58:58.759+0000] {dag.py:3486} INFO - Setting next_dagrun for ecomm_data_pipeline to 2024-07-02T23:40:00+00:00, run_after=2024-07-03T01:10:00+00:00
+[2024-07-03T00:58:58.768+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/ecomm_dag.py took 0.058 seconds
+[2024-07-03T00:59:29.112+0000] {processor.py:157} INFO - Started process (PID=82) to work on /opt/airflow/dags/ecomm_dag.py
+[2024-07-03T00:59:29.113+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/ecomm_dag.py for tasks to queue
+[2024-07-03T00:59:29.114+0000] {logging_mixin.py:149} INFO - [2024-07-03T00:59:29.113+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/ecomm_dag.py
+[2024-07-03T00:59:29.124+0000] {processor.py:836} INFO - DAG(s) dict_keys(['ecomm_data_pipeline']) retrieved from /opt/airflow/dags/ecomm_dag.py
+[2024-07-03T00:59:29.143+0000] {logging_mixin.py:149} INFO - [2024-07-03T00:59:29.143+0000] {dag.py:2726} INFO - Sync 1 DAGs
+[2024-07-03T00:59:29.155+0000] {logging_mixin.py:149} INFO - [2024-07-03T00:59:29.155+0000] {dag.py:3486} INFO - Setting next_dagrun for ecomm_data_pipeline to 2024-07-02T23:40:00+00:00, run_after=2024-07-03T01:10:00+00:00
+[2024-07-03T00:59:29.165+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/ecomm_dag.py took 0.058 seconds
+[2024-07-03T00:59:59.496+0000] {processor.py:157} INFO - Started process (PID=92) to work on /opt/airflow/dags/ecomm_dag.py
+[2024-07-03T00:59:59.497+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/ecomm_dag.py for tasks to queue
+[2024-07-03T00:59:59.498+0000] {logging_mixin.py:149} INFO - [2024-07-03T00:59:59.498+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/ecomm_dag.py
+[2024-07-03T00:59:59.507+0000] {processor.py:836} INFO - DAG(s) dict_keys(['ecomm_data_pipeline']) retrieved from /opt/airflow/dags/ecomm_dag.py
+[2024-07-03T00:59:59.526+0000] {logging_mixin.py:149} INFO - [2024-07-03T00:59:59.526+0000] {dag.py:2726} INFO - Sync 1 DAGs
+[2024-07-03T00:59:59.539+0000] {logging_mixin.py:149} INFO - [2024-07-03T00:59:59.539+0000] {dag.py:3486} INFO - Setting next_dagrun for ecomm_data_pipeline to 2024-07-02T23:40:00+00:00, run_after=2024-07-03T01:10:00+00:00
+[2024-07-03T00:59:59.548+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/ecomm_dag.py took 0.055 seconds
+[2024-07-03T01:00:29.851+0000] {processor.py:157} INFO - Started process (PID=111) to work on /opt/airflow/dags/ecomm_dag.py
+[2024-07-03T01:00:29.852+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/ecomm_dag.py for tasks to queue
+[2024-07-03T01:00:29.853+0000] {logging_mixin.py:149} INFO - [2024-07-03T01:00:29.853+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/ecomm_dag.py
+[2024-07-03T01:00:29.865+0000] {processor.py:836} INFO - DAG(s) dict_keys(['ecomm_data_pipeline']) retrieved from /opt/airflow/dags/ecomm_dag.py
+[2024-07-03T01:00:29.891+0000] {logging_mixin.py:149} INFO - [2024-07-03T01:00:29.891+0000] {dag.py:2726} INFO - Sync 1 DAGs
+[2024-07-03T01:00:29.905+0000] {logging_mixin.py:149} INFO - [2024-07-03T01:00:29.905+0000] {dag.py:3486} INFO - Setting next_dagrun for ecomm_data_pipeline to 2024-07-02T23:40:00+00:00, run_after=2024-07-03T01:10:00+00:00
+[2024-07-03T01:00:29.915+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/ecomm_dag.py took 0.069 seconds
+[2024-07-03T01:01:00.265+0000] {processor.py:157} INFO - Started process (PID=121) to work on /opt/airflow/dags/ecomm_dag.py
+[2024-07-03T01:01:00.266+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/ecomm_dag.py for tasks to queue
+[2024-07-03T01:01:00.267+0000] {logging_mixin.py:149} INFO - [2024-07-03T01:01:00.266+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/ecomm_dag.py
+[2024-07-03T01:01:00.276+0000] {processor.py:836} INFO - DAG(s) dict_keys(['ecomm_data_pipeline']) retrieved from /opt/airflow/dags/ecomm_dag.py
+[2024-07-03T01:01:00.294+0000] {logging_mixin.py:149} INFO - [2024-07-03T01:01:00.294+0000] {dag.py:2726} INFO - Sync 1 DAGs
+[2024-07-03T01:01:00.306+0000] {logging_mixin.py:149} INFO - [2024-07-03T01:01:00.306+0000] {dag.py:3486} INFO - Setting next_dagrun for ecomm_data_pipeline to 2024-07-02T23:40:00+00:00, run_after=2024-07-03T01:10:00+00:00
+[2024-07-03T01:01:00.315+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/ecomm_dag.py took 0.053 seconds
+[2024-07-03T01:01:30.624+0000] {processor.py:157} INFO - Started process (PID=131) to work on /opt/airflow/dags/ecomm_dag.py
+[2024-07-03T01:01:30.625+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/ecomm_dag.py for tasks to queue
+[2024-07-03T01:01:30.626+0000] {logging_mixin.py:149} INFO - [2024-07-03T01:01:30.626+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/ecomm_dag.py
+[2024-07-03T01:01:30.637+0000] {processor.py:836} INFO - DAG(s) dict_keys(['ecomm_data_pipeline']) retrieved from /opt/airflow/dags/ecomm_dag.py
+[2024-07-03T01:01:30.657+0000] {logging_mixin.py:149} INFO - [2024-07-03T01:01:30.657+0000] {dag.py:2726} INFO - Sync 1 DAGs
+[2024-07-03T01:01:30.670+0000] {logging_mixin.py:149} INFO - [2024-07-03T01:01:30.670+0000] {dag.py:3486} INFO - Setting next_dagrun for ecomm_data_pipeline to 2024-07-02T23:40:00+00:00, run_after=2024-07-03T01:10:00+00:00
+[2024-07-03T01:01:30.679+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/ecomm_dag.py took 0.058 seconds
+[2024-07-03T01:02:00.984+0000] {processor.py:157} INFO - Started process (PID=140) to work on /opt/airflow/dags/ecomm_dag.py
+[2024-07-03T01:02:00.985+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/ecomm_dag.py for tasks to queue
+[2024-07-03T01:02:00.986+0000] {logging_mixin.py:149} INFO - [2024-07-03T01:02:00.986+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/ecomm_dag.py
+[2024-07-03T01:02:00.995+0000] {processor.py:836} INFO - DAG(s) dict_keys(['ecomm_data_pipeline']) retrieved from /opt/airflow/dags/ecomm_dag.py
+[2024-07-03T01:02:01.013+0000] {logging_mixin.py:149} INFO - [2024-07-03T01:02:01.013+0000] {dag.py:2726} INFO - Sync 1 DAGs
+[2024-07-03T01:02:01.096+0000] {logging_mixin.py:149} INFO - [2024-07-03T01:02:01.096+0000] {dag.py:3486} INFO - Setting next_dagrun for ecomm_data_pipeline to 2024-07-02T23:40:00+00:00, run_after=2024-07-03T01:10:00+00:00
+[2024-07-03T01:02:01.105+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/ecomm_dag.py took 0.124 seconds
+[2024-07-03T01:02:31.383+0000] {processor.py:157} INFO - Started process (PID=150) to work on /opt/airflow/dags/ecomm_dag.py
+[2024-07-03T01:02:31.384+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/ecomm_dag.py for tasks to queue
+[2024-07-03T01:02:31.384+0000] {logging_mixin.py:149} INFO - [2024-07-03T01:02:31.384+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/ecomm_dag.py
+[2024-07-03T01:02:31.394+0000] {processor.py:836} INFO - DAG(s) dict_keys(['ecomm_data_pipeline']) retrieved from /opt/airflow/dags/ecomm_dag.py
+[2024-07-03T01:02:31.413+0000] {logging_mixin.py:149} INFO - [2024-07-03T01:02:31.413+0000] {dag.py:2726} INFO - Sync 1 DAGs
+[2024-07-03T01:02:31.479+0000] {logging_mixin.py:149} INFO - [2024-07-03T01:02:31.479+0000] {dag.py:3486} INFO - Setting next_dagrun for ecomm_data_pipeline to 2024-07-02T23:40:00+00:00, run_after=2024-07-03T01:10:00+00:00
+[2024-07-03T01:02:31.487+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/ecomm_dag.py took 0.107 seconds
+[2024-07-03T01:03:01.703+0000] {processor.py:157} INFO - Started process (PID=160) to work on /opt/airflow/dags/ecomm_dag.py
+[2024-07-03T01:03:01.703+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/ecomm_dag.py for tasks to queue
+[2024-07-03T01:03:01.704+0000] {logging_mixin.py:149} INFO - [2024-07-03T01:03:01.704+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/ecomm_dag.py
+[2024-07-03T01:03:01.711+0000] {processor.py:836} INFO - DAG(s) dict_keys(['ecomm_data_pipeline']) retrieved from /opt/airflow/dags/ecomm_dag.py
+[2024-07-03T01:03:01.782+0000] {logging_mixin.py:149} INFO - [2024-07-03T01:03:01.782+0000] {dag.py:2726} INFO - Sync 1 DAGs
+[2024-07-03T01:03:01.792+0000] {logging_mixin.py:149} INFO - [2024-07-03T01:03:01.792+0000] {dag.py:3486} INFO - Setting next_dagrun for ecomm_data_pipeline to 2024-07-02T23:40:00+00:00, run_after=2024-07-03T01:10:00+00:00
+[2024-07-03T01:03:01.800+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/ecomm_dag.py took 0.100 seconds
+[2024-07-03T01:03:32.009+0000] {processor.py:157} INFO - Started process (PID=170) to work on /opt/airflow/dags/ecomm_dag.py
+[2024-07-03T01:03:32.009+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/ecomm_dag.py for tasks to queue
+[2024-07-03T01:03:32.010+0000] {logging_mixin.py:149} INFO - [2024-07-03T01:03:32.010+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/ecomm_dag.py
+[2024-07-03T01:03:32.018+0000] {processor.py:836} INFO - DAG(s) dict_keys(['ecomm_data_pipeline']) retrieved from /opt/airflow/dags/ecomm_dag.py
+[2024-07-03T01:03:32.037+0000] {logging_mixin.py:149} INFO - [2024-07-03T01:03:32.037+0000] {dag.py:2726} INFO - Sync 1 DAGs
+[2024-07-03T01:03:32.049+0000] {logging_mixin.py:149} INFO - [2024-07-03T01:03:32.049+0000] {dag.py:3486} INFO - Setting next_dagrun for ecomm_data_pipeline to 2024-07-02T23:40:00+00:00, run_after=2024-07-03T01:10:00+00:00
+[2024-07-03T01:03:32.057+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/ecomm_dag.py took 0.052 seconds
+[2024-07-03T01:04:02.384+0000] {processor.py:157} INFO - Started process (PID=180) to work on /opt/airflow/dags/ecomm_dag.py
+[2024-07-03T01:04:02.385+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/ecomm_dag.py for tasks to queue
+[2024-07-03T01:04:02.386+0000] {logging_mixin.py:149} INFO - [2024-07-03T01:04:02.385+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/ecomm_dag.py
+[2024-07-03T01:04:02.395+0000] {processor.py:836} INFO - DAG(s) dict_keys(['ecomm_data_pipeline']) retrieved from /opt/airflow/dags/ecomm_dag.py
+[2024-07-03T01:04:02.413+0000] {logging_mixin.py:149} INFO - [2024-07-03T01:04:02.413+0000] {dag.py:2726} INFO - Sync 1 DAGs
+[2024-07-03T01:04:02.480+0000] {logging_mixin.py:149} INFO - [2024-07-03T01:04:02.480+0000] {dag.py:3486} INFO - Setting next_dagrun for ecomm_data_pipeline to 2024-07-02T23:40:00+00:00, run_after=2024-07-03T01:10:00+00:00
+[2024-07-03T01:04:02.488+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/ecomm_dag.py took 0.108 seconds
+[2024-07-03T01:04:32.747+0000] {processor.py:157} INFO - Started process (PID=190) to work on /opt/airflow/dags/ecomm_dag.py
+[2024-07-03T01:04:32.748+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/ecomm_dag.py for tasks to queue
+[2024-07-03T01:04:32.749+0000] {logging_mixin.py:149} INFO - [2024-07-03T01:04:32.749+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/ecomm_dag.py
+[2024-07-03T01:04:32.758+0000] {processor.py:836} INFO - DAG(s) dict_keys(['ecomm_data_pipeline']) retrieved from /opt/airflow/dags/ecomm_dag.py
+[2024-07-03T01:04:32.777+0000] {logging_mixin.py:149} INFO - [2024-07-03T01:04:32.777+0000] {dag.py:2726} INFO - Sync 1 DAGs
+[2024-07-03T01:04:32.844+0000] {logging_mixin.py:149} INFO - [2024-07-03T01:04:32.844+0000] {dag.py:3486} INFO - Setting next_dagrun for ecomm_data_pipeline to 2024-07-02T23:40:00+00:00, run_after=2024-07-03T01:10:00+00:00
+[2024-07-03T01:04:32.852+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/ecomm_dag.py took 0.108 seconds
+[2024-07-03T01:05:03.129+0000] {processor.py:157} INFO - Started process (PID=200) to work on /opt/airflow/dags/ecomm_dag.py
+[2024-07-03T01:05:03.130+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/ecomm_dag.py for tasks to queue
+[2024-07-03T01:05:03.130+0000] {logging_mixin.py:149} INFO - [2024-07-03T01:05:03.130+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/ecomm_dag.py
+[2024-07-03T01:05:03.140+0000] {processor.py:836} INFO - DAG(s) dict_keys(['ecomm_data_pipeline']) retrieved from /opt/airflow/dags/ecomm_dag.py
+[2024-07-03T01:05:03.215+0000] {logging_mixin.py:149} INFO - [2024-07-03T01:05:03.215+0000] {dag.py:2726} INFO - Sync 1 DAGs
+[2024-07-03T01:05:03.225+0000] {logging_mixin.py:149} INFO - [2024-07-03T01:05:03.225+0000] {dag.py:3486} INFO - Setting next_dagrun for ecomm_data_pipeline to 2024-07-02T23:40:00+00:00, run_after=2024-07-03T01:10:00+00:00
+[2024-07-03T01:05:03.233+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/ecomm_dag.py took 0.108 seconds
+[2024-07-03T01:05:33.594+0000] {processor.py:157} INFO - Started process (PID=210) to work on /opt/airflow/dags/ecomm_dag.py
+[2024-07-03T01:05:33.594+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/ecomm_dag.py for tasks to queue
+[2024-07-03T01:05:33.595+0000] {logging_mixin.py:149} INFO - [2024-07-03T01:05:33.595+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/ecomm_dag.py
+[2024-07-03T01:05:33.600+0000] {processor.py:836} INFO - DAG(s) dict_keys(['ecomm_data_pipeline']) retrieved from /opt/airflow/dags/ecomm_dag.py
+[2024-07-03T01:05:33.614+0000] {logging_mixin.py:149} INFO - [2024-07-03T01:05:33.614+0000] {dag.py:2726} INFO - Sync 1 DAGs
+[2024-07-03T01:05:33.624+0000] {logging_mixin.py:149} INFO - [2024-07-03T01:05:33.624+0000] {dag.py:3486} INFO - Setting next_dagrun for ecomm_data_pipeline to 2024-07-02T23:40:00+00:00, run_after=2024-07-03T01:10:00+00:00
+[2024-07-03T01:05:33.634+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/ecomm_dag.py took 0.042 seconds
+[2024-07-03T01:06:03.972+0000] {processor.py:157} INFO - Started process (PID=220) to work on /opt/airflow/dags/ecomm_dag.py
+[2024-07-03T01:06:03.973+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/ecomm_dag.py for tasks to queue
+[2024-07-03T01:06:03.974+0000] {logging_mixin.py:149} INFO - [2024-07-03T01:06:03.973+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/ecomm_dag.py
+[2024-07-03T01:06:03.981+0000] {processor.py:836} INFO - DAG(s) dict_keys(['ecomm_data_pipeline']) retrieved from /opt/airflow/dags/ecomm_dag.py
+[2024-07-03T01:06:03.998+0000] {logging_mixin.py:149} INFO - [2024-07-03T01:06:03.998+0000] {dag.py:2726} INFO - Sync 1 DAGs
+[2024-07-03T01:06:04.011+0000] {logging_mixin.py:149} INFO - [2024-07-03T01:06:04.011+0000] {dag.py:3486} INFO - Setting next_dagrun for ecomm_data_pipeline to 2024-07-02T23:40:00+00:00, run_after=2024-07-03T01:10:00+00:00
+[2024-07-03T01:06:04.019+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/ecomm_dag.py took 0.049 seconds
+[2024-07-03T01:06:34.366+0000] {processor.py:157} INFO - Started process (PID=230) to work on /opt/airflow/dags/ecomm_dag.py
+[2024-07-03T01:06:34.367+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/ecomm_dag.py for tasks to queue
+[2024-07-03T01:06:34.368+0000] {logging_mixin.py:149} INFO - [2024-07-03T01:06:34.367+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/ecomm_dag.py
+[2024-07-03T01:06:34.377+0000] {processor.py:836} INFO - DAG(s) dict_keys(['ecomm_data_pipeline']) retrieved from /opt/airflow/dags/ecomm_dag.py
+[2024-07-03T01:06:34.395+0000] {logging_mixin.py:149} INFO - [2024-07-03T01:06:34.395+0000] {dag.py:2726} INFO - Sync 1 DAGs
+[2024-07-03T01:06:34.408+0000] {logging_mixin.py:149} INFO - [2024-07-03T01:06:34.408+0000] {dag.py:3486} INFO - Setting next_dagrun for ecomm_data_pipeline to 2024-07-02T23:40:00+00:00, run_after=2024-07-03T01:10:00+00:00
+[2024-07-03T01:06:34.416+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/ecomm_dag.py took 0.054 seconds
+[2024-07-03T01:07:04.731+0000] {processor.py:157} INFO - Started process (PID=240) to work on /opt/airflow/dags/ecomm_dag.py
+[2024-07-03T01:07:04.732+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/ecomm_dag.py for tasks to queue
+[2024-07-03T01:07:04.733+0000] {logging_mixin.py:149} INFO - [2024-07-03T01:07:04.733+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/ecomm_dag.py
+[2024-07-03T01:07:04.743+0000] {processor.py:836} INFO - DAG(s) dict_keys(['ecomm_data_pipeline']) retrieved from /opt/airflow/dags/ecomm_dag.py
+[2024-07-03T01:07:04.763+0000] {logging_mixin.py:149} INFO - [2024-07-03T01:07:04.763+0000] {dag.py:2726} INFO - Sync 1 DAGs
+[2024-07-03T01:07:04.776+0000] {logging_mixin.py:149} INFO - [2024-07-03T01:07:04.776+0000] {dag.py:3486} INFO - Setting next_dagrun for ecomm_data_pipeline to 2024-07-02T23:40:00+00:00, run_after=2024-07-03T01:10:00+00:00
+[2024-07-03T01:07:04.783+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/ecomm_dag.py took 0.056 seconds
+[2024-07-03T01:07:35.048+0000] {processor.py:157} INFO - Started process (PID=250) to work on /opt/airflow/dags/ecomm_dag.py
+[2024-07-03T01:07:35.049+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/ecomm_dag.py for tasks to queue
+[2024-07-03T01:07:35.050+0000] {logging_mixin.py:149} INFO - [2024-07-03T01:07:35.049+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/ecomm_dag.py
+[2024-07-03T01:07:35.059+0000] {processor.py:836} INFO - DAG(s) dict_keys(['ecomm_data_pipeline']) retrieved from /opt/airflow/dags/ecomm_dag.py
+[2024-07-03T01:07:35.077+0000] {logging_mixin.py:149} INFO - [2024-07-03T01:07:35.077+0000] {dag.py:2726} INFO - Sync 1 DAGs
+[2024-07-03T01:07:35.089+0000] {logging_mixin.py:149} INFO - [2024-07-03T01:07:35.089+0000] {dag.py:3486} INFO - Setting next_dagrun for ecomm_data_pipeline to 2024-07-02T23:40:00+00:00, run_after=2024-07-03T01:10:00+00:00
+[2024-07-03T01:07:35.098+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/ecomm_dag.py took 0.054 seconds
+[2024-07-03T01:08:05.405+0000] {processor.py:157} INFO - Started process (PID=261) to work on /opt/airflow/dags/ecomm_dag.py
+[2024-07-03T01:08:05.406+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/ecomm_dag.py for tasks to queue
+[2024-07-03T01:08:05.407+0000] {logging_mixin.py:149} INFO - [2024-07-03T01:08:05.407+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/ecomm_dag.py
+[2024-07-03T01:08:05.416+0000] {processor.py:836} INFO - DAG(s) dict_keys(['ecomm_data_pipeline']) retrieved from /opt/airflow/dags/ecomm_dag.py
+[2024-07-03T01:08:05.435+0000] {logging_mixin.py:149} INFO - [2024-07-03T01:08:05.435+0000] {dag.py:2726} INFO - Sync 1 DAGs
+[2024-07-03T01:08:05.448+0000] {logging_mixin.py:149} INFO - [2024-07-03T01:08:05.448+0000] {dag.py:3486} INFO - Setting next_dagrun for ecomm_data_pipeline to 2024-07-02T23:40:00+00:00, run_after=2024-07-03T01:10:00+00:00
+[2024-07-03T01:08:05.456+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/ecomm_dag.py took 0.054 seconds
+[2024-07-03T01:08:35.776+0000] {processor.py:157} INFO - Started process (PID=271) to work on /opt/airflow/dags/ecomm_dag.py
+[2024-07-03T01:08:35.777+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/ecomm_dag.py for tasks to queue
+[2024-07-03T01:08:35.778+0000] {logging_mixin.py:149} INFO - [2024-07-03T01:08:35.778+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/ecomm_dag.py
+[2024-07-03T01:08:35.790+0000] {processor.py:836} INFO - DAG(s) dict_keys(['ecomm_data_pipeline']) retrieved from /opt/airflow/dags/ecomm_dag.py
+[2024-07-03T01:08:35.818+0000] {logging_mixin.py:149} INFO - [2024-07-03T01:08:35.818+0000] {dag.py:2726} INFO - Sync 1 DAGs
+[2024-07-03T01:08:35.834+0000] {logging_mixin.py:149} INFO - [2024-07-03T01:08:35.834+0000] {dag.py:3486} INFO - Setting next_dagrun for ecomm_data_pipeline to 2024-07-02T23:40:00+00:00, run_after=2024-07-03T01:10:00+00:00
+[2024-07-03T01:08:35.843+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/ecomm_dag.py took 0.072 seconds
+[2024-07-03T01:09:06.116+0000] {processor.py:157} INFO - Started process (PID=281) to work on /opt/airflow/dags/ecomm_dag.py
+[2024-07-03T01:09:06.117+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/ecomm_dag.py for tasks to queue
+[2024-07-03T01:09:06.117+0000] {logging_mixin.py:149} INFO - [2024-07-03T01:09:06.117+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/ecomm_dag.py
+[2024-07-03T01:09:06.126+0000] {processor.py:836} INFO - DAG(s) dict_keys(['ecomm_data_pipeline']) retrieved from /opt/airflow/dags/ecomm_dag.py
+[2024-07-03T01:09:06.144+0000] {logging_mixin.py:149} INFO - [2024-07-03T01:09:06.143+0000] {dag.py:2726} INFO - Sync 1 DAGs
+[2024-07-03T01:09:06.155+0000] {logging_mixin.py:149} INFO - [2024-07-03T01:09:06.155+0000] {dag.py:3486} INFO - Setting next_dagrun for ecomm_data_pipeline to 2024-07-02T23:40:00+00:00, run_after=2024-07-03T01:10:00+00:00
+[2024-07-03T01:09:06.163+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/ecomm_dag.py took 0.050 seconds
+[2024-07-03T01:09:36.468+0000] {processor.py:157} INFO - Started process (PID=291) to work on /opt/airflow/dags/ecomm_dag.py
+[2024-07-03T01:09:36.469+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/ecomm_dag.py for tasks to queue
+[2024-07-03T01:09:36.470+0000] {logging_mixin.py:149} INFO - [2024-07-03T01:09:36.470+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/ecomm_dag.py
+[2024-07-03T01:09:36.479+0000] {processor.py:836} INFO - DAG(s) dict_keys(['ecomm_data_pipeline']) retrieved from /opt/airflow/dags/ecomm_dag.py
+[2024-07-03T01:09:36.498+0000] {logging_mixin.py:149} INFO - [2024-07-03T01:09:36.498+0000] {dag.py:2726} INFO - Sync 1 DAGs
+[2024-07-03T01:09:36.517+0000] {logging_mixin.py:149} INFO - [2024-07-03T01:09:36.516+0000] {dag.py:3486} INFO - Setting next_dagrun for ecomm_data_pipeline to 2024-07-02T23:40:00+00:00, run_after=2024-07-03T01:10:00+00:00
+[2024-07-03T01:09:36.527+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/ecomm_dag.py took 0.062 seconds
+[2024-07-03T01:10:06.860+0000] {processor.py:157} INFO - Started process (PID=301) to work on /opt/airflow/dags/ecomm_dag.py
+[2024-07-03T01:10:06.861+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/ecomm_dag.py for tasks to queue
+[2024-07-03T01:10:06.862+0000] {logging_mixin.py:149} INFO - [2024-07-03T01:10:06.862+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/ecomm_dag.py
+[2024-07-03T01:10:06.871+0000] {processor.py:836} INFO - DAG(s) dict_keys(['ecomm_data_pipeline']) retrieved from /opt/airflow/dags/ecomm_dag.py
+[2024-07-03T01:10:06.890+0000] {logging_mixin.py:149} INFO - [2024-07-03T01:10:06.890+0000] {dag.py:2726} INFO - Sync 1 DAGs
+[2024-07-03T01:10:06.902+0000] {logging_mixin.py:149} INFO - [2024-07-03T01:10:06.902+0000] {dag.py:3486} INFO - Setting next_dagrun for ecomm_data_pipeline to 2024-07-02T23:40:00+00:00, run_after=2024-07-03T01:10:00+00:00
+[2024-07-03T01:10:06.911+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/ecomm_dag.py took 0.055 seconds
+[2024-07-03T01:10:37.175+0000] {processor.py:157} INFO - Started process (PID=318) to work on /opt/airflow/dags/ecomm_dag.py
+[2024-07-03T01:10:37.176+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/ecomm_dag.py for tasks to queue
+[2024-07-03T01:10:37.177+0000] {logging_mixin.py:149} INFO - [2024-07-03T01:10:37.177+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/ecomm_dag.py
+[2024-07-03T01:10:37.188+0000] {processor.py:836} INFO - DAG(s) dict_keys(['ecomm_data_pipeline']) retrieved from /opt/airflow/dags/ecomm_dag.py
+[2024-07-03T01:10:37.209+0000] {logging_mixin.py:149} INFO - [2024-07-03T01:10:37.208+0000] {dag.py:2726} INFO - Sync 1 DAGs
+[2024-07-03T01:10:37.222+0000] {logging_mixin.py:149} INFO - [2024-07-03T01:10:37.222+0000] {dag.py:3486} INFO - Setting next_dagrun for ecomm_data_pipeline to 2024-07-02T23:40:00+00:00, run_after=2024-07-03T01:10:00+00:00
+[2024-07-03T01:10:37.232+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/ecomm_dag.py took 0.061 seconds
+[2024-07-03T01:11:07.575+0000] {processor.py:157} INFO - Started process (PID=331) to work on /opt/airflow/dags/ecomm_dag.py
+[2024-07-03T01:11:07.576+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/ecomm_dag.py for tasks to queue
+[2024-07-03T01:11:07.576+0000] {logging_mixin.py:149} INFO - [2024-07-03T01:11:07.576+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/ecomm_dag.py
+[2024-07-03T01:11:07.588+0000] {processor.py:836} INFO - DAG(s) dict_keys(['ecomm_data_pipeline']) retrieved from /opt/airflow/dags/ecomm_dag.py
+[2024-07-03T01:11:07.612+0000] {logging_mixin.py:149} INFO - [2024-07-03T01:11:07.612+0000] {dag.py:2726} INFO - Sync 1 DAGs
+[2024-07-03T01:11:07.629+0000] {logging_mixin.py:149} INFO - [2024-07-03T01:11:07.629+0000] {dag.py:3486} INFO - Setting next_dagrun for ecomm_data_pipeline to 2024-07-02T23:40:00+00:00, run_after=2024-07-03T01:10:00+00:00
+[2024-07-03T01:11:07.643+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/ecomm_dag.py took 0.072 seconds
+[2024-07-03T01:11:37.927+0000] {processor.py:157} INFO - Started process (PID=342) to work on /opt/airflow/dags/ecomm_dag.py
+[2024-07-03T01:11:37.928+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/ecomm_dag.py for tasks to queue
+[2024-07-03T01:11:37.929+0000] {logging_mixin.py:149} INFO - [2024-07-03T01:11:37.929+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/ecomm_dag.py
+[2024-07-03T01:11:37.940+0000] {processor.py:836} INFO - DAG(s) dict_keys(['ecomm_data_pipeline']) retrieved from /opt/airflow/dags/ecomm_dag.py
+[2024-07-03T01:11:37.961+0000] {logging_mixin.py:149} INFO - [2024-07-03T01:11:37.961+0000] {dag.py:2726} INFO - Sync 1 DAGs
+[2024-07-03T01:11:37.975+0000] {logging_mixin.py:149} INFO - [2024-07-03T01:11:37.975+0000] {dag.py:3486} INFO - Setting next_dagrun for ecomm_data_pipeline to 2024-07-02T23:40:00+00:00, run_after=2024-07-03T01:10:00+00:00
+[2024-07-03T01:11:37.985+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/ecomm_dag.py took 0.062 seconds
+[2024-07-03T01:12:08.284+0000] {processor.py:157} INFO - Started process (PID=357) to work on /opt/airflow/dags/ecomm_dag.py
+[2024-07-03T01:12:08.285+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/ecomm_dag.py for tasks to queue
+[2024-07-03T01:12:08.286+0000] {logging_mixin.py:149} INFO - [2024-07-03T01:12:08.285+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/ecomm_dag.py
+[2024-07-03T01:12:08.297+0000] {processor.py:836} INFO - DAG(s) dict_keys(['ecomm_data_pipeline']) retrieved from /opt/airflow/dags/ecomm_dag.py
+[2024-07-03T01:12:08.316+0000] {logging_mixin.py:149} INFO - [2024-07-03T01:12:08.316+0000] {dag.py:2726} INFO - Sync 1 DAGs
+[2024-07-03T01:12:08.330+0000] {logging_mixin.py:149} INFO - [2024-07-03T01:12:08.330+0000] {dag.py:3486} INFO - Setting next_dagrun for ecomm_data_pipeline to 2024-07-03T01:10:00+00:00, run_after=2024-07-03T02:40:00+00:00
+[2024-07-03T01:12:08.338+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/ecomm_dag.py took 0.059 seconds
+[2024-07-03T01:12:38.657+0000] {processor.py:157} INFO - Started process (PID=367) to work on /opt/airflow/dags/ecomm_dag.py
+[2024-07-03T01:12:38.659+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/ecomm_dag.py for tasks to queue
+[2024-07-03T01:12:38.659+0000] {logging_mixin.py:149} INFO - [2024-07-03T01:12:38.659+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/ecomm_dag.py
+[2024-07-03T01:12:38.670+0000] {processor.py:836} INFO - DAG(s) dict_keys(['ecomm_data_pipeline']) retrieved from /opt/airflow/dags/ecomm_dag.py
+[2024-07-03T01:12:38.690+0000] {logging_mixin.py:149} INFO - [2024-07-03T01:12:38.690+0000] {dag.py:2726} INFO - Sync 1 DAGs
+[2024-07-03T01:12:38.704+0000] {logging_mixin.py:149} INFO - [2024-07-03T01:12:38.704+0000] {dag.py:3486} INFO - Setting next_dagrun for ecomm_data_pipeline to 2024-07-03T01:10:00+00:00, run_after=2024-07-03T02:40:00+00:00
+[2024-07-03T01:12:38.713+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/ecomm_dag.py took 0.061 seconds
+[2024-07-03T01:13:08.982+0000] {processor.py:157} INFO - Started process (PID=377) to work on /opt/airflow/dags/ecomm_dag.py
+[2024-07-03T01:13:08.983+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/ecomm_dag.py for tasks to queue
+[2024-07-03T01:13:08.984+0000] {logging_mixin.py:149} INFO - [2024-07-03T01:13:08.984+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/ecomm_dag.py
+[2024-07-03T01:13:08.992+0000] {processor.py:836} INFO - DAG(s) dict_keys(['ecomm_data_pipeline']) retrieved from /opt/airflow/dags/ecomm_dag.py
+[2024-07-03T01:13:09.011+0000] {logging_mixin.py:149} INFO - [2024-07-03T01:13:09.010+0000] {dag.py:2726} INFO - Sync 1 DAGs
+[2024-07-03T01:13:09.025+0000] {logging_mixin.py:149} INFO - [2024-07-03T01:13:09.024+0000] {dag.py:3486} INFO - Setting next_dagrun for ecomm_data_pipeline to 2024-07-03T01:10:00+00:00, run_after=2024-07-03T02:40:00+00:00
+[2024-07-03T01:13:09.034+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/ecomm_dag.py took 0.056 seconds
+[2024-07-03T01:13:39.308+0000] {processor.py:157} INFO - Started process (PID=387) to work on /opt/airflow/dags/ecomm_dag.py
+[2024-07-03T01:13:39.310+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/ecomm_dag.py for tasks to queue
+[2024-07-03T01:13:39.310+0000] {logging_mixin.py:149} INFO - [2024-07-03T01:13:39.310+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/ecomm_dag.py
+[2024-07-03T01:13:39.321+0000] {processor.py:836} INFO - DAG(s) dict_keys(['ecomm_data_pipeline']) retrieved from /opt/airflow/dags/ecomm_dag.py
+[2024-07-03T01:13:39.339+0000] {logging_mixin.py:149} INFO - [2024-07-03T01:13:39.339+0000] {dag.py:2726} INFO - Sync 1 DAGs
+[2024-07-03T01:13:39.352+0000] {logging_mixin.py:149} INFO - [2024-07-03T01:13:39.352+0000] {dag.py:3486} INFO - Setting next_dagrun for ecomm_data_pipeline to 2024-07-03T01:10:00+00:00, run_after=2024-07-03T02:40:00+00:00
+[2024-07-03T01:13:39.361+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/ecomm_dag.py took 0.057 seconds
+[2024-07-03T01:14:09.650+0000] {processor.py:157} INFO - Started process (PID=397) to work on /opt/airflow/dags/ecomm_dag.py
+[2024-07-03T01:14:09.651+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/ecomm_dag.py for tasks to queue
+[2024-07-03T01:14:09.651+0000] {logging_mixin.py:149} INFO - [2024-07-03T01:14:09.651+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/ecomm_dag.py
+[2024-07-03T01:14:09.660+0000] {processor.py:836} INFO - DAG(s) dict_keys(['ecomm_data_pipeline']) retrieved from /opt/airflow/dags/ecomm_dag.py
+[2024-07-03T01:14:09.677+0000] {logging_mixin.py:149} INFO - [2024-07-03T01:14:09.677+0000] {dag.py:2726} INFO - Sync 1 DAGs
+[2024-07-03T01:14:09.689+0000] {logging_mixin.py:149} INFO - [2024-07-03T01:14:09.689+0000] {dag.py:3486} INFO - Setting next_dagrun for ecomm_data_pipeline to 2024-07-03T01:10:00+00:00, run_after=2024-07-03T02:40:00+00:00
+[2024-07-03T01:14:09.698+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/ecomm_dag.py took 0.051 seconds
+[2024-07-03T01:14:39.966+0000] {processor.py:157} INFO - Started process (PID=407) to work on /opt/airflow/dags/ecomm_dag.py
+[2024-07-03T01:14:39.966+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/ecomm_dag.py for tasks to queue
+[2024-07-03T01:14:39.967+0000] {logging_mixin.py:149} INFO - [2024-07-03T01:14:39.967+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/ecomm_dag.py
+[2024-07-03T01:14:39.976+0000] {processor.py:836} INFO - DAG(s) dict_keys(['ecomm_data_pipeline']) retrieved from /opt/airflow/dags/ecomm_dag.py
+[2024-07-03T01:14:39.998+0000] {logging_mixin.py:149} INFO - [2024-07-03T01:14:39.998+0000] {dag.py:2726} INFO - Sync 1 DAGs
+[2024-07-03T01:14:40.012+0000] {logging_mixin.py:149} INFO - [2024-07-03T01:14:40.012+0000] {dag.py:3486} INFO - Setting next_dagrun for ecomm_data_pipeline to 2024-07-03T01:10:00+00:00, run_after=2024-07-03T02:40:00+00:00
+[2024-07-03T01:14:40.021+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/ecomm_dag.py took 0.059 seconds
+[2024-07-03T01:15:10.315+0000] {processor.py:157} INFO - Started process (PID=417) to work on /opt/airflow/dags/ecomm_dag.py
+[2024-07-03T01:15:10.317+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/ecomm_dag.py for tasks to queue
+[2024-07-03T01:15:10.318+0000] {logging_mixin.py:149} INFO - [2024-07-03T01:15:10.318+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/ecomm_dag.py
+[2024-07-03T01:15:10.328+0000] {processor.py:836} INFO - DAG(s) dict_keys(['ecomm_data_pipeline']) retrieved from /opt/airflow/dags/ecomm_dag.py
+[2024-07-03T01:15:10.346+0000] {logging_mixin.py:149} INFO - [2024-07-03T01:15:10.346+0000] {dag.py:2726} INFO - Sync 1 DAGs
+[2024-07-03T01:15:10.359+0000] {logging_mixin.py:149} INFO - [2024-07-03T01:15:10.359+0000] {dag.py:3486} INFO - Setting next_dagrun for ecomm_data_pipeline to 2024-07-03T01:10:00+00:00, run_after=2024-07-03T02:40:00+00:00
+[2024-07-03T01:15:10.367+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/ecomm_dag.py took 0.056 seconds
+[2024-07-03T01:15:40.685+0000] {processor.py:157} INFO - Started process (PID=427) to work on /opt/airflow/dags/ecomm_dag.py
+[2024-07-03T01:15:40.686+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/ecomm_dag.py for tasks to queue
+[2024-07-03T01:15:40.687+0000] {logging_mixin.py:149} INFO - [2024-07-03T01:15:40.687+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/ecomm_dag.py
+[2024-07-03T01:15:40.697+0000] {processor.py:836} INFO - DAG(s) dict_keys(['ecomm_data_pipeline']) retrieved from /opt/airflow/dags/ecomm_dag.py
+[2024-07-03T01:15:40.716+0000] {logging_mixin.py:149} INFO - [2024-07-03T01:15:40.716+0000] {dag.py:2726} INFO - Sync 1 DAGs
+[2024-07-03T01:15:40.728+0000] {logging_mixin.py:149} INFO - [2024-07-03T01:15:40.728+0000] {dag.py:3486} INFO - Setting next_dagrun for ecomm_data_pipeline to 2024-07-03T01:10:00+00:00, run_after=2024-07-03T02:40:00+00:00
+[2024-07-03T01:15:40.737+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/ecomm_dag.py took 0.057 seconds
+[2024-07-03T01:16:11.069+0000] {processor.py:157} INFO - Started process (PID=437) to work on /opt/airflow/dags/ecomm_dag.py
+[2024-07-03T01:16:11.070+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/ecomm_dag.py for tasks to queue
+[2024-07-03T01:16:11.071+0000] {logging_mixin.py:149} INFO - [2024-07-03T01:16:11.071+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/ecomm_dag.py
+[2024-07-03T01:16:11.080+0000] {processor.py:836} INFO - DAG(s) dict_keys(['ecomm_data_pipeline']) retrieved from /opt/airflow/dags/ecomm_dag.py
+[2024-07-03T01:16:11.101+0000] {logging_mixin.py:149} INFO - [2024-07-03T01:16:11.101+0000] {dag.py:2726} INFO - Sync 1 DAGs
+[2024-07-03T01:16:11.116+0000] {logging_mixin.py:149} INFO - [2024-07-03T01:16:11.116+0000] {dag.py:3486} INFO - Setting next_dagrun for ecomm_data_pipeline to 2024-07-03T01:10:00+00:00, run_after=2024-07-03T02:40:00+00:00
+[2024-07-03T01:16:11.126+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/ecomm_dag.py took 0.060 seconds
+[2024-07-03T01:16:41.434+0000] {processor.py:157} INFO - Started process (PID=447) to work on /opt/airflow/dags/ecomm_dag.py
+[2024-07-03T01:16:41.435+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/ecomm_dag.py for tasks to queue
+[2024-07-03T01:16:41.436+0000] {logging_mixin.py:149} INFO - [2024-07-03T01:16:41.436+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/ecomm_dag.py
+[2024-07-03T01:16:41.447+0000] {processor.py:836} INFO - DAG(s) dict_keys(['ecomm_data_pipeline']) retrieved from /opt/airflow/dags/ecomm_dag.py
+[2024-07-03T01:16:41.465+0000] {logging_mixin.py:149} INFO - [2024-07-03T01:16:41.465+0000] {dag.py:2726} INFO - Sync 1 DAGs
+[2024-07-03T01:16:41.477+0000] {logging_mixin.py:149} INFO - [2024-07-03T01:16:41.477+0000] {dag.py:3486} INFO - Setting next_dagrun for ecomm_data_pipeline to 2024-07-03T01:10:00+00:00, run_after=2024-07-03T02:40:00+00:00
+[2024-07-03T01:16:41.486+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/ecomm_dag.py took 0.056 seconds
+[2024-07-03T01:17:11.791+0000] {processor.py:157} INFO - Started process (PID=457) to work on /opt/airflow/dags/ecomm_dag.py
+[2024-07-03T01:17:11.792+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/ecomm_dag.py for tasks to queue
+[2024-07-03T01:17:11.793+0000] {logging_mixin.py:149} INFO - [2024-07-03T01:17:11.793+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/ecomm_dag.py
+[2024-07-03T01:17:11.803+0000] {processor.py:836} INFO - DAG(s) dict_keys(['ecomm_data_pipeline']) retrieved from /opt/airflow/dags/ecomm_dag.py
+[2024-07-03T01:17:11.822+0000] {logging_mixin.py:149} INFO - [2024-07-03T01:17:11.822+0000] {dag.py:2726} INFO - Sync 1 DAGs
+[2024-07-03T01:17:11.835+0000] {logging_mixin.py:149} INFO - [2024-07-03T01:17:11.835+0000] {dag.py:3486} INFO - Setting next_dagrun for ecomm_data_pipeline to 2024-07-03T01:10:00+00:00, run_after=2024-07-03T02:40:00+00:00
+[2024-07-03T01:17:11.843+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/ecomm_dag.py took 0.056 seconds
+[2024-07-03T01:17:42.163+0000] {processor.py:157} INFO - Started process (PID=467) to work on /opt/airflow/dags/ecomm_dag.py
+[2024-07-03T01:17:42.165+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/ecomm_dag.py for tasks to queue
+[2024-07-03T01:17:42.166+0000] {logging_mixin.py:149} INFO - [2024-07-03T01:17:42.165+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/ecomm_dag.py
+[2024-07-03T01:17:42.179+0000] {processor.py:836} INFO - DAG(s) dict_keys(['ecomm_data_pipeline']) retrieved from /opt/airflow/dags/ecomm_dag.py
+[2024-07-03T01:17:42.199+0000] {logging_mixin.py:149} INFO - [2024-07-03T01:17:42.199+0000] {dag.py:2726} INFO - Sync 1 DAGs
+[2024-07-03T01:17:42.212+0000] {logging_mixin.py:149} INFO - [2024-07-03T01:17:42.212+0000] {dag.py:3486} INFO - Setting next_dagrun for ecomm_data_pipeline to 2024-07-03T01:10:00+00:00, run_after=2024-07-03T02:40:00+00:00
+[2024-07-03T01:17:42.222+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/ecomm_dag.py took 0.064 seconds
+[2024-07-03T01:18:12.571+0000] {processor.py:157} INFO - Started process (PID=477) to work on /opt/airflow/dags/ecomm_dag.py
+[2024-07-03T01:18:12.574+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/ecomm_dag.py for tasks to queue
+[2024-07-03T01:18:12.575+0000] {logging_mixin.py:149} INFO - [2024-07-03T01:18:12.575+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/ecomm_dag.py
+[2024-07-03T01:18:12.585+0000] {processor.py:836} INFO - DAG(s) dict_keys(['ecomm_data_pipeline']) retrieved from /opt/airflow/dags/ecomm_dag.py
+[2024-07-03T01:18:12.602+0000] {logging_mixin.py:149} INFO - [2024-07-03T01:18:12.602+0000] {dag.py:2726} INFO - Sync 1 DAGs
+[2024-07-03T01:18:12.615+0000] {logging_mixin.py:149} INFO - [2024-07-03T01:18:12.615+0000] {dag.py:3486} INFO - Setting next_dagrun for ecomm_data_pipeline to 2024-07-03T01:10:00+00:00, run_after=2024-07-03T02:40:00+00:00
+[2024-07-03T01:18:12.623+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/ecomm_dag.py took 0.055 seconds
+[2024-07-03T01:18:42.926+0000] {processor.py:157} INFO - Started process (PID=487) to work on /opt/airflow/dags/ecomm_dag.py
+[2024-07-03T01:18:42.927+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/ecomm_dag.py for tasks to queue
+[2024-07-03T01:18:42.927+0000] {logging_mixin.py:149} INFO - [2024-07-03T01:18:42.927+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/ecomm_dag.py
+[2024-07-03T01:18:42.936+0000] {processor.py:836} INFO - DAG(s) dict_keys(['ecomm_data_pipeline']) retrieved from /opt/airflow/dags/ecomm_dag.py
+[2024-07-03T01:18:42.954+0000] {logging_mixin.py:149} INFO - [2024-07-03T01:18:42.954+0000] {dag.py:2726} INFO - Sync 1 DAGs
+[2024-07-03T01:18:42.967+0000] {logging_mixin.py:149} INFO - [2024-07-03T01:18:42.967+0000] {dag.py:3486} INFO - Setting next_dagrun for ecomm_data_pipeline to 2024-07-03T01:10:00+00:00, run_after=2024-07-03T02:40:00+00:00
+[2024-07-03T01:18:42.975+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/ecomm_dag.py took 0.052 seconds
+[2024-07-03T01:22:49.339+0000] {processor.py:157} INFO - Started process (PID=10) to work on /opt/airflow/dags/ecomm_dag.py
+[2024-07-03T01:22:49.340+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/ecomm_dag.py for tasks to queue
+[2024-07-03T01:22:49.341+0000] {logging_mixin.py:149} INFO - [2024-07-03T01:22:49.341+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/ecomm_dag.py
+[2024-07-03T01:22:49.355+0000] {processor.py:836} INFO - DAG(s) dict_keys(['ecomm_data_pipeline']) retrieved from /opt/airflow/dags/ecomm_dag.py
+[2024-07-03T01:22:49.394+0000] {logging_mixin.py:149} INFO - [2024-07-03T01:22:49.394+0000] {dag.py:2726} INFO - Sync 1 DAGs
+[2024-07-03T01:22:49.404+0000] {logging_mixin.py:149} INFO - [2024-07-03T01:22:49.403+0000] {dag.py:3486} INFO - Setting next_dagrun for ecomm_data_pipeline to 2024-07-03T01:10:00+00:00, run_after=2024-07-03T02:40:00+00:00
+[2024-07-03T01:22:49.412+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/ecomm_dag.py took 0.075 seconds
+[2024-07-03T01:23:19.625+0000] {processor.py:157} INFO - Started process (PID=21) to work on /opt/airflow/dags/ecomm_dag.py
+[2024-07-03T01:23:19.626+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/ecomm_dag.py for tasks to queue
+[2024-07-03T01:23:19.627+0000] {logging_mixin.py:149} INFO - [2024-07-03T01:23:19.626+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/ecomm_dag.py
+[2024-07-03T01:23:19.633+0000] {processor.py:836} INFO - DAG(s) dict_keys(['ecomm_data_pipeline']) retrieved from /opt/airflow/dags/ecomm_dag.py
+[2024-07-03T01:23:19.653+0000] {logging_mixin.py:149} INFO - [2024-07-03T01:23:19.652+0000] {dag.py:2726} INFO - Sync 1 DAGs
+[2024-07-03T01:23:19.667+0000] {logging_mixin.py:149} INFO - [2024-07-03T01:23:19.667+0000] {dag.py:3486} INFO - Setting next_dagrun for ecomm_data_pipeline to 2024-07-03T01:10:00+00:00, run_after=2024-07-03T02:40:00+00:00
+[2024-07-03T01:23:19.675+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/ecomm_dag.py took 0.052 seconds
+[2024-07-03T01:23:49.891+0000] {processor.py:157} INFO - Started process (PID=31) to work on /opt/airflow/dags/ecomm_dag.py
+[2024-07-03T01:23:49.892+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/ecomm_dag.py for tasks to queue
+[2024-07-03T01:23:49.893+0000] {logging_mixin.py:149} INFO - [2024-07-03T01:23:49.893+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/ecomm_dag.py
+[2024-07-03T01:23:49.903+0000] {processor.py:836} INFO - DAG(s) dict_keys(['ecomm_data_pipeline']) retrieved from /opt/airflow/dags/ecomm_dag.py
+[2024-07-03T01:23:49.913+0000] {logging_mixin.py:149} INFO - [2024-07-03T01:23:49.913+0000] {dag.py:2726} INFO - Sync 1 DAGs
+[2024-07-03T01:23:49.926+0000] {logging_mixin.py:149} INFO - [2024-07-03T01:23:49.926+0000] {dag.py:3486} INFO - Setting next_dagrun for ecomm_data_pipeline to 2024-07-02T23:40:00+00:00, run_after=2024-07-03T01:10:00+00:00
+[2024-07-03T01:23:49.935+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/ecomm_dag.py took 0.046 seconds
+[2024-07-03T01:24:20.187+0000] {processor.py:157} INFO - Started process (PID=46) to work on /opt/airflow/dags/ecomm_dag.py
+[2024-07-03T01:24:20.187+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/ecomm_dag.py for tasks to queue
+[2024-07-03T01:24:20.188+0000] {logging_mixin.py:149} INFO - [2024-07-03T01:24:20.188+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/ecomm_dag.py
+[2024-07-03T01:24:20.199+0000] {processor.py:836} INFO - DAG(s) dict_keys(['ecomm_data_pipeline']) retrieved from /opt/airflow/dags/ecomm_dag.py
+[2024-07-03T01:24:20.219+0000] {logging_mixin.py:149} INFO - [2024-07-03T01:24:20.219+0000] {dag.py:2726} INFO - Sync 1 DAGs
+[2024-07-03T01:24:20.232+0000] {logging_mixin.py:149} INFO - [2024-07-03T01:24:20.232+0000] {dag.py:3486} INFO - Setting next_dagrun for ecomm_data_pipeline to 2024-07-03T01:10:00+00:00, run_after=2024-07-03T02:40:00+00:00
+[2024-07-03T01:24:20.242+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/ecomm_dag.py took 0.058 seconds
+[2024-07-03T01:25:47.289+0000] {processor.py:157} INFO - Started process (PID=11) to work on /opt/airflow/dags/ecomm_dag.py
+[2024-07-03T01:25:47.290+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/ecomm_dag.py for tasks to queue
+[2024-07-03T01:25:47.290+0000] {logging_mixin.py:149} INFO - [2024-07-03T01:25:47.290+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/ecomm_dag.py
+[2024-07-03T01:25:47.303+0000] {processor.py:836} INFO - DAG(s) dict_keys(['ecomm_data_pipeline']) retrieved from /opt/airflow/dags/ecomm_dag.py
+[2024-07-03T01:25:47.339+0000] {logging_mixin.py:149} INFO - [2024-07-03T01:25:47.339+0000] {dag.py:2726} INFO - Sync 1 DAGs
+[2024-07-03T01:25:47.348+0000] {logging_mixin.py:149} INFO - [2024-07-03T01:25:47.348+0000] {dag.py:3486} INFO - Setting next_dagrun for ecomm_data_pipeline to 2024-07-03T01:10:00+00:00, run_after=2024-07-03T02:40:00+00:00
+[2024-07-03T01:25:47.356+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/ecomm_dag.py took 0.070 seconds
+[2024-07-03T01:26:17.615+0000] {processor.py:157} INFO - Started process (PID=21) to work on /opt/airflow/dags/ecomm_dag.py
+[2024-07-03T01:26:17.616+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/ecomm_dag.py for tasks to queue
+[2024-07-03T01:26:17.616+0000] {logging_mixin.py:149} INFO - [2024-07-03T01:26:17.616+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/ecomm_dag.py
+[2024-07-03T01:26:17.622+0000] {processor.py:836} INFO - DAG(s) dict_keys(['ecomm_data_pipeline']) retrieved from /opt/airflow/dags/ecomm_dag.py
+[2024-07-03T01:26:17.638+0000] {logging_mixin.py:149} INFO - [2024-07-03T01:26:17.638+0000] {dag.py:2726} INFO - Sync 1 DAGs
+[2024-07-03T01:26:17.649+0000] {logging_mixin.py:149} INFO - [2024-07-03T01:26:17.649+0000] {dag.py:3486} INFO - Setting next_dagrun for ecomm_data_pipeline to 2024-07-03T01:10:00+00:00, run_after=2024-07-03T02:40:00+00:00
+[2024-07-03T01:26:17.657+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/ecomm_dag.py took 0.044 seconds
+[2024-07-03T01:26:47.892+0000] {processor.py:157} INFO - Started process (PID=31) to work on /opt/airflow/dags/ecomm_dag.py
+[2024-07-03T01:26:47.894+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/ecomm_dag.py for tasks to queue
+[2024-07-03T01:26:47.895+0000] {logging_mixin.py:149} INFO - [2024-07-03T01:26:47.895+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/ecomm_dag.py
+[2024-07-03T01:26:47.906+0000] {processor.py:836} INFO - DAG(s) dict_keys(['ecomm_data_pipeline']) retrieved from /opt/airflow/dags/ecomm_dag.py
+[2024-07-03T01:26:47.917+0000] {logging_mixin.py:149} INFO - [2024-07-03T01:26:47.916+0000] {dag.py:2726} INFO - Sync 1 DAGs
+[2024-07-03T01:26:47.930+0000] {logging_mixin.py:149} INFO - [2024-07-03T01:26:47.930+0000] {dag.py:3486} INFO - Setting next_dagrun for ecomm_data_pipeline to 2024-07-03T01:10:00+00:00, run_after=2024-07-03T02:40:00+00:00
+[2024-07-03T01:26:47.938+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/ecomm_dag.py took 0.050 seconds
+[2024-07-03T01:27:18.273+0000] {processor.py:157} INFO - Started process (PID=41) to work on /opt/airflow/dags/ecomm_dag.py
+[2024-07-03T01:27:18.274+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/ecomm_dag.py for tasks to queue
+[2024-07-03T01:27:18.275+0000] {logging_mixin.py:149} INFO - [2024-07-03T01:27:18.275+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/ecomm_dag.py
+[2024-07-03T01:27:18.288+0000] {processor.py:836} INFO - DAG(s) dict_keys(['ecomm_data_pipeline']) retrieved from /opt/airflow/dags/ecomm_dag.py
+[2024-07-03T01:27:18.308+0000] {logging_mixin.py:149} INFO - [2024-07-03T01:27:18.307+0000] {dag.py:2726} INFO - Sync 1 DAGs
+[2024-07-03T01:27:18.321+0000] {logging_mixin.py:149} INFO - [2024-07-03T01:27:18.321+0000] {dag.py:3486} INFO - Setting next_dagrun for ecomm_data_pipeline to 2024-07-03T01:10:00+00:00, run_after=2024-07-03T02:40:00+00:00
+[2024-07-03T01:27:18.330+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/ecomm_dag.py took 0.062 seconds
+[2024-07-03T01:27:48.631+0000] {processor.py:157} INFO - Started process (PID=51) to work on /opt/airflow/dags/ecomm_dag.py
+[2024-07-03T01:27:48.633+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/ecomm_dag.py for tasks to queue
+[2024-07-03T01:27:48.633+0000] {logging_mixin.py:149} INFO - [2024-07-03T01:27:48.633+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/ecomm_dag.py
+[2024-07-03T01:27:48.640+0000] {processor.py:836} INFO - DAG(s) dict_keys(['ecomm_data_pipeline']) retrieved from /opt/airflow/dags/ecomm_dag.py
+[2024-07-03T01:27:48.655+0000] {logging_mixin.py:149} INFO - [2024-07-03T01:27:48.655+0000] {dag.py:2726} INFO - Sync 1 DAGs
+[2024-07-03T01:27:48.667+0000] {logging_mixin.py:149} INFO - [2024-07-03T01:27:48.667+0000] {dag.py:3486} INFO - Setting next_dagrun for ecomm_data_pipeline to 2024-07-03T01:10:00+00:00, run_after=2024-07-03T02:40:00+00:00
+[2024-07-03T01:27:48.675+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/ecomm_dag.py took 0.047 seconds
+[2024-07-03T01:28:19.015+0000] {processor.py:157} INFO - Started process (PID=61) to work on /opt/airflow/dags/ecomm_dag.py
+[2024-07-03T01:28:19.016+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/ecomm_dag.py for tasks to queue
+[2024-07-03T01:28:19.016+0000] {logging_mixin.py:149} INFO - [2024-07-03T01:28:19.016+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/ecomm_dag.py
+[2024-07-03T01:28:19.022+0000] {processor.py:836} INFO - DAG(s) dict_keys(['ecomm_data_pipeline']) retrieved from /opt/airflow/dags/ecomm_dag.py
+[2024-07-03T01:28:19.036+0000] {logging_mixin.py:149} INFO - [2024-07-03T01:28:19.036+0000] {dag.py:2726} INFO - Sync 1 DAGs
+[2024-07-03T01:28:19.047+0000] {logging_mixin.py:149} INFO - [2024-07-03T01:28:19.047+0000] {dag.py:3486} INFO - Setting next_dagrun for ecomm_data_pipeline to 2024-07-03T01:10:00+00:00, run_after=2024-07-03T02:40:00+00:00
+[2024-07-03T01:28:19.055+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/ecomm_dag.py took 0.041 seconds
+[2024-07-03T01:28:49.396+0000] {processor.py:157} INFO - Started process (PID=63) to work on /opt/airflow/dags/ecomm_dag.py
+[2024-07-03T01:28:49.397+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/ecomm_dag.py for tasks to queue
+[2024-07-03T01:28:49.397+0000] {logging_mixin.py:149} INFO - [2024-07-03T01:28:49.397+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/ecomm_dag.py
+[2024-07-03T01:28:49.407+0000] {processor.py:836} INFO - DAG(s) dict_keys(['ecomm_data_pipeline']) retrieved from /opt/airflow/dags/ecomm_dag.py
+[2024-07-03T01:28:49.426+0000] {logging_mixin.py:149} INFO - [2024-07-03T01:28:49.425+0000] {dag.py:2726} INFO - Sync 1 DAGs
+[2024-07-03T01:28:49.438+0000] {logging_mixin.py:149} INFO - [2024-07-03T01:28:49.438+0000] {dag.py:3486} INFO - Setting next_dagrun for ecomm_data_pipeline to 2024-07-03T01:10:00+00:00, run_after=2024-07-03T02:40:00+00:00
+[2024-07-03T01:28:49.446+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/ecomm_dag.py took 0.054 seconds
+[2024-07-03T01:29:19.795+0000] {processor.py:157} INFO - Started process (PID=73) to work on /opt/airflow/dags/ecomm_dag.py
+[2024-07-03T01:29:19.796+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/ecomm_dag.py for tasks to queue
+[2024-07-03T01:29:19.797+0000] {logging_mixin.py:149} INFO - [2024-07-03T01:29:19.797+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/ecomm_dag.py
+[2024-07-03T01:29:19.807+0000] {processor.py:836} INFO - DAG(s) dict_keys(['ecomm_data_pipeline']) retrieved from /opt/airflow/dags/ecomm_dag.py
+[2024-07-03T01:29:19.825+0000] {logging_mixin.py:149} INFO - [2024-07-03T01:29:19.825+0000] {dag.py:2726} INFO - Sync 1 DAGs
+[2024-07-03T01:29:19.837+0000] {logging_mixin.py:149} INFO - [2024-07-03T01:29:19.837+0000] {dag.py:3486} INFO - Setting next_dagrun for ecomm_data_pipeline to 2024-07-03T01:10:00+00:00, run_after=2024-07-03T02:40:00+00:00
+[2024-07-03T01:29:19.845+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/ecomm_dag.py took 0.058 seconds
+[2024-07-03T01:29:50.200+0000] {processor.py:157} INFO - Started process (PID=83) to work on /opt/airflow/dags/ecomm_dag.py
+[2024-07-03T01:29:50.201+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/ecomm_dag.py for tasks to queue
+[2024-07-03T01:29:50.202+0000] {logging_mixin.py:149} INFO - [2024-07-03T01:29:50.201+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/ecomm_dag.py
+[2024-07-03T01:29:50.211+0000] {processor.py:836} INFO - DAG(s) dict_keys(['ecomm_data_pipeline']) retrieved from /opt/airflow/dags/ecomm_dag.py
+[2024-07-03T01:29:50.230+0000] {logging_mixin.py:149} INFO - [2024-07-03T01:29:50.230+0000] {dag.py:2726} INFO - Sync 1 DAGs
+[2024-07-03T01:29:50.243+0000] {logging_mixin.py:149} INFO - [2024-07-03T01:29:50.243+0000] {dag.py:3486} INFO - Setting next_dagrun for ecomm_data_pipeline to 2024-07-03T01:10:00+00:00, run_after=2024-07-03T02:40:00+00:00
+[2024-07-03T01:29:50.251+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/ecomm_dag.py took 0.055 seconds
+[2024-07-03T01:30:20.581+0000] {processor.py:157} INFO - Started process (PID=92) to work on /opt/airflow/dags/ecomm_dag.py
+[2024-07-03T01:30:20.583+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/ecomm_dag.py for tasks to queue
+[2024-07-03T01:30:20.583+0000] {logging_mixin.py:149} INFO - [2024-07-03T01:30:20.583+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/ecomm_dag.py
+[2024-07-03T01:30:20.594+0000] {processor.py:836} INFO - DAG(s) dict_keys(['ecomm_data_pipeline']) retrieved from /opt/airflow/dags/ecomm_dag.py
+[2024-07-03T01:30:20.614+0000] {logging_mixin.py:149} INFO - [2024-07-03T01:30:20.614+0000] {dag.py:2726} INFO - Sync 1 DAGs
+[2024-07-03T01:30:20.626+0000] {logging_mixin.py:149} INFO - [2024-07-03T01:30:20.626+0000] {dag.py:3486} INFO - Setting next_dagrun for ecomm_data_pipeline to 2024-07-03T01:10:00+00:00, run_after=2024-07-03T02:40:00+00:00
+[2024-07-03T01:30:20.634+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/ecomm_dag.py took 0.057 seconds
+[2024-07-03T01:30:50.943+0000] {processor.py:157} INFO - Started process (PID=102) to work on /opt/airflow/dags/ecomm_dag.py
+[2024-07-03T01:30:50.945+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/ecomm_dag.py for tasks to queue
+[2024-07-03T01:30:50.946+0000] {logging_mixin.py:149} INFO - [2024-07-03T01:30:50.945+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/ecomm_dag.py
+[2024-07-03T01:30:50.955+0000] {processor.py:836} INFO - DAG(s) dict_keys(['ecomm_data_pipeline']) retrieved from /opt/airflow/dags/ecomm_dag.py
+[2024-07-03T01:30:50.974+0000] {logging_mixin.py:149} INFO - [2024-07-03T01:30:50.974+0000] {dag.py:2726} INFO - Sync 1 DAGs
+[2024-07-03T01:30:50.986+0000] {logging_mixin.py:149} INFO - [2024-07-03T01:30:50.986+0000] {dag.py:3486} INFO - Setting next_dagrun for ecomm_data_pipeline to 2024-07-03T01:10:00+00:00, run_after=2024-07-03T02:40:00+00:00
+[2024-07-03T01:30:50.995+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/ecomm_dag.py took 0.056 seconds
+[2024-07-03T01:31:21.291+0000] {processor.py:157} INFO - Started process (PID=112) to work on /opt/airflow/dags/ecomm_dag.py
+[2024-07-03T01:31:21.292+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/ecomm_dag.py for tasks to queue
+[2024-07-03T01:31:21.293+0000] {logging_mixin.py:149} INFO - [2024-07-03T01:31:21.293+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/ecomm_dag.py
+[2024-07-03T01:31:21.302+0000] {processor.py:836} INFO - DAG(s) dict_keys(['ecomm_data_pipeline']) retrieved from /opt/airflow/dags/ecomm_dag.py
+[2024-07-03T01:31:21.321+0000] {logging_mixin.py:149} INFO - [2024-07-03T01:31:21.321+0000] {dag.py:2726} INFO - Sync 1 DAGs
+[2024-07-03T01:31:21.333+0000] {logging_mixin.py:149} INFO - [2024-07-03T01:31:21.333+0000] {dag.py:3486} INFO - Setting next_dagrun for ecomm_data_pipeline to 2024-07-03T01:10:00+00:00, run_after=2024-07-03T02:40:00+00:00
+[2024-07-03T01:31:21.342+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/ecomm_dag.py took 0.055 seconds
+[2024-07-03T01:31:51.682+0000] {processor.py:157} INFO - Started process (PID=122) to work on /opt/airflow/dags/ecomm_dag.py
+[2024-07-03T01:31:51.683+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/ecomm_dag.py for tasks to queue
+[2024-07-03T01:31:51.684+0000] {logging_mixin.py:149} INFO - [2024-07-03T01:31:51.684+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/ecomm_dag.py
+[2024-07-03T01:31:51.693+0000] {processor.py:836} INFO - DAG(s) dict_keys(['ecomm_data_pipeline']) retrieved from /opt/airflow/dags/ecomm_dag.py
+[2024-07-03T01:31:51.710+0000] {logging_mixin.py:149} INFO - [2024-07-03T01:31:51.710+0000] {dag.py:2726} INFO - Sync 1 DAGs
+[2024-07-03T01:31:51.780+0000] {logging_mixin.py:149} INFO - [2024-07-03T01:31:51.780+0000] {dag.py:3486} INFO - Setting next_dagrun for ecomm_data_pipeline to 2024-07-03T01:10:00+00:00, run_after=2024-07-03T02:40:00+00:00
+[2024-07-03T01:31:51.788+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/ecomm_dag.py took 0.109 seconds
+[2024-07-03T01:32:22.024+0000] {processor.py:157} INFO - Started process (PID=132) to work on /opt/airflow/dags/ecomm_dag.py
+[2024-07-03T01:32:22.026+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/ecomm_dag.py for tasks to queue
+[2024-07-03T01:32:22.026+0000] {logging_mixin.py:149} INFO - [2024-07-03T01:32:22.026+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/ecomm_dag.py
+[2024-07-03T01:32:22.038+0000] {processor.py:836} INFO - DAG(s) dict_keys(['ecomm_data_pipeline']) retrieved from /opt/airflow/dags/ecomm_dag.py
+[2024-07-03T01:32:22.059+0000] {logging_mixin.py:149} INFO - [2024-07-03T01:32:22.059+0000] {dag.py:2726} INFO - Sync 1 DAGs
+[2024-07-03T01:32:22.144+0000] {logging_mixin.py:149} INFO - [2024-07-03T01:32:22.143+0000] {dag.py:3486} INFO - Setting next_dagrun for ecomm_data_pipeline to 2024-07-03T01:10:00+00:00, run_after=2024-07-03T02:40:00+00:00
+[2024-07-03T01:32:22.152+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/ecomm_dag.py took 0.132 seconds
+[2024-07-03T01:32:52.449+0000] {processor.py:157} INFO - Started process (PID=142) to work on /opt/airflow/dags/ecomm_dag.py
+[2024-07-03T01:32:52.450+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/ecomm_dag.py for tasks to queue
+[2024-07-03T01:32:52.451+0000] {logging_mixin.py:149} INFO - [2024-07-03T01:32:52.451+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/ecomm_dag.py
+[2024-07-03T01:32:52.461+0000] {processor.py:836} INFO - DAG(s) dict_keys(['ecomm_data_pipeline']) retrieved from /opt/airflow/dags/ecomm_dag.py
+[2024-07-03T01:32:52.557+0000] {logging_mixin.py:149} INFO - [2024-07-03T01:32:52.557+0000] {dag.py:2726} INFO - Sync 1 DAGs
+[2024-07-03T01:32:52.567+0000] {logging_mixin.py:149} INFO - [2024-07-03T01:32:52.567+0000] {dag.py:3486} INFO - Setting next_dagrun for ecomm_data_pipeline to 2024-07-03T01:10:00+00:00, run_after=2024-07-03T02:40:00+00:00
+[2024-07-03T01:32:52.575+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/ecomm_dag.py took 0.129 seconds
+[2024-07-03T01:33:22.901+0000] {processor.py:157} INFO - Started process (PID=152) to work on /opt/airflow/dags/ecomm_dag.py
+[2024-07-03T01:33:22.901+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/ecomm_dag.py for tasks to queue
+[2024-07-03T01:33:22.902+0000] {logging_mixin.py:149} INFO - [2024-07-03T01:33:22.902+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/ecomm_dag.py
+[2024-07-03T01:33:22.910+0000] {processor.py:836} INFO - DAG(s) dict_keys(['ecomm_data_pipeline']) retrieved from /opt/airflow/dags/ecomm_dag.py
+[2024-07-03T01:33:22.928+0000] {logging_mixin.py:149} INFO - [2024-07-03T01:33:22.928+0000] {dag.py:2726} INFO - Sync 1 DAGs
+[2024-07-03T01:33:22.942+0000] {logging_mixin.py:149} INFO - [2024-07-03T01:33:22.941+0000] {dag.py:3486} INFO - Setting next_dagrun for ecomm_data_pipeline to 2024-07-03T01:10:00+00:00, run_after=2024-07-03T02:40:00+00:00
+[2024-07-03T01:33:22.953+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/ecomm_dag.py took 0.054 seconds
+[2024-07-03T01:33:53.244+0000] {processor.py:157} INFO - Started process (PID=162) to work on /opt/airflow/dags/ecomm_dag.py
+[2024-07-03T01:33:53.246+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/ecomm_dag.py for tasks to queue
+[2024-07-03T01:33:53.246+0000] {logging_mixin.py:149} INFO - [2024-07-03T01:33:53.246+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/ecomm_dag.py
+[2024-07-03T01:33:53.259+0000] {processor.py:836} INFO - DAG(s) dict_keys(['ecomm_data_pipeline']) retrieved from /opt/airflow/dags/ecomm_dag.py
+[2024-07-03T01:33:53.282+0000] {logging_mixin.py:149} INFO - [2024-07-03T01:33:53.282+0000] {dag.py:2726} INFO - Sync 1 DAGs
+[2024-07-03T01:33:53.298+0000] {logging_mixin.py:149} INFO - [2024-07-03T01:33:53.297+0000] {dag.py:3486} INFO - Setting next_dagrun for ecomm_data_pipeline to 2024-07-03T01:10:00+00:00, run_after=2024-07-03T02:40:00+00:00
+[2024-07-03T01:33:53.307+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/ecomm_dag.py took 0.067 seconds
+[2024-07-03T01:34:23.608+0000] {processor.py:157} INFO - Started process (PID=172) to work on /opt/airflow/dags/ecomm_dag.py
+[2024-07-03T01:34:23.610+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/ecomm_dag.py for tasks to queue
+[2024-07-03T01:34:23.610+0000] {logging_mixin.py:149} INFO - [2024-07-03T01:34:23.610+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/ecomm_dag.py
+[2024-07-03T01:34:23.621+0000] {processor.py:836} INFO - DAG(s) dict_keys(['ecomm_data_pipeline']) retrieved from /opt/airflow/dags/ecomm_dag.py
+[2024-07-03T01:34:23.641+0000] {logging_mixin.py:149} INFO - [2024-07-03T01:34:23.641+0000] {dag.py:2726} INFO - Sync 1 DAGs
+[2024-07-03T01:34:23.655+0000] {logging_mixin.py:149} INFO - [2024-07-03T01:34:23.655+0000] {dag.py:3486} INFO - Setting next_dagrun for ecomm_data_pipeline to 2024-07-03T01:10:00+00:00, run_after=2024-07-03T02:40:00+00:00
+[2024-07-03T01:34:23.662+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/ecomm_dag.py took 0.059 seconds
+[2024-07-03T01:34:53.986+0000] {processor.py:157} INFO - Started process (PID=182) to work on /opt/airflow/dags/ecomm_dag.py
+[2024-07-03T01:34:53.987+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/ecomm_dag.py for tasks to queue
+[2024-07-03T01:34:53.987+0000] {logging_mixin.py:149} INFO - [2024-07-03T01:34:53.987+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/ecomm_dag.py
+[2024-07-03T01:34:53.995+0000] {processor.py:836} INFO - DAG(s) dict_keys(['ecomm_data_pipeline']) retrieved from /opt/airflow/dags/ecomm_dag.py
+[2024-07-03T01:34:54.012+0000] {logging_mixin.py:149} INFO - [2024-07-03T01:34:54.012+0000] {dag.py:2726} INFO - Sync 1 DAGs
+[2024-07-03T01:34:54.025+0000] {logging_mixin.py:149} INFO - [2024-07-03T01:34:54.024+0000] {dag.py:3486} INFO - Setting next_dagrun for ecomm_data_pipeline to 2024-07-03T01:10:00+00:00, run_after=2024-07-03T02:40:00+00:00
+[2024-07-03T01:34:54.033+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/ecomm_dag.py took 0.049 seconds
+[2024-07-03T01:35:24.350+0000] {processor.py:157} INFO - Started process (PID=192) to work on /opt/airflow/dags/ecomm_dag.py
+[2024-07-03T01:35:24.351+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/ecomm_dag.py for tasks to queue
+[2024-07-03T01:35:24.352+0000] {logging_mixin.py:149} INFO - [2024-07-03T01:35:24.352+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/ecomm_dag.py
+[2024-07-03T01:35:24.362+0000] {processor.py:836} INFO - DAG(s) dict_keys(['ecomm_data_pipeline']) retrieved from /opt/airflow/dags/ecomm_dag.py
+[2024-07-03T01:35:24.381+0000] {logging_mixin.py:149} INFO - [2024-07-03T01:35:24.381+0000] {dag.py:2726} INFO - Sync 1 DAGs
+[2024-07-03T01:35:24.394+0000] {logging_mixin.py:149} INFO - [2024-07-03T01:35:24.394+0000] {dag.py:3486} INFO - Setting next_dagrun for ecomm_data_pipeline to 2024-07-03T01:10:00+00:00, run_after=2024-07-03T02:40:00+00:00
+[2024-07-03T01:35:24.401+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/ecomm_dag.py took 0.055 seconds
+[2024-07-03T01:35:54.742+0000] {processor.py:157} INFO - Started process (PID=202) to work on /opt/airflow/dags/ecomm_dag.py
+[2024-07-03T01:35:54.743+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/ecomm_dag.py for tasks to queue
+[2024-07-03T01:35:54.743+0000] {logging_mixin.py:149} INFO - [2024-07-03T01:35:54.743+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/ecomm_dag.py
+[2024-07-03T01:35:54.752+0000] {processor.py:836} INFO - DAG(s) dict_keys(['ecomm_data_pipeline']) retrieved from /opt/airflow/dags/ecomm_dag.py
+[2024-07-03T01:35:54.771+0000] {logging_mixin.py:149} INFO - [2024-07-03T01:35:54.771+0000] {dag.py:2726} INFO - Sync 1 DAGs
+[2024-07-03T01:35:54.783+0000] {logging_mixin.py:149} INFO - [2024-07-03T01:35:54.783+0000] {dag.py:3486} INFO - Setting next_dagrun for ecomm_data_pipeline to 2024-07-03T01:10:00+00:00, run_after=2024-07-03T02:40:00+00:00
+[2024-07-03T01:35:54.791+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/ecomm_dag.py took 0.053 seconds
+[2024-07-03T01:36:25.100+0000] {processor.py:157} INFO - Started process (PID=212) to work on /opt/airflow/dags/ecomm_dag.py
+[2024-07-03T01:36:25.102+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/ecomm_dag.py for tasks to queue
+[2024-07-03T01:36:25.102+0000] {logging_mixin.py:149} INFO - [2024-07-03T01:36:25.102+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/ecomm_dag.py
+[2024-07-03T01:36:25.112+0000] {processor.py:836} INFO - DAG(s) dict_keys(['ecomm_data_pipeline']) retrieved from /opt/airflow/dags/ecomm_dag.py
+[2024-07-03T01:36:25.131+0000] {logging_mixin.py:149} INFO - [2024-07-03T01:36:25.131+0000] {dag.py:2726} INFO - Sync 1 DAGs
+[2024-07-03T01:36:25.144+0000] {logging_mixin.py:149} INFO - [2024-07-03T01:36:25.144+0000] {dag.py:3486} INFO - Setting next_dagrun for ecomm_data_pipeline to 2024-07-03T01:10:00+00:00, run_after=2024-07-03T02:40:00+00:00
+[2024-07-03T01:36:25.152+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/ecomm_dag.py took 0.056 seconds

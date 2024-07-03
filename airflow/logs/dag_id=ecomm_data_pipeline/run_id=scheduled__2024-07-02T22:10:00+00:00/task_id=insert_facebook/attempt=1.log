@@ -1,0 +1,30 @@
+[2024-07-03T00:27:13.681+0000] {taskinstance.py:1103} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: ecomm_data_pipeline.insert_facebook scheduled__2024-07-02T22:10:00+00:00 [queued]>
+[2024-07-03T00:27:13.684+0000] {taskinstance.py:1103} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: ecomm_data_pipeline.insert_facebook scheduled__2024-07-02T22:10:00+00:00 [queued]>
+[2024-07-03T00:27:13.684+0000] {taskinstance.py:1308} INFO - Starting attempt 1 of 2
+[2024-07-03T00:27:13.688+0000] {taskinstance.py:1327} INFO - Executing <Task(PythonOperator): insert_facebook> on 2024-07-02 22:10:00+00:00
+[2024-07-03T00:27:13.689+0000] {standard_task_runner.py:57} INFO - Started process 267 to run task
+[2024-07-03T00:27:13.691+0000] {standard_task_runner.py:84} INFO - Running: ['airflow', 'tasks', 'run', 'ecomm_data_pipeline', 'insert_facebook', 'scheduled__2024-07-02T22:10:00+00:00', '--job-id', '313', '--raw', '--subdir', 'DAGS_FOLDER/ecomm_dag.py', '--cfg-path', '/tmp/tmpfch56opg']
+[2024-07-03T00:27:13.692+0000] {standard_task_runner.py:85} INFO - Job 313: Subtask insert_facebook
+[2024-07-03T00:27:13.712+0000] {task_command.py:410} INFO - Running <TaskInstance: ecomm_data_pipeline.insert_facebook scheduled__2024-07-02T22:10:00+00:00 [running]> on host e25ac14d8d5f
+[2024-07-03T00:27:13.747+0000] {taskinstance.py:1545} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='airflow' AIRFLOW_CTX_DAG_ID='ecomm_data_pipeline' AIRFLOW_CTX_TASK_ID='insert_facebook' AIRFLOW_CTX_EXECUTION_DATE='2024-07-02T22:10:00+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2024-07-02T22:10:00+00:00'
+[2024-07-03T00:27:13.748+0000] {logging_mixin.py:149} INFO - Inserting data into facebook from /opt/airflow/generator/fake_facebook_data.json...
+[2024-07-03T00:27:13.751+0000] {logging_mixin.py:149} INFO - Error inserting data into facebook: tuple index out of range
+[2024-07-03T00:27:13.751+0000] {python.py:183} INFO - Done. Returned value was: None
+[2024-07-03T00:27:13.756+0000] {taskinstance.py:1345} INFO - Marking task as SUCCESS. dag_id=ecomm_data_pipeline, task_id=insert_facebook, execution_date=20240702T221000, start_date=20240703T002713, end_date=20240703T002713
+[2024-07-03T00:27:13.793+0000] {local_task_job_runner.py:225} INFO - Task exited with return code 0
+[2024-07-03T00:27:13.801+0000] {taskinstance.py:2651} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2024-07-03T00:48:30.686+0000] {taskinstance.py:1103} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: ecomm_data_pipeline.insert_facebook scheduled__2024-07-02T22:10:00+00:00 [queued]>
+[2024-07-03T00:48:30.690+0000] {taskinstance.py:1103} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: ecomm_data_pipeline.insert_facebook scheduled__2024-07-02T22:10:00+00:00 [queued]>
+[2024-07-03T00:48:30.690+0000] {taskinstance.py:1308} INFO - Starting attempt 1 of 2
+[2024-07-03T00:48:30.695+0000] {taskinstance.py:1327} INFO - Executing <Task(PythonOperator): insert_facebook> on 2024-07-02 22:10:00+00:00
+[2024-07-03T00:48:30.697+0000] {standard_task_runner.py:57} INFO - Started process 66 to run task
+[2024-07-03T00:48:30.698+0000] {standard_task_runner.py:84} INFO - Running: ['airflow', 'tasks', 'run', 'ecomm_data_pipeline', 'insert_facebook', 'scheduled__2024-07-02T22:10:00+00:00', '--job-id', '332', '--raw', '--subdir', 'DAGS_FOLDER/ecomm_dag.py', '--cfg-path', '/tmp/tmpplqmijz0']
+[2024-07-03T00:48:30.699+0000] {standard_task_runner.py:85} INFO - Job 332: Subtask insert_facebook
+[2024-07-03T00:48:30.723+0000] {task_command.py:410} INFO - Running <TaskInstance: ecomm_data_pipeline.insert_facebook scheduled__2024-07-02T22:10:00+00:00 [running]> on host 9ea872201ce6
+[2024-07-03T00:48:30.761+0000] {taskinstance.py:1545} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='airflow' AIRFLOW_CTX_DAG_ID='ecomm_data_pipeline' AIRFLOW_CTX_TASK_ID='insert_facebook' AIRFLOW_CTX_EXECUTION_DATE='2024-07-02T22:10:00+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2024-07-02T22:10:00+00:00'
+[2024-07-03T00:48:30.762+0000] {logging_mixin.py:149} INFO - Inserting data into facebook from /opt/airflow/generator/fake_facebook_data.json...
+[2024-07-03T00:48:30.765+0000] {logging_mixin.py:149} INFO - Error inserting data into facebook: tuple index out of range
+[2024-07-03T00:48:30.765+0000] {python.py:183} INFO - Done. Returned value was: None
+[2024-07-03T00:48:30.770+0000] {taskinstance.py:1345} INFO - Marking task as SUCCESS. dag_id=ecomm_data_pipeline, task_id=insert_facebook, execution_date=20240702T221000, start_date=20240703T004830, end_date=20240703T004830
+[2024-07-03T00:48:30.797+0000] {local_task_job_runner.py:225} INFO - Task exited with return code 0
+[2024-07-03T00:48:30.805+0000] {taskinstance.py:2651} INFO - 0 downstream tasks scheduled from follow-on schedule check

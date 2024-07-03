@@ -1,0 +1,53 @@
+[2024-07-02T22:59:51.917+0000] {taskinstance.py:1103} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: ecomm_data_pipeline.generate_and_insert_data scheduled__2024-07-02T00:20:00+00:00 [queued]>
+[2024-07-02T22:59:51.920+0000] {taskinstance.py:1103} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: ecomm_data_pipeline.generate_and_insert_data scheduled__2024-07-02T00:20:00+00:00 [queued]>
+[2024-07-02T22:59:51.921+0000] {taskinstance.py:1308} INFO - Starting attempt 1 of 2
+[2024-07-02T22:59:51.925+0000] {taskinstance.py:1327} INFO - Executing <Task(PythonOperator): generate_and_insert_data> on 2024-07-02 00:20:00+00:00
+[2024-07-02T22:59:51.926+0000] {standard_task_runner.py:57} INFO - Started process 164 to run task
+[2024-07-02T22:59:51.928+0000] {standard_task_runner.py:84} INFO - Running: ['airflow', 'tasks', 'run', 'ecomm_data_pipeline', 'generate_and_insert_data', 'scheduled__2024-07-02T00:20:00+00:00', '--job-id', '75', '--raw', '--subdir', 'DAGS_FOLDER/ecomm_dag.py', '--cfg-path', '/tmp/tmp9e8z1e10']
+[2024-07-02T22:59:51.928+0000] {standard_task_runner.py:85} INFO - Job 75: Subtask generate_and_insert_data
+[2024-07-02T22:59:51.950+0000] {task_command.py:410} INFO - Running <TaskInstance: ecomm_data_pipeline.generate_and_insert_data scheduled__2024-07-02T00:20:00+00:00 [running]> on host 5b8fb0180af8
+[2024-07-02T22:59:51.985+0000] {taskinstance.py:1545} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='airflow' AIRFLOW_CTX_DAG_ID='ecomm_data_pipeline' AIRFLOW_CTX_TASK_ID='generate_and_insert_data' AIRFLOW_CTX_EXECUTION_DATE='2024-07-02T00:20:00+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2024-07-02T00:20:00+00:00'
+[2024-07-02T22:59:51.986+0000] {ecomm_dag.py:26} INFO - Running data generation script...
+[2024-07-02T23:00:17.166+0000] {local_task_job_runner.py:291} WARNING - State of this instance has been externally set to None. Terminating instance.
+[2024-07-02T23:00:17.168+0000] {process_utils.py:131} INFO - Sending Signals.SIGTERM to group 164. PIDs of all processes in the group: [165, 164]
+[2024-07-02T23:00:17.168+0000] {process_utils.py:86} INFO - Sending the signal Signals.SIGTERM to group 164
+[2024-07-02T23:00:17.169+0000] {taskinstance.py:1517} ERROR - Received SIGTERM. Terminating subprocesses.
+[2024-07-02T23:00:17.170+0000] {ecomm_dag.py:51} ERROR - General error in generate_and_insert_data: Task received SIGTERM signal
+[2024-07-02T23:00:17.178+0000] {taskinstance.py:1824} ERROR - Task failed with exception
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.9/site-packages/airflow/operators/python.py", line 181, in execute
+    return_value = self.execute_callable()
+  File "/home/airflow/.local/lib/python3.9/site-packages/airflow/operators/python.py", line 198, in execute_callable
+    return self.python_callable(*self.op_args, **self.op_kwargs)
+  File "/opt/airflow/dags/ecomm_dag.py", line 27, in generate_and_insert_data
+    result = subprocess.run(["python3", "/opt/airflow/generator/ecomm_generator.py"], check=True, capture_output=True, text=True)
+  File "/usr/local/lib/python3.9/subprocess.py", line 507, in run
+    stdout, stderr = process.communicate(input, timeout=timeout)
+  File "/usr/local/lib/python3.9/subprocess.py", line 1134, in communicate
+    stdout, stderr = self._communicate(input, endtime, timeout)
+  File "/usr/local/lib/python3.9/subprocess.py", line 1979, in _communicate
+    ready = selector.select(timeout)
+  File "/usr/local/lib/python3.9/selectors.py", line 416, in select
+    fd_event_list = self._selector.poll(timeout)
+  File "/home/airflow/.local/lib/python3.9/site-packages/airflow/models/taskinstance.py", line 1519, in signal_handler
+    raise AirflowException("Task received SIGTERM signal")
+airflow.exceptions.AirflowException: Task received SIGTERM signal
+[2024-07-02T23:00:17.181+0000] {taskinstance.py:1345} INFO - Marking task as FAILED. dag_id=ecomm_data_pipeline, task_id=generate_and_insert_data, execution_date=20240702T002000, start_date=20240702T225951, end_date=20240702T230017
+[2024-07-02T23:00:17.190+0000] {standard_task_runner.py:104} ERROR - Failed to execute job 75 for task generate_and_insert_data ((psycopg2.errors.ForeignKeyViolation) insert or update on table "task_fail" violates foreign key constraint "task_fail_ti_fkey"
+DETAIL:  Key (dag_id, task_id, run_id, map_index)=(ecomm_data_pipeline, generate_and_insert_data, scheduled__2024-07-02T00:20:00+00:00, -1) is not present in table "task_instance".
+
+[SQL: INSERT INTO task_fail (task_id, dag_id, run_id, map_index, start_date, end_date, duration) VALUES (%(task_id)s, %(dag_id)s, %(run_id)s, %(map_index)s, %(start_date)s, %(end_date)s, %(duration)s) RETURNING task_fail.id]
+[parameters: {'task_id': 'generate_and_insert_data', 'dag_id': 'ecomm_data_pipeline', 'run_id': 'scheduled__2024-07-02T00:20:00+00:00', 'map_index': -1, 'start_date': datetime.datetime(2024, 7, 2, 22, 59, 51, 918214, tzinfo=Timezone('UTC')), 'end_date': datetime.datetime(2024, 7, 2, 23, 0, 17, 181592, tzinfo=Timezone('UTC')), 'duration': 25}]
+(Background on this error at: https://sqlalche.me/e/14/gkpj); 164)
+[2024-07-02T23:00:17.205+0000] {process_utils.py:79} INFO - Process psutil.Process(pid=164, status='terminated', exitcode=1, started='22:59:51') (164) terminated with exit code 1
+[2024-07-02T23:00:17.206+0000] {process_utils.py:79} INFO - Process psutil.Process(pid=165, status='terminated', started='22:59:51') (165) terminated with exit code None
+[2024-07-02T23:00:36.707+0000] {taskinstance.py:1103} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: ecomm_data_pipeline.generate_and_insert_data scheduled__2024-07-02T00:20:00+00:00 [queued]>
+[2024-07-02T23:00:36.710+0000] {taskinstance.py:1103} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: ecomm_data_pipeline.generate_and_insert_data scheduled__2024-07-02T00:20:00+00:00 [queued]>
+[2024-07-02T23:00:36.710+0000] {taskinstance.py:1308} INFO - Starting attempt 1 of 2
+[2024-07-02T23:00:36.714+0000] {taskinstance.py:1327} INFO - Executing <Task(PythonOperator): generate_and_insert_data> on 2024-07-02 00:20:00+00:00
+[2024-07-02T23:00:36.715+0000] {standard_task_runner.py:57} INFO - Started process 14 to run task
+[2024-07-02T23:00:36.716+0000] {standard_task_runner.py:84} INFO - Running: ['airflow', 'tasks', 'run', 'ecomm_data_pipeline', 'generate_and_insert_data', 'scheduled__2024-07-02T00:20:00+00:00', '--job-id', '77', '--raw', '--subdir', 'DAGS_FOLDER/ecomm_dag.py', '--cfg-path', '/tmp/tmp0dx92rji']
+[2024-07-02T23:00:36.717+0000] {standard_task_runner.py:85} INFO - Job 77: Subtask generate_and_insert_data
+[2024-07-02T23:00:36.737+0000] {task_command.py:410} INFO - Running <TaskInstance: ecomm_data_pipeline.generate_and_insert_data scheduled__2024-07-02T00:20:00+00:00 [running]> on host 5b8fb0180af8
+[2024-07-02T23:00:36.772+0000] {taskinstance.py:1545} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='airflow' AIRFLOW_CTX_DAG_ID='ecomm_data_pipeline' AIRFLOW_CTX_TASK_ID='generate_and_insert_data' AIRFLOW_CTX_EXECUTION_DATE='2024-07-02T00:20:00+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2024-07-02T00:20:00+00:00'
+[2024-07-02T23:00:36.773+0000] {ecomm_dag.py:26} INFO - Running data generation script...
