@@ -394,3 +394,28 @@ DETAIL:  Key (name)=(can_edit) already exists.
 [2024-06-28T18:45:21.048+0000] {logging_mixin.py:188} INFO - [2024-06-28T18:45:21.048+0000] {dag.py:3096} INFO - Sync 1 DAGs
 [2024-06-28T18:45:21.057+0000] {logging_mixin.py:188} INFO - [2024-06-28T18:45:21.057+0000] {dag.py:3954} INFO - Setting next_dagrun for example_dag to 2023-01-01 02:50:00+00:00, run_after=2023-01-01 03:00:00+00:00
 [2024-06-28T18:45:21.064+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/example_dag.py took 0.045 seconds
+[2024-06-28T22:13:20.460+0000] {processor.py:161} INFO - Started process (PID=29) to work on /opt/airflow/dags/example_dag.py
+[2024-06-28T22:13:20.460+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/example_dag.py for tasks to queue
+[2024-06-28T22:13:20.461+0000] {logging_mixin.py:188} INFO - [2024-06-28T22:13:20.461+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/example_dag.py
+[2024-06-28T22:13:20.478+0000] {processor.py:840} INFO - DAG(s) 'example_dag' retrieved from /opt/airflow/dags/example_dag.py
+[2024-06-28T22:13:20.581+0000] {logging_mixin.py:188} INFO - [2024-06-28T22:13:20.581+0000] {override.py:1829} INFO - Created Permission View: can delete on DAG:example_dag
+[2024-06-28T22:13:20.583+0000] {logging_mixin.py:188} INFO - [2024-06-28T22:13:20.582+0000] {override.py:1829} INFO - Created Permission View: can edit on DAG:example_dag
+[2024-06-28T22:13:20.584+0000] {logging_mixin.py:188} INFO - [2024-06-28T22:13:20.584+0000] {override.py:1829} INFO - Created Permission View: can read on DAG:example_dag
+[2024-06-28T22:13:20.584+0000] {logging_mixin.py:188} INFO - [2024-06-28T22:13:20.584+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2024-06-28T22:13:20.589+0000] {logging_mixin.py:188} INFO - [2024-06-28T22:13:20.589+0000] {dag.py:3118} INFO - Creating ORM DAG for example_dag
+[2024-06-28T22:13:20.592+0000] {logging_mixin.py:188} INFO - [2024-06-28T22:13:20.592+0000] {dag.py:3954} INFO - Setting next_dagrun for example_dag to 2023-01-01 00:00:00+00:00, run_after=2023-01-01 00:10:00+00:00
+[2024-06-28T22:13:20.597+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/example_dag.py took 0.141 seconds
+[2024-06-28T22:13:50.689+0000] {processor.py:161} INFO - Started process (PID=283) to work on /opt/airflow/dags/example_dag.py
+[2024-06-28T22:13:50.689+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/example_dag.py for tasks to queue
+[2024-06-28T22:13:50.690+0000] {logging_mixin.py:188} INFO - [2024-06-28T22:13:50.690+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/example_dag.py
+[2024-06-28T22:13:50.696+0000] {processor.py:840} INFO - DAG(s) 'example_dag' retrieved from /opt/airflow/dags/example_dag.py
+[2024-06-28T22:13:50.709+0000] {logging_mixin.py:188} INFO - [2024-06-28T22:13:50.708+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2024-06-28T22:13:50.717+0000] {logging_mixin.py:188} INFO - [2024-06-28T22:13:50.716+0000] {dag.py:3954} INFO - Setting next_dagrun for example_dag to 2023-01-01 01:40:00+00:00, run_after=2023-01-01 01:50:00+00:00
+[2024-06-28T22:13:50.723+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/example_dag.py took 0.037 seconds
+[2024-06-28T22:14:20.885+0000] {processor.py:161} INFO - Started process (PID=548) to work on /opt/airflow/dags/example_dag.py
+[2024-06-28T22:14:20.885+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/example_dag.py for tasks to queue
+[2024-06-28T22:14:20.886+0000] {logging_mixin.py:188} INFO - [2024-06-28T22:14:20.886+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/example_dag.py
+[2024-06-28T22:14:20.893+0000] {processor.py:840} INFO - DAG(s) 'example_dag' retrieved from /opt/airflow/dags/example_dag.py
+[2024-06-28T22:14:20.898+0000] {logging_mixin.py:188} INFO - [2024-06-28T22:14:20.898+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2024-06-28T22:14:20.907+0000] {logging_mixin.py:188} INFO - [2024-06-28T22:14:20.907+0000] {dag.py:3954} INFO - Setting next_dagrun for example_dag to 2023-01-01 03:10:00+00:00, run_after=2023-01-01 03:20:00+00:00
+[2024-06-28T22:14:20.913+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/example_dag.py took 0.032 seconds

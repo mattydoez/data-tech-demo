@@ -1,22 +1,19 @@
-FROM apache/superset:2.0.1 
+FROM apache/superset:latest
 
-ARG SUPERSET_ADMIN
-ARG SUPERSET_PASSWORD
-ARG POSTGRES_USER
-ARG POSTGRES_PASSWORD
-# Switching to root to install the required packages
+# Install necessary dependencies
 USER root
-COPY --chown=superset:superset ./superset/assets .
-RUN pip install psycopg2-binary
+RUN apt-get update && apt-get install -y \
+    build-essential \
+    libssl-dev libffi-dev \
+    libxml2-dev libxslt1-dev \
+    && apt-get clean \
+    && rm -rf /var/lib/apt/lists/*
+
+# Switch back to the superset user
 USER superset
-RUN superset fab create-admin \
-              --username ${SUPERSET_ADMIN} \
-              --firstname Superset \
-              --lastname Admin \
-              --email admin@example.com \
-              --password ${SUPERSET_PASSWORD}
-RUN superset db upgrade
-RUN superset init
-RUN superset set_database_uri -d OLTP  -u postgresql+psycopg2://${POSTGRES_USER}:${POSTGRES_PASSWORD}@oltp:5432/sales_oltp
-RUN superset set_database_uri -d DW  -u postgresql+psycopg2://${POSTGRES_USER}:${POSTGRES_PASSWORD}@dw:5432/sales_dw
-RUN superset import-dashboards -p ./dashboard.json
+
+# Expose the port that superset runs on
+EXPOSE 8088
+
+# Command to run the superset server
+CMD ["gunicorn", "--bind", "0.0.0.0:8088", "--access-logfile", "-", "--error-logfile", "-", "--workers", "1", "--worker-class", "gthread", "--threads", "20", "--timeout", "60", "--limit-request-line", "0", "--limit-request-field_size", "0", "superset.app:create_app()"]

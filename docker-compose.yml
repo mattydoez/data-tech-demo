@@ -2,41 +2,46 @@ version: "3.9"
 
 services:
   company_db:
-    image: postgres:latest
+    image: postgres:13
     ports:
       - "5432:5432"
     environment:
       POSTGRES_DB: company_db
-      POSTGRES_USER: $POSTGRES_USER
-      POSTGRES_PASSWORD: $POSTGRES_PASSWORD
+      POSTGRES_USER: ${POSTGRES_USER}
+      POSTGRES_PASSWORD: ${POSTGRES_PASSWORD}
     healthcheck:
-      test: ["CMD-SHELL", "pg_isready", "-d", "company_db"]
+      test: ["CMD-SHELL", "pg_isready -U ${POSTGRES_USER} -d company_db"]
       interval: 30s
       timeout: 60s
       retries: 5
       start_period: 80s
     volumes:
       - ./postgres_database/init.sql:/docker-entrypoint-initdb.d/init.sql
+      - company_db_data:/var/lib/postgresql/data
 
   airflowdb:
-    image: postgres:latest
+    image: postgres:13
+    ports:
+      - "5433:5432"
     environment:
       POSTGRES_DB: airflow
-      POSTGRES_USER: $POSTGRES_USER
-      POSTGRES_PASSWORD: $POSTGRES_PASSWORD
+      POSTGRES_USER: ${POSTGRES_USER}
+      POSTGRES_PASSWORD: ${POSTGRES_PASSWORD}
+    volumes:
+      - ./pgdata:/var/lib/postgresql/data
     healthcheck:
-      test: ["CMD-SHELL", "pg_isready", "-d", "airflow"]
+      test: ["CMD-SHELL", "pg_isready -U ${POSTGRES_USER} -d airflow"]
       interval: 30s
       timeout: 60s
       retries: 5
       start_period: 80s
 
   dw:
-    image: postgres:latest
+    image: postgres:13
     environment:
       POSTGRES_DB: company_dw
-      POSTGRES_USER: $POSTGRES_USER
-      POSTGRES_PASSWORD: $POSTGRES_PASSWORD
+      POSTGRES_USER: ${POSTGRES_USER}
+      POSTGRES_PASSWORD: ${POSTGRES_PASSWORD}
     ports:
       - "54321:5432"
 
@@ -45,40 +50,40 @@ services:
       context: .
       dockerfile: ./external_data/Dockerfile
       args:
-        POSTGRES_USER: $POSTGRES_USER
-        POSTGRES_PASSWORD: $POSTGRES_PASSWORD
-        WEATHER_API_KEY: $WEATHER_API_KEY
+        POSTGRES_USER: ${POSTGRES_USER}
+        POSTGRES_PASSWORD: ${POSTGRES_PASSWORD}
+        WEATHER_API_KEY: ${WEATHER_API_KEY}
     depends_on:
       dw:
         condition: service_healthy
 
   airflow-init:
-    image: apache/airflow:latest
-    platform: linux/arm64
+    build:
+      context: ./airflow
+      dockerfile: Dockerfile
     environment:
       LOAD_EX: n
       EXECUTOR: Local
       AIRFLOW__CORE__FERNET_KEY: GmhP3ADRHscUZ2z_ohwMOmXlu5jFSI5IQRG0s-KrV_Y=
-      AIRFLOW__DATABASE__SQL_ALCHEMY_CONN: postgresql://${POSTGRES_USER}:${POSTGRES_PASSWORD}@airflowdb:5432/airflow
+      AIRFLOW__DATABASE__SQL_ALCHEMY_CONN: postgresql+psycopg2://${POSTGRES_USER}:${POSTGRES_PASSWORD}@airflowdb:5432/airflow
       AIRFLOW_CONN_COMPANY_DW: postgresql://${POSTGRES_USER}:${POSTGRES_PASSWORD}@dw:5432/company_dw
       AIRFLOW_CONN_COMPANY_DB: postgresql://${POSTGRES_USER}:${POSTGRES_PASSWORD}@company_db:5432/company_db
       AIRFLOW__CORE__DAGS_ARE_PAUSED_AT_CREATION: False
-      POSTGRES_USER: ${POSTGRES_USER}
-      POSTGRES_PASSWORD: ${POSTGRES_PASSWORD}
-    entrypoint: ["airflow", "db", "migrate"]
+    entrypoint: ["/entrypoint.sh", "db", "init"]
     depends_on:
       airflowdb:
         condition: service_healthy
 
   airflow-scheduler:
-    image: apache/airflow:latest
-    platform: linux/arm64
+    build:
+      context: ./airflow
+      dockerfile: Dockerfile
     restart: always
     environment:
       LOAD_EX: n
       EXECUTOR: Local
       AIRFLOW__CORE__FERNET_KEY: GmhP3ADRHscUZ2z_ohwMOmXlu5jFSI5IQRG0s-KrV_Y=
-      AIRFLOW__DATABASE__SQL_ALCHEMY_CONN: postgresql://${POSTGRES_USER}:${POSTGRES_PASSWORD}@airflowdb:5432/airflow
+      AIRFLOW__DATABASE__SQL_ALCHEMY_CONN: postgresql+psycopg2://${POSTGRES_USER}:${POSTGRES_PASSWORD}@airflowdb:5432/airflow
       AIRFLOW_CONN_COMPANY_DW: postgresql://${POSTGRES_USER}:${POSTGRES_PASSWORD}@dw:5432/company_dw
       AIRFLOW_CONN_COMPANY_DB: postgresql://${POSTGRES_USER}:${POSTGRES_PASSWORD}@company_db:5432/company_db
       AIRFLOW__CORE__DAGS_ARE_PAUSED_AT_CREATION: False
@@ -88,12 +93,13 @@ services:
       AIRFLOW__WEBSERVER__BASE_URL: "http://localhost:8080"
       AIRFLOW__LOGGING__LOG_URL: "http://localhost:8080/log/{{ dag_id }}/{{ task_id }}/{{ execution_date }}/{{ try_number }}.log"
       AIRFLOW_HOME: /opt/airflow
+      AIRFLOW__CORE__DAGS_FOLDER: /opt/airflow/dags
     volumes:
       - ./airflow/dags:/opt/airflow/dags
       - ./dbt/dbt_company:/usr/local/airflow/dbt
       - ./airflow/logs:/opt/airflow/logs
-      - ./generator:/opt/airflow/generator
-    command: scheduler
+      - ./airflow/generator:/opt/airflow/generator
+    command: ["scheduler"]
     healthcheck:
       test: ["CMD-SHELL", "airflow jobs check --job-type SchedulerJob --hostname $(hostname)"]
       interval: 30s
@@ -110,28 +116,28 @@ services:
     build:
       context: ./airflow
       dockerfile: Dockerfile
-    platform: linux/arm64
     restart: always
     environment:
       LOAD_EX: n
       EXECUTOR: Local
       AIRFLOW__CORE__FERNET_KEY: GmhP3ADRHscUZ2z_ohwMOmXlu5jFSI5IQRG0s-KrV_Y=
-      AIRFLOW__DATABASE__SQL_ALCHEMY_CONN: postgresql://${POSTGRES_USER}:${POSTGRES_PASSWORD}@airflowdb:5432/airflow
-      AIRFLOW_CONN_COMPANY_DW: postgresql://${POSTGRES_USER}:${POSTGRES_PASSWORD}@dw:5432/company_dw
+      AIRFLOW__DATABASE__SQL_ALCHEMY_CONN: postgresql+psycopg2://${POSTGRES_USER}:${POSTGRES_PASSWORD}@airflowdb:5432/airflow
+      AIRFLOW_CONN_COMPANY_DW: postgresql://${POSTGRES_USER}:${POSTGRES_PASSWORD}@dw:5433/company_dw
       AIRFLOW_CONN_COMPANY_DB: postgresql://${POSTGRES_USER}:${POSTGRES_PASSWORD}@company_db:5432/company_db
       AIRFLOW__CORE__DAGS_ARE_PAUSED_AT_CREATION: False
-      POSTGRES_USER: ${POSTGRES_USER}
-      POSTGRES_PASSWORD: ${POSTGRES_PASSWORD}
+      AIRFLOW__CORE__DAGS_FOLDER: /opt/airflow/dags
       AIRFLOW__CORE__LOGGING_LEVEL: "INFO"
       AIRFLOW__WEBSERVER__BASE_URL: "http://localhost:8080"
       AIRFLOW__LOGGING__LOG_URL: "http://localhost:8080/log/{{ dag_id }}/{{ task_id }}/{{ execution_date }}/{{ try_number }}.log"
       AIRFLOW_HOME: /opt/airflow
       AIRFLOW__SCHEDULER__DAG_DIR_LIST_INTERVAL: 30
+      POSTGRES_USER: ${POSTGRES_USER}
+      POSTGRES_PASSWORD: ${POSTGRES_PASSWORD}
     volumes:
       - ./airflow/dags:/opt/airflow/dags
       - ./dbt/dbt_company:/usr/local/airflow/dbt
       - ./airflow/logs:/opt/airflow/logs
-      - ./generator:/opt/airflow/generator
+      - ./airflow/generator:/opt/airflow/generator
     ports:
       - "8080:8080"
     command: >
@@ -144,18 +150,11 @@ services:
         condition: service_completed_successfully
       airflow-scheduler:
         condition: service_healthy
-    networks:
-      - default
 
   superset:
     build:
       context: .
       dockerfile: ./superset/Dockerfile
-      args:
-        POSTGRES_USER: $POSTGRES_USER
-        POSTGRES_PASSWORD: $POSTGRES_PASSWORD
-        SUPERSET_ADMIN: $SUPERSET_ADMIN
-        SUPERSET_PASSWORD: $SUPERSET_PASSWORD
     ports:
       - "8088:8088"
     command: gunicorn --bind "0.0.0.0:8088" --access-logfile '-' --error-logfile '-' --workers 1 --worker-class gthread --threads 20 --timeout 60 --limit-request-line 0 --limit-request-field_size 0 "superset.app:create_app()"
@@ -165,3 +164,6 @@ services:
 networks:
   default:
     driver: bridge
+
+volumes:
+  company_db_data:

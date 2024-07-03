@@ -9,37 +9,32 @@ import os
 default_args = {
     'owner': 'airflow',
     'depends_on_past': False,
-    'start_date': datetime(2023, 1, 1),
+    'start_date': datetime(2024, 7, 2),
     'email_on_failure': False,
     'email_on_retry': False,
     'retries': 1,
     'retry_delay': timedelta(minutes=1),
 }
 
-def generate_and_insert_data():
+def generate_data():
     try:
         # Run the data generation script
-        result = subprocess.run(["python3", "/opt/airflow/generator/ecomm_generator.py"], check=True, capture_output=True, text=True)
+        print("Running data generation script...")
+        result = subprocess.run(["python3", "/opt/airflow/generator/ecomm_generator.py"], check=True, capture_output=True, text=True, timeout=300)
         print(result.stdout)
         print(result.stderr)
-        
-        # Insert generated data into PostgreSQL database
-        insert_data_into_db("/opt/airflow/generator/fake_users.json", "users", insert_user_query)
-        insert_data_into_db("/opt/airflow/generator/fake_clickstream_events.json", "clickstream_events", insert_clickstream_event_query)
-        insert_data_into_db("/opt/airflow/generator/fake_transaction_data.json", "transactions", insert_transaction_query)
-        insert_data_into_db("/opt/airflow/generator/fake_google_search_data.json", "google_search", insert_google_search_query)
-        insert_data_into_db("/opt/airflow/generator/fake_email_marketing_data.json", "email_marketing", insert_email_marketing_query)
-        insert_data_into_db("/opt/airflow/generator/fake_facebook_data.json", "facebook", insert_facebook_query)
-        
     except subprocess.CalledProcessError as e:
-        print(f"Error in generate_and_insert_data: {e}")
+        print(f"Error in generate_data: {e}")
         print(f"stdout: {e.stdout}")
         print(f"stderr: {e.stderr}")
+    except subprocess.TimeoutExpired as e:
+        print(f"Data generation script timed out: {e}")
     except Exception as e:
-        print(f"General error in generate_and_insert_data: {e}")
+        print(f"General error in generate_data: {e}")
 
-def insert_data_into_db(file_path, table_name, insert_query):
+def insert_data(file_path, table_name, insert_query):
     try:
+        print(f"Inserting data into {table_name} from {file_path}...")
         with open(file_path, "r") as f:
             data = json.load(f)
 
@@ -58,11 +53,30 @@ def insert_data_into_db(file_path, table_name, insert_query):
         conn.commit()
         cursor.close()
         conn.close()
+        print(f"Successfully inserted data into {table_name}.")
     except Exception as e:
         print(f"Error inserting data into {table_name}: {e}")
 
+def insert_users():
+    insert_data("/opt/airflow/generator/fake_users.json", "users", insert_user_query)
+
+def insert_clickstream_events():
+    insert_data("/opt/airflow/generator/fake_clickstream_events.json", "clickstream_events", insert_clickstream_event_query)
+
+def insert_transactions():
+    insert_data("/opt/airflow/generator/fake_transaction_data.json", "transactions", insert_transaction_query)
+
+def insert_google_search():
+    insert_data("/opt/airflow/generator/fake_google_search_data.json", "google_search", insert_google_search_query)
+
+def insert_email_marketing():
+    insert_data("/opt/airflow/generator/fake_email_marketing_data.json", "email_marketing", insert_email_marketing_query)
+
+def insert_facebook():
+    insert_data("/opt/airflow/generator/fake_facebook_data.json", "facebook", insert_facebook_query)
+
 insert_user_query = """
-    INSERT INTO users (username, email, address, phone_number, created_at) VALUES (%s, %s, %s, %s, %s)
+    INSERT INTO users (username, email, address, phone_number) VALUES (%s, %s, %s, %s)
 """
 insert_clickstream_event_query = """
     INSERT INTO clickstream_events (user_id, event_type, event_timestamp) VALUES (%s, %s, %s)
@@ -83,12 +97,20 @@ insert_facebook_query = """
 dag = DAG(
     'ecomm_data_pipeline',
     default_args=default_args,
-    description='Generate and insert e-commerce data every 10 minutes',
-    schedule_interval=timedelta(minutes=10),
+    description='Generate and insert e-commerce data every 90 minutes',
+    schedule_interval=timedelta(minutes=90),
 )
 
-generate_and_insert_data_task = PythonOperator(
-    task_id='generate_and_insert_data',
-    python_callable=generate_and_insert_data,
+generate_data_task = PythonOperator(
+    task_id='generate_data',
+    python_callable=generate_data,
     dag=dag,
 )
+
+insert_users_task = PythonOperator(
+    task_id='insert_users',
+    python_callable=insert_users,
+    dag=dag,
+)
+
+generate_data_task >> insert_users_task

@@ -1,23 +1,27 @@
-# Use the official Airflow image
-FROM apache/airflow:latest
+FROM apache/airflow:2.6.1-python3.9
 
-# Switch to root user to install additional dependencies
 USER root
-
-# Install PostgreSQL client library, build-essential, and other necessary packages
 RUN apt-get update && apt-get install -y \
-    libpq-dev gcc build-essential python3-dev && \
-    apt-get clean && \
-    rm -rf /var/lib/apt/lists/*
+    libpq-dev gcc build-essential \
+    libssl-dev libffi-dev \
+    libxml2-dev libxslt1-dev \
+    zlib1g-dev libjpeg-dev libblas-dev liblapack-dev gfortran \
+    && apt-get clean \
+    && rm -rf /var/lib/apt/lists/*
 
-# Switch back to the airflow user
+# Copy the entrypoint script and set the correct permissions
+COPY entrypoint.sh /entrypoint.sh
+RUN chmod +x /entrypoint.sh
+
 USER airflow
 
-# Copy requirements.txt to the Docker image
+# Copy requirements.txt and install dependencies
 COPY requirements.txt /requirements.txt
-
-# Install Python dependencies
+RUN pip install --upgrade pip
 RUN pip install --no-cache-dir -r /requirements.txt
 
-# Set environment variable for Airflow home directory
+# Set environment variables
 ENV AIRFLOW_HOME=/opt/airflow
+
+# Use the entrypoint script
+ENTRYPOINT ["/entrypoint.sh"]

@@ -1,0 +1,39 @@
+[2024-07-02T22:55:03.097+0000] {taskinstance.py:1103} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: ecomm_data_pipeline.generate_data scheduled__2024-07-02T01:10:00+00:00 [queued]>
+[2024-07-02T22:55:03.100+0000] {taskinstance.py:1103} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: ecomm_data_pipeline.generate_data scheduled__2024-07-02T01:10:00+00:00 [queued]>
+[2024-07-02T22:55:03.101+0000] {taskinstance.py:1308} INFO - Starting attempt 1 of 2
+[2024-07-02T22:55:03.105+0000] {taskinstance.py:1327} INFO - Executing <Task(PythonOperator): generate_data> on 2024-07-02 01:10:00+00:00
+[2024-07-02T22:55:03.106+0000] {standard_task_runner.py:57} INFO - Started process 45 to run task
+[2024-07-02T22:55:03.107+0000] {standard_task_runner.py:84} INFO - Running: ['airflow', 'tasks', 'run', 'ecomm_data_pipeline', 'generate_data', 'scheduled__2024-07-02T01:10:00+00:00', '--job-id', '63', '--raw', '--subdir', 'DAGS_FOLDER/ecomm_dag.py', '--cfg-path', '/tmp/tmpwp25qfkx']
+[2024-07-02T22:55:03.108+0000] {standard_task_runner.py:85} INFO - Job 63: Subtask generate_data
+[2024-07-02T22:55:03.126+0000] {task_command.py:410} INFO - Running <TaskInstance: ecomm_data_pipeline.generate_data scheduled__2024-07-02T01:10:00+00:00 [running]> on host 5b8fb0180af8
+[2024-07-02T22:55:03.159+0000] {taskinstance.py:1545} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='airflow' AIRFLOW_CTX_DAG_ID='ecomm_data_pipeline' AIRFLOW_CTX_TASK_ID='generate_data' AIRFLOW_CTX_EXECUTION_DATE='2024-07-02T01:10:00+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2024-07-02T01:10:00+00:00'
+[2024-07-02T22:55:03.434+0000] {local_task_job_runner.py:225} INFO - Task exited with return code 1
+[2024-07-02T22:55:03.444+0000] {taskinstance.py:2651} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2024-07-03T00:10:28.330+0000] {taskinstance.py:1103} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: ecomm_data_pipeline.generate_data scheduled__2024-07-02T01:10:00+00:00 [queued]>
+[2024-07-03T00:10:28.333+0000] {taskinstance.py:1103} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: ecomm_data_pipeline.generate_data scheduled__2024-07-02T01:10:00+00:00 [queued]>
+[2024-07-03T00:10:28.333+0000] {taskinstance.py:1308} INFO - Starting attempt 1 of 2
+[2024-07-03T00:10:28.337+0000] {taskinstance.py:1327} INFO - Executing <Task(PythonOperator): generate_data> on 2024-07-02 01:10:00+00:00
+[2024-07-03T00:10:28.338+0000] {standard_task_runner.py:57} INFO - Started process 106 to run task
+[2024-07-03T00:10:28.340+0000] {standard_task_runner.py:84} INFO - Running: ['airflow', 'tasks', 'run', 'ecomm_data_pipeline', 'generate_data', 'scheduled__2024-07-02T01:10:00+00:00', '--job-id', '120', '--raw', '--subdir', 'DAGS_FOLDER/ecomm_dag.py', '--cfg-path', '/tmp/tmpa8b1zd1c']
+[2024-07-03T00:10:28.340+0000] {standard_task_runner.py:85} INFO - Job 120: Subtask generate_data
+[2024-07-03T00:10:28.359+0000] {task_command.py:410} INFO - Running <TaskInstance: ecomm_data_pipeline.generate_data scheduled__2024-07-02T01:10:00+00:00 [running]> on host a91436ab9950
+[2024-07-03T00:10:28.391+0000] {taskinstance.py:1545} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='airflow' AIRFLOW_CTX_DAG_ID='ecomm_data_pipeline' AIRFLOW_CTX_TASK_ID='generate_data' AIRFLOW_CTX_EXECUTION_DATE='2024-07-02T01:10:00+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2024-07-02T01:10:00+00:00'
+[2024-07-03T00:10:28.392+0000] {logging_mixin.py:149} INFO - Running data generation script...
+[2024-07-03T00:10:28.764+0000] {logging_mixin.py:149} INFO - 2024-07-03 00:10:28,566 - INFO - Generating fake user data...
+2024-07-03 00:10:28,582 - INFO - Generated 60 users.
+2024-07-03 00:10:28,582 - INFO - Generating fake clickstream events...
+2024-07-03 00:10:28,582 - INFO - Generated 9 clickstream events.
+2024-07-03 00:10:28,582 - INFO - Generating fake transaction data...
+2024-07-03 00:10:28,583 - INFO - Generated 52 transaction data records.
+2024-07-03 00:10:28,583 - INFO - Generating fake Google Search marketing data...
+2024-07-03 00:10:28,597 - INFO - Generated 1000 Google Search marketing data records.
+2024-07-03 00:10:28,597 - INFO - Generating fake Email Marketing data...
+2024-07-03 00:10:28,710 - INFO - Generated 1000 Email Marketing data records.
+2024-07-03 00:10:28,711 - INFO - Generating fake Facebook data...
+2024-07-03 00:10:28,726 - INFO - Generated 1000 Facebook data records.
+2024-07-03 00:10:28,726 - INFO - Writing generated data to JSON files...
+2024-07-03 00:10:28,757 - INFO - Data generation complete. Sleeping for 10 minutes...
+[2024-07-03T00:10:28.764+0000] {python.py:183} INFO - Done. Returned value was: None
+[2024-07-03T00:10:28.777+0000] {taskinstance.py:1345} INFO - Marking task as SUCCESS. dag_id=ecomm_data_pipeline, task_id=generate_data, execution_date=20240702T011000, start_date=20240703T001028, end_date=20240703T001028
+[2024-07-03T00:10:28.795+0000] {local_task_job_runner.py:225} INFO - Task exited with return code 0
+[2024-07-03T00:10:28.805+0000] {taskinstance.py:2651} INFO - 6 downstream tasks scheduled from follow-on schedule check
