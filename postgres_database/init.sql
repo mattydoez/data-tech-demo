@@ -17,12 +17,13 @@ CREATE TABLE email_marketing (
     date DATE NOT NULL,
     user_email VARCHAR(100),
     campaign VARCHAR(100),
-    received BOOLEAN,
-    opened BOOLEAN,
-    subscribed BOOLEAN,
+    ad VARCHAR(100),
+    received INT,
+    opened INT,
+    subscribed INT,
     clicks INT,
     bounces INT,
-    unsubscribed BOOLEAN,
+    unsubscribed INT,
     created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
 );
 
@@ -58,7 +59,6 @@ CREATE TABLE users (
 CREATE TABLE transactions (
     transaction_id SERIAL PRIMARY KEY,
     timestamp TIMESTAMP NOT NULL,
-    amount DECIMAL(10, 2),
     product_id INT,
     user_id INT REFERENCES users(user_id),
     payment_method VARCHAR(50),
@@ -83,6 +83,6 @@ CREATE TABLE products (
     name VARCHAR(255),
     category INT,
     description VARCHAR(255),
-    created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
-    price DECIMAL
+    price DECIMAL,
+    created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
 );

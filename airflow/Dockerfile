@@ -18,6 +18,7 @@ USER airflow
 # Copy requirements.txt and install dependencies
 COPY requirements.txt /requirements.txt
 RUN pip install --upgrade pip
+RUN pip install dbt-core dbt-postgres
 RUN pip install --no-cache-dir -r /requirements.txt
 
 # Set environment variables

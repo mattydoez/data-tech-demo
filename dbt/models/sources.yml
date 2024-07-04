@@ -1,0 +1,7 @@
+version: 2
+
+sources:
+  - name: company_db
+    schema: public
+    tables:
+      - name: users

@@ -36,26 +36,22 @@ services:
       retries: 5
       start_period: 80s
 
-  dw:
+  company_dw:
     image: postgres:13
+    ports:
+      - "5435:5432"
     environment:
       POSTGRES_DB: company_dw
       POSTGRES_USER: ${POSTGRES_USER}
       POSTGRES_PASSWORD: ${POSTGRES_PASSWORD}
-    ports:
-      - "54321:5432"
-
-  external_data:
-    build:
-      context: .
-      dockerfile: ./external_data/Dockerfile
-      args:
-        POSTGRES_USER: ${POSTGRES_USER}
-        POSTGRES_PASSWORD: ${POSTGRES_PASSWORD}
-        WEATHER_API_KEY: ${WEATHER_API_KEY}
-    depends_on:
-      dw:
-        condition: service_healthy
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U ${POSTGRES_USER} -d company_dw"]
+      interval: 30s
+      timeout: 60s
+      retries: 5
+      start_period: 80s
+    volumes:
+      - company_dw_data:/var/lib/postgresql/data
 
   airflow-init:
     build:
@@ -96,7 +92,7 @@ services:
       AIRFLOW__CORE__DAGS_FOLDER: /opt/airflow/dags
     volumes:
       - ./airflow/dags:/opt/airflow/dags
-      - ./dbt/dbt_company:/usr/local/airflow/dbt
+      - ./dbt:/opt/airflow/dbt
       - ./airflow/logs:/opt/airflow/logs
       - ./airflow/generator:/opt/airflow/generator
     command: ["scheduler"]
@@ -135,7 +131,7 @@ services:
       POSTGRES_PASSWORD: ${POSTGRES_PASSWORD}
     volumes:
       - ./airflow/dags:/opt/airflow/dags
-      - ./dbt/dbt_company:/usr/local/airflow/dbt
+      - ./dbt:/opt/airflow/dbt
       - ./airflow/logs:/opt/airflow/logs
       - ./airflow/generator:/opt/airflow/generator
     ports:
@@ -196,3 +192,4 @@ volumes:
   company_db_data:
   superset_db_data:
   superset_home:
+  company_dw_data:

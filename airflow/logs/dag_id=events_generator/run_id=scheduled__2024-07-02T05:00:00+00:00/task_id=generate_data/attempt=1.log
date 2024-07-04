@@ -1,0 +1,71 @@
+[2024-07-03T23:04:40.609+0000] {taskinstance.py:1103} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: events_generator.generate_data scheduled__2024-07-02T05:00:00+00:00 [queued]>
+[2024-07-03T23:04:40.613+0000] {taskinstance.py:1103} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: events_generator.generate_data scheduled__2024-07-02T05:00:00+00:00 [queued]>
+[2024-07-03T23:04:40.613+0000] {taskinstance.py:1308} INFO - Starting attempt 1 of 2
+[2024-07-03T23:04:40.618+0000] {taskinstance.py:1327} INFO - Executing <Task(PythonOperator): generate_data> on 2024-07-02 05:00:00+00:00
+[2024-07-03T23:04:40.620+0000] {standard_task_runner.py:57} INFO - Started process 170 to run task
+[2024-07-03T23:04:40.622+0000] {standard_task_runner.py:84} INFO - Running: ['airflow', 'tasks', 'run', 'events_generator', 'generate_data', 'scheduled__2024-07-02T05:00:00+00:00', '--job-id', '405', '--raw', '--subdir', 'DAGS_FOLDER/event_generator_dag.py', '--cfg-path', '/tmp/tmpxip27l9k']
+[2024-07-03T23:04:40.623+0000] {standard_task_runner.py:85} INFO - Job 405: Subtask generate_data
+[2024-07-03T23:04:40.647+0000] {task_command.py:410} INFO - Running <TaskInstance: events_generator.generate_data scheduled__2024-07-02T05:00:00+00:00 [running]> on host a4053733dbc4
+[2024-07-03T23:04:40.687+0000] {taskinstance.py:1545} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='airflow' AIRFLOW_CTX_DAG_ID='events_generator' AIRFLOW_CTX_TASK_ID='generate_data' AIRFLOW_CTX_EXECUTION_DATE='2024-07-02T05:00:00+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2024-07-02T05:00:00+00:00'
+[2024-07-03T23:04:40.688+0000] {logging_mixin.py:149} INFO - Running data generation script...
+[2024-07-03T23:04:40.887+0000] {logging_mixin.py:149} INFO - Error in generate_data: Command '['python3', '/opt/airflow/generator/events_generator.py']' returned non-zero exit status 1.
+[2024-07-03T23:04:40.888+0000] {logging_mixin.py:149} INFO - stdout: Error fetching user_ids: column "user_id" does not exist
+LINE 1: SELECT user_id FROM products
+               ^
+[2024-07-03T23:04:40.888+0000] {logging_mixin.py:149} INFO - stderr: Traceback (most recent call last):
+  File "/opt/airflow/generator/events_generator.py", line 125, in <module>
+    main()
+  File "/opt/airflow/generator/events_generator.py", line 113, in main
+    clickstream_events = [generate_clickstream_event(user_session) for _ in range(random.randint(1, 250))]
+  File "/opt/airflow/generator/events_generator.py", line 113, in <listcomp>
+    clickstream_events = [generate_clickstream_event(user_session) for _ in range(random.randint(1, 250))]
+  File "/opt/airflow/generator/events_generator.py", line 68, in generate_clickstream_event
+    product_id = random.choice(product_ids) if action in ["add_to_cart", "purchase"] else None
+  File "/usr/local/lib/python3.9/random.py", line 346, in choice
+    return seq[self._randbelow(len(seq))]
+IndexError: list index out of range
+[2024-07-03T23:04:40.888+0000] {python.py:183} INFO - Done. Returned value was: None
+[2024-07-03T23:04:40.894+0000] {taskinstance.py:1345} INFO - Marking task as SUCCESS. dag_id=events_generator, task_id=generate_data, execution_date=20240702T050000, start_date=20240703T230440, end_date=20240703T230440
+[2024-07-03T23:04:40.908+0000] {local_task_job_runner.py:225} INFO - Task exited with return code 0
+[2024-07-03T23:04:40.918+0000] {taskinstance.py:2651} INFO - 2 downstream tasks scheduled from follow-on schedule check
+[2024-07-03T23:13:44.038+0000] {taskinstance.py:1103} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: events_generator.generate_data scheduled__2024-07-02T05:00:00+00:00 [queued]>
+[2024-07-03T23:13:44.041+0000] {taskinstance.py:1103} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: events_generator.generate_data scheduled__2024-07-02T05:00:00+00:00 [queued]>
+[2024-07-03T23:13:44.041+0000] {taskinstance.py:1308} INFO - Starting attempt 1 of 2
+[2024-07-03T23:13:44.045+0000] {taskinstance.py:1327} INFO - Executing <Task(PythonOperator): generate_data> on 2024-07-02 05:00:00+00:00
+[2024-07-03T23:13:44.046+0000] {standard_task_runner.py:57} INFO - Started process 394 to run task
+[2024-07-03T23:13:44.048+0000] {standard_task_runner.py:84} INFO - Running: ['airflow', 'tasks', 'run', 'events_generator', 'generate_data', 'scheduled__2024-07-02T05:00:00+00:00', '--job-id', '408', '--raw', '--subdir', 'DAGS_FOLDER/event_generator_dag.py', '--cfg-path', '/tmp/tmp1zz835lh']
+[2024-07-03T23:13:44.048+0000] {standard_task_runner.py:85} INFO - Job 408: Subtask generate_data
+[2024-07-03T23:13:44.068+0000] {task_command.py:410} INFO - Running <TaskInstance: events_generator.generate_data scheduled__2024-07-02T05:00:00+00:00 [running]> on host a4053733dbc4
+[2024-07-03T23:13:44.104+0000] {taskinstance.py:1545} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='airflow' AIRFLOW_CTX_DAG_ID='events_generator' AIRFLOW_CTX_TASK_ID='generate_data' AIRFLOW_CTX_EXECUTION_DATE='2024-07-02T05:00:00+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2024-07-02T05:00:00+00:00'
+[2024-07-03T23:13:44.105+0000] {logging_mixin.py:149} INFO - Running data generation script...
+[2024-07-03T23:13:44.304+0000] {logging_mixin.py:149} INFO - Error in generate_data: Command '['python3', '/opt/airflow/generator/events_generator.py']' returned non-zero exit status 1.
+[2024-07-03T23:13:44.304+0000] {logging_mixin.py:149} INFO - stdout: 
+[2024-07-03T23:13:44.304+0000] {logging_mixin.py:149} INFO - stderr: Traceback (most recent call last):
+  File "/opt/airflow/generator/events_generator.py", line 127, in <module>
+    main()
+  File "/opt/airflow/generator/events_generator.py", line 115, in main
+    clickstream_events = [generate_clickstream_event(user_session) for _ in range(random.randint(1, 250))]
+  File "/opt/airflow/generator/events_generator.py", line 115, in <listcomp>
+    clickstream_events = [generate_clickstream_event(user_session) for _ in range(random.randint(1, 250))]
+  File "/opt/airflow/generator/events_generator.py", line 70, in generate_clickstream_event
+    product_id = random.choice(product_ids) if action in ["add_to_cart", "purchase"] else None
+  File "/usr/local/lib/python3.9/random.py", line 346, in choice
+    return seq[self._randbelow(len(seq))]
+IndexError: list index out of range
+[2024-07-03T23:13:44.304+0000] {taskinstance.py:1824} ERROR - Task failed with exception
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.9/site-packages/airflow/operators/python.py", line 181, in execute
+    return_value = self.execute_callable()
+  File "/home/airflow/.local/lib/python3.9/site-packages/airflow/operators/python.py", line 198, in execute_callable
+    return self.python_callable(*self.op_args, **self.op_kwargs)
+  File "/opt/airflow/dags/event_generator_dag.py", line 30, in generate_data
+    raise e  # Raise exception to fail the task
+  File "/opt/airflow/dags/event_generator_dag.py", line 23, in generate_data
+    result = subprocess.run(["python3", "/opt/airflow/generator/events_generator.py"], check=True, capture_output=True, text=True, timeout=300)
+  File "/usr/local/lib/python3.9/subprocess.py", line 528, in run
+    raise CalledProcessError(retcode, process.args,
+subprocess.CalledProcessError: Command '['python3', '/opt/airflow/generator/events_generator.py']' returned non-zero exit status 1.
+[2024-07-03T23:13:44.310+0000] {taskinstance.py:1345} INFO - Marking task as UP_FOR_RETRY. dag_id=events_generator, task_id=generate_data, execution_date=20240702T050000, start_date=20240703T231344, end_date=20240703T231344
+[2024-07-03T23:13:44.316+0000] {standard_task_runner.py:104} ERROR - Failed to execute job 408 for task generate_data (Command '['python3', '/opt/airflow/generator/events_generator.py']' returned non-zero exit status 1.; 394)
+[2024-07-03T23:13:44.329+0000] {local_task_job_runner.py:225} INFO - Task exited with return code 1
+[2024-07-03T23:13:44.343+0000] {taskinstance.py:2651} INFO - 0 downstream tasks scheduled from follow-on schedule check

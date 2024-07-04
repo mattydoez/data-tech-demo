@@ -1,0 +1,19 @@
+[2024-07-04T01:16:28.717+0000] {taskinstance.py:1103} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: marketing_generator.generate_data scheduled__2024-07-03T17:00:00+00:00 [queued]>
+[2024-07-04T01:16:28.720+0000] {taskinstance.py:1103} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: marketing_generator.generate_data scheduled__2024-07-03T17:00:00+00:00 [queued]>
+[2024-07-04T01:16:28.720+0000] {taskinstance.py:1308} INFO - Starting attempt 1 of 2
+[2024-07-04T01:16:28.725+0000] {taskinstance.py:1327} INFO - Executing <Task(PythonOperator): generate_data> on 2024-07-03 17:00:00+00:00
+[2024-07-04T01:16:28.726+0000] {standard_task_runner.py:57} INFO - Started process 2531 to run task
+[2024-07-04T01:16:28.727+0000] {standard_task_runner.py:84} INFO - Running: ['airflow', 'tasks', 'run', 'marketing_generator', 'generate_data', 'scheduled__2024-07-03T17:00:00+00:00', '--job-id', '687', '--raw', '--subdir', 'DAGS_FOLDER/marketing_generator_dag.py', '--cfg-path', '/tmp/tmpf7xxtwgz']
+[2024-07-04T01:16:28.728+0000] {standard_task_runner.py:85} INFO - Job 687: Subtask generate_data
+[2024-07-04T01:16:28.749+0000] {task_command.py:410} INFO - Running <TaskInstance: marketing_generator.generate_data scheduled__2024-07-03T17:00:00+00:00 [running]> on host a4053733dbc4
+[2024-07-04T01:16:28.783+0000] {taskinstance.py:1545} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='airflow' AIRFLOW_CTX_DAG_ID='marketing_generator' AIRFLOW_CTX_TASK_ID='generate_data' AIRFLOW_CTX_EXECUTION_DATE='2024-07-03T17:00:00+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2024-07-03T17:00:00+00:00'
+[2024-07-04T01:16:28.784+0000] {logging_mixin.py:149} INFO - Running data generation script...
+[2024-07-04T01:16:29.366+0000] {logging_mixin.py:149} INFO - 2024-07-04 01:16:29,075 - INFO - Generated 9650 Google Search marketing data records.
+2024-07-04 01:16:29,075 - INFO - Generated 9650 Email Marketing data records.
+2024-07-04 01:16:29,075 - INFO - Generated 9650 Facebook data records.
+2024-07-04 01:16:29,075 - INFO - Writing generated data to JSON files...
+2024-07-04 01:16:29,356 - INFO - Data generation complete.
+[2024-07-04T01:16:29.366+0000] {python.py:183} INFO - Done. Returned value was: None
+[2024-07-04T01:16:29.373+0000] {taskinstance.py:1345} INFO - Marking task as SUCCESS. dag_id=marketing_generator, task_id=generate_data, execution_date=20240703T170000, start_date=20240704T011628, end_date=20240704T011629
+[2024-07-04T01:16:29.422+0000] {local_task_job_runner.py:225} INFO - Task exited with return code 0
+[2024-07-04T01:16:29.434+0000] {taskinstance.py:2651} INFO - 3 downstream tasks scheduled from follow-on schedule check

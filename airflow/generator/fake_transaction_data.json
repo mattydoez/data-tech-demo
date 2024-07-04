@@ -1,0 +1,100 @@
+[
+    {
+        "timestamp": "2024-07-04T04:35:13",
+        "product_id": 156,
+        "user_id": 7139,
+        "payment_method": "Mastercard",
+        "transaction_type": 0
+    },
+    {
+        "timestamp": "2024-07-04T04:10:07",
+        "product_id": 56,
+        "user_id": 2558,
+        "payment_method": "Klarna",
+        "transaction_type": 1
+    },
+    {
+        "timestamp": "2024-07-04T04:05:40",
+        "product_id": 32,
+        "user_id": 2806,
+        "payment_method": "Apple Pay",
+        "transaction_type": 1
+    },
+    {
+        "timestamp": "2024-07-04T04:26:28",
+        "product_id": 49,
+        "user_id": 4835,
+        "payment_method": "Apple Pay",
+        "transaction_type": 0
+    },
+    {
+        "timestamp": "2024-07-04T03:38:09",
+        "product_id": 101,
+        "user_id": 5497,
+        "payment_method": "Visa",
+        "transaction_type": 0
+    },
+    {
+        "timestamp": "2024-07-04T04:17:40",
+        "product_id": 124,
+        "user_id": 475,
+        "payment_method": "Klarna",
+        "transaction_type": 1
+    },
+    {
+        "timestamp": "2024-07-04T04:19:04",
+        "product_id": 45,
+        "user_id": 1759,
+        "payment_method": "Affirm",
+        "transaction_type": 1
+    },
+    {
+        "timestamp": "2024-07-04T03:54:06",
+        "product_id": 174,
+        "user_id": 5327,
+        "payment_method": "Visa",
+        "transaction_type": 0
+    },
+    {
+        "timestamp": "2024-07-04T04:28:48",
+        "product_id": 42,
+        "user_id": 3682,
+        "payment_method": "Mastercard",
+        "transaction_type": 1
+    },
+    {
+        "timestamp": "2024-07-04T04:26:59",
+        "product_id": 47,
+        "user_id": 5619,
+        "payment_method": "Apple Pay",
+        "transaction_type": 0
+    },
+    {
+        "timestamp": "2024-07-04T03:56:51",
+        "product_id": 130,
+        "user_id": 4120,
+        "payment_method": "Affirm",
+        "transaction_type": 0
+    },
+    {
+        "timestamp": "2024-07-04T04:05:04",
+        "product_id": 179,
+        "user_id": 5405,
+        "payment_method": "Zelle",
+        "transaction_type": 1
+    },
+    {
+        "timestamp": "2024-07-04T04:20:26",
+        "product_id": 8,
+        "user_id": 4849,
+        "payment_method": "Apple Pay",
+        "transaction_type": 0
+    },
+    {
+        "timestamp": "2024-07-04T03:59:18",
+        "product_id": 88,
+        "user_id": 3162,
+        "payment_method": "Affirm",
+        "transaction_type": 1
+    }
+]

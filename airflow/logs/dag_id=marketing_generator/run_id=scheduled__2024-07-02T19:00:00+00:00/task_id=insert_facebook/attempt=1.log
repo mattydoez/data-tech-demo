@@ -1,0 +1,15 @@
+[2024-07-04T00:23:36.823+0000] {taskinstance.py:1103} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: marketing_generator.insert_facebook scheduled__2024-07-02T19:00:00+00:00 [queued]>
+[2024-07-04T00:23:36.826+0000] {taskinstance.py:1103} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: marketing_generator.insert_facebook scheduled__2024-07-02T19:00:00+00:00 [queued]>
+[2024-07-04T00:23:36.827+0000] {taskinstance.py:1308} INFO - Starting attempt 1 of 2
+[2024-07-04T00:23:36.831+0000] {taskinstance.py:1327} INFO - Executing <Task(PythonOperator): insert_facebook> on 2024-07-02 19:00:00+00:00
+[2024-07-04T00:23:36.832+0000] {standard_task_runner.py:57} INFO - Started process 1734 to run task
+[2024-07-04T00:23:36.834+0000] {standard_task_runner.py:84} INFO - Running: ['airflow', 'tasks', 'run', 'marketing_generator', 'insert_facebook', 'scheduled__2024-07-02T19:00:00+00:00', '--job-id', '597', '--raw', '--subdir', 'DAGS_FOLDER/marketing_generator_dag.py', '--cfg-path', '/tmp/tmpcexm4v5h']
+[2024-07-04T00:23:36.834+0000] {standard_task_runner.py:85} INFO - Job 597: Subtask insert_facebook
+[2024-07-04T00:23:36.854+0000] {task_command.py:410} INFO - Running <TaskInstance: marketing_generator.insert_facebook scheduled__2024-07-02T19:00:00+00:00 [running]> on host a4053733dbc4
+[2024-07-04T00:23:36.887+0000] {taskinstance.py:1545} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='airflow' AIRFLOW_CTX_DAG_ID='marketing_generator' AIRFLOW_CTX_TASK_ID='insert_facebook' AIRFLOW_CTX_EXECUTION_DATE='2024-07-02T19:00:00+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2024-07-02T19:00:00+00:00'
+[2024-07-04T00:23:36.888+0000] {logging_mixin.py:149} INFO - Inserting data into facebook from /opt/airflow/generator/fake_facebook_data.json...
+[2024-07-04T00:23:37.518+0000] {logging_mixin.py:149} INFO - Successfully inserted data into facebook.
+[2024-07-04T00:23:37.519+0000] {python.py:183} INFO - Done. Returned value was: None
+[2024-07-04T00:23:37.525+0000] {taskinstance.py:1345} INFO - Marking task as SUCCESS. dag_id=marketing_generator, task_id=insert_facebook, execution_date=20240702T190000, start_date=20240704T002336, end_date=20240704T002337
+[2024-07-04T00:23:37.535+0000] {local_task_job_runner.py:225} INFO - Task exited with return code 0
+[2024-07-04T00:23:37.543+0000] {taskinstance.py:2651} INFO - 0 downstream tasks scheduled from follow-on schedule check

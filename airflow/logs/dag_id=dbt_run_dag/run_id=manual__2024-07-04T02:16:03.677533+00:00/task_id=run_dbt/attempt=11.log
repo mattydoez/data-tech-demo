@@ -1,0 +1,43 @@
+[2024-07-04T02:46:32.716+0000] {taskinstance.py:1103} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: dbt_run_dag.run_dbt manual__2024-07-04T02:16:03.677533+00:00 [queued]>
+[2024-07-04T02:46:32.719+0000] {taskinstance.py:1103} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: dbt_run_dag.run_dbt manual__2024-07-04T02:16:03.677533+00:00 [queued]>
+[2024-07-04T02:46:32.719+0000] {taskinstance.py:1308} INFO - Starting attempt 11 of 12
+[2024-07-04T02:46:32.724+0000] {taskinstance.py:1327} INFO - Executing <Task(BashOperator): run_dbt> on 2024-07-04 02:16:03.677533+00:00
+[2024-07-04T02:46:32.725+0000] {standard_task_runner.py:57} INFO - Started process 344 to run task
+[2024-07-04T02:46:32.726+0000] {standard_task_runner.py:84} INFO - Running: ['airflow', 'tasks', 'run', 'dbt_run_dag', 'run_dbt', 'manual__2024-07-04T02:16:03.677533+00:00', '--job-id', '747', '--raw', '--subdir', 'DAGS_FOLDER/dbt_run_dag.py', '--cfg-path', '/tmp/tmpfs3mo8cq']
+[2024-07-04T02:46:32.727+0000] {standard_task_runner.py:85} INFO - Job 747: Subtask run_dbt
+[2024-07-04T02:46:32.747+0000] {task_command.py:410} INFO - Running <TaskInstance: dbt_run_dag.run_dbt manual__2024-07-04T02:16:03.677533+00:00 [running]> on host 6585ae4859da
+[2024-07-04T02:46:32.789+0000] {taskinstance.py:1545} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='airflow' AIRFLOW_CTX_DAG_ID='dbt_run_dag' AIRFLOW_CTX_TASK_ID='run_dbt' AIRFLOW_CTX_EXECUTION_DATE='2024-07-04T02:16:03.677533+00:00' AIRFLOW_CTX_TRY_NUMBER='11' AIRFLOW_CTX_DAG_RUN_ID='manual__2024-07-04T02:16:03.677533+00:00'
+[2024-07-04T02:46:32.790+0000] {subprocess.py:63} INFO - Tmp dir root location: 
+ /tmp
+[2024-07-04T02:46:32.790+0000] {subprocess.py:75} INFO - Running command: ['/bin/bash', '-c', 'cd /opt/airflow/dbt && dbt run --profiles-dir /opt/airflow/dbt']
+[2024-07-04T02:46:32.794+0000] {subprocess.py:86} INFO - Output:
+[2024-07-04T02:46:33.833+0000] {subprocess.py:93} INFO - [0m02:46:33  Running with dbt=1.8.3
+[2024-07-04T02:46:33.934+0000] {subprocess.py:93} INFO - [0m02:46:33  Registered adapter: ***=1.8.2
+[2024-07-04T02:46:34.151+0000] {subprocess.py:93} INFO - [0m02:46:34  Found 1 model, 1 source, 415 macros
+[2024-07-04T02:46:34.153+0000] {subprocess.py:93} INFO - [0m02:46:34
+[2024-07-04T02:46:34.195+0000] {subprocess.py:93} INFO - [0m02:46:34  Concurrency: 4 threads (target='dev')
+[2024-07-04T02:46:34.195+0000] {subprocess.py:93} INFO - [0m02:46:34
+[2024-07-04T02:46:34.200+0000] {subprocess.py:93} INFO - [0m02:46:34  1 of 1 START sql view model public.users ....................................... [RUN]
+[2024-07-04T02:46:34.232+0000] {subprocess.py:93} INFO - [0m02:46:34  1 of 1 ERROR creating sql view model public.users .............................. [[31mERROR[0m in 0.03s]
+[2024-07-04T02:46:34.237+0000] {subprocess.py:93} INFO - [0m02:46:34
+[2024-07-04T02:46:34.237+0000] {subprocess.py:93} INFO - [0m02:46:34  Finished running 1 view model in 0 hours 0 minutes and 0.08 seconds (0.08s).
+[2024-07-04T02:46:34.259+0000] {subprocess.py:93} INFO - [0m02:46:34
+[2024-07-04T02:46:34.260+0000] {subprocess.py:93} INFO - [0m02:46:34  [31mCompleted with 1 error and 0 warnings:[0m
+[2024-07-04T02:46:34.260+0000] {subprocess.py:93} INFO - [0m02:46:34
+[2024-07-04T02:46:34.260+0000] {subprocess.py:93} INFO - [0m02:46:34    Database Error in model users (models/users.sql)
+[2024-07-04T02:46:34.260+0000] {subprocess.py:93} INFO -   relation "public.users" does not exist
+[2024-07-04T02:46:34.260+0000] {subprocess.py:93} INFO -   LINE 12:     "company_dw"."public"."users"
+[2024-07-04T02:46:34.260+0000] {subprocess.py:93} INFO -                ^
+[2024-07-04T02:46:34.261+0000] {subprocess.py:93} INFO -   compiled Code at target/run/ecomm_data_demo/models/users.sql
+[2024-07-04T02:46:34.261+0000] {subprocess.py:93} INFO - [0m02:46:34
+[2024-07-04T02:46:34.261+0000] {subprocess.py:93} INFO - [0m02:46:34  Done. PASS=0 WARN=0 ERROR=1 SKIP=0 TOTAL=1
+[2024-07-04T02:46:34.742+0000] {subprocess.py:97} INFO - Command exited with return code 1
+[2024-07-04T02:46:34.749+0000] {taskinstance.py:1824} ERROR - Task failed with exception
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.9/site-packages/airflow/operators/bash.py", line 210, in execute
+    raise AirflowException(
+airflow.exceptions.AirflowException: Bash command failed. The command returned a non-zero exit code 1.
+[2024-07-04T02:46:34.751+0000] {taskinstance.py:1345} INFO - Marking task as UP_FOR_RETRY. dag_id=dbt_run_dag, task_id=run_dbt, execution_date=20240704T021603, start_date=20240704T024632, end_date=20240704T024634
+[2024-07-04T02:46:34.758+0000] {standard_task_runner.py:104} ERROR - Failed to execute job 747 for task run_dbt (Bash command failed. The command returned a non-zero exit code 1.; 344)
+[2024-07-04T02:46:34.763+0000] {local_task_job_runner.py:225} INFO - Task exited with return code 1
+[2024-07-04T02:46:34.771+0000] {taskinstance.py:2651} INFO - 0 downstream tasks scheduled from follow-on schedule check

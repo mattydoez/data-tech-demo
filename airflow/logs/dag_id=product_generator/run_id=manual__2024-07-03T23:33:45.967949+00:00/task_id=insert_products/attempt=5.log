@@ -1,0 +1,15 @@
+[2024-07-03T23:38:07.937+0000] {taskinstance.py:1103} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: product_generator.insert_products manual__2024-07-03T23:33:45.967949+00:00 [queued]>
+[2024-07-03T23:38:07.940+0000] {taskinstance.py:1103} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: product_generator.insert_products manual__2024-07-03T23:33:45.967949+00:00 [queued]>
+[2024-07-03T23:38:07.940+0000] {taskinstance.py:1308} INFO - Starting attempt 5 of 6
+[2024-07-03T23:38:07.944+0000] {taskinstance.py:1327} INFO - Executing <Task(PythonOperator): insert_products> on 2024-07-03 23:33:45.967949+00:00
+[2024-07-03T23:38:07.946+0000] {standard_task_runner.py:57} INFO - Started process 164 to run task
+[2024-07-03T23:38:07.947+0000] {standard_task_runner.py:84} INFO - Running: ['airflow', 'tasks', 'run', 'product_generator', 'insert_products', 'manual__2024-07-03T23:33:45.967949+00:00', '--job-id', '421', '--raw', '--subdir', 'DAGS_FOLDER/product_generator_dag.py', '--cfg-path', '/tmp/tmpducehkib']
+[2024-07-03T23:38:07.948+0000] {standard_task_runner.py:85} INFO - Job 421: Subtask insert_products
+[2024-07-03T23:38:07.969+0000] {task_command.py:410} INFO - Running <TaskInstance: product_generator.insert_products manual__2024-07-03T23:33:45.967949+00:00 [running]> on host a4053733dbc4
+[2024-07-03T23:38:08.001+0000] {taskinstance.py:1545} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='airflow' AIRFLOW_CTX_DAG_ID='product_generator' AIRFLOW_CTX_TASK_ID='insert_products' AIRFLOW_CTX_EXECUTION_DATE='2024-07-03T23:33:45.967949+00:00' AIRFLOW_CTX_TRY_NUMBER='5' AIRFLOW_CTX_DAG_RUN_ID='manual__2024-07-03T23:33:45.967949+00:00'
+[2024-07-03T23:38:08.002+0000] {logging_mixin.py:149} INFO - Inserting data into products from /opt/airflow/generator/fake_products.json...
+[2024-07-03T23:38:08.015+0000] {logging_mixin.py:149} INFO - Successfully inserted data into products.
+[2024-07-03T23:38:08.015+0000] {python.py:183} INFO - Done. Returned value was: None
+[2024-07-03T23:38:08.020+0000] {taskinstance.py:1345} INFO - Marking task as SUCCESS. dag_id=product_generator, task_id=insert_products, execution_date=20240703T233345, start_date=20240703T233807, end_date=20240703T233808
+[2024-07-03T23:38:08.051+0000] {local_task_job_runner.py:225} INFO - Task exited with return code 0
+[2024-07-03T23:38:08.060+0000] {taskinstance.py:2651} INFO - 0 downstream tasks scheduled from follow-on schedule check

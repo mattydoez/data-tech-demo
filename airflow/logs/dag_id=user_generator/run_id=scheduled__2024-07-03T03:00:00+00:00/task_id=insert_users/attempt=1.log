@@ -1,0 +1,15 @@
+[2024-07-03T23:42:29.429+0000] {taskinstance.py:1103} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: user_generator.insert_users scheduled__2024-07-03T03:00:00+00:00 [queued]>
+[2024-07-03T23:42:29.433+0000] {taskinstance.py:1103} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: user_generator.insert_users scheduled__2024-07-03T03:00:00+00:00 [queued]>
+[2024-07-03T23:42:29.433+0000] {taskinstance.py:1308} INFO - Starting attempt 1 of 2
+[2024-07-03T23:42:29.438+0000] {taskinstance.py:1327} INFO - Executing <Task(PythonOperator): insert_users> on 2024-07-03 03:00:00+00:00
+[2024-07-03T23:42:29.439+0000] {standard_task_runner.py:57} INFO - Started process 543 to run task
+[2024-07-03T23:42:29.440+0000] {standard_task_runner.py:84} INFO - Running: ['airflow', 'tasks', 'run', 'user_generator', 'insert_users', 'scheduled__2024-07-03T03:00:00+00:00', '--job-id', '538', '--raw', '--subdir', 'DAGS_FOLDER/user_generator_dag.py', '--cfg-path', '/tmp/tmpejvtdzhy']
+[2024-07-03T23:42:29.441+0000] {standard_task_runner.py:85} INFO - Job 538: Subtask insert_users
+[2024-07-03T23:42:29.461+0000] {task_command.py:410} INFO - Running <TaskInstance: user_generator.insert_users scheduled__2024-07-03T03:00:00+00:00 [running]> on host a4053733dbc4
+[2024-07-03T23:42:29.500+0000] {taskinstance.py:1545} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='airflow' AIRFLOW_CTX_DAG_ID='user_generator' AIRFLOW_CTX_TASK_ID='insert_users' AIRFLOW_CTX_EXECUTION_DATE='2024-07-03T03:00:00+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2024-07-03T03:00:00+00:00'
+[2024-07-03T23:42:29.500+0000] {logging_mixin.py:149} INFO - Inserting data into users from /opt/airflow/generator/fake_users.json...
+[2024-07-03T23:42:29.524+0000] {logging_mixin.py:149} INFO - Successfully inserted data into users.
+[2024-07-03T23:42:29.525+0000] {python.py:183} INFO - Done. Returned value was: None
+[2024-07-03T23:42:29.530+0000] {taskinstance.py:1345} INFO - Marking task as SUCCESS. dag_id=user_generator, task_id=insert_users, execution_date=20240703T030000, start_date=20240703T234229, end_date=20240703T234229
+[2024-07-03T23:42:29.539+0000] {local_task_job_runner.py:225} INFO - Task exited with return code 0
+[2024-07-03T23:42:29.547+0000] {taskinstance.py:2651} INFO - 0 downstream tasks scheduled from follow-on schedule check
