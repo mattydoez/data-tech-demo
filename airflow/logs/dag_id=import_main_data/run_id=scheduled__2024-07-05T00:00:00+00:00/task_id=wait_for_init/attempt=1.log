@@ -1,0 +1,20 @@
+[2024-07-06T17:56:26.108+0000] {taskinstance.py:1103} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: import_main_data.wait_for_init scheduled__2024-07-05T00:00:00+00:00 [queued]>
+[2024-07-06T17:56:26.111+0000] {taskinstance.py:1103} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: import_main_data.wait_for_init scheduled__2024-07-05T00:00:00+00:00 [queued]>
+[2024-07-06T17:56:26.111+0000] {taskinstance.py:1308} INFO - Starting attempt 1 of 2
+[2024-07-06T17:56:26.116+0000] {taskinstance.py:1327} INFO - Executing <Task(ExternalTaskSensor): wait_for_init> on 2024-07-05 00:00:00+00:00
+[2024-07-06T17:56:26.117+0000] {standard_task_runner.py:57} INFO - Started process 178 to run task
+[2024-07-06T17:56:26.118+0000] {standard_task_runner.py:84} INFO - Running: ['airflow', 'tasks', 'run', 'import_main_data', 'wait_for_init', 'scheduled__2024-07-05T00:00:00+00:00', '--job-id', '800', '--raw', '--subdir', 'DAGS_FOLDER/import_raw_data.py', '--cfg-path', '/tmp/tmphwf0ec7i']
+[2024-07-06T17:56:26.119+0000] {standard_task_runner.py:85} INFO - Job 800: Subtask wait_for_init
+[2024-07-06T17:56:26.142+0000] {task_command.py:410} INFO - Running <TaskInstance: import_main_data.wait_for_init scheduled__2024-07-05T00:00:00+00:00 [running]> on host f6bf59d3e65b
+[2024-07-06T17:56:26.176+0000] {taskinstance.py:1545} INFO - Exporting env vars: AIRFLOW_CTX_DAG_EMAIL='airflow@example.com' AIRFLOW_CTX_DAG_OWNER='airflow' AIRFLOW_CTX_DAG_ID='import_main_data' AIRFLOW_CTX_TASK_ID='wait_for_init' AIRFLOW_CTX_EXECUTION_DATE='2024-07-05T00:00:00+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2024-07-05T00:00:00+00:00'
+[2024-07-06T17:56:26.177+0000] {external_task.py:247} INFO - Poking for DAG 'initialize_etl_environment' on 2024-07-05T00:00:00+00:00 ... 
+[2024-07-06T17:57:26.247+0000] {external_task.py:247} INFO - Poking for DAG 'initialize_etl_environment' on 2024-07-05T00:00:00+00:00 ... 
+[2024-07-06T17:57:26.261+0000] {taskinstance.py:1824} ERROR - Task failed with exception
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.9/site-packages/airflow/sensors/base.py", line 242, in execute
+    raise AirflowSensorTimeout(message)
+airflow.exceptions.AirflowSensorTimeout: Sensor has timed out; run duration of 60.084331860998645 seconds exceeds the specified timeout of 1.
+[2024-07-06T17:57:26.270+0000] {taskinstance.py:1345} INFO - Immediate failure requested. Marking task as FAILED. dag_id=import_main_data, task_id=wait_for_init, execution_date=20240705T000000, start_date=20240706T175626, end_date=20240706T175726
+[2024-07-06T17:57:26.278+0000] {standard_task_runner.py:104} ERROR - Failed to execute job 800 for task wait_for_init (Sensor has timed out; run duration of 60.084331860998645 seconds exceeds the specified timeout of 1.; 178)
+[2024-07-06T17:57:26.296+0000] {local_task_job_runner.py:225} INFO - Task exited with return code 1
+[2024-07-06T17:57:26.312+0000] {taskinstance.py:2651} INFO - 0 downstream tasks scheduled from follow-on schedule check

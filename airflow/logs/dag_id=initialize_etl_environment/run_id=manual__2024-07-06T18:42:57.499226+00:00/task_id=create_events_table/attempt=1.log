@@ -1,0 +1,38 @@
+[2024-07-06T18:43:02.367+0000] {taskinstance.py:1103} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: initialize_etl_environment.create_events_table manual__2024-07-06T18:42:57.499226+00:00 [queued]>
+[2024-07-06T18:43:02.370+0000] {taskinstance.py:1103} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: initialize_etl_environment.create_events_table manual__2024-07-06T18:42:57.499226+00:00 [queued]>
+[2024-07-06T18:43:02.371+0000] {taskinstance.py:1308} INFO - Starting attempt 1 of 2
+[2024-07-06T18:43:02.376+0000] {taskinstance.py:1327} INFO - Executing <Task(PostgresOperator): create_events_table> on 2024-07-06 18:42:57.499226+00:00
+[2024-07-06T18:43:02.378+0000] {standard_task_runner.py:57} INFO - Started process 1328 to run task
+[2024-07-06T18:43:02.381+0000] {standard_task_runner.py:84} INFO - Running: ['airflow', 'tasks', 'run', 'initialize_etl_environment', 'create_events_table', 'manual__2024-07-06T18:42:57.499226+00:00', '--job-id', '891', '--raw', '--subdir', 'DAGS_FOLDER/etl_env_init.py', '--cfg-path', '/tmp/tmps4ynhj91']
+[2024-07-06T18:43:02.382+0000] {standard_task_runner.py:85} INFO - Job 891: Subtask create_events_table
+[2024-07-06T18:43:02.419+0000] {task_command.py:410} INFO - Running <TaskInstance: initialize_etl_environment.create_events_table manual__2024-07-06T18:42:57.499226+00:00 [running]> on host f6bf59d3e65b
+[2024-07-06T18:43:02.475+0000] {taskinstance.py:1545} INFO - Exporting env vars: AIRFLOW_CTX_DAG_EMAIL='airflow@example.com' AIRFLOW_CTX_DAG_OWNER='airflow' AIRFLOW_CTX_DAG_ID='initialize_etl_environment' AIRFLOW_CTX_TASK_ID='create_events_table' AIRFLOW_CTX_EXECUTION_DATE='2024-07-06T18:42:57.499226+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2024-07-06T18:42:57.499226+00:00'
+[2024-07-06T18:43:02.476+0000] {sql.py:262} INFO - Executing: 
+    CREATE TABLE IF NOT EXISTS raw.clickstream_events (
+        event_id INT PRIMARY KEY,
+        user_id INT REFERENCES raw.users(user_id),
+        timestamp TIMESTAMP NOT NULL,
+        page_visited VARCHAR(255),
+        action VARCHAR(50),
+        product_id INT,
+        created_at TIMESTAMP 
+    );
+        
+    
+[2024-07-06T18:43:02.480+0000] {base.py:73} INFO - Using connection ID 'company_dw' for task execution.
+[2024-07-06T18:43:02.505+0000] {base.py:73} INFO - Using connection ID 'company_dw' for task execution.
+[2024-07-06T18:43:02.507+0000] {sql.py:375} INFO - Running statement: 
+    CREATE TABLE IF NOT EXISTS raw.clickstream_events (
+        event_id INT PRIMARY KEY,
+        user_id INT REFERENCES raw.users(user_id),
+        timestamp TIMESTAMP NOT NULL,
+        page_visited VARCHAR(255),
+        action VARCHAR(50),
+        product_id INT,
+        created_at TIMESTAMP 
+    );
+        
+    , parameters: None
+[2024-07-06T18:43:02.512+0000] {taskinstance.py:1345} INFO - Marking task as SUCCESS. dag_id=initialize_etl_environment, task_id=create_events_table, execution_date=20240706T184257, start_date=20240706T184302, end_date=20240706T184302
+[2024-07-06T18:43:02.524+0000] {local_task_job_runner.py:225} INFO - Task exited with return code 0
+[2024-07-06T18:43:02.532+0000] {taskinstance.py:2651} INFO - 0 downstream tasks scheduled from follow-on schedule check

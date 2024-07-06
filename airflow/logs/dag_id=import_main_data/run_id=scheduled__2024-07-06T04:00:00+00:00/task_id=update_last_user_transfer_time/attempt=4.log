@@ -1,0 +1,13 @@
+[2024-07-06T21:16:42.016+0000] {taskinstance.py:1103} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: import_main_data.update_last_user_transfer_time scheduled__2024-07-06T04:00:00+00:00 [queued]>
+[2024-07-06T21:16:42.022+0000] {taskinstance.py:1103} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: import_main_data.update_last_user_transfer_time scheduled__2024-07-06T04:00:00+00:00 [queued]>
+[2024-07-06T21:16:42.022+0000] {taskinstance.py:1308} INFO - Starting attempt 4 of 5
+[2024-07-06T21:16:42.027+0000] {taskinstance.py:1327} INFO - Executing <Task(PythonOperator): update_last_user_transfer_time> on 2024-07-06 04:00:00+00:00
+[2024-07-06T21:16:42.030+0000] {standard_task_runner.py:57} INFO - Started process 1917 to run task
+[2024-07-06T21:16:42.032+0000] {standard_task_runner.py:84} INFO - Running: ['airflow', 'tasks', 'run', 'import_main_data', 'update_last_user_transfer_time', 'scheduled__2024-07-06T04:00:00+00:00', '--job-id', '1017', '--raw', '--subdir', 'DAGS_FOLDER/import_raw_data.py', '--cfg-path', '/tmp/tmpwox1bm22']
+[2024-07-06T21:16:42.032+0000] {standard_task_runner.py:85} INFO - Job 1017: Subtask update_last_user_transfer_time
+[2024-07-06T21:16:42.074+0000] {task_command.py:410} INFO - Running <TaskInstance: import_main_data.update_last_user_transfer_time scheduled__2024-07-06T04:00:00+00:00 [running]> on host c058add182a5
+[2024-07-06T21:16:42.114+0000] {taskinstance.py:1545} INFO - Exporting env vars: AIRFLOW_CTX_DAG_EMAIL='airflow@example.com' AIRFLOW_CTX_DAG_OWNER='airflow' AIRFLOW_CTX_DAG_ID='import_main_data' AIRFLOW_CTX_TASK_ID='update_last_user_transfer_time' AIRFLOW_CTX_EXECUTION_DATE='2024-07-06T04:00:00+00:00' AIRFLOW_CTX_TRY_NUMBER='4' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2024-07-06T04:00:00+00:00'
+[2024-07-06T21:16:42.116+0000] {python.py:183} INFO - Done. Returned value was: None
+[2024-07-06T21:16:42.121+0000] {taskinstance.py:1345} INFO - Marking task as SUCCESS. dag_id=import_main_data, task_id=update_last_user_transfer_time, execution_date=20240706T040000, start_date=20240706T211642, end_date=20240706T211642
+[2024-07-06T21:16:42.137+0000] {local_task_job_runner.py:225} INFO - Task exited with return code 0
+[2024-07-06T21:16:42.146+0000] {taskinstance.py:2651} INFO - 0 downstream tasks scheduled from follow-on schedule check

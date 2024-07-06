@@ -1,0 +1,26 @@
+[2024-07-06T21:59:13.675+0000] {taskinstance.py:1103} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: initialize_etl_environment.create_schemas scheduled__2024-07-04T00:00:00+00:00 [queued]>
+[2024-07-06T21:59:13.679+0000] {taskinstance.py:1103} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: initialize_etl_environment.create_schemas scheduled__2024-07-04T00:00:00+00:00 [queued]>
+[2024-07-06T21:59:13.679+0000] {taskinstance.py:1308} INFO - Starting attempt 1 of 2
+[2024-07-06T21:59:13.683+0000] {taskinstance.py:1327} INFO - Executing <Task(PostgresOperator): create_schemas> on 2024-07-04 00:00:00+00:00
+[2024-07-06T21:59:13.684+0000] {standard_task_runner.py:57} INFO - Started process 3802 to run task
+[2024-07-06T21:59:13.686+0000] {standard_task_runner.py:84} INFO - Running: ['airflow', 'tasks', 'run', 'initialize_etl_environment', 'create_schemas', 'scheduled__2024-07-04T00:00:00+00:00', '--job-id', '1100', '--raw', '--subdir', 'DAGS_FOLDER/etl_env_init.py', '--cfg-path', '/tmp/tmpaww6b6dy']
+[2024-07-06T21:59:13.686+0000] {standard_task_runner.py:85} INFO - Job 1100: Subtask create_schemas
+[2024-07-06T21:59:13.708+0000] {task_command.py:410} INFO - Running <TaskInstance: initialize_etl_environment.create_schemas scheduled__2024-07-04T00:00:00+00:00 [running]> on host c058add182a5
+[2024-07-06T21:59:13.750+0000] {taskinstance.py:1545} INFO - Exporting env vars: AIRFLOW_CTX_DAG_EMAIL='airflow@example.com' AIRFLOW_CTX_DAG_OWNER='airflow' AIRFLOW_CTX_DAG_ID='initialize_etl_environment' AIRFLOW_CTX_TASK_ID='create_schemas' AIRFLOW_CTX_EXECUTION_DATE='2024-07-04T00:00:00+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2024-07-04T00:00:00+00:00'
+[2024-07-06T21:59:13.750+0000] {sql.py:262} INFO - Executing: 
+    Create schema if not exists raw;
+    Create schema if not exists staging;
+    Create schema if not exists analytics;  
+    Create schema if not exists ops;     
+    
+[2024-07-06T21:59:13.753+0000] {base.py:73} INFO - Using connection ID 'company_dw' for task execution.
+[2024-07-06T21:59:13.777+0000] {base.py:73} INFO - Using connection ID 'company_dw' for task execution.
+[2024-07-06T21:59:13.779+0000] {sql.py:375} INFO - Running statement: 
+    Create schema if not exists raw;
+    Create schema if not exists staging;
+    Create schema if not exists analytics;  
+    Create schema if not exists ops;     
+    , parameters: None
+[2024-07-06T21:59:13.783+0000] {taskinstance.py:1345} INFO - Marking task as SUCCESS. dag_id=initialize_etl_environment, task_id=create_schemas, execution_date=20240704T000000, start_date=20240706T215913, end_date=20240706T215913
+[2024-07-06T21:59:13.826+0000] {local_task_job_runner.py:225} INFO - Task exited with return code 0
+[2024-07-06T21:59:13.840+0000] {taskinstance.py:2651} INFO - 1 downstream tasks scheduled from follow-on schedule check

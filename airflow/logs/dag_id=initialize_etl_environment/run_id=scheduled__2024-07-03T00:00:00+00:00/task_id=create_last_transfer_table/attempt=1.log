@@ -1,0 +1,28 @@
+[2024-07-06T21:59:14.957+0000] {taskinstance.py:1103} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: initialize_etl_environment.create_last_transfer_table scheduled__2024-07-03T00:00:00+00:00 [queued]>
+[2024-07-06T21:59:14.960+0000] {taskinstance.py:1103} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: initialize_etl_environment.create_last_transfer_table scheduled__2024-07-03T00:00:00+00:00 [queued]>
+[2024-07-06T21:59:14.960+0000] {taskinstance.py:1308} INFO - Starting attempt 1 of 2
+[2024-07-06T21:59:14.964+0000] {taskinstance.py:1327} INFO - Executing <Task(PostgresOperator): create_last_transfer_table> on 2024-07-03 00:00:00+00:00
+[2024-07-06T21:59:14.966+0000] {standard_task_runner.py:57} INFO - Started process 3804 to run task
+[2024-07-06T21:59:14.967+0000] {standard_task_runner.py:84} INFO - Running: ['airflow', 'tasks', 'run', 'initialize_etl_environment', 'create_last_transfer_table', 'scheduled__2024-07-03T00:00:00+00:00', '--job-id', '1101', '--raw', '--subdir', 'DAGS_FOLDER/etl_env_init.py', '--cfg-path', '/tmp/tmp26sn1991']
+[2024-07-06T21:59:14.968+0000] {standard_task_runner.py:85} INFO - Job 1101: Subtask create_last_transfer_table
+[2024-07-06T21:59:14.987+0000] {task_command.py:410} INFO - Running <TaskInstance: initialize_etl_environment.create_last_transfer_table scheduled__2024-07-03T00:00:00+00:00 [running]> on host c058add182a5
+[2024-07-06T21:59:15.022+0000] {taskinstance.py:1545} INFO - Exporting env vars: AIRFLOW_CTX_DAG_EMAIL='airflow@example.com' AIRFLOW_CTX_DAG_OWNER='airflow' AIRFLOW_CTX_DAG_ID='initialize_etl_environment' AIRFLOW_CTX_TASK_ID='create_last_transfer_table' AIRFLOW_CTX_EXECUTION_DATE='2024-07-03T00:00:00+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2024-07-03T00:00:00+00:00'
+[2024-07-06T21:59:15.023+0000] {sql.py:262} INFO - Executing: 
+    CREATE TABLE IF NOT EXISTS ops.last_transfer (
+        id SERIAL PRIMARY KEY,
+        table_name VARCHAR(50),
+        last_transfer TIMESTAMP
+    );
+    
+[2024-07-06T21:59:15.026+0000] {base.py:73} INFO - Using connection ID 'company_dw' for task execution.
+[2024-07-06T21:59:15.046+0000] {base.py:73} INFO - Using connection ID 'company_dw' for task execution.
+[2024-07-06T21:59:15.048+0000] {sql.py:375} INFO - Running statement: 
+    CREATE TABLE IF NOT EXISTS ops.last_transfer (
+        id SERIAL PRIMARY KEY,
+        table_name VARCHAR(50),
+        last_transfer TIMESTAMP
+    );
+    , parameters: None
+[2024-07-06T21:59:15.052+0000] {taskinstance.py:1345} INFO - Marking task as SUCCESS. dag_id=initialize_etl_environment, task_id=create_last_transfer_table, execution_date=20240703T000000, start_date=20240706T215914, end_date=20240706T215915
+[2024-07-06T21:59:15.074+0000] {local_task_job_runner.py:225} INFO - Task exited with return code 0
+[2024-07-06T21:59:15.085+0000] {taskinstance.py:2651} INFO - 7 downstream tasks scheduled from follow-on schedule check

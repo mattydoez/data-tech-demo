@@ -1,0 +1,32 @@
+[2024-07-06T22:03:21.043+0000] {taskinstance.py:1103} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: import_main_data.update_last_products_transfer_time scheduled__2024-07-06T05:00:00+00:00 [queued]>
+[2024-07-06T22:03:21.047+0000] {taskinstance.py:1103} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: import_main_data.update_last_products_transfer_time scheduled__2024-07-06T05:00:00+00:00 [queued]>
+[2024-07-06T22:03:21.047+0000] {taskinstance.py:1308} INFO - Starting attempt 1 of 2
+[2024-07-06T22:03:21.051+0000] {taskinstance.py:1327} INFO - Executing <Task(PythonOperator): update_last_products_transfer_time> on 2024-07-06 05:00:00+00:00
+[2024-07-06T22:03:21.053+0000] {standard_task_runner.py:57} INFO - Started process 4029 to run task
+[2024-07-06T22:03:21.054+0000] {standard_task_runner.py:84} INFO - Running: ['airflow', 'tasks', 'run', 'import_main_data', 'update_last_products_transfer_time', 'scheduled__2024-07-06T05:00:00+00:00', '--job-id', '1123', '--raw', '--subdir', 'DAGS_FOLDER/import_raw_data.py', '--cfg-path', '/tmp/tmps8ikzfww']
+[2024-07-06T22:03:21.055+0000] {standard_task_runner.py:85} INFO - Job 1123: Subtask update_last_products_transfer_time
+[2024-07-06T22:03:21.074+0000] {task_command.py:410} INFO - Running <TaskInstance: import_main_data.update_last_products_transfer_time scheduled__2024-07-06T05:00:00+00:00 [running]> on host c058add182a5
+[2024-07-06T22:03:21.110+0000] {taskinstance.py:1545} INFO - Exporting env vars: AIRFLOW_CTX_DAG_EMAIL='airflow@example.com' AIRFLOW_CTX_DAG_OWNER='airflow' AIRFLOW_CTX_DAG_ID='import_main_data' AIRFLOW_CTX_TASK_ID='update_last_products_transfer_time' AIRFLOW_CTX_EXECUTION_DATE='2024-07-06T05:00:00+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2024-07-06T05:00:00+00:00'
+[2024-07-06T22:03:21.112+0000] {error_handling_decorator.py:10} ERROR - Error: Task did not return a successful result.
+[2024-07-06T22:03:21.113+0000] {error_handling_decorator.py:11} ERROR - Traceback (most recent call last):
+  File "/opt/airflow/dags/error_handling_decorator.py", line 21, in wrapper
+    raise ValueError("Task did not return a successful result.")
+ValueError: Task did not return a successful result.
+
+[2024-07-06T22:03:21.113+0000] {taskinstance.py:1824} ERROR - Task failed with exception
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.9/site-packages/airflow/operators/python.py", line 181, in execute
+    return_value = self.execute_callable()
+  File "/home/airflow/.local/lib/python3.9/site-packages/airflow/operators/python.py", line 198, in execute_callable
+    return self.python_callable(*self.op_args, **self.op_kwargs)
+  File "/opt/airflow/dags/error_handling_decorator.py", line 24, in wrapper
+    error_handler.log_and_raise(exc)
+  File "/opt/airflow/dags/error_handling_decorator.py", line 12, in log_and_raise
+    raise exc
+  File "/opt/airflow/dags/error_handling_decorator.py", line 21, in wrapper
+    raise ValueError("Task did not return a successful result.")
+ValueError: Task did not return a successful result.
+[2024-07-06T22:03:21.116+0000] {taskinstance.py:1345} INFO - Marking task as UP_FOR_RETRY. dag_id=import_main_data, task_id=update_last_products_transfer_time, execution_date=20240706T050000, start_date=20240706T220321, end_date=20240706T220321
+[2024-07-06T22:03:21.121+0000] {standard_task_runner.py:104} ERROR - Failed to execute job 1123 for task update_last_products_transfer_time (Task did not return a successful result.; 4029)
+[2024-07-06T22:03:21.162+0000] {local_task_job_runner.py:225} INFO - Task exited with return code 1
+[2024-07-06T22:03:21.170+0000] {taskinstance.py:2651} INFO - 0 downstream tasks scheduled from follow-on schedule check

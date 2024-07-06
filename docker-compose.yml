@@ -62,7 +62,7 @@ services:
       EXECUTOR: Local
       AIRFLOW__CORE__FERNET_KEY: GmhP3ADRHscUZ2z_ohwMOmXlu5jFSI5IQRG0s-KrV_Y=
       AIRFLOW__DATABASE__SQL_ALCHEMY_CONN: postgresql+psycopg2://${POSTGRES_USER}:${POSTGRES_PASSWORD}@airflowdb:5432/airflow
-      AIRFLOW_CONN_COMPANY_DW: postgresql://${POSTGRES_USER}:${POSTGRES_PASSWORD}@dw:5432/company_dw
+      AIRFLOW_CONN_COMPANY_DW: postgresql://${POSTGRES_USER}:${POSTGRES_PASSWORD}@company_dw:5432/company_dw
       AIRFLOW_CONN_COMPANY_DB: postgresql://${POSTGRES_USER}:${POSTGRES_PASSWORD}@company_db:5432/company_db
       AIRFLOW__CORE__DAGS_ARE_PAUSED_AT_CREATION: False
     entrypoint: ["/entrypoint.sh", "db", "init"]
@@ -80,7 +80,7 @@ services:
       EXECUTOR: Local
       AIRFLOW__CORE__FERNET_KEY: GmhP3ADRHscUZ2z_ohwMOmXlu5jFSI5IQRG0s-KrV_Y=
       AIRFLOW__DATABASE__SQL_ALCHEMY_CONN: postgresql+psycopg2://${POSTGRES_USER}:${POSTGRES_PASSWORD}@airflowdb:5432/airflow
-      AIRFLOW_CONN_COMPANY_DW: postgresql://${POSTGRES_USER}:${POSTGRES_PASSWORD}@dw:5432/company_dw
+      AIRFLOW_CONN_COMPANY_DW: postgresql://${POSTGRES_USER}:${POSTGRES_PASSWORD}@company_dw:5432/company_dw
       AIRFLOW_CONN_COMPANY_DB: postgresql://${POSTGRES_USER}:${POSTGRES_PASSWORD}@company_db:5432/company_db
       AIRFLOW__CORE__DAGS_ARE_PAUSED_AT_CREATION: False
       POSTGRES_USER: ${POSTGRES_USER}
@@ -95,6 +95,7 @@ services:
       - ./dbt:/opt/airflow/dbt
       - ./airflow/logs:/opt/airflow/logs
       - ./airflow/generator:/opt/airflow/generator
+      - ./airflow/scripts:/opt/airflow/scripts
     command: ["scheduler"]
     healthcheck:
       test: ["CMD-SHELL", "airflow jobs check --job-type SchedulerJob --hostname $(hostname)"]
@@ -118,7 +119,7 @@ services:
       EXECUTOR: Local
       AIRFLOW__CORE__FERNET_KEY: GmhP3ADRHscUZ2z_ohwMOmXlu5jFSI5IQRG0s-KrV_Y=
       AIRFLOW__DATABASE__SQL_ALCHEMY_CONN: postgresql+psycopg2://${POSTGRES_USER}:${POSTGRES_PASSWORD}@airflowdb:5432/airflow
-      AIRFLOW_CONN_COMPANY_DW: postgresql://${POSTGRES_USER}:${POSTGRES_PASSWORD}@dw:5433/company_dw
+      AIRFLOW_CONN_COMPANY_DW: postgresql://${POSTGRES_USER}:${POSTGRES_PASSWORD}@company_dw:5432/company_dw
       AIRFLOW_CONN_COMPANY_DB: postgresql://${POSTGRES_USER}:${POSTGRES_PASSWORD}@company_db:5432/company_db
       AIRFLOW__CORE__DAGS_ARE_PAUSED_AT_CREATION: False
       AIRFLOW__CORE__DAGS_FOLDER: /opt/airflow/dags
@@ -134,6 +135,7 @@ services:
       - ./dbt:/opt/airflow/dbt
       - ./airflow/logs:/opt/airflow/logs
       - ./airflow/generator:/opt/airflow/generator
+      - ./airflow/scripts:/opt/airflow/scripts
     ports:
       - "8080:8080"
     command: >

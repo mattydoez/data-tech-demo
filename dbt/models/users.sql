@@ -1,5 +1,6 @@
+-- users.sql
 {{ config(
-    materialized='view'
+    materialized='table'
 ) }}
 
 SELECT

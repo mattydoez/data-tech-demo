@@ -1,0 +1,65 @@
+[2024-07-06T18:10:27.989+0000] {taskinstance.py:1103} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: import_main_data.wait_for_init scheduled__2024-07-05T07:00:00+00:00 [queued]>
+[2024-07-06T18:10:27.992+0000] {taskinstance.py:1103} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: import_main_data.wait_for_init scheduled__2024-07-05T07:00:00+00:00 [queued]>
+[2024-07-06T18:10:27.992+0000] {taskinstance.py:1308} INFO - Starting attempt 1 of 2
+[2024-07-06T18:10:27.997+0000] {taskinstance.py:1327} INFO - Executing <Task(ExternalTaskSensor): wait_for_init> on 2024-07-05 07:00:00+00:00
+[2024-07-06T18:10:27.998+0000] {standard_task_runner.py:57} INFO - Started process 629 to run task
+[2024-07-06T18:10:28.000+0000] {standard_task_runner.py:84} INFO - Running: ['airflow', 'tasks', 'run', 'import_main_data', 'wait_for_init', 'scheduled__2024-07-05T07:00:00+00:00', '--job-id', '809', '--raw', '--subdir', 'DAGS_FOLDER/import_raw_data.py', '--cfg-path', '/tmp/tmpr9kk5_fd']
+[2024-07-06T18:10:28.000+0000] {standard_task_runner.py:85} INFO - Job 809: Subtask wait_for_init
+[2024-07-06T18:10:28.022+0000] {task_command.py:410} INFO - Running <TaskInstance: import_main_data.wait_for_init scheduled__2024-07-05T07:00:00+00:00 [running]> on host f6bf59d3e65b
+[2024-07-06T18:10:28.056+0000] {taskinstance.py:1545} INFO - Exporting env vars: AIRFLOW_CTX_DAG_EMAIL='airflow@example.com' AIRFLOW_CTX_DAG_OWNER='airflow' AIRFLOW_CTX_DAG_ID='import_main_data' AIRFLOW_CTX_TASK_ID='wait_for_init' AIRFLOW_CTX_EXECUTION_DATE='2024-07-05T07:00:00+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2024-07-05T07:00:00+00:00'
+[2024-07-06T18:10:28.060+0000] {external_task.py:247} INFO - Poking for DAG 'initialize_etl_environment' on 2024-07-05T07:00:00+00:00 ... 
+[2024-07-06T18:10:28.072+0000] {taskinstance.py:1784} INFO - Rescheduling task, marking task as UP_FOR_RESCHEDULE
+[2024-07-06T18:10:28.101+0000] {local_task_job_runner.py:225} INFO - Task exited with return code 0
+[2024-07-06T18:10:28.113+0000] {taskinstance.py:2651} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2024-07-06T18:11:30.215+0000] {taskinstance.py:1103} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: import_main_data.wait_for_init scheduled__2024-07-05T07:00:00+00:00 [queued]>
+[2024-07-06T18:11:30.218+0000] {taskinstance.py:1103} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: import_main_data.wait_for_init scheduled__2024-07-05T07:00:00+00:00 [queued]>
+[2024-07-06T18:11:30.218+0000] {taskinstance.py:1308} INFO - Starting attempt 1 of 2
+[2024-07-06T18:11:30.222+0000] {taskinstance.py:1327} INFO - Executing <Task(ExternalTaskSensor): wait_for_init> on 2024-07-05 07:00:00+00:00
+[2024-07-06T18:11:30.223+0000] {standard_task_runner.py:57} INFO - Started process 693 to run task
+[2024-07-06T18:11:30.225+0000] {standard_task_runner.py:84} INFO - Running: ['airflow', 'tasks', 'run', 'import_main_data', 'wait_for_init', 'scheduled__2024-07-05T07:00:00+00:00', '--job-id', '825', '--raw', '--subdir', 'DAGS_FOLDER/import_raw_data.py', '--cfg-path', '/tmp/tmp0kq0zcz3']
+[2024-07-06T18:11:30.226+0000] {standard_task_runner.py:85} INFO - Job 825: Subtask wait_for_init
+[2024-07-06T18:11:30.246+0000] {task_command.py:410} INFO - Running <TaskInstance: import_main_data.wait_for_init scheduled__2024-07-05T07:00:00+00:00 [running]> on host f6bf59d3e65b
+[2024-07-06T18:11:30.278+0000] {taskinstance.py:1545} INFO - Exporting env vars: AIRFLOW_CTX_DAG_EMAIL='airflow@example.com' AIRFLOW_CTX_DAG_OWNER='airflow' AIRFLOW_CTX_DAG_ID='import_main_data' AIRFLOW_CTX_TASK_ID='wait_for_init' AIRFLOW_CTX_EXECUTION_DATE='2024-07-05T07:00:00+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2024-07-05T07:00:00+00:00'
+[2024-07-06T18:11:30.282+0000] {external_task.py:247} INFO - Poking for DAG 'initialize_etl_environment' on 2024-07-05T07:00:00+00:00 ... 
+[2024-07-06T18:11:30.293+0000] {taskinstance.py:1784} INFO - Rescheduling task, marking task as UP_FOR_RESCHEDULE
+[2024-07-06T18:11:30.326+0000] {local_task_job_runner.py:225} INFO - Task exited with return code 0
+[2024-07-06T18:11:30.338+0000] {taskinstance.py:2651} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2024-07-06T18:12:31.573+0000] {taskinstance.py:1103} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: import_main_data.wait_for_init scheduled__2024-07-05T07:00:00+00:00 [queued]>
+[2024-07-06T18:12:31.575+0000] {taskinstance.py:1103} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: import_main_data.wait_for_init scheduled__2024-07-05T07:00:00+00:00 [queued]>
+[2024-07-06T18:12:31.576+0000] {taskinstance.py:1308} INFO - Starting attempt 1 of 2
+[2024-07-06T18:12:31.580+0000] {taskinstance.py:1327} INFO - Executing <Task(ExternalTaskSensor): wait_for_init> on 2024-07-05 07:00:00+00:00
+[2024-07-06T18:12:31.581+0000] {standard_task_runner.py:57} INFO - Started process 757 to run task
+[2024-07-06T18:12:31.582+0000] {standard_task_runner.py:84} INFO - Running: ['airflow', 'tasks', 'run', 'import_main_data', 'wait_for_init', 'scheduled__2024-07-05T07:00:00+00:00', '--job-id', '841', '--raw', '--subdir', 'DAGS_FOLDER/import_raw_data.py', '--cfg-path', '/tmp/tmprlrepp5i']
+[2024-07-06T18:12:31.583+0000] {standard_task_runner.py:85} INFO - Job 841: Subtask wait_for_init
+[2024-07-06T18:12:31.602+0000] {task_command.py:410} INFO - Running <TaskInstance: import_main_data.wait_for_init scheduled__2024-07-05T07:00:00+00:00 [running]> on host f6bf59d3e65b
+[2024-07-06T18:12:31.633+0000] {taskinstance.py:1545} INFO - Exporting env vars: AIRFLOW_CTX_DAG_EMAIL='airflow@example.com' AIRFLOW_CTX_DAG_OWNER='airflow' AIRFLOW_CTX_DAG_ID='import_main_data' AIRFLOW_CTX_TASK_ID='wait_for_init' AIRFLOW_CTX_EXECUTION_DATE='2024-07-05T07:00:00+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2024-07-05T07:00:00+00:00'
+[2024-07-06T18:12:31.638+0000] {external_task.py:247} INFO - Poking for DAG 'initialize_etl_environment' on 2024-07-05T07:00:00+00:00 ... 
+[2024-07-06T18:12:31.648+0000] {taskinstance.py:1784} INFO - Rescheduling task, marking task as UP_FOR_RESCHEDULE
+[2024-07-06T18:12:31.684+0000] {local_task_job_runner.py:225} INFO - Task exited with return code 0
+[2024-07-06T18:12:31.697+0000] {taskinstance.py:2651} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2024-07-06T18:13:33.433+0000] {taskinstance.py:1103} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: import_main_data.wait_for_init scheduled__2024-07-05T07:00:00+00:00 [queued]>
+[2024-07-06T18:13:33.436+0000] {taskinstance.py:1103} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: import_main_data.wait_for_init scheduled__2024-07-05T07:00:00+00:00 [queued]>
+[2024-07-06T18:13:33.437+0000] {taskinstance.py:1308} INFO - Starting attempt 1 of 2
+[2024-07-06T18:13:33.441+0000] {taskinstance.py:1327} INFO - Executing <Task(ExternalTaskSensor): wait_for_init> on 2024-07-05 07:00:00+00:00
+[2024-07-06T18:13:33.442+0000] {standard_task_runner.py:57} INFO - Started process 821 to run task
+[2024-07-06T18:13:33.444+0000] {standard_task_runner.py:84} INFO - Running: ['airflow', 'tasks', 'run', 'import_main_data', 'wait_for_init', 'scheduled__2024-07-05T07:00:00+00:00', '--job-id', '857', '--raw', '--subdir', 'DAGS_FOLDER/import_raw_data.py', '--cfg-path', '/tmp/tmpvm_90cvl']
+[2024-07-06T18:13:33.445+0000] {standard_task_runner.py:85} INFO - Job 857: Subtask wait_for_init
+[2024-07-06T18:13:33.466+0000] {task_command.py:410} INFO - Running <TaskInstance: import_main_data.wait_for_init scheduled__2024-07-05T07:00:00+00:00 [running]> on host f6bf59d3e65b
+[2024-07-06T18:13:33.499+0000] {taskinstance.py:1545} INFO - Exporting env vars: AIRFLOW_CTX_DAG_EMAIL='airflow@example.com' AIRFLOW_CTX_DAG_OWNER='airflow' AIRFLOW_CTX_DAG_ID='import_main_data' AIRFLOW_CTX_TASK_ID='wait_for_init' AIRFLOW_CTX_EXECUTION_DATE='2024-07-05T07:00:00+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2024-07-05T07:00:00+00:00'
+[2024-07-06T18:13:33.503+0000] {external_task.py:247} INFO - Poking for DAG 'initialize_etl_environment' on 2024-07-05T07:00:00+00:00 ... 
+[2024-07-06T18:13:33.515+0000] {taskinstance.py:1784} INFO - Rescheduling task, marking task as UP_FOR_RESCHEDULE
+[2024-07-06T18:13:33.548+0000] {local_task_job_runner.py:225} INFO - Task exited with return code 0
+[2024-07-06T18:13:33.560+0000] {taskinstance.py:2651} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2024-07-06T18:14:34.934+0000] {taskinstance.py:1103} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: import_main_data.wait_for_init scheduled__2024-07-05T07:00:00+00:00 [queued]>
+[2024-07-06T18:14:34.937+0000] {taskinstance.py:1103} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: import_main_data.wait_for_init scheduled__2024-07-05T07:00:00+00:00 [queued]>
+[2024-07-06T18:14:34.937+0000] {taskinstance.py:1308} INFO - Starting attempt 1 of 2
+[2024-07-06T18:14:34.941+0000] {taskinstance.py:1327} INFO - Executing <Task(ExternalTaskSensor): wait_for_init> on 2024-07-05 07:00:00+00:00
+[2024-07-06T18:14:34.943+0000] {standard_task_runner.py:57} INFO - Started process 886 to run task
+[2024-07-06T18:14:34.944+0000] {standard_task_runner.py:84} INFO - Running: ['airflow', 'tasks', 'run', 'import_main_data', 'wait_for_init', 'scheduled__2024-07-05T07:00:00+00:00', '--job-id', '873', '--raw', '--subdir', 'DAGS_FOLDER/import_raw_data.py', '--cfg-path', '/tmp/tmptx84j8eu']
+[2024-07-06T18:14:34.945+0000] {standard_task_runner.py:85} INFO - Job 873: Subtask wait_for_init
+[2024-07-06T18:14:34.965+0000] {task_command.py:410} INFO - Running <TaskInstance: import_main_data.wait_for_init scheduled__2024-07-05T07:00:00+00:00 [running]> on host f6bf59d3e65b
+[2024-07-06T18:14:35.000+0000] {taskinstance.py:1545} INFO - Exporting env vars: AIRFLOW_CTX_DAG_EMAIL='airflow@example.com' AIRFLOW_CTX_DAG_OWNER='airflow' AIRFLOW_CTX_DAG_ID='import_main_data' AIRFLOW_CTX_TASK_ID='wait_for_init' AIRFLOW_CTX_EXECUTION_DATE='2024-07-05T07:00:00+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2024-07-05T07:00:00+00:00'
+[2024-07-06T18:14:35.004+0000] {external_task.py:247} INFO - Poking for DAG 'initialize_etl_environment' on 2024-07-05T07:00:00+00:00 ... 
+[2024-07-06T18:14:35.015+0000] {taskinstance.py:1784} INFO - Rescheduling task, marking task as UP_FOR_RESCHEDULE
+[2024-07-06T18:14:35.045+0000] {local_task_job_runner.py:225} INFO - Task exited with return code 0
+[2024-07-06T18:14:35.057+0000] {taskinstance.py:2651} INFO - 0 downstream tasks scheduled from follow-on schedule check

@@ -2167,3 +2167,910 @@ LINE 12:     "company_dw"."public"."users"
 [0m03:17:43.846682 [debug] [MainThread]: Command `dbt run` failed at 03:17:43.846629 after 0.86 seconds
 [0m03:17:43.846980 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0xffff9657e2e0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0xffff95074b50>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0xffffb33e6280>]}
 [0m03:17:43.847269 [debug] [MainThread]: Flushing usage events
+[0m04:51:17.485348 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0xffff665ca7f0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0xffff65b517c0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0xffff64649c10>]}
+
+
+============================== 04:51:17.489278 | 21961fe3-f6c9-4bfb-ab7d-b4970d04dde2 ==============================
+[0m04:51:17.489278 [info ] [MainThread]: Running with dbt=1.8.3
+[0m04:51:17.489789 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'profiles_dir': '/opt/airflow/dbt', 'fail_fast': 'False', 'version_check': 'True', 'log_path': '/opt/airflow/dbt/logs', 'debug': 'False', 'warn_error': 'None', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'empty': 'False', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'static_parser': 'True', 'invocation_command': 'dbt run --profiles-dir /opt/airflow/dbt', 'introspect': 'True', 'target_path': 'None', 'log_format': 'default', 'send_anonymous_usage_stats': 'True'}
+[0m04:51:17.570443 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '21961fe3-f6c9-4bfb-ab7d-b4970d04dde2', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0xffff6602d940>]}
+[0m04:51:17.595465 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': '21961fe3-f6c9-4bfb-ab7d-b4970d04dde2', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0xffff831410d0>]}
+[0m04:51:17.596248 [info ] [MainThread]: Registered adapter: postgres=1.8.2
+[0m04:51:17.604775 [debug] [MainThread]: checksum: 871d77df38a0661255d31f261d53a40de07e4ab2030d521ff4a1932357e45ee6, vars: {}, profile: , target: dev, version: 1.8.3
+[0m04:51:17.691508 [info ] [MainThread]: Unable to do partial parsing because config vars, config profile, or config target have changed
+[0m04:51:17.692211 [debug] [MainThread]: previous checksum: 871d77df38a0661255d31f261d53a40de07e4ab2030d521ff4a1932357e45ee6, current checksum: 30bd4080c2bc8dee5936f8f60083ffbe1c906859d0fd965607c2144031479456
+[0m04:51:17.692616 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'partial_parser', 'label': '21961fe3-f6c9-4bfb-ab7d-b4970d04dde2', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0xffff65bc11c0>]}
+[0m04:51:18.187314 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': '21961fe3-f6c9-4bfb-ab7d-b4970d04dde2', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0xffff7ff2e130>]}
+[0m04:51:18.243829 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': '21961fe3-f6c9-4bfb-ab7d-b4970d04dde2', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0xffff7bb53790>]}
+[0m04:51:18.244567 [info ] [MainThread]: Found 1 model, 1 source, 415 macros
+[0m04:51:18.244872 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '21961fe3-f6c9-4bfb-ab7d-b4970d04dde2', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0xffff7bb4f190>]}
+[0m04:51:18.245752 [info ] [MainThread]: 
+[0m04:51:18.246247 [debug] [MainThread]: Acquiring new postgres connection 'master'
+[0m04:51:18.246882 [debug] [ThreadPool]: Acquiring new postgres connection 'list_company_dw'
+[0m04:51:18.293419 [debug] [ThreadPool]: Using postgres connection "list_company_dw"
+[0m04:51:18.293953 [debug] [ThreadPool]: On list_company_dw: /* {"app": "dbt", "dbt_version": "1.8.3", "profile_name": "default", "target_name": "dev", "connection_name": "list_company_dw"} */
+
+    select distinct nspname from pg_namespace
+  
+[0m04:51:18.294299 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m04:51:18.297740 [debug] [ThreadPool]: SQL status: SELECT 4 in 0.003 seconds
+[0m04:51:18.298487 [debug] [ThreadPool]: On list_company_dw: Close
+[0m04:51:18.299290 [debug] [ThreadPool]: Re-using an available connection from the pool (formerly list_company_dw, now list_company_dw_public)
+[0m04:51:18.302766 [debug] [ThreadPool]: Using postgres connection "list_company_dw_public"
+[0m04:51:18.303088 [debug] [ThreadPool]: On list_company_dw_public: BEGIN
+[0m04:51:18.303354 [debug] [ThreadPool]: Opening a new connection, currently in state closed
+[0m04:51:18.305184 [debug] [ThreadPool]: SQL status: BEGIN in 0.002 seconds
+[0m04:51:18.305578 [debug] [ThreadPool]: Using postgres connection "list_company_dw_public"
+[0m04:51:18.305855 [debug] [ThreadPool]: On list_company_dw_public: /* {"app": "dbt", "dbt_version": "1.8.3", "profile_name": "default", "target_name": "dev", "connection_name": "list_company_dw_public"} */
+select
+      'company_dw' as database,
+      tablename as name,
+      schemaname as schema,
+      'table' as type
+    from pg_tables
+    where schemaname ilike 'public'
+    union all
+    select
+      'company_dw' as database,
+      viewname as name,
+      schemaname as schema,
+      'view' as type
+    from pg_views
+    where schemaname ilike 'public'
+    union all
+    select
+      'company_dw' as database,
+      matviewname as name,
+      schemaname as schema,
+      'materialized_view' as type
+    from pg_matviews
+    where schemaname ilike 'public'
+  
+[0m04:51:18.307674 [debug] [ThreadPool]: SQL status: SELECT 0 in 0.002 seconds
+[0m04:51:18.308321 [debug] [ThreadPool]: On list_company_dw_public: ROLLBACK
+[0m04:51:18.308739 [debug] [ThreadPool]: On list_company_dw_public: Close
+[0m04:51:18.311241 [debug] [MainThread]: Using postgres connection "master"
+[0m04:51:18.311561 [debug] [MainThread]: On master: BEGIN
+[0m04:51:18.311882 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m04:51:18.313688 [debug] [MainThread]: SQL status: BEGIN in 0.002 seconds
+[0m04:51:18.314003 [debug] [MainThread]: Using postgres connection "master"
+[0m04:51:18.314341 [debug] [MainThread]: On master: /* {"app": "dbt", "dbt_version": "1.8.3", "profile_name": "default", "target_name": "dev", "connection_name": "master"} */
+with relation as (
+        select
+            pg_rewrite.ev_class as class,
+            pg_rewrite.oid as id
+        from pg_rewrite
+    ),
+    class as (
+        select
+            oid as id,
+            relname as name,
+            relnamespace as schema,
+            relkind as kind
+        from pg_class
+    ),
+    dependency as (
+        select distinct
+            pg_depend.objid as id,
+            pg_depend.refobjid as ref
+        from pg_depend
+    ),
+    schema as (
+        select
+            pg_namespace.oid as id,
+            pg_namespace.nspname as name
+        from pg_namespace
+        where nspname != 'information_schema' and nspname not like 'pg\_%'
+    ),
+    referenced as (
+        select
+            relation.id AS id,
+            referenced_class.name ,
+            referenced_class.schema ,
+            referenced_class.kind
+        from relation
+        join class as referenced_class on relation.class=referenced_class.id
+        where referenced_class.kind in ('r', 'v', 'm')
+    ),
+    relationships as (
+        select
+            referenced.name as referenced_name,
+            referenced.schema as referenced_schema_id,
+            dependent_class.name as dependent_name,
+            dependent_class.schema as dependent_schema_id,
+            referenced.kind as kind
+        from referenced
+        join dependency on referenced.id=dependency.id
+        join class as dependent_class on dependency.ref=dependent_class.id
+        where
+            (referenced.name != dependent_class.name or
+             referenced.schema != dependent_class.schema)
+    )
+
+    select
+        referenced_schema.name as referenced_schema,
+        relationships.referenced_name as referenced_name,
+        dependent_schema.name as dependent_schema,
+        relationships.dependent_name as dependent_name
+    from relationships
+    join schema as dependent_schema on relationships.dependent_schema_id=dependent_schema.id
+    join schema as referenced_schema on relationships.referenced_schema_id=referenced_schema.id
+    group by referenced_schema, referenced_name, dependent_schema, dependent_name
+    order by referenced_schema, referenced_name, dependent_schema, dependent_name;
+[0m04:51:18.315896 [debug] [MainThread]: SQL status: SELECT 0 in 0.001 seconds
+[0m04:51:18.316552 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '21961fe3-f6c9-4bfb-ab7d-b4970d04dde2', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0xffff7feb16a0>]}
+[0m04:51:18.316985 [debug] [MainThread]: On master: ROLLBACK
+[0m04:51:18.317421 [debug] [MainThread]: Using postgres connection "master"
+[0m04:51:18.317734 [debug] [MainThread]: On master: BEGIN
+[0m04:51:18.318145 [debug] [MainThread]: SQL status: BEGIN in 0.000 seconds
+[0m04:51:18.318482 [debug] [MainThread]: On master: COMMIT
+[0m04:51:18.318748 [debug] [MainThread]: Using postgres connection "master"
+[0m04:51:18.318993 [debug] [MainThread]: On master: COMMIT
+[0m04:51:18.319352 [debug] [MainThread]: SQL status: COMMIT in 0.000 seconds
+[0m04:51:18.319588 [debug] [MainThread]: On master: Close
+[0m04:51:18.319925 [info ] [MainThread]: Concurrency: 4 threads (target='dev')
+[0m04:51:18.320204 [info ] [MainThread]: 
+[0m04:51:18.324239 [debug] [Thread-1  ]: Began running node model.ecomm_data_demo.users
+[0m04:51:18.324631 [info ] [Thread-1  ]: 1 of 1 START sql view model public.users ....................................... [RUN]
+[0m04:51:18.325111 [debug] [Thread-1  ]: Re-using an available connection from the pool (formerly list_company_dw_public, now model.ecomm_data_demo.users)
+[0m04:51:18.325388 [debug] [Thread-1  ]: Began compiling node model.ecomm_data_demo.users
+[0m04:51:18.329517 [debug] [Thread-1  ]: Writing injected SQL for node "model.ecomm_data_demo.users"
+[0m04:51:18.330596 [debug] [Thread-1  ]: Began executing node model.ecomm_data_demo.users
+[0m04:51:18.349349 [debug] [Thread-1  ]: Writing runtime sql for node "model.ecomm_data_demo.users"
+[0m04:51:18.350709 [debug] [Thread-1  ]: Using postgres connection "model.ecomm_data_demo.users"
+[0m04:51:18.351047 [debug] [Thread-1  ]: On model.ecomm_data_demo.users: BEGIN
+[0m04:51:18.351343 [debug] [Thread-1  ]: Opening a new connection, currently in state closed
+[0m04:51:18.353494 [debug] [Thread-1  ]: SQL status: BEGIN in 0.002 seconds
+[0m04:51:18.353867 [debug] [Thread-1  ]: Using postgres connection "model.ecomm_data_demo.users"
+[0m04:51:18.354147 [debug] [Thread-1  ]: On model.ecomm_data_demo.users: /* {"app": "dbt", "dbt_version": "1.8.3", "profile_name": "default", "target_name": "dev", "node_id": "model.ecomm_data_demo.users"} */
+
+  create view "company_dw"."public"."users__dbt_tmp"
+    
+    
+  as (
+    
+
+SELECT
+    *
+FROM
+    "company_dw"."public"."users"
+  );
+[0m04:51:18.354583 [debug] [Thread-1  ]: Postgres adapter: Postgres error: relation "public.users" does not exist
+LINE 12:     "company_dw"."public"."users"
+             ^
+
+[0m04:51:18.354828 [debug] [Thread-1  ]: On model.ecomm_data_demo.users: ROLLBACK
+[0m04:51:18.355137 [debug] [Thread-1  ]: On model.ecomm_data_demo.users: Close
+[0m04:51:18.356436 [debug] [Thread-1  ]: Database Error in model users (models/users.sql)
+  relation "public.users" does not exist
+  LINE 12:     "company_dw"."public"."users"
+               ^
+  compiled Code at target/run/ecomm_data_demo/models/users.sql
+[0m04:51:18.357341 [debug] [Thread-1  ]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '21961fe3-f6c9-4bfb-ab7d-b4970d04dde2', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0xffff82f904f0>]}
+[0m04:51:18.357745 [error] [Thread-1  ]: 1 of 1 ERROR creating sql view model public.users .............................. [[31mERROR[0m in 0.03s]
+[0m04:51:18.358143 [debug] [Thread-1  ]: Finished running node model.ecomm_data_demo.users
+[0m04:51:18.359132 [debug] [MainThread]: Using postgres connection "master"
+[0m04:51:18.359408 [debug] [MainThread]: On master: BEGIN
+[0m04:51:18.359638 [debug] [MainThread]: Opening a new connection, currently in state closed
+[0m04:51:18.361475 [debug] [MainThread]: SQL status: BEGIN in 0.002 seconds
+[0m04:51:18.361872 [debug] [MainThread]: On master: COMMIT
+[0m04:51:18.362188 [debug] [MainThread]: Using postgres connection "master"
+[0m04:51:18.362435 [debug] [MainThread]: On master: COMMIT
+[0m04:51:18.362755 [debug] [MainThread]: SQL status: COMMIT in 0.000 seconds
+[0m04:51:18.363006 [debug] [MainThread]: On master: Close
+[0m04:51:18.363382 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m04:51:18.363636 [debug] [MainThread]: Connection 'model.ecomm_data_demo.users' was properly closed.
+[0m04:51:18.363914 [info ] [MainThread]: 
+[0m04:51:18.364223 [info ] [MainThread]: Finished running 1 view model in 0 hours 0 minutes and 0.12 seconds (0.12s).
+[0m04:51:18.364705 [debug] [MainThread]: Command end result
+[0m04:51:18.385309 [info ] [MainThread]: 
+[0m04:51:18.385691 [info ] [MainThread]: [31mCompleted with 1 error and 0 warnings:[0m
+[0m04:51:18.385972 [info ] [MainThread]: 
+[0m04:51:18.386293 [error] [MainThread]:   Database Error in model users (models/users.sql)
+  relation "public.users" does not exist
+  LINE 12:     "company_dw"."public"."users"
+               ^
+  compiled Code at target/run/ecomm_data_demo/models/users.sql
+[0m04:51:18.386496 [info ] [MainThread]: 
+[0m04:51:18.386736 [info ] [MainThread]: Done. PASS=0 WARN=0 ERROR=1 SKIP=0 TOTAL=1
+[0m04:51:18.387332 [debug] [MainThread]: Resource report: {"command_name": "run", "command_wall_clock_time": 0.9280345, "process_user_time": 2.760819, "process_kernel_time": 0.149342, "process_mem_max_rss": "124064", "process_out_blocks": "6200", "command_success": false, "process_in_blocks": "0"}
+[0m04:51:18.387655 [debug] [MainThread]: Command `dbt run` failed at 04:51:18.387610 after 0.93 seconds
+[0m04:51:18.387902 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0xffff665ca7f0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0xffff64c60a60>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0xffff82f25160>]}
+[0m04:51:18.388133 [debug] [MainThread]: Flushing usage events
+[0m04:56:21.845167 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0xffff64302520>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0xffff629638e0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0xffff63c5efa0>]}
+
+
+============================== 04:56:21.849259 | 807170b3-c576-4ac4-856b-24dfbfd89e81 ==============================
+[0m04:56:21.849259 [info ] [MainThread]: Running with dbt=1.8.3
+[0m04:56:21.849773 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'profiles_dir': '/opt/airflow/dbt', 'fail_fast': 'False', 'debug': 'False', 'log_path': '/opt/airflow/dbt/logs', 'warn_error': 'None', 'version_check': 'True', 'use_colors': 'True', 'use_experimental_parser': 'False', 'empty': 'False', 'quiet': 'False', 'no_print': 'None', 'log_format': 'default', 'introspect': 'True', 'static_parser': 'True', 'invocation_command': 'dbt run --profiles-dir /opt/airflow/dbt', 'target_path': 'None', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'send_anonymous_usage_stats': 'True'}
+[0m04:56:21.920761 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '807170b3-c576-4ac4-856b-24dfbfd89e81', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0xffff813dff10>]}
+[0m04:56:21.943916 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': '807170b3-c576-4ac4-856b-24dfbfd89e81', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0xffff63451940>]}
+[0m04:56:21.944414 [info ] [MainThread]: Registered adapter: postgres=1.8.2
+[0m04:56:21.951382 [debug] [MainThread]: checksum: 871d77df38a0661255d31f261d53a40de07e4ab2030d521ff4a1932357e45ee6, vars: {}, profile: , target: dev, version: 1.8.3
+[0m04:56:22.031459 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 0 files added, 0 files changed.
+[0m04:56:22.031788 [debug] [MainThread]: Partial parsing enabled, no changes found, skipping parsing
+[0m04:56:22.049215 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': '807170b3-c576-4ac4-856b-24dfbfd89e81', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0xffff81128130>]}
+[0m04:56:22.102413 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': '807170b3-c576-4ac4-856b-24dfbfd89e81', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0xffff810a6d00>]}
+[0m04:56:22.102773 [info ] [MainThread]: Found 1 model, 1 source, 415 macros
+[0m04:56:22.103045 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '807170b3-c576-4ac4-856b-24dfbfd89e81', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0xffff8116b790>]}
+[0m04:56:22.103867 [info ] [MainThread]: 
+[0m04:56:22.104313 [debug] [MainThread]: Acquiring new postgres connection 'master'
+[0m04:56:22.104959 [debug] [ThreadPool]: Acquiring new postgres connection 'list_company_dw'
+[0m04:56:22.121441 [debug] [ThreadPool]: Using postgres connection "list_company_dw"
+[0m04:56:22.121786 [debug] [ThreadPool]: On list_company_dw: /* {"app": "dbt", "dbt_version": "1.8.3", "profile_name": "default", "target_name": "dev", "connection_name": "list_company_dw"} */
+
+    select distinct nspname from pg_namespace
+  
+[0m04:56:22.122060 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m04:56:22.124384 [debug] [ThreadPool]: SQL status: SELECT 4 in 0.002 seconds
+[0m04:56:22.125054 [debug] [ThreadPool]: On list_company_dw: Close
+[0m04:56:22.125794 [debug] [ThreadPool]: Re-using an available connection from the pool (formerly list_company_dw, now list_company_dw_public)
+[0m04:56:22.128932 [debug] [ThreadPool]: Using postgres connection "list_company_dw_public"
+[0m04:56:22.129224 [debug] [ThreadPool]: On list_company_dw_public: BEGIN
+[0m04:56:22.129458 [debug] [ThreadPool]: Opening a new connection, currently in state closed
+[0m04:56:22.130920 [debug] [ThreadPool]: SQL status: BEGIN in 0.001 seconds
+[0m04:56:22.131254 [debug] [ThreadPool]: Using postgres connection "list_company_dw_public"
+[0m04:56:22.131519 [debug] [ThreadPool]: On list_company_dw_public: /* {"app": "dbt", "dbt_version": "1.8.3", "profile_name": "default", "target_name": "dev", "connection_name": "list_company_dw_public"} */
+select
+      'company_dw' as database,
+      tablename as name,
+      schemaname as schema,
+      'table' as type
+    from pg_tables
+    where schemaname ilike 'public'
+    union all
+    select
+      'company_dw' as database,
+      viewname as name,
+      schemaname as schema,
+      'view' as type
+    from pg_views
+    where schemaname ilike 'public'
+    union all
+    select
+      'company_dw' as database,
+      matviewname as name,
+      schemaname as schema,
+      'materialized_view' as type
+    from pg_matviews
+    where schemaname ilike 'public'
+  
+[0m04:56:22.132833 [debug] [ThreadPool]: SQL status: SELECT 0 in 0.001 seconds
+[0m04:56:22.133408 [debug] [ThreadPool]: On list_company_dw_public: ROLLBACK
+[0m04:56:22.133721 [debug] [ThreadPool]: On list_company_dw_public: Close
+[0m04:56:22.135885 [debug] [MainThread]: Using postgres connection "master"
+[0m04:56:22.136170 [debug] [MainThread]: On master: BEGIN
+[0m04:56:22.136391 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m04:56:22.137772 [debug] [MainThread]: SQL status: BEGIN in 0.001 seconds
+[0m04:56:22.138077 [debug] [MainThread]: Using postgres connection "master"
+[0m04:56:22.138389 [debug] [MainThread]: On master: /* {"app": "dbt", "dbt_version": "1.8.3", "profile_name": "default", "target_name": "dev", "connection_name": "master"} */
+with relation as (
+        select
+            pg_rewrite.ev_class as class,
+            pg_rewrite.oid as id
+        from pg_rewrite
+    ),
+    class as (
+        select
+            oid as id,
+            relname as name,
+            relnamespace as schema,
+            relkind as kind
+        from pg_class
+    ),
+    dependency as (
+        select distinct
+            pg_depend.objid as id,
+            pg_depend.refobjid as ref
+        from pg_depend
+    ),
+    schema as (
+        select
+            pg_namespace.oid as id,
+            pg_namespace.nspname as name
+        from pg_namespace
+        where nspname != 'information_schema' and nspname not like 'pg\_%'
+    ),
+    referenced as (
+        select
+            relation.id AS id,
+            referenced_class.name ,
+            referenced_class.schema ,
+            referenced_class.kind
+        from relation
+        join class as referenced_class on relation.class=referenced_class.id
+        where referenced_class.kind in ('r', 'v', 'm')
+    ),
+    relationships as (
+        select
+            referenced.name as referenced_name,
+            referenced.schema as referenced_schema_id,
+            dependent_class.name as dependent_name,
+            dependent_class.schema as dependent_schema_id,
+            referenced.kind as kind
+        from referenced
+        join dependency on referenced.id=dependency.id
+        join class as dependent_class on dependency.ref=dependent_class.id
+        where
+            (referenced.name != dependent_class.name or
+             referenced.schema != dependent_class.schema)
+    )
+
+    select
+        referenced_schema.name as referenced_schema,
+        relationships.referenced_name as referenced_name,
+        dependent_schema.name as dependent_schema,
+        relationships.dependent_name as dependent_name
+    from relationships
+    join schema as dependent_schema on relationships.dependent_schema_id=dependent_schema.id
+    join schema as referenced_schema on relationships.referenced_schema_id=referenced_schema.id
+    group by referenced_schema, referenced_name, dependent_schema, dependent_name
+    order by referenced_schema, referenced_name, dependent_schema, dependent_name;
+[0m04:56:22.139984 [debug] [MainThread]: SQL status: SELECT 0 in 0.001 seconds
+[0m04:56:22.140598 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '807170b3-c576-4ac4-856b-24dfbfd89e81', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0xffff812e03a0>]}
+[0m04:56:22.140912 [debug] [MainThread]: On master: ROLLBACK
+[0m04:56:22.141216 [debug] [MainThread]: Using postgres connection "master"
+[0m04:56:22.141445 [debug] [MainThread]: On master: BEGIN
+[0m04:56:22.141799 [debug] [MainThread]: SQL status: BEGIN in 0.000 seconds
+[0m04:56:22.142083 [debug] [MainThread]: On master: COMMIT
+[0m04:56:22.142355 [debug] [MainThread]: Using postgres connection "master"
+[0m04:56:22.142575 [debug] [MainThread]: On master: COMMIT
+[0m04:56:22.142849 [debug] [MainThread]: SQL status: COMMIT in 0.000 seconds
+[0m04:56:22.143087 [debug] [MainThread]: On master: Close
+[0m04:56:22.143415 [info ] [MainThread]: Concurrency: 4 threads (target='dev')
+[0m04:56:22.143668 [info ] [MainThread]: 
+[0m04:56:22.147491 [debug] [Thread-1  ]: Began running node model.ecomm_data_demo.users
+[0m04:56:22.147851 [info ] [Thread-1  ]: 1 of 1 START sql view model public.users ....................................... [RUN]
+[0m04:56:22.148224 [debug] [Thread-1  ]: Re-using an available connection from the pool (formerly list_company_dw_public, now model.ecomm_data_demo.users)
+[0m04:56:22.148490 [debug] [Thread-1  ]: Began compiling node model.ecomm_data_demo.users
+[0m04:56:22.152497 [debug] [Thread-1  ]: Writing injected SQL for node "model.ecomm_data_demo.users"
+[0m04:56:22.153466 [debug] [Thread-1  ]: Began executing node model.ecomm_data_demo.users
+[0m04:56:22.172030 [debug] [Thread-1  ]: Writing runtime sql for node "model.ecomm_data_demo.users"
+[0m04:56:22.172988 [debug] [Thread-1  ]: Using postgres connection "model.ecomm_data_demo.users"
+[0m04:56:22.173242 [debug] [Thread-1  ]: On model.ecomm_data_demo.users: BEGIN
+[0m04:56:22.173494 [debug] [Thread-1  ]: Opening a new connection, currently in state closed
+[0m04:56:22.175214 [debug] [Thread-1  ]: SQL status: BEGIN in 0.002 seconds
+[0m04:56:22.175536 [debug] [Thread-1  ]: Using postgres connection "model.ecomm_data_demo.users"
+[0m04:56:22.175821 [debug] [Thread-1  ]: On model.ecomm_data_demo.users: /* {"app": "dbt", "dbt_version": "1.8.3", "profile_name": "default", "target_name": "dev", "node_id": "model.ecomm_data_demo.users"} */
+
+  create view "company_dw"."public"."users__dbt_tmp"
+    
+    
+  as (
+    
+
+SELECT
+    *
+FROM
+    "company_dw"."public"."users"
+  );
+[0m04:56:22.176271 [debug] [Thread-1  ]: Postgres adapter: Postgres error: relation "public.users" does not exist
+LINE 12:     "company_dw"."public"."users"
+             ^
+
+[0m04:56:22.176607 [debug] [Thread-1  ]: On model.ecomm_data_demo.users: ROLLBACK
+[0m04:56:22.176939 [debug] [Thread-1  ]: On model.ecomm_data_demo.users: Close
+[0m04:56:22.178126 [debug] [Thread-1  ]: Database Error in model users (models/users.sql)
+  relation "public.users" does not exist
+  LINE 12:     "company_dw"."public"."users"
+               ^
+  compiled Code at target/run/ecomm_data_demo/models/users.sql
+[0m04:56:22.178940 [debug] [Thread-1  ]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '807170b3-c576-4ac4-856b-24dfbfd89e81', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0xffff642f88b0>]}
+[0m04:56:22.179328 [error] [Thread-1  ]: 1 of 1 ERROR creating sql view model public.users .............................. [[31mERROR[0m in 0.03s]
+[0m04:56:22.179742 [debug] [Thread-1  ]: Finished running node model.ecomm_data_demo.users
+[0m04:56:22.180550 [debug] [MainThread]: Using postgres connection "master"
+[0m04:56:22.180769 [debug] [MainThread]: On master: BEGIN
+[0m04:56:22.180955 [debug] [MainThread]: Opening a new connection, currently in state closed
+[0m04:56:22.182310 [debug] [MainThread]: SQL status: BEGIN in 0.001 seconds
+[0m04:56:22.182548 [debug] [MainThread]: On master: COMMIT
+[0m04:56:22.182727 [debug] [MainThread]: Using postgres connection "master"
+[0m04:56:22.182893 [debug] [MainThread]: On master: COMMIT
+[0m04:56:22.183141 [debug] [MainThread]: SQL status: COMMIT in 0.000 seconds
+[0m04:56:22.183370 [debug] [MainThread]: On master: Close
+[0m04:56:22.183643 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m04:56:22.184599 [debug] [MainThread]: Connection 'model.ecomm_data_demo.users' was properly closed.
+[0m04:56:22.184863 [info ] [MainThread]: 
+[0m04:56:22.185224 [info ] [MainThread]: Finished running 1 view model in 0 hours 0 minutes and 0.08 seconds (0.08s).
+[0m04:56:22.185851 [debug] [MainThread]: Command end result
+[0m04:56:22.205086 [info ] [MainThread]: 
+[0m04:56:22.205434 [info ] [MainThread]: [31mCompleted with 1 error and 0 warnings:[0m
+[0m04:56:22.205693 [info ] [MainThread]: 
+[0m04:56:22.205986 [error] [MainThread]:   Database Error in model users (models/users.sql)
+  relation "public.users" does not exist
+  LINE 12:     "company_dw"."public"."users"
+               ^
+  compiled Code at target/run/ecomm_data_demo/models/users.sql
+[0m04:56:22.206249 [info ] [MainThread]: 
+[0m04:56:22.206509 [info ] [MainThread]: Done. PASS=0 WARN=0 ERROR=1 SKIP=0 TOTAL=1
+[0m04:56:22.207043 [debug] [MainThread]: Resource report: {"command_name": "run", "command_wall_clock_time": 0.38673738, "process_user_time": 2.040554, "process_kernel_time": 0.077058, "process_mem_max_rss": "122632", "command_success": false, "process_in_blocks": "0", "process_out_blocks": "0"}
+[0m04:56:22.207361 [debug] [MainThread]: Command `dbt run` failed at 04:56:22.207305 after 0.39 seconds
+[0m04:56:22.207615 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0xffff64302520>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0xffff813dff10>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0xffff810ccdf0>]}
+[0m04:56:22.207835 [debug] [MainThread]: Flushing usage events
+[0m05:19:29.497327 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0xffff93d9c2e0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0xffff922577c0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0xffff92257760>]}
+
+
+============================== 05:19:29.501561 | 189eea3a-2dd0-4146-b6cb-e07e23d84e07 ==============================
+[0m05:19:29.501561 [info ] [MainThread]: Running with dbt=1.8.3
+[0m05:19:29.502119 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'profiles_dir': '/opt/airflow/dbt', 'version_check': 'True', 'debug': 'False', 'log_path': '/opt/airflow/dbt/logs', 'fail_fast': 'False', 'warn_error': 'None', 'use_colors': 'True', 'use_experimental_parser': 'False', 'empty': 'False', 'quiet': 'False', 'no_print': 'None', 'log_format': 'default', 'introspect': 'True', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'invocation_command': 'dbt run --profiles-dir /opt/airflow/dbt', 'target_path': 'None', 'static_parser': 'True', 'send_anonymous_usage_stats': 'True'}
+[0m05:19:29.584318 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '189eea3a-2dd0-4146-b6cb-e07e23d84e07', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0xffff93c07a00>]}
+[0m05:19:29.607442 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': '189eea3a-2dd0-4146-b6cb-e07e23d84e07', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0xffff922ec0d0>]}
+[0m05:19:29.608147 [info ] [MainThread]: Registered adapter: postgres=1.8.2
+[0m05:19:29.617278 [debug] [MainThread]: checksum: 30bd4080c2bc8dee5936f8f60083ffbe1c906859d0fd965607c2144031479456, vars: {}, profile: , target: , version: 1.8.3
+[0m05:19:29.687944 [info ] [MainThread]: Unable to do partial parsing because config vars, config profile, or config target have changed
+[0m05:19:29.688546 [debug] [MainThread]: previous checksum: 30bd4080c2bc8dee5936f8f60083ffbe1c906859d0fd965607c2144031479456, current checksum: 871d77df38a0661255d31f261d53a40de07e4ab2030d521ff4a1932357e45ee6
+[0m05:19:29.688925 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'partial_parser', 'label': '189eea3a-2dd0-4146-b6cb-e07e23d84e07', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0xffff92e4f910>]}
+[0m05:19:30.212290 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': '189eea3a-2dd0-4146-b6cb-e07e23d84e07', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0xffffb0344130>]}
+[0m05:19:30.264599 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': '189eea3a-2dd0-4146-b6cb-e07e23d84e07', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0xffffadaf5880>]}
+[0m05:19:30.264971 [info ] [MainThread]: Found 1 model, 1 source, 415 macros
+[0m05:19:30.265327 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '189eea3a-2dd0-4146-b6cb-e07e23d84e07', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0xffffb0350af0>]}
+[0m05:19:30.266278 [info ] [MainThread]: 
+[0m05:19:30.266911 [debug] [MainThread]: Acquiring new postgres connection 'master'
+[0m05:19:30.267515 [debug] [ThreadPool]: Acquiring new postgres connection 'list_company_dw'
+[0m05:19:30.306738 [debug] [ThreadPool]: Using postgres connection "list_company_dw"
+[0m05:19:30.307179 [debug] [ThreadPool]: On list_company_dw: /* {"app": "dbt", "dbt_version": "1.8.3", "profile_name": "default", "target_name": "dev", "connection_name": "list_company_dw"} */
+
+    select distinct nspname from pg_namespace
+  
+[0m05:19:30.307487 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m05:19:30.310269 [debug] [ThreadPool]: SQL status: SELECT 4 in 0.003 seconds
+[0m05:19:30.310927 [debug] [ThreadPool]: On list_company_dw: Close
+[0m05:19:30.311689 [debug] [ThreadPool]: Re-using an available connection from the pool (formerly list_company_dw, now list_company_dw_public)
+[0m05:19:30.314945 [debug] [ThreadPool]: Using postgres connection "list_company_dw_public"
+[0m05:19:30.315297 [debug] [ThreadPool]: On list_company_dw_public: BEGIN
+[0m05:19:30.315612 [debug] [ThreadPool]: Opening a new connection, currently in state closed
+[0m05:19:30.317179 [debug] [ThreadPool]: SQL status: BEGIN in 0.002 seconds
+[0m05:19:30.317570 [debug] [ThreadPool]: Using postgres connection "list_company_dw_public"
+[0m05:19:30.317893 [debug] [ThreadPool]: On list_company_dw_public: /* {"app": "dbt", "dbt_version": "1.8.3", "profile_name": "default", "target_name": "dev", "connection_name": "list_company_dw_public"} */
+select
+      'company_dw' as database,
+      tablename as name,
+      schemaname as schema,
+      'table' as type
+    from pg_tables
+    where schemaname ilike 'public'
+    union all
+    select
+      'company_dw' as database,
+      viewname as name,
+      schemaname as schema,
+      'view' as type
+    from pg_views
+    where schemaname ilike 'public'
+    union all
+    select
+      'company_dw' as database,
+      matviewname as name,
+      schemaname as schema,
+      'materialized_view' as type
+    from pg_matviews
+    where schemaname ilike 'public'
+  
+[0m05:19:30.319429 [debug] [ThreadPool]: SQL status: SELECT 0 in 0.001 seconds
+[0m05:19:30.320094 [debug] [ThreadPool]: On list_company_dw_public: ROLLBACK
+[0m05:19:30.320426 [debug] [ThreadPool]: On list_company_dw_public: Close
+[0m05:19:30.322585 [debug] [MainThread]: Using postgres connection "master"
+[0m05:19:30.322881 [debug] [MainThread]: On master: BEGIN
+[0m05:19:30.323138 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m05:19:30.324593 [debug] [MainThread]: SQL status: BEGIN in 0.001 seconds
+[0m05:19:30.324981 [debug] [MainThread]: Using postgres connection "master"
+[0m05:19:30.325318 [debug] [MainThread]: On master: /* {"app": "dbt", "dbt_version": "1.8.3", "profile_name": "default", "target_name": "dev", "connection_name": "master"} */
+with relation as (
+        select
+            pg_rewrite.ev_class as class,
+            pg_rewrite.oid as id
+        from pg_rewrite
+    ),
+    class as (
+        select
+            oid as id,
+            relname as name,
+            relnamespace as schema,
+            relkind as kind
+        from pg_class
+    ),
+    dependency as (
+        select distinct
+            pg_depend.objid as id,
+            pg_depend.refobjid as ref
+        from pg_depend
+    ),
+    schema as (
+        select
+            pg_namespace.oid as id,
+            pg_namespace.nspname as name
+        from pg_namespace
+        where nspname != 'information_schema' and nspname not like 'pg\_%'
+    ),
+    referenced as (
+        select
+            relation.id AS id,
+            referenced_class.name ,
+            referenced_class.schema ,
+            referenced_class.kind
+        from relation
+        join class as referenced_class on relation.class=referenced_class.id
+        where referenced_class.kind in ('r', 'v', 'm')
+    ),
+    relationships as (
+        select
+            referenced.name as referenced_name,
+            referenced.schema as referenced_schema_id,
+            dependent_class.name as dependent_name,
+            dependent_class.schema as dependent_schema_id,
+            referenced.kind as kind
+        from referenced
+        join dependency on referenced.id=dependency.id
+        join class as dependent_class on dependency.ref=dependent_class.id
+        where
+            (referenced.name != dependent_class.name or
+             referenced.schema != dependent_class.schema)
+    )
+
+    select
+        referenced_schema.name as referenced_schema,
+        relationships.referenced_name as referenced_name,
+        dependent_schema.name as dependent_schema,
+        relationships.dependent_name as dependent_name
+    from relationships
+    join schema as dependent_schema on relationships.dependent_schema_id=dependent_schema.id
+    join schema as referenced_schema on relationships.referenced_schema_id=referenced_schema.id
+    group by referenced_schema, referenced_name, dependent_schema, dependent_name
+    order by referenced_schema, referenced_name, dependent_schema, dependent_name;
+[0m05:19:30.326739 [debug] [MainThread]: SQL status: SELECT 0 in 0.001 seconds
+[0m05:19:30.327335 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '189eea3a-2dd0-4146-b6cb-e07e23d84e07', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0xffffb02c2580>]}
+[0m05:19:30.327691 [debug] [MainThread]: On master: ROLLBACK
+[0m05:19:30.328030 [debug] [MainThread]: Using postgres connection "master"
+[0m05:19:30.328307 [debug] [MainThread]: On master: BEGIN
+[0m05:19:30.328713 [debug] [MainThread]: SQL status: BEGIN in 0.000 seconds
+[0m05:19:30.329051 [debug] [MainThread]: On master: COMMIT
+[0m05:19:30.329370 [debug] [MainThread]: Using postgres connection "master"
+[0m05:19:30.329671 [debug] [MainThread]: On master: COMMIT
+[0m05:19:30.330003 [debug] [MainThread]: SQL status: COMMIT in 0.000 seconds
+[0m05:19:30.330288 [debug] [MainThread]: On master: Close
+[0m05:19:30.330648 [info ] [MainThread]: Concurrency: 4 threads (target='dev')
+[0m05:19:30.331004 [info ] [MainThread]: 
+[0m05:19:30.335184 [debug] [Thread-1  ]: Began running node model.ecomm_data_demo.users
+[0m05:19:30.335640 [info ] [Thread-1  ]: 1 of 1 START sql table model public.users ...................................... [RUN]
+[0m05:19:30.336137 [debug] [Thread-1  ]: Re-using an available connection from the pool (formerly list_company_dw_public, now model.ecomm_data_demo.users)
+[0m05:19:30.336431 [debug] [Thread-1  ]: Began compiling node model.ecomm_data_demo.users
+[0m05:19:30.340502 [debug] [Thread-1  ]: Writing injected SQL for node "model.ecomm_data_demo.users"
+[0m05:19:30.341560 [debug] [Thread-1  ]: Began executing node model.ecomm_data_demo.users
+[0m05:19:30.361948 [debug] [Thread-1  ]: Writing runtime sql for node "model.ecomm_data_demo.users"
+[0m05:19:30.363081 [debug] [Thread-1  ]: Using postgres connection "model.ecomm_data_demo.users"
+[0m05:19:30.363372 [debug] [Thread-1  ]: On model.ecomm_data_demo.users: BEGIN
+[0m05:19:30.363668 [debug] [Thread-1  ]: Opening a new connection, currently in state closed
+[0m05:19:30.365646 [debug] [Thread-1  ]: SQL status: BEGIN in 0.002 seconds
+[0m05:19:30.365984 [debug] [Thread-1  ]: Using postgres connection "model.ecomm_data_demo.users"
+[0m05:19:30.366292 [debug] [Thread-1  ]: On model.ecomm_data_demo.users: /* {"app": "dbt", "dbt_version": "1.8.3", "profile_name": "default", "target_name": "dev", "node_id": "model.ecomm_data_demo.users"} */
+
+  
+    
+
+  create  table "company_dw"."public"."users__dbt_tmp"
+  
+  
+    as
+  
+  (
+    -- users.sql
+
+
+SELECT
+    *
+FROM
+    "company_db"."public"."users"
+  );
+  
+[0m05:19:30.366810 [debug] [Thread-1  ]: Postgres adapter: Postgres error: cross-database references are not implemented: "company_db.public.users"
+LINE 18:     "company_db"."public"."users"
+             ^
+
+[0m05:19:30.367125 [debug] [Thread-1  ]: On model.ecomm_data_demo.users: ROLLBACK
+[0m05:19:30.367494 [debug] [Thread-1  ]: On model.ecomm_data_demo.users: Close
+[0m05:19:30.368770 [debug] [Thread-1  ]: Database Error in model users (models/users.sql)
+  cross-database references are not implemented: "company_db.public.users"
+  LINE 18:     "company_db"."public"."users"
+               ^
+  compiled Code at target/run/ecomm_data_demo/models/users.sql
+[0m05:19:30.369694 [debug] [Thread-1  ]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '189eea3a-2dd0-4146-b6cb-e07e23d84e07', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0xffffb0d3b370>]}
+[0m05:19:30.370146 [error] [Thread-1  ]: 1 of 1 ERROR creating sql table model public.users ............................. [[31mERROR[0m in 0.03s]
+[0m05:19:30.370634 [debug] [Thread-1  ]: Finished running node model.ecomm_data_demo.users
+[0m05:19:30.371477 [debug] [MainThread]: Using postgres connection "master"
+[0m05:19:30.371731 [debug] [MainThread]: On master: BEGIN
+[0m05:19:30.371944 [debug] [MainThread]: Opening a new connection, currently in state closed
+[0m05:19:30.373285 [debug] [MainThread]: SQL status: BEGIN in 0.001 seconds
+[0m05:19:30.373618 [debug] [MainThread]: On master: COMMIT
+[0m05:19:30.373945 [debug] [MainThread]: Using postgres connection "master"
+[0m05:19:30.374203 [debug] [MainThread]: On master: COMMIT
+[0m05:19:30.374489 [debug] [MainThread]: SQL status: COMMIT in 0.000 seconds
+[0m05:19:30.374758 [debug] [MainThread]: On master: Close
+[0m05:19:30.375152 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m05:19:30.375447 [debug] [MainThread]: Connection 'model.ecomm_data_demo.users' was properly closed.
+[0m05:19:30.375804 [info ] [MainThread]: 
+[0m05:19:30.376188 [info ] [MainThread]: Finished running 1 table model in 0 hours 0 minutes and 0.11 seconds (0.11s).
+[0m05:19:30.376755 [debug] [MainThread]: Command end result
+[0m05:19:30.397796 [info ] [MainThread]: 
+[0m05:19:30.398313 [info ] [MainThread]: [31mCompleted with 1 error and 0 warnings:[0m
+[0m05:19:30.398703 [info ] [MainThread]: 
+[0m05:19:30.399084 [error] [MainThread]:   Database Error in model users (models/users.sql)
+  cross-database references are not implemented: "company_db.public.users"
+  LINE 18:     "company_db"."public"."users"
+               ^
+  compiled Code at target/run/ecomm_data_demo/models/users.sql
+[0m05:19:30.399399 [info ] [MainThread]: 
+[0m05:19:30.399751 [info ] [MainThread]: Done. PASS=0 WARN=0 ERROR=1 SKIP=0 TOTAL=1
+[0m05:19:30.400370 [debug] [MainThread]: Resource report: {"command_name": "run", "command_wall_clock_time": 0.92794174, "process_user_time": 2.555991, "process_kernel_time": 0.13325, "process_mem_max_rss": "124820", "process_in_blocks": "8", "command_success": false, "process_out_blocks": "0"}
+[0m05:19:30.400803 [debug] [MainThread]: Command `dbt run` failed at 05:19:30.400753 after 0.93 seconds
+[0m05:19:30.401114 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0xffff93d9c2e0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0xffff92892b50>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0xffffb0b58c10>]}
+[0m05:19:30.401378 [debug] [MainThread]: Flushing usage events
+[0m05:20:01.910720 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0xffff6a6482e0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0xffff68b036a0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0xffff68b03640>]}
+
+
+============================== 05:20:01.914069 | 17153fbe-e704-4569-b124-0f8403424af2 ==============================
+[0m05:20:01.914069 [info ] [MainThread]: Running with dbt=1.8.3
+[0m05:20:01.914670 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'write_json': 'True', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'version_check': 'True', 'profiles_dir': '/opt/airflow/dbt', 'log_path': '/opt/airflow/dbt/logs', 'debug': 'False', 'fail_fast': 'False', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'empty': 'None', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'static_parser': 'True', 'log_format': 'default', 'invocation_command': 'dbt debug --profiles-dir /opt/airflow/dbt', 'target_path': 'None', 'introspect': 'True', 'send_anonymous_usage_stats': 'True'}
+[0m05:20:01.918076 [info ] [MainThread]: dbt version: 1.8.3
+[0m05:20:01.918523 [info ] [MainThread]: python version: 3.9.16
+[0m05:20:01.918946 [info ] [MainThread]: python path: /usr/local/bin/python
+[0m05:20:01.919338 [info ] [MainThread]: os info: Linux-6.6.31-linuxkit-aarch64-with-glibc2.31
+[0m05:20:01.979643 [info ] [MainThread]: Using profiles dir at /opt/airflow/dbt
+[0m05:20:01.980851 [info ] [MainThread]: Using profiles.yml file at /opt/airflow/dbt/profiles.yml
+[0m05:20:01.981634 [info ] [MainThread]: Using dbt_project.yml file at /opt/airflow/dbt/dbt_project.yml
+[0m05:20:01.982542 [info ] [MainThread]: adapter type: postgres
+[0m05:20:01.983053 [info ] [MainThread]: adapter version: 1.8.2
+[0m05:20:02.024874 [info ] [MainThread]: Configuration:
+[0m05:20:02.025529 [info ] [MainThread]:   profiles.yml file [[32mOK found and valid[0m]
+[0m05:20:02.025999 [info ] [MainThread]:   dbt_project.yml file [[32mOK found and valid[0m]
+[0m05:20:02.026396 [info ] [MainThread]: Required dependencies:
+[0m05:20:02.026828 [debug] [MainThread]: Executing "git --help"
+[0m05:20:02.029344 [info ] [MainThread]:  - git [[31mERROR[0m]
+
+[0m05:20:02.029851 [info ] [MainThread]: Connection:
+[0m05:20:02.030323 [info ] [MainThread]:   host: company_dw
+[0m05:20:02.030725 [info ] [MainThread]:   port: 5432
+[0m05:20:02.031067 [info ] [MainThread]:   user: postgres
+[0m05:20:02.031425 [info ] [MainThread]:   database: company_dw
+[0m05:20:02.031799 [info ] [MainThread]:   schema: public
+[0m05:20:02.032201 [info ] [MainThread]:   connect_timeout: 10
+[0m05:20:02.032570 [info ] [MainThread]:   role: None
+[0m05:20:02.032960 [info ] [MainThread]:   search_path: None
+[0m05:20:02.033306 [info ] [MainThread]:   keepalives_idle: 0
+[0m05:20:02.033699 [info ] [MainThread]:   sslmode: None
+[0m05:20:02.034073 [info ] [MainThread]:   sslcert: None
+[0m05:20:02.034412 [info ] [MainThread]:   sslkey: None
+[0m05:20:02.034793 [info ] [MainThread]:   sslrootcert: None
+[0m05:20:02.035136 [info ] [MainThread]:   application_name: dbt
+[0m05:20:02.035484 [info ] [MainThread]:   retries: 1
+[0m05:20:02.036126 [info ] [MainThread]: Registered adapter: postgres=1.8.2
+[0m05:20:02.039574 [debug] [MainThread]: Acquiring new postgres connection 'debug'
+[0m05:20:02.077653 [debug] [MainThread]: Using postgres connection "debug"
+[0m05:20:02.078103 [debug] [MainThread]: On debug: select 1 as id
+[0m05:20:02.078423 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m05:20:02.080677 [debug] [MainThread]: SQL status: SELECT 1 in 0.002 seconds
+[0m05:20:02.081267 [debug] [MainThread]: On debug: Close
+[0m05:20:02.081602 [info ] [MainThread]:   Connection test: [[32mOK connection ok[0m]
+
+[0m05:20:02.082000 [info ] [MainThread]: [31m1 check failed:[0m
+[0m05:20:02.082403 [info ] [MainThread]: Error from git --help: User does not have permissions for this command: "git"
+
+[0m05:20:02.083091 [debug] [MainThread]: Resource report: {"command_name": "debug", "command_wall_clock_time": 0.19760558, "process_user_time": 1.96866, "process_kernel_time": 0.06522, "process_mem_max_rss": "125532", "command_success": false, "process_in_blocks": "0", "process_out_blocks": "0"}
+[0m05:20:02.083552 [debug] [MainThread]: Command `dbt debug` failed at 05:20:02.083466 after 0.20 seconds
+[0m05:20:02.083944 [debug] [MainThread]: Connection 'debug' was properly closed.
+[0m05:20:02.084266 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0xffff6a6482e0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0xffff874f2df0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0xffff8753c3a0>]}
+[0m05:20:02.084669 [debug] [MainThread]: Flushing usage events
+[0m05:21:18.194966 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0xffff8cb672e0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0xffff8b023730>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0xffff8b0236d0>]}
+
+
+============================== 05:21:18.198184 | 99f9af76-5e03-4c2e-901b-9492ec8bda79 ==============================
+[0m05:21:18.198184 [info ] [MainThread]: Running with dbt=1.8.3
+[0m05:21:18.198768 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'write_json': 'True', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'debug': 'False', 'version_check': 'True', 'log_path': '/opt/airflow/dbt/logs', 'profiles_dir': '/opt/airflow/dbt', 'fail_fast': 'False', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'empty': 'False', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'static_parser': 'True', 'introspect': 'True', 'log_format': 'default', 'target_path': 'None', 'invocation_command': 'dbt run --profiles-dir /opt/airflow/dbt', 'send_anonymous_usage_stats': 'True'}
+[0m05:21:18.269521 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '99f9af76-5e03-4c2e-901b-9492ec8bda79', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0xffff8ca246d0>]}
+[0m05:21:18.292351 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': '99f9af76-5e03-4c2e-901b-9492ec8bda79', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0xffff8b275f70>]}
+[0m05:21:18.292855 [info ] [MainThread]: Registered adapter: postgres=1.8.2
+[0m05:21:18.300097 [debug] [MainThread]: checksum: 30bd4080c2bc8dee5936f8f60083ffbe1c906859d0fd965607c2144031479456, vars: {}, profile: , target: , version: 1.8.3
+[0m05:21:18.381766 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 0 files added, 0 files changed.
+[0m05:21:18.382163 [debug] [MainThread]: Partial parsing enabled, no changes found, skipping parsing
+[0m05:21:18.400110 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': '99f9af76-5e03-4c2e-901b-9492ec8bda79', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0xffffa980a130>]}
+[0m05:21:18.450547 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': '99f9af76-5e03-4c2e-901b-9492ec8bda79', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0xffffa97ae790>]}
+[0m05:21:18.450914 [info ] [MainThread]: Found 1 model, 1 source, 415 macros
+[0m05:21:18.451263 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '99f9af76-5e03-4c2e-901b-9492ec8bda79', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0xffffa9ab5cd0>]}
+[0m05:21:18.452065 [info ] [MainThread]: 
+[0m05:21:18.452513 [debug] [MainThread]: Acquiring new postgres connection 'master'
+[0m05:21:18.453157 [debug] [ThreadPool]: Acquiring new postgres connection 'list_company_dw'
+[0m05:21:18.468697 [debug] [ThreadPool]: Using postgres connection "list_company_dw"
+[0m05:21:18.469076 [debug] [ThreadPool]: On list_company_dw: /* {"app": "dbt", "dbt_version": "1.8.3", "profile_name": "default", "target_name": "dev", "connection_name": "list_company_dw"} */
+
+    select distinct nspname from pg_namespace
+  
+[0m05:21:18.469376 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m05:21:18.471672 [debug] [ThreadPool]: SQL status: SELECT 4 in 0.002 seconds
+[0m05:21:18.472380 [debug] [ThreadPool]: On list_company_dw: Close
+[0m05:21:18.473141 [debug] [ThreadPool]: Re-using an available connection from the pool (formerly list_company_dw, now list_company_dw_public)
+[0m05:21:18.476493 [debug] [ThreadPool]: Using postgres connection "list_company_dw_public"
+[0m05:21:18.476812 [debug] [ThreadPool]: On list_company_dw_public: BEGIN
+[0m05:21:18.477106 [debug] [ThreadPool]: Opening a new connection, currently in state closed
+[0m05:21:18.478508 [debug] [ThreadPool]: SQL status: BEGIN in 0.001 seconds
+[0m05:21:18.478910 [debug] [ThreadPool]: Using postgres connection "list_company_dw_public"
+[0m05:21:18.479276 [debug] [ThreadPool]: On list_company_dw_public: /* {"app": "dbt", "dbt_version": "1.8.3", "profile_name": "default", "target_name": "dev", "connection_name": "list_company_dw_public"} */
+select
+      'company_dw' as database,
+      tablename as name,
+      schemaname as schema,
+      'table' as type
+    from pg_tables
+    where schemaname ilike 'public'
+    union all
+    select
+      'company_dw' as database,
+      viewname as name,
+      schemaname as schema,
+      'view' as type
+    from pg_views
+    where schemaname ilike 'public'
+    union all
+    select
+      'company_dw' as database,
+      matviewname as name,
+      schemaname as schema,
+      'materialized_view' as type
+    from pg_matviews
+    where schemaname ilike 'public'
+  
+[0m05:21:18.480522 [debug] [ThreadPool]: SQL status: SELECT 0 in 0.001 seconds
+[0m05:21:18.481201 [debug] [ThreadPool]: On list_company_dw_public: ROLLBACK
+[0m05:21:18.481526 [debug] [ThreadPool]: On list_company_dw_public: Close
+[0m05:21:18.483776 [debug] [MainThread]: Using postgres connection "master"
+[0m05:21:18.484099 [debug] [MainThread]: On master: BEGIN
+[0m05:21:18.484318 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m05:21:18.485692 [debug] [MainThread]: SQL status: BEGIN in 0.001 seconds
+[0m05:21:18.485970 [debug] [MainThread]: Using postgres connection "master"
+[0m05:21:18.486238 [debug] [MainThread]: On master: /* {"app": "dbt", "dbt_version": "1.8.3", "profile_name": "default", "target_name": "dev", "connection_name": "master"} */
+with relation as (
+        select
+            pg_rewrite.ev_class as class,
+            pg_rewrite.oid as id
+        from pg_rewrite
+    ),
+    class as (
+        select
+            oid as id,
+            relname as name,
+            relnamespace as schema,
+            relkind as kind
+        from pg_class
+    ),
+    dependency as (
+        select distinct
+            pg_depend.objid as id,
+            pg_depend.refobjid as ref
+        from pg_depend
+    ),
+    schema as (
+        select
+            pg_namespace.oid as id,
+            pg_namespace.nspname as name
+        from pg_namespace
+        where nspname != 'information_schema' and nspname not like 'pg\_%'
+    ),
+    referenced as (
+        select
+            relation.id AS id,
+            referenced_class.name ,
+            referenced_class.schema ,
+            referenced_class.kind
+        from relation
+        join class as referenced_class on relation.class=referenced_class.id
+        where referenced_class.kind in ('r', 'v', 'm')
+    ),
+    relationships as (
+        select
+            referenced.name as referenced_name,
+            referenced.schema as referenced_schema_id,
+            dependent_class.name as dependent_name,
+            dependent_class.schema as dependent_schema_id,
+            referenced.kind as kind
+        from referenced
+        join dependency on referenced.id=dependency.id
+        join class as dependent_class on dependency.ref=dependent_class.id
+        where
+            (referenced.name != dependent_class.name or
+             referenced.schema != dependent_class.schema)
+    )
+
+    select
+        referenced_schema.name as referenced_schema,
+        relationships.referenced_name as referenced_name,
+        dependent_schema.name as dependent_schema,
+        relationships.dependent_name as dependent_name
+    from relationships
+    join schema as dependent_schema on relationships.dependent_schema_id=dependent_schema.id
+    join schema as referenced_schema on relationships.referenced_schema_id=referenced_schema.id
+    group by referenced_schema, referenced_name, dependent_schema, dependent_name
+    order by referenced_schema, referenced_name, dependent_schema, dependent_name;
+[0m05:21:18.487433 [debug] [MainThread]: SQL status: SELECT 0 in 0.001 seconds
+[0m05:21:18.488060 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '99f9af76-5e03-4c2e-901b-9492ec8bda79', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0xffffa93f0580>]}
+[0m05:21:18.488381 [debug] [MainThread]: On master: ROLLBACK
+[0m05:21:18.488742 [debug] [MainThread]: Using postgres connection "master"
+[0m05:21:18.488970 [debug] [MainThread]: On master: BEGIN
+[0m05:21:18.489373 [debug] [MainThread]: SQL status: BEGIN in 0.000 seconds
+[0m05:21:18.489725 [debug] [MainThread]: On master: COMMIT
+[0m05:21:18.490007 [debug] [MainThread]: Using postgres connection "master"
+[0m05:21:18.490267 [debug] [MainThread]: On master: COMMIT
+[0m05:21:18.490602 [debug] [MainThread]: SQL status: COMMIT in 0.000 seconds
+[0m05:21:18.490874 [debug] [MainThread]: On master: Close
+[0m05:21:18.491238 [info ] [MainThread]: Concurrency: 4 threads (target='dev')
+[0m05:21:18.491627 [info ] [MainThread]: 
+[0m05:21:18.495490 [debug] [Thread-1  ]: Began running node model.ecomm_data_demo.users
+[0m05:21:18.495937 [info ] [Thread-1  ]: 1 of 1 START sql table model public.users ...................................... [RUN]
+[0m05:21:18.496368 [debug] [Thread-1  ]: Re-using an available connection from the pool (formerly list_company_dw_public, now model.ecomm_data_demo.users)
+[0m05:21:18.496756 [debug] [Thread-1  ]: Began compiling node model.ecomm_data_demo.users
+[0m05:21:18.500831 [debug] [Thread-1  ]: Writing injected SQL for node "model.ecomm_data_demo.users"
+[0m05:21:18.501784 [debug] [Thread-1  ]: Began executing node model.ecomm_data_demo.users
+[0m05:21:18.521824 [debug] [Thread-1  ]: Writing runtime sql for node "model.ecomm_data_demo.users"
+[0m05:21:18.522847 [debug] [Thread-1  ]: Using postgres connection "model.ecomm_data_demo.users"
+[0m05:21:18.523160 [debug] [Thread-1  ]: On model.ecomm_data_demo.users: BEGIN
+[0m05:21:18.523445 [debug] [Thread-1  ]: Opening a new connection, currently in state closed
+[0m05:21:18.525261 [debug] [Thread-1  ]: SQL status: BEGIN in 0.002 seconds
+[0m05:21:18.525565 [debug] [Thread-1  ]: Using postgres connection "model.ecomm_data_demo.users"
+[0m05:21:18.525879 [debug] [Thread-1  ]: On model.ecomm_data_demo.users: /* {"app": "dbt", "dbt_version": "1.8.3", "profile_name": "default", "target_name": "dev", "node_id": "model.ecomm_data_demo.users"} */
+
+  
+    
+
+  create  table "company_dw"."public"."users__dbt_tmp"
+  
+  
+    as
+  
+  (
+    -- users.sql
+
+
+SELECT
+    *
+FROM
+    "company_db"."public"."users"
+  );
+  
+[0m05:21:18.526306 [debug] [Thread-1  ]: Postgres adapter: Postgres error: cross-database references are not implemented: "company_db.public.users"
+LINE 18:     "company_db"."public"."users"
+             ^
+
+[0m05:21:18.526597 [debug] [Thread-1  ]: On model.ecomm_data_demo.users: ROLLBACK
+[0m05:21:18.526998 [debug] [Thread-1  ]: On model.ecomm_data_demo.users: Close
+[0m05:21:18.528123 [debug] [Thread-1  ]: Database Error in model users (models/users.sql)
+  cross-database references are not implemented: "company_db.public.users"
+  LINE 18:     "company_db"."public"."users"
+               ^
+  compiled Code at target/run/ecomm_data_demo/models/users.sql
+[0m05:21:18.528970 [debug] [Thread-1  ]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '99f9af76-5e03-4c2e-901b-9492ec8bda79', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0xffffa9b29e20>]}
+[0m05:21:18.529399 [error] [Thread-1  ]: 1 of 1 ERROR creating sql table model public.users ............................. [[31mERROR[0m in 0.03s]
+[0m05:21:18.529884 [debug] [Thread-1  ]: Finished running node model.ecomm_data_demo.users
+[0m05:21:18.530766 [debug] [MainThread]: Using postgres connection "master"
+[0m05:21:18.531062 [debug] [MainThread]: On master: BEGIN
+[0m05:21:18.531296 [debug] [MainThread]: Opening a new connection, currently in state closed
+[0m05:21:18.532631 [debug] [MainThread]: SQL status: BEGIN in 0.001 seconds
+[0m05:21:18.532993 [debug] [MainThread]: On master: COMMIT
+[0m05:21:18.533341 [debug] [MainThread]: Using postgres connection "master"
+[0m05:21:18.533635 [debug] [MainThread]: On master: COMMIT
+[0m05:21:18.534113 [debug] [MainThread]: SQL status: COMMIT in 0.000 seconds
+[0m05:21:18.534446 [debug] [MainThread]: On master: Close
+[0m05:21:18.534861 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m05:21:18.535148 [debug] [MainThread]: Connection 'model.ecomm_data_demo.users' was properly closed.
+[0m05:21:18.535464 [info ] [MainThread]: 
+[0m05:21:18.535908 [info ] [MainThread]: Finished running 1 table model in 0 hours 0 minutes and 0.08 seconds (0.08s).
+[0m05:21:18.536399 [debug] [MainThread]: Command end result
+[0m05:21:18.555663 [info ] [MainThread]: 
+[0m05:21:18.556074 [info ] [MainThread]: [31mCompleted with 1 error and 0 warnings:[0m
+[0m05:21:18.556369 [info ] [MainThread]: 
+[0m05:21:18.556654 [error] [MainThread]:   Database Error in model users (models/users.sql)
+  cross-database references are not implemented: "company_db.public.users"
+  LINE 18:     "company_db"."public"."users"
+               ^
+  compiled Code at target/run/ecomm_data_demo/models/users.sql
+[0m05:21:18.557001 [info ] [MainThread]: 
+[0m05:21:18.557319 [info ] [MainThread]: Done. PASS=0 WARN=0 ERROR=1 SKIP=0 TOTAL=1
+[0m05:21:18.557900 [debug] [MainThread]: Resource report: {"command_name": "run", "command_wall_clock_time": 0.38741907, "process_user_time": 2.124601, "process_kernel_time": 0.076768, "process_mem_max_rss": "120580", "command_success": false, "process_in_blocks": "0", "process_out_blocks": "0"}
+[0m05:21:18.558341 [debug] [MainThread]: Command `dbt run` failed at 05:21:18.558281 after 0.39 seconds
+[0m05:21:18.558646 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0xffff8cb672e0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0xffffa97ae790>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0xffff8ca246d0>]}
+[0m05:21:18.558918 [debug] [MainThread]: Flushing usage events

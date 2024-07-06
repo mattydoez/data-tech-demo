@@ -20,7 +20,7 @@ def generate_data():
     try:
         # Run the data generation script
         print("Running data generation script...")
-        result = subprocess.run(["python3", "/opt/airflow/generator/user_generator.py"], check=True, capture_output=True, text=True, timeout=300)
+        result = subprocess.run(["python3", "/opt/airflow/generator/users_generator.py"], check=True, capture_output=True, text=True, timeout=300)
         print(result.stdout)
         print(result.stderr)
     except subprocess.CalledProcessError as e:
@@ -70,6 +70,8 @@ dag = DAG(
     default_args=default_args,
     description='Generate and insert user data every 180 minutes',
     schedule_interval=timedelta(minutes=180),
+    tags=['generator'],
+    wait_for_downstream=True
 )
 
 generate_data_task = PythonOperator(

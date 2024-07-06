@@ -1,0 +1,26 @@
+[2024-07-06T19:00:02.476+0000] {taskinstance.py:1103} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: import_main_data.export_and_load_user_data scheduled__2024-07-06T04:00:00+00:00 [queued]>
+[2024-07-06T19:00:02.480+0000] {taskinstance.py:1103} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: import_main_data.export_and_load_user_data scheduled__2024-07-06T04:00:00+00:00 [queued]>
+[2024-07-06T19:00:02.480+0000] {taskinstance.py:1308} INFO - Starting attempt 4 of 5
+[2024-07-06T19:00:02.484+0000] {taskinstance.py:1327} INFO - Executing <Task(BashOperator): export_and_load_user_data> on 2024-07-06 04:00:00+00:00
+[2024-07-06T19:00:02.486+0000] {standard_task_runner.py:57} INFO - Started process 1993 to run task
+[2024-07-06T19:00:02.487+0000] {standard_task_runner.py:84} INFO - Running: ['airflow', 'tasks', 'run', 'import_main_data', 'export_and_load_user_data', 'scheduled__2024-07-06T04:00:00+00:00', '--job-id', '938', '--raw', '--subdir', 'DAGS_FOLDER/import_raw_data.py', '--cfg-path', '/tmp/tmpgubrw_2e']
+[2024-07-06T19:00:02.488+0000] {standard_task_runner.py:85} INFO - Job 938: Subtask export_and_load_user_data
+[2024-07-06T19:00:02.510+0000] {task_command.py:410} INFO - Running <TaskInstance: import_main_data.export_and_load_user_data scheduled__2024-07-06T04:00:00+00:00 [running]> on host f6bf59d3e65b
+[2024-07-06T19:00:02.555+0000] {taskinstance.py:1545} INFO - Exporting env vars: AIRFLOW_CTX_DAG_EMAIL='airflow@example.com' AIRFLOW_CTX_DAG_OWNER='airflow' AIRFLOW_CTX_DAG_ID='import_main_data' AIRFLOW_CTX_TASK_ID='export_and_load_user_data' AIRFLOW_CTX_EXECUTION_DATE='2024-07-06T04:00:00+00:00' AIRFLOW_CTX_TRY_NUMBER='4' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2024-07-06T04:00:00+00:00'
+[2024-07-06T19:00:02.555+0000] {subprocess.py:63} INFO - Tmp dir root location: 
+ /tmp
+[2024-07-06T19:00:02.556+0000] {subprocess.py:75} INFO - Running command: ['/bin/bash', '-c', '\n        LAST_TRANSFER=$(psql ***ql://***:***@company_dw:5432/company_dw -t -c "SELECT COALESCE((SELECT last_transfer FROM ops.last_transfer WHERE table_name = \'users\' ORDER BY last_transfer DESC LIMIT 1), \'1970-01-01 00:00:00\')")\n        psql ***ql://***:***@company_db:5432/company_db -c "\\copy (SELECT * FROM users WHERE created_at > \'$LAST_TRANSFER\') TO stdout" | psql ***ql://***:***@company_dw:5432/company_dw -c "\n        CREATE TEMP TABLE temp_users (LIKE raw.users INCLUDING DEFAULTS);\n        \\copy temp_users FROM stdin;\n        INSERT INTO raw.users(user_id, username, email, address, phone_number, created_at)\n        SELECT user_id, username, email, address, phone_number, created_at\n        FROM temp_users\n        WHERE temp_users.user_id NOT IN (SELECT user_id FROM raw.users);\n        DROP TABLE temp_users;"\n    ']
+[2024-07-06T19:00:02.558+0000] {subprocess.py:86} INFO - Output:
+[2024-07-06T19:00:02.589+0000] {subprocess.py:93} INFO - ERROR:  syntax error at or near "\"
+[2024-07-06T19:00:02.589+0000] {subprocess.py:93} INFO - LINE 3:         \copy temp_users FROM stdin;
+[2024-07-06T19:00:02.589+0000] {subprocess.py:93} INFO -                 ^
+[2024-07-06T19:00:02.590+0000] {subprocess.py:97} INFO - Command exited with return code 1
+[2024-07-06T19:00:02.596+0000] {taskinstance.py:1824} ERROR - Task failed with exception
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.9/site-packages/airflow/operators/bash.py", line 210, in execute
+    raise AirflowException(
+airflow.exceptions.AirflowException: Bash command failed. The command returned a non-zero exit code 1.
+[2024-07-06T19:00:02.597+0000] {taskinstance.py:1345} INFO - Marking task as UP_FOR_RETRY. dag_id=import_main_data, task_id=export_and_load_user_data, execution_date=20240706T040000, start_date=20240706T190002, end_date=20240706T190002
+[2024-07-06T19:00:02.602+0000] {standard_task_runner.py:104} ERROR - Failed to execute job 938 for task export_and_load_user_data (Bash command failed. The command returned a non-zero exit code 1.; 1993)
+[2024-07-06T19:00:02.626+0000] {local_task_job_runner.py:225} INFO - Task exited with return code 1
+[2024-07-06T19:00:02.637+0000] {taskinstance.py:2651} INFO - 0 downstream tasks scheduled from follow-on schedule check

@@ -80,6 +80,8 @@ dag = DAG(
     default_args=default_args,
     description='Generate and insert events data every 60 minutes',
     schedule_interval=timedelta(minutes=60),
+    tags=['generator'],
+    wait_for_downstream=True
 )
 
 generate_data_task = PythonOperator(

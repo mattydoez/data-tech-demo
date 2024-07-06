@@ -11,13 +11,3 @@ default:
       schema: public
       threads: 4
       keepalives_idle: 0
-    company_db:
-      type: postgres
-      host: company_db
-      user: "{{ env_var('POSTGRES_USER') }}"
-      password: "{{ env_var('POSTGRES_PASSWORD') }}"
-      port: 5432
-      dbname: company_db
-      schema: public
-      threads: 4
-      keepalives_idle: 0

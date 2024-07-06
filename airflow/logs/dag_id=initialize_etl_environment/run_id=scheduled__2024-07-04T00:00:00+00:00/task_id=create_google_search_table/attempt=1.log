@@ -1,0 +1,42 @@
+[2024-07-06T22:08:28.629+0000] {taskinstance.py:1103} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: initialize_etl_environment.create_google_search_table scheduled__2024-07-04T00:00:00+00:00 [queued]>
+[2024-07-06T22:08:28.632+0000] {taskinstance.py:1103} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: initialize_etl_environment.create_google_search_table scheduled__2024-07-04T00:00:00+00:00 [queued]>
+[2024-07-06T22:08:28.632+0000] {taskinstance.py:1308} INFO - Starting attempt 1 of 2
+[2024-07-06T22:08:28.637+0000] {taskinstance.py:1327} INFO - Executing <Task(PostgresOperator): create_google_search_table> on 2024-07-04 00:00:00+00:00
+[2024-07-06T22:08:28.638+0000] {standard_task_runner.py:57} INFO - Started process 4354 to run task
+[2024-07-06T22:08:28.640+0000] {standard_task_runner.py:84} INFO - Running: ['airflow', 'tasks', 'run', 'initialize_etl_environment', 'create_google_search_table', 'scheduled__2024-07-04T00:00:00+00:00', '--job-id', '1183', '--raw', '--subdir', 'DAGS_FOLDER/etl_env_init.py', '--cfg-path', '/tmp/tmpj2s0i28s']
+[2024-07-06T22:08:28.640+0000] {standard_task_runner.py:85} INFO - Job 1183: Subtask create_google_search_table
+[2024-07-06T22:08:28.662+0000] {task_command.py:410} INFO - Running <TaskInstance: initialize_etl_environment.create_google_search_table scheduled__2024-07-04T00:00:00+00:00 [running]> on host c058add182a5
+[2024-07-06T22:08:28.699+0000] {taskinstance.py:1545} INFO - Exporting env vars: AIRFLOW_CTX_DAG_EMAIL='airflow@example.com' AIRFLOW_CTX_DAG_OWNER='airflow' AIRFLOW_CTX_DAG_ID='initialize_etl_environment' AIRFLOW_CTX_TASK_ID='create_google_search_table' AIRFLOW_CTX_EXECUTION_DATE='2024-07-04T00:00:00+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2024-07-04T00:00:00+00:00'
+[2024-07-06T22:08:28.700+0000] {sql.py:262} INFO - Executing: 
+    CREATE TABLE IF NOT EXISTS raw.google_search (
+        id INT PRIMARY KEY,
+        date DATE NOT NULL,
+        campaign VARCHAR(100),
+        ad VARCHAR(100),
+        impressions INT,
+        clicks INT,
+        cost DECIMAL(10, 2),
+        conversions INT,
+        created_at TIMESTAMP 
+    );
+        
+    
+[2024-07-06T22:08:28.703+0000] {base.py:73} INFO - Using connection ID 'company_dw' for task execution.
+[2024-07-06T22:08:28.724+0000] {base.py:73} INFO - Using connection ID 'company_dw' for task execution.
+[2024-07-06T22:08:28.726+0000] {sql.py:375} INFO - Running statement: 
+    CREATE TABLE IF NOT EXISTS raw.google_search (
+        id INT PRIMARY KEY,
+        date DATE NOT NULL,
+        campaign VARCHAR(100),
+        ad VARCHAR(100),
+        impressions INT,
+        clicks INT,
+        cost DECIMAL(10, 2),
+        conversions INT,
+        created_at TIMESTAMP 
+    );
+        
+    , parameters: None
+[2024-07-06T22:08:28.731+0000] {taskinstance.py:1345} INFO - Marking task as SUCCESS. dag_id=initialize_etl_environment, task_id=create_google_search_table, execution_date=20240704T000000, start_date=20240706T220828, end_date=20240706T220828
+[2024-07-06T22:08:28.743+0000] {local_task_job_runner.py:225} INFO - Task exited with return code 0
+[2024-07-06T22:08:28.751+0000] {taskinstance.py:2651} INFO - 0 downstream tasks scheduled from follow-on schedule check

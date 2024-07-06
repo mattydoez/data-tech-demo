@@ -1,0 +1,13 @@
+[2024-07-06T20:18:47.023+0000] {taskinstance.py:1103} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: import_main_data.generate_user_sql scheduled__2024-07-06T04:00:00+00:00 [queued]>
+[2024-07-06T20:18:47.027+0000] {taskinstance.py:1103} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: import_main_data.generate_user_sql scheduled__2024-07-06T04:00:00+00:00 [queued]>
+[2024-07-06T20:18:47.027+0000] {taskinstance.py:1308} INFO - Starting attempt 17 of 18
+[2024-07-06T20:18:47.032+0000] {taskinstance.py:1327} INFO - Executing <Task(PythonOperator): generate_user_sql> on 2024-07-06 04:00:00+00:00
+[2024-07-06T20:18:47.034+0000] {standard_task_runner.py:57} INFO - Started process 57 to run task
+[2024-07-06T20:18:47.036+0000] {standard_task_runner.py:84} INFO - Running: ['airflow', 'tasks', 'run', 'import_main_data', 'generate_user_sql', 'scheduled__2024-07-06T04:00:00+00:00', '--job-id', '979', '--raw', '--subdir', 'DAGS_FOLDER/import_raw_data.py', '--cfg-path', '/tmp/tmpt_ob833_']
+[2024-07-06T20:18:47.037+0000] {standard_task_runner.py:85} INFO - Job 979: Subtask generate_user_sql
+[2024-07-06T20:18:47.065+0000] {task_command.py:410} INFO - Running <TaskInstance: import_main_data.generate_user_sql scheduled__2024-07-06T04:00:00+00:00 [running]> on host c058add182a5
+[2024-07-06T20:18:47.123+0000] {taskinstance.py:1545} INFO - Exporting env vars: AIRFLOW_CTX_DAG_EMAIL='airflow@example.com' AIRFLOW_CTX_DAG_OWNER='airflow' AIRFLOW_CTX_DAG_ID='import_main_data' AIRFLOW_CTX_TASK_ID='generate_user_sql' AIRFLOW_CTX_EXECUTION_DATE='2024-07-06T04:00:00+00:00' AIRFLOW_CTX_TRY_NUMBER='17' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2024-07-06T04:00:00+00:00'
+[2024-07-06T20:18:47.123+0000] {python.py:183} INFO - Done. Returned value was: bash /opt/airflow/scripts/import_core_data.sh users user_id 'user_id, username, email, address, phone_number, created_at' ***ql://***:***@company_db:5432/company_db ***ql://***:***@company_dw:5432/company_dw
+[2024-07-06T20:18:47.136+0000] {taskinstance.py:1345} INFO - Marking task as SUCCESS. dag_id=import_main_data, task_id=generate_user_sql, execution_date=20240706T040000, start_date=20240706T201847, end_date=20240706T201847
+[2024-07-06T20:18:47.183+0000] {local_task_job_runner.py:225} INFO - Task exited with return code 0
+[2024-07-06T20:18:47.196+0000] {taskinstance.py:2651} INFO - 1 downstream tasks scheduled from follow-on schedule check

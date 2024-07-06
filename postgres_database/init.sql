@@ -81,7 +81,7 @@ CREATE TABLE clickstream_events (
 CREATE TABLE products (
     product_id SERIAL PRIMARY KEY,
     name VARCHAR(255),
-    category INT,
+    category VARCHAR(255),
     description VARCHAR(255),
     price DECIMAL,
     created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP

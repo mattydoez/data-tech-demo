@@ -1,12 +1,19 @@
 
-  create view "company_dw"."public"."users__dbt_tmp"
+  
     
-    
-  as (
-    
+
+  create  table "company_dw"."public"."users__dbt_tmp"
+  
+  
+    as
+  
+  (
+    -- users.sql
+
 
 SELECT
     *
 FROM
-    "company_dw"."public"."users"
+    "company_db"."public"."users"
   );
+  

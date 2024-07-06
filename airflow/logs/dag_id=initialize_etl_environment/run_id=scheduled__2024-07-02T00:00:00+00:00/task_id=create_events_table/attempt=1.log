@@ -1,0 +1,50 @@
+[2024-07-06T17:52:57.578+0000] {taskinstance.py:1103} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: initialize_etl_environment.create_events_table scheduled__2024-07-02T00:00:00+00:00 [queued]>
+[2024-07-06T17:52:57.581+0000] {taskinstance.py:1103} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: initialize_etl_environment.create_events_table scheduled__2024-07-02T00:00:00+00:00 [queued]>
+[2024-07-06T17:52:57.581+0000] {taskinstance.py:1308} INFO - Starting attempt 1 of 2
+[2024-07-06T17:52:57.585+0000] {taskinstance.py:1327} INFO - Executing <Task(PostgresOperator): create_events_table> on 2024-07-02 00:00:00+00:00
+[2024-07-06T17:52:57.587+0000] {standard_task_runner.py:57} INFO - Started process 42 to run task
+[2024-07-06T17:52:57.588+0000] {standard_task_runner.py:84} INFO - Running: ['airflow', 'tasks', 'run', 'initialize_etl_environment', 'create_events_table', 'scheduled__2024-07-02T00:00:00+00:00', '--job-id', '786', '--raw', '--subdir', 'DAGS_FOLDER/etl_env_init.py', '--cfg-path', '/tmp/tmpwn34obzg']
+[2024-07-06T17:52:57.589+0000] {standard_task_runner.py:85} INFO - Job 786: Subtask create_events_table
+[2024-07-06T17:52:57.608+0000] {task_command.py:410} INFO - Running <TaskInstance: initialize_etl_environment.create_events_table scheduled__2024-07-02T00:00:00+00:00 [running]> on host f6bf59d3e65b
+[2024-07-06T17:52:57.641+0000] {taskinstance.py:1545} INFO - Exporting env vars: AIRFLOW_CTX_DAG_EMAIL='airflow@example.com' AIRFLOW_CTX_DAG_OWNER='airflow' AIRFLOW_CTX_DAG_ID='initialize_etl_environment' AIRFLOW_CTX_TASK_ID='create_events_table' AIRFLOW_CTX_EXECUTION_DATE='2024-07-02T00:00:00+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2024-07-02T00:00:00+00:00'
+[2024-07-06T17:52:57.641+0000] {sql.py:262} INFO - Executing: 
+    CREATE TABLE IF NOT EXISTS raw.clickstream_events (
+        event_id INT PRIMARY KEY,
+        user_id INT REFERENCES users(user_id),
+        timestamp TIMESTAMP NOT NULL,
+        page_visited VARCHAR(255),
+        action VARCHAR(50),
+        product_id INT,
+        created_at TIMESTAMP 
+    );
+        
+    
+[2024-07-06T17:52:57.645+0000] {base.py:73} INFO - Using connection ID 'company_dw' for task execution.
+[2024-07-06T17:52:57.665+0000] {base.py:73} INFO - Using connection ID 'company_dw' for task execution.
+[2024-07-06T17:52:57.667+0000] {sql.py:375} INFO - Running statement: 
+    CREATE TABLE IF NOT EXISTS raw.clickstream_events (
+        event_id INT PRIMARY KEY,
+        user_id INT REFERENCES users(user_id),
+        timestamp TIMESTAMP NOT NULL,
+        page_visited VARCHAR(255),
+        action VARCHAR(50),
+        product_id INT,
+        created_at TIMESTAMP 
+    );
+        
+    , parameters: None
+[2024-07-06T17:52:57.669+0000] {taskinstance.py:1824} ERROR - Task failed with exception
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.9/site-packages/airflow/providers/common/sql/operators/sql.py", line 268, in execute
+    output = hook.run(
+  File "/home/airflow/.local/lib/python3.9/site-packages/airflow/providers/common/sql/hooks/sql.py", line 349, in run
+    self._run_command(cur, sql_statement, parameters)
+  File "/home/airflow/.local/lib/python3.9/site-packages/airflow/providers/common/sql/hooks/sql.py", line 380, in _run_command
+    cur.execute(sql_statement)
+psycopg2.errors.UndefinedTable: relation "users" does not exist
+
+[2024-07-06T17:52:57.673+0000] {taskinstance.py:1345} INFO - Marking task as UP_FOR_RETRY. dag_id=initialize_etl_environment, task_id=create_events_table, execution_date=20240702T000000, start_date=20240706T175257, end_date=20240706T175257
+[2024-07-06T17:52:57.677+0000] {standard_task_runner.py:104} ERROR - Failed to execute job 786 for task create_events_table (relation "users" does not exist
+; 42)
+[2024-07-06T17:52:57.688+0000] {local_task_job_runner.py:225} INFO - Task exited with return code 1
+[2024-07-06T17:52:57.696+0000] {taskinstance.py:2651} INFO - 0 downstream tasks scheduled from follow-on schedule check

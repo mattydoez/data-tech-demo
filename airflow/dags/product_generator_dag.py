@@ -73,6 +73,8 @@ dag = DAG(
     default_args=default_args,
     description='Generate and insert product data once',
     schedule_interval=None,
+    tags=['generator'],
+    wait_for_downstream=True
 )
 
 generate_data_task = PythonOperator(
