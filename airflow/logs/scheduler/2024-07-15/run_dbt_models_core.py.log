@@ -1,0 +1,84 @@
+[2024-07-15T22:11:03.830+0000] {processor.py:157} INFO - Started process (PID=9) to work on /opt/airflow/dags/run_dbt_models_core.py
+[2024-07-15T22:11:03.830+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/run_dbt_models_core.py for tasks to queue
+[2024-07-15T22:11:03.830+0000] {logging_mixin.py:149} INFO - [2024-07-15T22:11:03.830+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/run_dbt_models_core.py
+[2024-07-15T22:11:03.849+0000] {processor.py:836} INFO - DAG(s) dict_keys(['run_dbt_model_core']) retrieved from /opt/airflow/dags/run_dbt_models_core.py
+[2024-07-15T22:11:03.950+0000] {logging_mixin.py:149} INFO - [2024-07-15T22:11:03.950+0000] {dag.py:2726} INFO - Sync 1 DAGs
+[2024-07-15T22:11:03.959+0000] {logging_mixin.py:149} INFO - [2024-07-15T22:11:03.959+0000] {dag.py:3486} INFO - Setting next_dagrun for run_dbt_model_core to None, run_after=None
+[2024-07-15T22:11:03.967+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/run_dbt_models_core.py took 0.139 seconds
+[2024-07-15T22:11:34.340+0000] {processor.py:157} INFO - Started process (PID=33) to work on /opt/airflow/dags/run_dbt_models_core.py
+[2024-07-15T22:11:34.341+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/run_dbt_models_core.py for tasks to queue
+[2024-07-15T22:11:34.341+0000] {logging_mixin.py:149} INFO - [2024-07-15T22:11:34.341+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/run_dbt_models_core.py
+[2024-07-15T22:11:34.362+0000] {processor.py:836} INFO - DAG(s) dict_keys(['run_dbt_model_core']) retrieved from /opt/airflow/dags/run_dbt_models_core.py
+[2024-07-15T22:11:34.371+0000] {logging_mixin.py:149} INFO - [2024-07-15T22:11:34.371+0000] {dag.py:2726} INFO - Sync 1 DAGs
+[2024-07-15T22:11:34.384+0000] {logging_mixin.py:149} INFO - [2024-07-15T22:11:34.384+0000] {dag.py:3486} INFO - Setting next_dagrun for run_dbt_model_core to None, run_after=None
+[2024-07-15T22:11:34.393+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/run_dbt_models_core.py took 0.058 seconds
+[2024-07-15T22:12:04.784+0000] {processor.py:157} INFO - Started process (PID=66) to work on /opt/airflow/dags/run_dbt_models_core.py
+[2024-07-15T22:12:04.785+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/run_dbt_models_core.py for tasks to queue
+[2024-07-15T22:12:04.789+0000] {logging_mixin.py:149} INFO - [2024-07-15T22:12:04.789+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/run_dbt_models_core.py
+[2024-07-15T22:12:04.840+0000] {processor.py:836} INFO - DAG(s) dict_keys(['run_dbt_model_core']) retrieved from /opt/airflow/dags/run_dbt_models_core.py
+[2024-07-15T22:12:04.885+0000] {logging_mixin.py:149} INFO - [2024-07-15T22:12:04.885+0000] {dag.py:2726} INFO - Sync 1 DAGs
+[2024-07-15T22:12:04.960+0000] {logging_mixin.py:149} INFO - [2024-07-15T22:12:04.960+0000] {dag.py:3486} INFO - Setting next_dagrun for run_dbt_model_core to None, run_after=None
+[2024-07-15T22:12:04.967+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/run_dbt_models_core.py took 0.186 seconds
+[2024-07-15T22:12:35.367+0000] {processor.py:157} INFO - Started process (PID=91) to work on /opt/airflow/dags/run_dbt_models_core.py
+[2024-07-15T22:12:35.368+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/run_dbt_models_core.py for tasks to queue
+[2024-07-15T22:12:35.369+0000] {logging_mixin.py:149} INFO - [2024-07-15T22:12:35.369+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/run_dbt_models_core.py
+[2024-07-15T22:12:35.382+0000] {processor.py:836} INFO - DAG(s) dict_keys(['run_dbt_model_core']) retrieved from /opt/airflow/dags/run_dbt_models_core.py
+[2024-07-15T22:12:35.403+0000] {logging_mixin.py:149} INFO - [2024-07-15T22:12:35.403+0000] {dag.py:2726} INFO - Sync 1 DAGs
+[2024-07-15T22:12:35.488+0000] {logging_mixin.py:149} INFO - [2024-07-15T22:12:35.488+0000] {dag.py:3486} INFO - Setting next_dagrun for run_dbt_model_core to None, run_after=None
+[2024-07-15T22:12:35.495+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/run_dbt_models_core.py took 0.130 seconds
+[2024-07-15T22:13:05.986+0000] {processor.py:157} INFO - Started process (PID=116) to work on /opt/airflow/dags/run_dbt_models_core.py
+[2024-07-15T22:13:05.987+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/run_dbt_models_core.py for tasks to queue
+[2024-07-15T22:13:05.988+0000] {logging_mixin.py:149} INFO - [2024-07-15T22:13:05.988+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/run_dbt_models_core.py
+[2024-07-15T22:13:06.003+0000] {processor.py:836} INFO - DAG(s) dict_keys(['run_dbt_model_core']) retrieved from /opt/airflow/dags/run_dbt_models_core.py
+[2024-07-15T22:13:06.097+0000] {logging_mixin.py:149} INFO - [2024-07-15T22:13:06.097+0000] {dag.py:2726} INFO - Sync 1 DAGs
+[2024-07-15T22:13:06.106+0000] {logging_mixin.py:149} INFO - [2024-07-15T22:13:06.106+0000] {dag.py:3486} INFO - Setting next_dagrun for run_dbt_model_core to None, run_after=None
+[2024-07-15T22:13:06.114+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/run_dbt_models_core.py took 0.130 seconds
+[2024-07-15T22:14:06.745+0000] {processor.py:157} INFO - Started process (PID=9) to work on /opt/airflow/dags/run_dbt_models_core.py
+[2024-07-15T22:14:06.746+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/run_dbt_models_core.py for tasks to queue
+[2024-07-15T22:14:06.746+0000] {logging_mixin.py:149} INFO - [2024-07-15T22:14:06.746+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/run_dbt_models_core.py
+[2024-07-15T22:14:06.774+0000] {processor.py:836} INFO - DAG(s) dict_keys(['run_dbt_model_core']) retrieved from /opt/airflow/dags/run_dbt_models_core.py
+[2024-07-15T22:14:06.850+0000] {logging_mixin.py:149} INFO - [2024-07-15T22:14:06.850+0000] {dag.py:2726} INFO - Sync 1 DAGs
+[2024-07-15T22:14:06.861+0000] {logging_mixin.py:149} INFO - [2024-07-15T22:14:06.861+0000] {dag.py:3486} INFO - Setting next_dagrun for run_dbt_model_core to None, run_after=None
+[2024-07-15T22:14:06.871+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/run_dbt_models_core.py took 0.127 seconds
+[2024-07-15T22:14:37.236+0000] {processor.py:157} INFO - Started process (PID=34) to work on /opt/airflow/dags/run_dbt_models_core.py
+[2024-07-15T22:14:37.236+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/run_dbt_models_core.py for tasks to queue
+[2024-07-15T22:14:37.237+0000] {logging_mixin.py:149} INFO - [2024-07-15T22:14:37.237+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/run_dbt_models_core.py
+[2024-07-15T22:14:37.255+0000] {processor.py:836} INFO - DAG(s) dict_keys(['run_dbt_model_core']) retrieved from /opt/airflow/dags/run_dbt_models_core.py
+[2024-07-15T22:14:37.316+0000] {logging_mixin.py:149} INFO - [2024-07-15T22:14:37.316+0000] {dag.py:2726} INFO - Sync 1 DAGs
+[2024-07-15T22:14:37.343+0000] {logging_mixin.py:149} INFO - [2024-07-15T22:14:37.342+0000] {dag.py:3486} INFO - Setting next_dagrun for run_dbt_model_core to None, run_after=None
+[2024-07-15T22:14:37.352+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/run_dbt_models_core.py took 0.118 seconds
+[2024-07-15T22:15:07.821+0000] {processor.py:157} INFO - Started process (PID=66) to work on /opt/airflow/dags/run_dbt_models_core.py
+[2024-07-15T22:15:07.822+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/run_dbt_models_core.py for tasks to queue
+[2024-07-15T22:15:07.823+0000] {logging_mixin.py:149} INFO - [2024-07-15T22:15:07.823+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/run_dbt_models_core.py
+[2024-07-15T22:15:07.861+0000] {processor.py:836} INFO - DAG(s) dict_keys(['run_dbt_model_core']) retrieved from /opt/airflow/dags/run_dbt_models_core.py
+[2024-07-15T22:15:07.922+0000] {logging_mixin.py:149} INFO - [2024-07-15T22:15:07.922+0000] {dag.py:2726} INFO - Sync 1 DAGs
+[2024-07-15T22:15:07.999+0000] {logging_mixin.py:149} INFO - [2024-07-15T22:15:07.998+0000] {dag.py:3486} INFO - Setting next_dagrun for run_dbt_model_core to None, run_after=None
+[2024-07-15T22:15:08.006+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/run_dbt_models_core.py took 0.189 seconds
+[2024-07-15T22:15:38.459+0000] {processor.py:157} INFO - Started process (PID=91) to work on /opt/airflow/dags/run_dbt_models_core.py
+[2024-07-15T22:15:38.460+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/run_dbt_models_core.py for tasks to queue
+[2024-07-15T22:15:38.461+0000] {logging_mixin.py:149} INFO - [2024-07-15T22:15:38.461+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/run_dbt_models_core.py
+[2024-07-15T22:15:38.500+0000] {processor.py:836} INFO - DAG(s) dict_keys(['run_dbt_model_core']) retrieved from /opt/airflow/dags/run_dbt_models_core.py
+[2024-07-15T22:15:38.541+0000] {logging_mixin.py:149} INFO - [2024-07-15T22:15:38.541+0000] {dag.py:2726} INFO - Sync 1 DAGs
+[2024-07-15T22:15:38.624+0000] {logging_mixin.py:149} INFO - [2024-07-15T22:15:38.624+0000] {dag.py:3486} INFO - Setting next_dagrun for run_dbt_model_core to None, run_after=None
+[2024-07-15T22:15:38.632+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/run_dbt_models_core.py took 0.176 seconds
+[2024-07-15T22:16:09.450+0000] {processor.py:157} INFO - Started process (PID=141) to work on /opt/airflow/dags/run_dbt_models_core.py
+[2024-07-15T22:16:09.451+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/run_dbt_models_core.py for tasks to queue
+[2024-07-15T22:16:09.453+0000] {logging_mixin.py:149} INFO - [2024-07-15T22:16:09.453+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/run_dbt_models_core.py
+[2024-07-15T22:16:09.469+0000] {processor.py:836} INFO - DAG(s) dict_keys(['run_dbt_model_core']) retrieved from /opt/airflow/dags/run_dbt_models_core.py
+[2024-07-15T22:16:09.559+0000] {logging_mixin.py:149} INFO - [2024-07-15T22:16:09.559+0000] {dag.py:2726} INFO - Sync 1 DAGs
+[2024-07-15T22:16:09.569+0000] {logging_mixin.py:149} INFO - [2024-07-15T22:16:09.569+0000] {dag.py:3486} INFO - Setting next_dagrun for run_dbt_model_core to None, run_after=None
+[2024-07-15T22:16:09.576+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/run_dbt_models_core.py took 0.131 seconds
+[2024-07-15T22:16:40.015+0000] {processor.py:157} INFO - Started process (PID=166) to work on /opt/airflow/dags/run_dbt_models_core.py
+[2024-07-15T22:16:40.017+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/run_dbt_models_core.py for tasks to queue
+[2024-07-15T22:16:40.018+0000] {logging_mixin.py:149} INFO - [2024-07-15T22:16:40.018+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/run_dbt_models_core.py
+[2024-07-15T22:16:40.104+0000] {processor.py:836} INFO - DAG(s) dict_keys(['run_dbt_model_core']) retrieved from /opt/airflow/dags/run_dbt_models_core.py
+[2024-07-15T22:16:40.116+0000] {logging_mixin.py:149} INFO - [2024-07-15T22:16:40.116+0000] {dag.py:2726} INFO - Sync 1 DAGs
+[2024-07-15T22:16:40.126+0000] {logging_mixin.py:149} INFO - [2024-07-15T22:16:40.126+0000] {dag.py:3486} INFO - Setting next_dagrun for run_dbt_model_core to None, run_after=None
+[2024-07-15T22:16:40.133+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/run_dbt_models_core.py took 0.123 seconds
+[2024-07-15T22:17:10.496+0000] {processor.py:157} INFO - Started process (PID=190) to work on /opt/airflow/dags/run_dbt_models_core.py
+[2024-07-15T22:17:10.496+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/run_dbt_models_core.py for tasks to queue
+[2024-07-15T22:17:10.497+0000] {logging_mixin.py:149} INFO - [2024-07-15T22:17:10.497+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/run_dbt_models_core.py
+[2024-07-15T22:17:10.580+0000] {processor.py:836} INFO - DAG(s) dict_keys(['run_dbt_model_core']) retrieved from /opt/airflow/dags/run_dbt_models_core.py
+[2024-07-15T22:17:10.591+0000] {logging_mixin.py:149} INFO - [2024-07-15T22:17:10.591+0000] {dag.py:2726} INFO - Sync 1 DAGs
+[2024-07-15T22:17:10.600+0000] {logging_mixin.py:149} INFO - [2024-07-15T22:17:10.599+0000] {dag.py:3486} INFO - Setting next_dagrun for run_dbt_model_core to None, run_after=None
+[2024-07-15T22:17:10.607+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/run_dbt_models_core.py took 0.115 seconds

@@ -1,2 +1,0 @@
-[2024-07-06T22:09:05.683+0000] {taskinstance.py:1093} INFO - Dependencies not met for <TaskInstance: events_generator.insert_transactions scheduled__2024-07-04T10:00:00+00:00 [success]>, dependency 'Task Instance State' FAILED: Task is in the 'success' state.
-[2024-07-06T22:09:05.687+0000] {local_task_job_runner.py:154} INFO - Task is not able to be run

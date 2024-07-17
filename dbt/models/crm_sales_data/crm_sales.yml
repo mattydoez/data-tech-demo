@@ -1,0 +1,64 @@
+version: 2
+
+sources:
+- name: crm_sales_data
+  schema: crm_sales_data
+  tables:
+  - name: accounts
+    identifier: accounts
+  - name: products
+    identifier: products
+  - name: sales_pipeline
+    identifier: sales_pipeline
+  - name: sales_teams
+    identifier: sales_teams
+
+models:
+  - name: crm_stg_sales_pipelines
+    description: "Staging model for sales pipelines"
+    tests:
+      - no_nan_values: {model_name: "crm_stg_sales_pipelines"}
+    columns:
+      - name: opportunity_id
+        tests:
+          - unique
+          - not_null
+
+  - name: crm_stg_sales_accounts
+    description: "Staging model for sales accounts"
+    tests:
+      - no_nan_values: {model_name: "crm_stg_sales_accounts"}
+    columns:
+      - name: account_id
+        tests:
+          - unique
+          - not_null
+
+  - name: crm_stg_sales_products
+    description: "Staging model for sales products"
+    tests:
+      - no_nan_values: {model_name: "crm_stg_sales_products"}
+    columns:
+      - name: product_id
+        tests:
+          - unique
+          - not_null
+
+  - name: crm_stg_sales_teams
+    description: "Staging model for sales teams"
+    tests:
+      - no_nan_values: {model_name: "crm_stg_sales_teams"}
+    columns:
+      - name: sales_agent
+        tests:
+          - unique
+          - not_null
+
+  - name: kpi
+    description: "Fact model with high-level kpis"
+    columns:
+      - name: revenue
+
+  
+
+

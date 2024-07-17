@@ -19,6 +19,7 @@ COPY superset_config.py /app/pythonpath/superset_config.py
 # Ensure the script is executable
 RUN chmod +x /app/init_superset.sh
 
+
 # Switch back to the superset user
 USER superset
 

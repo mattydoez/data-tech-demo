@@ -1,0 +1,68 @@
+[2024-07-15T22:11:56.234+0000] {taskinstance.py:1037} DEBUG - previous_execution_date was called
+[2024-07-15T22:11:56.240+0000] {__init__.py:51} DEBUG - Loading core task runner: StandardTaskRunner
+[2024-07-15T22:11:56.245+0000] {taskinstance.py:1037} DEBUG - previous_execution_date was called
+[2024-07-15T22:11:56.246+0000] {base_task_runner.py:68} DEBUG - Planning to run as the  user
+[2024-07-15T22:11:56.247+0000] {taskinstance.py:789} DEBUG - Refreshing TaskInstance <TaskInstance: crm_sales_data_ingestion.ingest_sales_pipeline manual__2024-07-15T22:11:47.505978+00:00 [queued]> from DB
+[2024-07-15T22:11:56.254+0000] {taskinstance.py:1112} DEBUG - <TaskInstance: crm_sales_data_ingestion.ingest_sales_pipeline manual__2024-07-15T22:11:47.505978+00:00 [queued]> dependency 'Previous Dagrun State' PASSED: True, The task did not have depends_on_past set.
+[2024-07-15T22:11:56.257+0000] {taskinstance.py:1112} DEBUG - <TaskInstance: crm_sales_data_ingestion.ingest_sales_pipeline manual__2024-07-15T22:11:47.505978+00:00 [queued]> dependency 'Not In Retry Period' PASSED: True, The task instance was not marked for retrying.
+[2024-07-15T22:11:56.257+0000] {taskinstance.py:1112} DEBUG - <TaskInstance: crm_sales_data_ingestion.ingest_sales_pipeline manual__2024-07-15T22:11:47.505978+00:00 [queued]> dependency 'Task Instance State' PASSED: True, Task state queued was valid.
+[2024-07-15T22:11:56.257+0000] {taskinstance.py:1112} DEBUG - <TaskInstance: crm_sales_data_ingestion.ingest_sales_pipeline manual__2024-07-15T22:11:47.505978+00:00 [queued]> dependency 'Task Instance Not Running' PASSED: True, Task is not in running state.
+[2024-07-15T22:11:56.258+0000] {taskinstance.py:1103} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: crm_sales_data_ingestion.ingest_sales_pipeline manual__2024-07-15T22:11:47.505978+00:00 [queued]>
+[2024-07-15T22:11:56.258+0000] {taskinstance.py:1112} DEBUG - <TaskInstance: crm_sales_data_ingestion.ingest_sales_pipeline manual__2024-07-15T22:11:47.505978+00:00 [queued]> dependency 'Not In Retry Period' PASSED: True, The task instance was not marked for retrying.
+[2024-07-15T22:11:56.258+0000] {taskinstance.py:1112} DEBUG - <TaskInstance: crm_sales_data_ingestion.ingest_sales_pipeline manual__2024-07-15T22:11:47.505978+00:00 [queued]> dependency 'Task Concurrency' PASSED: True, Task concurrency is not set.
+[2024-07-15T22:11:56.258+0000] {taskinstance.py:1112} DEBUG - <TaskInstance: crm_sales_data_ingestion.ingest_sales_pipeline manual__2024-07-15T22:11:47.505978+00:00 [queued]> dependency 'Previous Dagrun State' PASSED: True, The task did not have depends_on_past set.
+[2024-07-15T22:11:56.261+0000] {taskinstance.py:1112} DEBUG - <TaskInstance: crm_sales_data_ingestion.ingest_sales_pipeline manual__2024-07-15T22:11:47.505978+00:00 [queued]> dependency 'Pool Slots Available' PASSED: True, There are enough open slots in default_pool to execute the task
+[2024-07-15T22:11:56.261+0000] {taskinstance.py:1103} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: crm_sales_data_ingestion.ingest_sales_pipeline manual__2024-07-15T22:11:47.505978+00:00 [queued]>
+[2024-07-15T22:11:56.261+0000] {taskinstance.py:1308} INFO - Starting attempt 1 of 2
+[2024-07-15T22:11:56.266+0000] {taskinstance.py:1327} INFO - Executing <Task(PythonOperator): ingest_sales_pipeline> on 2024-07-15 22:11:47.505978+00:00
+[2024-07-15T22:11:56.268+0000] {standard_task_runner.py:57} INFO - Started process 54 to run task
+[2024-07-15T22:11:56.269+0000] {standard_task_runner.py:84} INFO - Running: ['airflow', 'tasks', 'run', 'crm_sales_data_ingestion', 'ingest_sales_pipeline', 'manual__2024-07-15T22:11:47.505978+00:00', '--job-id', '63', '--raw', '--subdir', 'DAGS_FOLDER/ingest_crm_sales_data.py', '--cfg-path', '/tmp/tmpm68hy02f']
+[2024-07-15T22:11:56.270+0000] {standard_task_runner.py:85} INFO - Job 63: Subtask ingest_sales_pipeline
+[2024-07-15T22:11:56.271+0000] {cli_action_loggers.py:65} DEBUG - Calling callbacks: [<function default_action_log at 0xffff8d540550>]
+[2024-07-15T22:11:56.288+0000] {taskinstance.py:1037} DEBUG - previous_execution_date was called
+[2024-07-15T22:11:56.290+0000] {task_command.py:410} INFO - Running <TaskInstance: crm_sales_data_ingestion.ingest_sales_pipeline manual__2024-07-15T22:11:47.505978+00:00 [running]> on host bdd8ff0aff36
+[2024-07-15T22:11:56.290+0000] {settings.py:353} DEBUG - Disposing DB connection pool (PID 54)
+[2024-07-15T22:11:56.290+0000] {settings.py:212} DEBUG - Setting up DB connection pool (PID 54)
+[2024-07-15T22:11:56.290+0000] {settings.py:285} DEBUG - settings.prepare_engine_args(): Using NullPool
+[2024-07-15T22:11:56.291+0000] {taskinstance.py:789} DEBUG - Refreshing TaskInstance <TaskInstance: crm_sales_data_ingestion.ingest_sales_pipeline manual__2024-07-15T22:11:47.505978+00:00 [running]> from DB
+[2024-07-15T22:11:56.304+0000] {taskinstance.py:1037} DEBUG - previous_execution_date was called
+[2024-07-15T22:11:56.304+0000] {taskinstance.py:868} DEBUG - Clearing XCom data
+[2024-07-15T22:11:56.315+0000] {retries.py:80} DEBUG - Running RenderedTaskInstanceFields._do_delete_old_records with retries. Try 1 of 3
+[2024-07-15T22:11:56.320+0000] {taskinstance.py:1545} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='airflow' AIRFLOW_CTX_DAG_ID='crm_sales_data_ingestion' AIRFLOW_CTX_TASK_ID='ingest_sales_pipeline' AIRFLOW_CTX_EXECUTION_DATE='2024-07-15T22:11:47.505978+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2024-07-15T22:11:47.505978+00:00'
+[2024-07-15T22:11:56.320+0000] {__init__.py:117} DEBUG - Preparing lineage inlets and outlets
+[2024-07-15T22:11:56.320+0000] {__init__.py:155} DEBUG - inlets: [], outlets: []
+[2024-07-15T22:11:56.324+0000] {base.py:73} INFO - Using connection ID 'company_dw' for task execution.
+[2024-07-15T22:11:56.326+0000] {taskinstance.py:1824} ERROR - Task failed with exception
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.9/site-packages/airflow/operators/python.py", line 181, in execute
+    return_value = self.execute_callable()
+  File "/home/airflow/.local/lib/python3.9/site-packages/airflow/operators/python.py", line 198, in execute_callable
+    return self.python_callable(*self.op_args, **self.op_kwargs)
+  File "/opt/airflow/dags/ingest_crm_sales_data.py", line 38, in ingest_csv_to_postgres
+    df = pd.read_csv(file_path)
+  File "/home/airflow/.local/lib/python3.9/site-packages/pandas/util/_decorators.py", line 311, in wrapper
+    return func(*args, **kwargs)
+  File "/home/airflow/.local/lib/python3.9/site-packages/pandas/io/parsers/readers.py", line 586, in read_csv
+    return _read(filepath_or_buffer, kwds)
+  File "/home/airflow/.local/lib/python3.9/site-packages/pandas/io/parsers/readers.py", line 482, in _read
+    parser = TextFileReader(filepath_or_buffer, **kwds)
+  File "/home/airflow/.local/lib/python3.9/site-packages/pandas/io/parsers/readers.py", line 811, in __init__
+    self._engine = self._make_engine(self.engine)
+  File "/home/airflow/.local/lib/python3.9/site-packages/pandas/io/parsers/readers.py", line 1040, in _make_engine
+    return mapping[engine](self.f, **self.options)  # type: ignore[call-arg]
+  File "/home/airflow/.local/lib/python3.9/site-packages/pandas/io/parsers/c_parser_wrapper.py", line 51, in __init__
+    self._open_handles(src, kwds)
+  File "/home/airflow/.local/lib/python3.9/site-packages/pandas/io/parsers/base_parser.py", line 222, in _open_handles
+    self.handles = get_handle(
+  File "/home/airflow/.local/lib/python3.9/site-packages/pandas/io/common.py", line 702, in get_handle
+    handle = open(
+FileNotFoundError: [Errno 2] No such file or directory: '/opt/airflow/data/crm_sales_data/sales_pipeline.csv'
+[2024-07-15T22:11:56.327+0000] {taskinstance.py:789} DEBUG - Refreshing TaskInstance <TaskInstance: crm_sales_data_ingestion.ingest_sales_pipeline manual__2024-07-15T22:11:47.505978+00:00 [running]> from DB
+[2024-07-15T22:11:56.331+0000] {taskinstance.py:2305} DEBUG - Task Duration set to 0.072831
+[2024-07-15T22:11:56.331+0000] {taskinstance.py:1356} DEBUG - Clearing next_method and next_kwargs.
+[2024-07-15T22:11:56.331+0000] {taskinstance.py:1345} INFO - Marking task as UP_FOR_RETRY. dag_id=crm_sales_data_ingestion, task_id=ingest_sales_pipeline, execution_date=20240715T221147, start_date=20240715T221156, end_date=20240715T221156
+[2024-07-15T22:11:56.335+0000] {cli_action_loggers.py:83} DEBUG - Calling callbacks: []
+[2024-07-15T22:11:56.336+0000] {standard_task_runner.py:104} ERROR - Failed to execute job 63 for task ingest_sales_pipeline ([Errno 2] No such file or directory: '/opt/airflow/data/crm_sales_data/sales_pipeline.csv'; 54)
+[2024-07-15T22:11:56.371+0000] {local_task_job_runner.py:225} INFO - Task exited with return code 1
+[2024-07-15T22:11:56.380+0000] {dagrun.py:697} DEBUG - number of tis tasks for <DagRun crm_sales_data_ingestion @ 2024-07-15 22:11:47.505978+00:00: manual__2024-07-15T22:11:47.505978+00:00, state:running, queued_at: 2024-07-15 22:11:47.514889+00:00. externally triggered: True>: 0 task(s)
+[2024-07-15T22:11:56.380+0000] {taskinstance.py:2651} INFO - 0 downstream tasks scheduled from follow-on schedule check

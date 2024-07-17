@@ -1,0 +1,58 @@
+[2024-07-15T22:14:39.367+0000] {taskinstance.py:1037} DEBUG - previous_execution_date was called
+[2024-07-15T22:14:39.374+0000] {__init__.py:51} DEBUG - Loading core task runner: StandardTaskRunner
+[2024-07-15T22:14:39.379+0000] {taskinstance.py:1037} DEBUG - previous_execution_date was called
+[2024-07-15T22:14:39.380+0000] {base_task_runner.py:68} DEBUG - Planning to run as the  user
+[2024-07-15T22:14:39.381+0000] {taskinstance.py:789} DEBUG - Refreshing TaskInstance <TaskInstance: crm_sales_data_ingestion.ingest_data_dictionary manual__2024-07-15T22:11:47.505978+00:00 [queued]> from DB
+[2024-07-15T22:14:39.389+0000] {taskinstance.py:1112} DEBUG - <TaskInstance: crm_sales_data_ingestion.ingest_data_dictionary manual__2024-07-15T22:11:47.505978+00:00 [queued]> dependency 'Task Instance State' PASSED: True, Task state queued was valid.
+[2024-07-15T22:14:39.389+0000] {taskinstance.py:1112} DEBUG - <TaskInstance: crm_sales_data_ingestion.ingest_data_dictionary manual__2024-07-15T22:11:47.505978+00:00 [queued]> dependency 'Not In Retry Period' PASSED: True, The task instance was not marked for retrying.
+[2024-07-15T22:14:39.393+0000] {taskinstance.py:1112} DEBUG - <TaskInstance: crm_sales_data_ingestion.ingest_data_dictionary manual__2024-07-15T22:11:47.505978+00:00 [queued]> dependency 'Previous Dagrun State' PASSED: True, The task did not have depends_on_past set.
+[2024-07-15T22:14:39.393+0000] {taskinstance.py:1112} DEBUG - <TaskInstance: crm_sales_data_ingestion.ingest_data_dictionary manual__2024-07-15T22:11:47.505978+00:00 [queued]> dependency 'Task Instance Not Running' PASSED: True, Task is not in running state.
+[2024-07-15T22:14:39.393+0000] {taskinstance.py:1103} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: crm_sales_data_ingestion.ingest_data_dictionary manual__2024-07-15T22:11:47.505978+00:00 [queued]>
+[2024-07-15T22:14:39.394+0000] {taskinstance.py:1112} DEBUG - <TaskInstance: crm_sales_data_ingestion.ingest_data_dictionary manual__2024-07-15T22:11:47.505978+00:00 [queued]> dependency 'Task Concurrency' PASSED: True, Task concurrency is not set.
+[2024-07-15T22:14:39.397+0000] {taskinstance.py:1112} DEBUG - <TaskInstance: crm_sales_data_ingestion.ingest_data_dictionary manual__2024-07-15T22:11:47.505978+00:00 [queued]> dependency 'Pool Slots Available' PASSED: True, There are enough open slots in default_pool to execute the task
+[2024-07-15T22:14:39.397+0000] {taskinstance.py:1112} DEBUG - <TaskInstance: crm_sales_data_ingestion.ingest_data_dictionary manual__2024-07-15T22:11:47.505978+00:00 [queued]> dependency 'Previous Dagrun State' PASSED: True, The task did not have depends_on_past set.
+[2024-07-15T22:14:39.397+0000] {taskinstance.py:1112} DEBUG - <TaskInstance: crm_sales_data_ingestion.ingest_data_dictionary manual__2024-07-15T22:11:47.505978+00:00 [queued]> dependency 'Not In Retry Period' PASSED: True, The task instance was not marked for retrying.
+[2024-07-15T22:14:39.398+0000] {taskinstance.py:1103} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: crm_sales_data_ingestion.ingest_data_dictionary manual__2024-07-15T22:11:47.505978+00:00 [queued]>
+[2024-07-15T22:14:39.398+0000] {taskinstance.py:1308} INFO - Starting attempt 2 of 3
+[2024-07-15T22:14:39.402+0000] {taskinstance.py:1327} INFO - Executing <Task(PythonOperator): ingest_data_dictionary> on 2024-07-15 22:11:47.505978+00:00
+[2024-07-15T22:14:39.404+0000] {standard_task_runner.py:57} INFO - Started process 35 to run task
+[2024-07-15T22:14:39.406+0000] {standard_task_runner.py:84} INFO - Running: ['airflow', 'tasks', 'run', 'crm_sales_data_ingestion', 'ingest_data_dictionary', 'manual__2024-07-15T22:11:47.505978+00:00', '--job-id', '66', '--raw', '--subdir', 'DAGS_FOLDER/ingest_crm_sales_data.py', '--cfg-path', '/tmp/tmps_wmkfu5']
+[2024-07-15T22:14:39.407+0000] {standard_task_runner.py:85} INFO - Job 66: Subtask ingest_data_dictionary
+[2024-07-15T22:14:39.408+0000] {cli_action_loggers.py:65} DEBUG - Calling callbacks: [<function default_action_log at 0xffff7f47a550>]
+[2024-07-15T22:14:39.428+0000] {taskinstance.py:1037} DEBUG - previous_execution_date was called
+[2024-07-15T22:14:39.429+0000] {task_command.py:410} INFO - Running <TaskInstance: crm_sales_data_ingestion.ingest_data_dictionary manual__2024-07-15T22:11:47.505978+00:00 [running]> on host b91763c3682d
+[2024-07-15T22:14:39.429+0000] {settings.py:353} DEBUG - Disposing DB connection pool (PID 35)
+[2024-07-15T22:14:39.430+0000] {settings.py:212} DEBUG - Setting up DB connection pool (PID 35)
+[2024-07-15T22:14:39.430+0000] {settings.py:285} DEBUG - settings.prepare_engine_args(): Using NullPool
+[2024-07-15T22:14:39.431+0000] {taskinstance.py:789} DEBUG - Refreshing TaskInstance <TaskInstance: crm_sales_data_ingestion.ingest_data_dictionary manual__2024-07-15T22:11:47.505978+00:00 [running]> from DB
+[2024-07-15T22:14:39.447+0000] {taskinstance.py:1037} DEBUG - previous_execution_date was called
+[2024-07-15T22:14:39.448+0000] {taskinstance.py:868} DEBUG - Clearing XCom data
+[2024-07-15T22:14:39.460+0000] {retries.py:80} DEBUG - Running RenderedTaskInstanceFields._do_delete_old_records with retries. Try 1 of 3
+[2024-07-15T22:14:39.466+0000] {taskinstance.py:1545} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='airflow' AIRFLOW_CTX_DAG_ID='crm_sales_data_ingestion' AIRFLOW_CTX_TASK_ID='ingest_data_dictionary' AIRFLOW_CTX_EXECUTION_DATE='2024-07-15T22:11:47.505978+00:00' AIRFLOW_CTX_TRY_NUMBER='2' AIRFLOW_CTX_DAG_RUN_ID='manual__2024-07-15T22:11:47.505978+00:00'
+[2024-07-15T22:14:39.466+0000] {__init__.py:117} DEBUG - Preparing lineage inlets and outlets
+[2024-07-15T22:14:39.466+0000] {__init__.py:155} DEBUG - inlets: [], outlets: []
+[2024-07-15T22:14:39.471+0000] {base.py:73} INFO - Using connection ID 'company_dw' for task execution.
+[2024-07-15T22:14:39.477+0000] {taskinstance.py:1824} ERROR - Task failed with exception
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.9/site-packages/airflow/operators/python.py", line 181, in execute
+    return_value = self.execute_callable()
+  File "/home/airflow/.local/lib/python3.9/site-packages/airflow/operators/python.py", line 198, in execute_callable
+    return self.python_callable(*self.op_args, **self.op_kwargs)
+  File "/opt/airflow/dags/ingest_crm_sales_data.py", line 47, in ingest_csv_to_postgres
+    cursor.execute(create_table_query)
+psycopg2.errors.SyntaxError: syntax error at or near "Table"
+LINE 3:         Table TEXT, Field TEXT, Description TEXT
+                ^
+
+[2024-07-15T22:14:39.478+0000] {taskinstance.py:789} DEBUG - Refreshing TaskInstance <TaskInstance: crm_sales_data_ingestion.ingest_data_dictionary manual__2024-07-15T22:11:47.505978+00:00 [running]> from DB
+[2024-07-15T22:14:39.481+0000] {taskinstance.py:2305} DEBUG - Task Duration set to 0.087693
+[2024-07-15T22:14:39.482+0000] {taskinstance.py:1356} DEBUG - Clearing next_method and next_kwargs.
+[2024-07-15T22:14:39.482+0000] {taskinstance.py:1345} INFO - Marking task as UP_FOR_RETRY. dag_id=crm_sales_data_ingestion, task_id=ingest_data_dictionary, execution_date=20240715T221147, start_date=20240715T221439, end_date=20240715T221439
+[2024-07-15T22:14:39.488+0000] {cli_action_loggers.py:83} DEBUG - Calling callbacks: []
+[2024-07-15T22:14:39.488+0000] {standard_task_runner.py:104} ERROR - Failed to execute job 66 for task ingest_data_dictionary (syntax error at or near "Table"
+LINE 3:         Table TEXT, Field TEXT, Description TEXT
+                ^
+; 35)
+[2024-07-15T22:14:39.507+0000] {local_task_job_runner.py:225} INFO - Task exited with return code 1
+[2024-07-15T22:14:39.516+0000] {dagrun.py:697} DEBUG - number of tis tasks for <DagRun crm_sales_data_ingestion @ 2024-07-15 22:11:47.505978+00:00: manual__2024-07-15T22:11:47.505978+00:00, state:running, queued_at: 2024-07-15 22:11:47.514889+00:00. externally triggered: True>: 0 task(s)
+[2024-07-15T22:14:39.516+0000] {taskinstance.py:2651} INFO - 0 downstream tasks scheduled from follow-on schedule check

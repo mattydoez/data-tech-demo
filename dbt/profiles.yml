@@ -1,13 +1,12 @@
-default:
-  target: dev
+matt_demo:
   outputs:
     dev:
       type: postgres
-      host: company_dw
-      user: "{{ env_var('POSTGRES_USER') }}"
-      password: "{{ env_var('POSTGRES_PASSWORD') }}"
-      port: 5432
-      dbname: company_dw
-      schema: public
       threads: 4
-      keepalives_idle: 0
+      host: company_dw
+      port: 5432
+      user: "{{ env_var('POSTGRES_USER') }}"
+      pass: "{{ env_var('POSTGRES_PASSWORD') }}"
+      dbname: company_dw
+      schema: "{{ env_var('DBT_SCHEMA', 'dev') }}"  # Default to 'dev' if DBT_SCHEMA is not set
+  target: dev
