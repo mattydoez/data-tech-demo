@@ -1,0 +1,70 @@
+[2024-07-15T23:10:04.140+0000] {taskinstance.py:1037} DEBUG - previous_execution_date was called
+[2024-07-15T23:10:04.150+0000] {__init__.py:51} DEBUG - Loading core task runner: StandardTaskRunner
+[2024-07-15T23:10:04.155+0000] {taskinstance.py:1037} DEBUG - previous_execution_date was called
+[2024-07-15T23:10:04.158+0000] {base_task_runner.py:68} DEBUG - Planning to run as the  user
+[2024-07-15T23:10:04.159+0000] {taskinstance.py:789} DEBUG - Refreshing TaskInstance <TaskInstance: run_dbt_init_tasks.dbt_deps manual__2024-07-15T23:10:03.352299+00:00 [queued]> from DB
+[2024-07-15T23:10:04.166+0000] {taskinstance.py:1112} DEBUG - <TaskInstance: run_dbt_init_tasks.dbt_deps manual__2024-07-15T23:10:03.352299+00:00 [queued]> dependency 'Task Instance State' PASSED: True, Task state queued was valid.
+[2024-07-15T23:10:04.166+0000] {taskinstance.py:1112} DEBUG - <TaskInstance: run_dbt_init_tasks.dbt_deps manual__2024-07-15T23:10:03.352299+00:00 [queued]> dependency 'Not In Retry Period' PASSED: True, The task instance was not marked for retrying.
+[2024-07-15T23:10:04.166+0000] {taskinstance.py:1112} DEBUG - <TaskInstance: run_dbt_init_tasks.dbt_deps manual__2024-07-15T23:10:03.352299+00:00 [queued]> dependency 'Trigger Rule' PASSED: True, The task instance did not have any upstream tasks.
+[2024-07-15T23:10:04.167+0000] {taskinstance.py:1112} DEBUG - <TaskInstance: run_dbt_init_tasks.dbt_deps manual__2024-07-15T23:10:03.352299+00:00 [queued]> dependency 'Previous Dagrun State' PASSED: True, The task did not have depends_on_past set.
+[2024-07-15T23:10:04.167+0000] {taskinstance.py:1112} DEBUG - <TaskInstance: run_dbt_init_tasks.dbt_deps manual__2024-07-15T23:10:03.352299+00:00 [queued]> dependency 'Task Instance Not Running' PASSED: True, Task is not in running state.
+[2024-07-15T23:10:04.169+0000] {taskinstance.py:1103} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: run_dbt_init_tasks.dbt_deps manual__2024-07-15T23:10:03.352299+00:00 [queued]>
+[2024-07-15T23:10:04.170+0000] {taskinstance.py:1112} DEBUG - <TaskInstance: run_dbt_init_tasks.dbt_deps manual__2024-07-15T23:10:03.352299+00:00 [queued]> dependency 'Trigger Rule' PASSED: True, The task instance did not have any upstream tasks.
+[2024-07-15T23:10:04.170+0000] {taskinstance.py:1112} DEBUG - <TaskInstance: run_dbt_init_tasks.dbt_deps manual__2024-07-15T23:10:03.352299+00:00 [queued]> dependency 'Task Concurrency' PASSED: True, Task concurrency is not set.
+[2024-07-15T23:10:04.172+0000] {taskinstance.py:1112} DEBUG - <TaskInstance: run_dbt_init_tasks.dbt_deps manual__2024-07-15T23:10:03.352299+00:00 [queued]> dependency 'Pool Slots Available' PASSED: True, There are enough open slots in default_pool to execute the task
+[2024-07-15T23:10:04.173+0000] {taskinstance.py:1112} DEBUG - <TaskInstance: run_dbt_init_tasks.dbt_deps manual__2024-07-15T23:10:03.352299+00:00 [queued]> dependency 'Previous Dagrun State' PASSED: True, The task did not have depends_on_past set.
+[2024-07-15T23:10:04.173+0000] {taskinstance.py:1112} DEBUG - <TaskInstance: run_dbt_init_tasks.dbt_deps manual__2024-07-15T23:10:03.352299+00:00 [queued]> dependency 'Not In Retry Period' PASSED: True, The task instance was not marked for retrying.
+[2024-07-15T23:10:04.173+0000] {taskinstance.py:1103} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: run_dbt_init_tasks.dbt_deps manual__2024-07-15T23:10:03.352299+00:00 [queued]>
+[2024-07-15T23:10:04.173+0000] {taskinstance.py:1308} INFO - Starting attempt 1 of 1
+[2024-07-15T23:10:04.177+0000] {taskinstance.py:1327} INFO - Executing <Task(DbtDepsOperator): dbt_deps> on 2024-07-15 23:10:03.352299+00:00
+[2024-07-15T23:10:04.180+0000] {standard_task_runner.py:57} INFO - Started process 977 to run task
+[2024-07-15T23:10:04.181+0000] {standard_task_runner.py:84} INFO - Running: ['airflow', 'tasks', 'run', 'run_dbt_init_tasks', 'dbt_deps', 'manual__2024-07-15T23:10:03.352299+00:00', '--job-id', '78', '--raw', '--subdir', 'DAGS_FOLDER/run_dbt_init_tasks.py', '--cfg-path', '/tmp/tmp81ob3337']
+[2024-07-15T23:10:04.182+0000] {standard_task_runner.py:85} INFO - Job 78: Subtask dbt_deps
+[2024-07-15T23:10:04.182+0000] {cli_action_loggers.py:65} DEBUG - Calling callbacks: [<function default_action_log at 0xffff7f47a550>]
+[2024-07-15T23:10:04.199+0000] {taskinstance.py:1037} DEBUG - previous_execution_date was called
+[2024-07-15T23:10:04.202+0000] {task_command.py:410} INFO - Running <TaskInstance: run_dbt_init_tasks.dbt_deps manual__2024-07-15T23:10:03.352299+00:00 [running]> on host b91763c3682d
+[2024-07-15T23:10:04.202+0000] {settings.py:353} DEBUG - Disposing DB connection pool (PID 977)
+[2024-07-15T23:10:04.202+0000] {settings.py:212} DEBUG - Setting up DB connection pool (PID 977)
+[2024-07-15T23:10:04.202+0000] {settings.py:285} DEBUG - settings.prepare_engine_args(): Using NullPool
+[2024-07-15T23:10:04.203+0000] {taskinstance.py:789} DEBUG - Refreshing TaskInstance <TaskInstance: run_dbt_init_tasks.dbt_deps manual__2024-07-15T23:10:03.352299+00:00 [running]> from DB
+[2024-07-15T23:10:04.218+0000] {taskinstance.py:1037} DEBUG - previous_execution_date was called
+[2024-07-15T23:10:04.221+0000] {taskinstance.py:868} DEBUG - Clearing XCom data
+[2024-07-15T23:10:04.232+0000] {retries.py:80} DEBUG - Running RenderedTaskInstanceFields._do_delete_old_records with retries. Try 1 of 3
+[2024-07-15T23:10:04.237+0000] {taskinstance.py:1545} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='airflow' AIRFLOW_CTX_DAG_ID='run_dbt_init_tasks' AIRFLOW_CTX_TASK_ID='dbt_deps' AIRFLOW_CTX_EXECUTION_DATE='2024-07-15T23:10:03.352299+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2024-07-15T23:10:03.352299+00:00'
+[2024-07-15T23:10:04.237+0000] {__init__.py:117} DEBUG - Preparing lineage inlets and outlets
+[2024-07-15T23:10:04.238+0000] {__init__.py:155} DEBUG - inlets: [], outlets: []
+[2024-07-15T23:10:04.238+0000] {dbt_hook.py:117} INFO - /home/airflow/.local/bin/dbt deps
+[2024-07-15T23:10:04.240+0000] {dbt_hook.py:126} INFO - Output:
+[2024-07-15T23:10:05.203+0000] {dbt_hook.py:130} INFO - [0m23:10:05  Running with dbt=1.8.3
+[2024-07-15T23:10:05.615+0000] {dbt_hook.py:130} INFO - [0m23:10:05  Installing dbt-labs/dbt_utils
+[2024-07-15T23:10:06.267+0000] {dbt_hook.py:130} INFO - [0m23:10:06  Installed from version 0.8.6
+[2024-07-15T23:10:06.267+0000] {dbt_hook.py:130} INFO - [0m23:10:06  Updated version available: 1.2.0
+[2024-07-15T23:10:06.268+0000] {dbt_hook.py:130} INFO - [0m23:10:06
+[2024-07-15T23:10:06.268+0000] {dbt_hook.py:130} INFO - [0m23:10:06  Updates available for packages: ['dbt-labs/dbt_utils']
+[2024-07-15T23:10:06.268+0000] {dbt_hook.py:130} INFO - Update your versions in packages.yml, then run dbt deps
+[2024-07-15T23:10:06.909+0000] {dbt_hook.py:132} INFO - Command exited with return code 0
+[2024-07-15T23:10:06.909+0000] {__init__.py:75} DEBUG - Lineage called with inlets: [], outlets: []
+[2024-07-15T23:10:06.910+0000] {taskinstance.py:789} DEBUG - Refreshing TaskInstance <TaskInstance: run_dbt_init_tasks.dbt_deps manual__2024-07-15T23:10:03.352299+00:00 [running]> from DB
+[2024-07-15T23:10:06.918+0000] {taskinstance.py:1356} DEBUG - Clearing next_method and next_kwargs.
+[2024-07-15T23:10:06.918+0000] {taskinstance.py:1345} INFO - Marking task as SUCCESS. dag_id=run_dbt_init_tasks, task_id=dbt_deps, execution_date=20240715T231003, start_date=20240715T231004, end_date=20240715T231006
+[2024-07-15T23:10:06.918+0000] {taskinstance.py:2305} DEBUG - Task Duration set to 2.748435
+[2024-07-15T23:10:06.926+0000] {cli_action_loggers.py:83} DEBUG - Calling callbacks: []
+[2024-07-15T23:10:06.938+0000] {local_task_job_runner.py:225} INFO - Task exited with return code 0
+[2024-07-15T23:10:06.948+0000] {dagrun.py:697} DEBUG - number of tis tasks for <DagRun run_dbt_init_tasks @ 2024-07-15 23:10:03.352299+00:00: manual__2024-07-15T23:10:03.352299+00:00, state:running, queued_at: 2024-07-15 23:10:03.359180+00:00. externally triggered: True>: 5 task(s)
+[2024-07-15T23:10:06.948+0000] {dagrun.py:718} DEBUG - number of scheduleable tasks for <DagRun run_dbt_init_tasks @ 2024-07-15 23:10:03.352299+00:00: manual__2024-07-15T23:10:03.352299+00:00, state:running, queued_at: 2024-07-15 23:10:03.359180+00:00. externally triggered: True>: 4 task(s)
+[2024-07-15T23:10:06.948+0000] {taskinstance.py:1112} DEBUG - <TaskInstance: run_dbt_init_tasks.dbt_seed manual__2024-07-15T23:10:03.352299+00:00 [None]> dependency 'Previous Dagrun State' PASSED: True, The task did not have depends_on_past set.
+[2024-07-15T23:10:06.948+0000] {taskinstance.py:1112} DEBUG - <TaskInstance: run_dbt_init_tasks.dbt_seed manual__2024-07-15T23:10:03.352299+00:00 [None]> dependency 'Not In Retry Period' PASSED: True, The task instance was not marked for retrying.
+[2024-07-15T23:10:06.949+0000] {taskinstance.py:1103} DEBUG - Dependencies all met for dep_context=None ti=<TaskInstance: run_dbt_init_tasks.dbt_seed manual__2024-07-15T23:10:03.352299+00:00 [None]>
+[2024-07-15T23:10:06.949+0000] {taskinstance.py:1112} DEBUG - <TaskInstance: run_dbt_init_tasks.model.ecomm_demo.dim_date manual__2024-07-15T23:10:03.352299+00:00 [None]> dependency 'Previous Dagrun State' PASSED: True, The task did not have depends_on_past set.
+[2024-07-15T23:10:06.949+0000] {taskinstance.py:1112} DEBUG - <TaskInstance: run_dbt_init_tasks.model.ecomm_demo.dim_date manual__2024-07-15T23:10:03.352299+00:00 [None]> dependency 'Not In Retry Period' PASSED: True, The task instance was not marked for retrying.
+[2024-07-15T23:10:06.949+0000] {taskinstance.py:1112} DEBUG - <TaskInstance: run_dbt_init_tasks.model.ecomm_demo.dim_date manual__2024-07-15T23:10:03.352299+00:00 [None]> dependency 'Trigger Rule' PASSED: False, Task's trigger rule 'all_success' requires all upstream tasks to have succeeded, but found 1 non-success(es). upstream_states=_UpstreamTIStates(success=0, skipped=0, failed=0, upstream_failed=0, removed=0, done=0), upstream_task_ids={'dbt_seed'}
+[2024-07-15T23:10:06.949+0000] {taskinstance.py:1093} DEBUG - Dependencies not met for <TaskInstance: run_dbt_init_tasks.model.ecomm_demo.dim_date manual__2024-07-15T23:10:03.352299+00:00 [None]>, dependency 'Trigger Rule' FAILED: Task's trigger rule 'all_success' requires all upstream tasks to have succeeded, but found 1 non-success(es). upstream_states=_UpstreamTIStates(success=0, skipped=0, failed=0, upstream_failed=0, removed=0, done=0), upstream_task_ids={'dbt_seed'}
+[2024-07-15T23:10:06.949+0000] {taskinstance.py:1112} DEBUG - <TaskInstance: run_dbt_init_tasks.test.ecomm_demo.dim_date manual__2024-07-15T23:10:03.352299+00:00 [None]> dependency 'Previous Dagrun State' PASSED: True, The task did not have depends_on_past set.
+[2024-07-15T23:10:06.949+0000] {taskinstance.py:1112} DEBUG - <TaskInstance: run_dbt_init_tasks.test.ecomm_demo.dim_date manual__2024-07-15T23:10:03.352299+00:00 [None]> dependency 'Not In Retry Period' PASSED: True, The task instance was not marked for retrying.
+[2024-07-15T23:10:06.950+0000] {taskinstance.py:1112} DEBUG - <TaskInstance: run_dbt_init_tasks.test.ecomm_demo.dim_date manual__2024-07-15T23:10:03.352299+00:00 [None]> dependency 'Trigger Rule' PASSED: False, Task's trigger rule 'all_success' requires all upstream tasks to have succeeded, but found 2 non-success(es). upstream_states=_UpstreamTIStates(success=0, skipped=0, failed=0, upstream_failed=0, removed=0, done=0), upstream_task_ids={'model.ecomm_demo.dim_date', 'dbt_seed'}
+[2024-07-15T23:10:06.950+0000] {taskinstance.py:1093} DEBUG - Dependencies not met for <TaskInstance: run_dbt_init_tasks.test.ecomm_demo.dim_date manual__2024-07-15T23:10:03.352299+00:00 [None]>, dependency 'Trigger Rule' FAILED: Task's trigger rule 'all_success' requires all upstream tasks to have succeeded, but found 2 non-success(es). upstream_states=_UpstreamTIStates(success=0, skipped=0, failed=0, upstream_failed=0, removed=0, done=0), upstream_task_ids={'model.ecomm_demo.dim_date', 'dbt_seed'}
+[2024-07-15T23:10:06.950+0000] {taskinstance.py:1112} DEBUG - <TaskInstance: run_dbt_init_tasks.generate_dbt_docs manual__2024-07-15T23:10:03.352299+00:00 [None]> dependency 'Previous Dagrun State' PASSED: True, The task did not have depends_on_past set.
+[2024-07-15T23:10:06.950+0000] {taskinstance.py:1112} DEBUG - <TaskInstance: run_dbt_init_tasks.generate_dbt_docs manual__2024-07-15T23:10:03.352299+00:00 [None]> dependency 'Not In Retry Period' PASSED: True, The task instance was not marked for retrying.
+[2024-07-15T23:10:06.950+0000] {taskinstance.py:1112} DEBUG - <TaskInstance: run_dbt_init_tasks.generate_dbt_docs manual__2024-07-15T23:10:03.352299+00:00 [None]> dependency 'Trigger Rule' PASSED: False, Task's trigger rule 'all_success' requires all upstream tasks to have succeeded, but found 2 non-success(es). upstream_states=_UpstreamTIStates(success=0, skipped=0, failed=0, upstream_failed=0, removed=0, done=0), upstream_task_ids={'model.ecomm_demo.dim_date', 'test.ecomm_demo.dim_date'}
+[2024-07-15T23:10:06.950+0000] {taskinstance.py:1093} DEBUG - Dependencies not met for <TaskInstance: run_dbt_init_tasks.generate_dbt_docs manual__2024-07-15T23:10:03.352299+00:00 [None]>, dependency 'Trigger Rule' FAILED: Task's trigger rule 'all_success' requires all upstream tasks to have succeeded, but found 2 non-success(es). upstream_states=_UpstreamTIStates(success=0, skipped=0, failed=0, upstream_failed=0, removed=0, done=0), upstream_task_ids={'model.ecomm_demo.dim_date', 'test.ecomm_demo.dim_date'}
+[2024-07-15T23:10:06.953+0000] {taskinstance.py:2651} INFO - 1 downstream tasks scheduled from follow-on schedule check

@@ -1,0 +1,72 @@
+[2024-07-16T00:15:43.074+0000] {taskinstance.py:1037} DEBUG - previous_execution_date was called
+[2024-07-16T00:15:43.079+0000] {__init__.py:51} DEBUG - Loading core task runner: StandardTaskRunner
+[2024-07-16T00:15:43.083+0000] {taskinstance.py:1037} DEBUG - previous_execution_date was called
+[2024-07-16T00:15:43.084+0000] {base_task_runner.py:68} DEBUG - Planning to run as the  user
+[2024-07-16T00:15:43.085+0000] {taskinstance.py:789} DEBUG - Refreshing TaskInstance <TaskInstance: run_dbt_model_crm_sales.test.matt_demo.crm_stg_accounts manual__2024-07-15T23:54:38.113182+00:00 [queued]> from DB
+[2024-07-16T00:15:43.093+0000] {taskinstance.py:1112} DEBUG - <TaskInstance: run_dbt_model_crm_sales.test.matt_demo.crm_stg_accounts manual__2024-07-15T23:54:38.113182+00:00 [queued]> dependency 'Not In Retry Period' PASSED: True, The task instance was not marked for retrying.
+[2024-07-16T00:15:43.098+0000] {taskinstance.py:1112} DEBUG - <TaskInstance: run_dbt_model_crm_sales.test.matt_demo.crm_stg_accounts manual__2024-07-15T23:54:38.113182+00:00 [queued]> dependency 'Task Instance State' PASSED: True, Task state queued was valid.
+[2024-07-16T00:15:43.099+0000] {taskinstance.py:1112} DEBUG - <TaskInstance: run_dbt_model_crm_sales.test.matt_demo.crm_stg_accounts manual__2024-07-15T23:54:38.113182+00:00 [queued]> dependency 'Previous Dagrun State' PASSED: True, This task instance was the first task instance for its task.
+[2024-07-16T00:15:43.099+0000] {taskinstance.py:1112} DEBUG - <TaskInstance: run_dbt_model_crm_sales.test.matt_demo.crm_stg_accounts manual__2024-07-15T23:54:38.113182+00:00 [queued]> dependency 'Task Instance Not Running' PASSED: True, Task is not in running state.
+[2024-07-16T00:15:43.099+0000] {taskinstance.py:1103} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: run_dbt_model_crm_sales.test.matt_demo.crm_stg_accounts manual__2024-07-15T23:54:38.113182+00:00 [queued]>
+[2024-07-16T00:15:43.099+0000] {taskinstance.py:1112} DEBUG - <TaskInstance: run_dbt_model_crm_sales.test.matt_demo.crm_stg_accounts manual__2024-07-15T23:54:38.113182+00:00 [queued]> dependency 'Not In Retry Period' PASSED: True, The task instance was not marked for retrying.
+[2024-07-16T00:15:43.102+0000] {taskinstance.py:1112} DEBUG - <TaskInstance: run_dbt_model_crm_sales.test.matt_demo.crm_stg_accounts manual__2024-07-15T23:54:38.113182+00:00 [queued]> dependency 'Pool Slots Available' PASSED: True, There are enough open slots in default_pool to execute the task
+[2024-07-16T00:15:43.103+0000] {taskinstance.py:1112} DEBUG - <TaskInstance: run_dbt_model_crm_sales.test.matt_demo.crm_stg_accounts manual__2024-07-15T23:54:38.113182+00:00 [queued]> dependency 'Previous Dagrun State' PASSED: True, This task instance was the first task instance for its task.
+[2024-07-16T00:15:43.104+0000] {taskinstance.py:1112} DEBUG - <TaskInstance: run_dbt_model_crm_sales.test.matt_demo.crm_stg_accounts manual__2024-07-15T23:54:38.113182+00:00 [queued]> dependency 'Task Concurrency' PASSED: True, Task concurrency is not set.
+[2024-07-16T00:15:43.104+0000] {taskinstance.py:1103} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: run_dbt_model_crm_sales.test.matt_demo.crm_stg_accounts manual__2024-07-15T23:54:38.113182+00:00 [queued]>
+[2024-07-16T00:15:43.104+0000] {taskinstance.py:1308} INFO - Starting attempt 5 of 5
+[2024-07-16T00:15:43.108+0000] {taskinstance.py:1327} INFO - Executing <Task(BashOperator): test.matt_demo.crm_stg_accounts> on 2024-07-15 23:54:38.113182+00:00
+[2024-07-16T00:15:43.109+0000] {standard_task_runner.py:57} INFO - Started process 2235 to run task
+[2024-07-16T00:15:43.111+0000] {standard_task_runner.py:84} INFO - Running: ['airflow', 'tasks', 'run', 'run_dbt_model_crm_sales', 'test.matt_demo.crm_stg_accounts', 'manual__2024-07-15T23:54:38.113182+00:00', '--job-id', '147', '--raw', '--subdir', 'DAGS_FOLDER/run_dbt_models_crm_sales.py', '--cfg-path', '/tmp/tmp36wltmwx']
+[2024-07-16T00:15:43.111+0000] {standard_task_runner.py:85} INFO - Job 147: Subtask test.matt_demo.crm_stg_accounts
+[2024-07-16T00:15:43.112+0000] {cli_action_loggers.py:65} DEBUG - Calling callbacks: [<function default_action_log at 0xffff7ee0a550>]
+[2024-07-16T00:15:43.129+0000] {taskinstance.py:1037} DEBUG - previous_execution_date was called
+[2024-07-16T00:15:43.131+0000] {task_command.py:410} INFO - Running <TaskInstance: run_dbt_model_crm_sales.test.matt_demo.crm_stg_accounts manual__2024-07-15T23:54:38.113182+00:00 [running]> on host f934d9af8cb8
+[2024-07-16T00:15:43.131+0000] {settings.py:353} DEBUG - Disposing DB connection pool (PID 2235)
+[2024-07-16T00:15:43.131+0000] {settings.py:212} DEBUG - Setting up DB connection pool (PID 2235)
+[2024-07-16T00:15:43.131+0000] {settings.py:285} DEBUG - settings.prepare_engine_args(): Using NullPool
+[2024-07-16T00:15:43.132+0000] {taskinstance.py:789} DEBUG - Refreshing TaskInstance <TaskInstance: run_dbt_model_crm_sales.test.matt_demo.crm_stg_accounts manual__2024-07-15T23:54:38.113182+00:00 [running]> from DB
+[2024-07-16T00:15:43.145+0000] {taskinstance.py:1037} DEBUG - previous_execution_date was called
+[2024-07-16T00:15:43.145+0000] {taskinstance.py:868} DEBUG - Clearing XCom data
+[2024-07-16T00:15:43.155+0000] {retries.py:80} DEBUG - Running RenderedTaskInstanceFields._do_delete_old_records with retries. Try 1 of 3
+[2024-07-16T00:15:43.160+0000] {taskinstance.py:1545} INFO - Exporting env vars: AIRFLOW_CTX_DAG_EMAIL='airflow@example.com' AIRFLOW_CTX_DAG_OWNER='airflow' AIRFLOW_CTX_DAG_ID='run_dbt_model_crm_sales' AIRFLOW_CTX_TASK_ID='test.matt_demo.crm_stg_accounts' AIRFLOW_CTX_EXECUTION_DATE='2024-07-15T23:54:38.113182+00:00' AIRFLOW_CTX_TRY_NUMBER='5' AIRFLOW_CTX_DAG_RUN_ID='manual__2024-07-15T23:54:38.113182+00:00'
+[2024-07-16T00:15:43.160+0000] {__init__.py:117} DEBUG - Preparing lineage inlets and outlets
+[2024-07-16T00:15:43.161+0000] {__init__.py:155} DEBUG - inlets: [], outlets: []
+[2024-07-16T00:15:43.161+0000] {bash.py:186} DEBUG - Exporting env vars: AIRFLOW_CTX_DAG_EMAIL='airflow@example.com' AIRFLOW_CTX_DAG_OWNER='airflow' AIRFLOW_CTX_DAG_ID='run_dbt_model_crm_sales' AIRFLOW_CTX_TASK_ID='test.matt_demo.crm_stg_accounts' AIRFLOW_CTX_EXECUTION_DATE='2024-07-15T23:54:38.113182+00:00' AIRFLOW_CTX_TRY_NUMBER='5' AIRFLOW_CTX_DAG_RUN_ID='manual__2024-07-15T23:54:38.113182+00:00'
+[2024-07-16T00:15:43.161+0000] {subprocess.py:63} INFO - Tmp dir root location: 
+ /tmp
+[2024-07-16T00:15:43.162+0000] {subprocess.py:75} INFO - Running command: ['/bin/bash', '-c', '\n            export DBT_SCHEMA=analysis_crm_sales &&\n            cd /opt/airflow/dbt &&\n            /home/airflow/.local/bin/dbt --no-write-json test --target dev --models crm_stg_accounts\n            ']
+[2024-07-16T00:15:43.164+0000] {subprocess.py:86} INFO - Output:
+[2024-07-16T00:15:44.029+0000] {subprocess.py:93} INFO - [0m00:15:44  Running with dbt=1.8.3
+[2024-07-16T00:15:44.129+0000] {subprocess.py:93} INFO - [0m00:15:44  Registered adapter: ***=1.8.2
+[2024-07-16T00:15:44.219+0000] {subprocess.py:93} INFO - [0m00:15:44  Unable to do partial parsing because config vars, config profile, or config target have changed
+[2024-07-16T00:15:44.220+0000] {subprocess.py:93} INFO - [0m00:15:44  Unable to do partial parsing because profile has changed
+[2024-07-16T00:15:44.879+0000] {subprocess.py:93} INFO - [0m00:15:44  [[33mWARNING[0m]: Deprecated functionality
+[2024-07-16T00:15:44.879+0000] {subprocess.py:93} INFO - The `tests` config has been renamed to `data_tests`. Please see
+[2024-07-16T00:15:44.879+0000] {subprocess.py:93} INFO - https://docs.getdbt.com/docs/build/data-tests#new-data_tests-syntax for more
+[2024-07-16T00:15:44.879+0000] {subprocess.py:93} INFO - information.
+[2024-07-16T00:15:44.930+0000] {subprocess.py:93} INFO - [0m00:15:44  Encountered an error:
+[2024-07-16T00:15:44.930+0000] {subprocess.py:93} INFO - Compilation Error in test no_nan_values_crm_stg_accounts_ (models/crm_sales_data/staging/schema.yml)
+[2024-07-16T00:15:44.930+0000] {subprocess.py:93} INFO -   The name argument to ref() must be a string, got <class 'dbt.adapters.***.relation.PostgresRelation'>
+[2024-07-16T00:15:44.931+0000] {subprocess.py:93} INFO - 
+[2024-07-16T00:15:44.931+0000] {subprocess.py:93} INFO -   > in macro test_no_nan_values (macros/no_nan_values.sql)
+[2024-07-16T00:15:44.931+0000] {subprocess.py:93} INFO -   > called by test no_nan_values_crm_stg_accounts_ (models/crm_sales_data/staging/schema.yml)
+[2024-07-16T00:15:45.540+0000] {subprocess.py:97} INFO - Command exited with return code 2
+[2024-07-16T00:15:45.540+0000] {taskinstance.py:789} DEBUG - Refreshing TaskInstance <TaskInstance: run_dbt_model_crm_sales.test.matt_demo.crm_stg_accounts manual__2024-07-15T23:54:38.113182+00:00 [running]> from DB
+[2024-07-16T00:15:45.546+0000] {taskinstance.py:1824} ERROR - Task failed with exception
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.9/site-packages/airflow/operators/bash.py", line 210, in execute
+    raise AirflowException(
+airflow.exceptions.AirflowException: Bash command failed. The command returned a non-zero exit code 2.
+[2024-07-16T00:15:45.546+0000] {taskinstance.py:789} DEBUG - Refreshing TaskInstance <TaskInstance: run_dbt_model_crm_sales.test.matt_demo.crm_stg_accounts manual__2024-07-15T23:54:38.113182+00:00 [running]> from DB
+[2024-07-16T00:15:45.547+0000] {taskinstance.py:2305} DEBUG - Task Duration set to 2.447877
+[2024-07-16T00:15:45.548+0000] {taskinstance.py:1356} DEBUG - Clearing next_method and next_kwargs.
+[2024-07-16T00:15:45.548+0000] {taskinstance.py:1345} INFO - Marking task as FAILED. dag_id=run_dbt_model_crm_sales, task_id=test.matt_demo.crm_stg_accounts, execution_date=20240715T235438, start_date=20240716T001543, end_date=20240716T001545
+[2024-07-16T00:15:45.554+0000] {cli_action_loggers.py:83} DEBUG - Calling callbacks: []
+[2024-07-16T00:15:45.554+0000] {standard_task_runner.py:104} ERROR - Failed to execute job 147 for task test.matt_demo.crm_stg_accounts (Bash command failed. The command returned a non-zero exit code 2.; 2235)
+[2024-07-16T00:15:45.566+0000] {local_task_job_runner.py:225} INFO - Task exited with return code 1
+[2024-07-16T00:15:45.585+0000] {dagrun.py:697} DEBUG - number of tis tasks for <DagRun run_dbt_model_crm_sales @ 2024-07-15 23:54:38.113182+00:00: manual__2024-07-15T23:54:38.113182+00:00, state:running, queued_at: 2024-07-16 00:10:20.650796+00:00. externally triggered: True>: 11 task(s)
+[2024-07-16T00:15:45.585+0000] {dagrun.py:718} DEBUG - number of scheduleable tasks for <DagRun run_dbt_model_crm_sales @ 2024-07-15 23:54:38.113182+00:00: manual__2024-07-15T23:54:38.113182+00:00, state:running, queued_at: 2024-07-16 00:10:20.650796+00:00. externally triggered: True>: 1 task(s)
+[2024-07-16T00:15:45.585+0000] {taskinstance.py:1112} DEBUG - <TaskInstance: run_dbt_model_crm_sales.test.matt_demo.crm_stg_sales_pipelines manual__2024-07-15T23:54:38.113182+00:00 [up_for_retry]> dependency 'Not In Retry Period' PASSED: False, Task is not ready for retry yet but will be retried automatically. Current date is 2024-07-16T00:15:45.585497+00:00 and task will be retried at 2024-07-16T00:15:47.854908+00:00.
+[2024-07-16T00:15:45.585+0000] {taskinstance.py:1093} DEBUG - Dependencies not met for <TaskInstance: run_dbt_model_crm_sales.test.matt_demo.crm_stg_sales_pipelines manual__2024-07-15T23:54:38.113182+00:00 [up_for_retry]>, dependency 'Not In Retry Period' FAILED: Task is not ready for retry yet but will be retried automatically. Current date is 2024-07-16T00:15:45.585497+00:00 and task will be retried at 2024-07-16T00:15:47.854908+00:00.
+[2024-07-16T00:15:45.586+0000] {taskinstance.py:1112} DEBUG - <TaskInstance: run_dbt_model_crm_sales.test.matt_demo.crm_stg_sales_pipelines manual__2024-07-15T23:54:38.113182+00:00 [up_for_retry]> dependency 'Previous Dagrun State' PASSED: True, This task instance was the first task instance for its task.
+[2024-07-16T00:15:45.587+0000] {taskinstance.py:2651} INFO - 0 downstream tasks scheduled from follow-on schedule check
