@@ -24,18 +24,6 @@ SUPERSET_SECRET_KEY=your_superset_secret_key
 # Project Structure
 ```
 ├── README.MD
-│   ├── data_generator.py
-│   ├── docker-compose.yml
-│   ├── etl_env_init.py
-│   ├── external_data
-│   ├── generator
-│   ├── import_core_data.sh
-│   ├── import_raw_data.py
-│   ├── postgres_database
-│   ├── predictions
-│   ├── product_generator_dag.py
-│   ├── run_data_generation.py
-│   └── sub_biz_generators
 ├── airflow
 │   ├── Dockerfile
 │   ├── airflow.cfg
