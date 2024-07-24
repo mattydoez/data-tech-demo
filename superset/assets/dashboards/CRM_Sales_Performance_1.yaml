@@ -1,0 +1,599 @@
+dashboard_title: CRM Sales Performance
+description: null
+css: "body{\n    background-image: linear-gradient(-90deg, #a1a2a9, #badaff);\n}\n\
+  \n\n\n  .grid-content .dragdroppable-row .dragdroppable-column .dashboard-component-chart-holder\
+  \ {\n    \n    border-radius:25px;\n    box-shadow: 0px 0px 30px #708090;\n  }"
+slug: null
+certified_by: ''
+certification_details: ''
+published: true
+uuid: a6bc07e8-f0d3-439c-acf4-12467e3a324a
+position:
+  CHART-explore-1-1:
+    children: []
+    id: CHART-explore-1-1
+    meta:
+      chartId: 1
+      height: 19
+      sliceName: Overall Revenue
+      uuid: c10b2147-18d5-453c-8c43-c8bbdfbbf44c
+      width: 4
+    parents:
+    - ROOT_ID
+    - GRID_ID
+    - ROW-KthIXn-ZG
+    type: CHART
+  CHART-explore-10-1:
+    children: []
+    id: CHART-explore-10-1
+    meta:
+      chartId: 10
+      height: 19
+      sliceName: Deals Engaged In
+      uuid: c615ca2a-f310-422b-9523-a2cccc92f63a
+      width: 4
+    parents:
+    - ROOT_ID
+    - GRID_ID
+    - ROW-Icz478Oeg
+    type: CHART
+  CHART-explore-11-1:
+    children: []
+    id: CHART-explore-11-1
+    meta:
+      chartId: 11
+      height: 19
+      sliceName: Avg Revenue Per Closed Deal
+      uuid: 44962a5d-642b-4b94-8b1d-760dcda77751
+      width: 4
+    parents:
+    - ROOT_ID
+    - GRID_ID
+    - ROW-KthIXn-ZG
+    type: CHART
+  CHART-explore-12-1:
+    children: []
+    id: CHART-explore-12-1
+    meta:
+      chartId: 12
+      height: 20
+      sliceName: Total Lost Deals
+      uuid: aa94c124-f5ea-4a94-86fb-8c6c790c4997
+      width: 4
+    parents:
+    - ROOT_ID
+    - GRID_ID
+    - ROW-Icz478Oeg
+    type: CHART
+  CHART-explore-13-1:
+    children: []
+    id: CHART-explore-13-1
+    meta:
+      chartId: 13
+      height: 50
+      sliceName: Product Win Rates
+      uuid: c364ed38-cac5-490c-a62a-257541537c44
+      width: 6
+    parents:
+    - ROOT_ID
+    - GRID_ID
+    - ROW-ebixkX_Nb
+    type: CHART
+  CHART-explore-14-1:
+    children: []
+    id: CHART-explore-14-1
+    meta:
+      chartId: 14
+      height: 50
+      sliceName: Possible Future Revenue
+      uuid: 22965e21-246b-49df-a578-e2a55eb7d78a
+      width: 12
+    parents:
+    - ROOT_ID
+    - GRID_ID
+    - ROW-8d6skx5Hw
+    type: CHART
+  CHART-explore-2-1:
+    children: []
+    id: CHART-explore-2-1
+    meta:
+      chartId: 2
+      height: 53
+      sliceName: Revenue By Month
+      uuid: fcd4c182-ee3e-4b53-9da4-00442e41dc25
+      width: 6
+    parents:
+    - ROOT_ID
+    - GRID_ID
+    - ROW-pNsjvQq_R
+    type: CHART
+  CHART-explore-3-1:
+    children: []
+    id: CHART-explore-3-1
+    meta:
+      chartId: 3
+      height: 54
+      sliceName: Team Revenue By Quarter
+      uuid: b098c890-094a-459b-b16d-176b9168607a
+      width: 6
+    parents:
+    - ROOT_ID
+    - GRID_ID
+    - ROW-D_eCuTt5u
+    type: CHART
+  CHART-explore-4-1:
+    children: []
+    id: CHART-explore-4-1
+    meta:
+      chartId: 4
+      height: 53
+      sliceName: Revenue Pct Total Over Time
+      uuid: 3146b7cf-98fe-4675-84c2-889217253ad1
+      width: 6
+    parents:
+    - ROOT_ID
+    - GRID_ID
+    - ROW-D_eCuTt5u
+    type: CHART
+  CHART-explore-5-1:
+    children: []
+    id: CHART-explore-5-1
+    meta:
+      chartId: 5
+      height: 50
+      sliceName: Revenue By Product
+      uuid: 0edab7d3-6048-4081-aba0-ea3dc078afcf
+      width: 6
+    parents:
+    - ROOT_ID
+    - GRID_ID
+    - ROW-ebixkX_Nb
+    type: CHART
+  CHART-explore-6-1:
+    children: []
+    id: CHART-explore-6-1
+    meta:
+      chartId: 6
+      height: 50
+      sliceName: Revenue Distribution By Industry
+      uuid: b515cbd2-dd8b-4521-a1b1-7a509948e66b
+      width: 12
+    parents:
+    - ROOT_ID
+    - GRID_ID
+    - ROW-7Odi8iDjgs
+    type: CHART
+  CHART-explore-7-1:
+    children: []
+    id: CHART-explore-7-1
+    meta:
+      chartId: 7
+      height: 53
+      sliceName: QoQ Growth
+      uuid: 8c7f637e-33ca-4aad-8c46-a81926a2b24d
+      width: 6
+    parents:
+    - ROOT_ID
+    - GRID_ID
+    - ROW-pNsjvQq_R
+    type: CHART
+  CHART-explore-8-1:
+    children: []
+    id: CHART-explore-8-1
+    meta:
+      chartId: 8
+      height: 19
+      sliceName: Won Deals
+      uuid: 93eeff96-aadd-48f6-9fc6-572a6d17181c
+      width: 4
+    parents:
+    - ROOT_ID
+    - GRID_ID
+    - ROW-KthIXn-ZG
+    type: CHART
+  CHART-explore-9-1:
+    children: []
+    id: CHART-explore-9-1
+    meta:
+      chartId: 9
+      height: 19
+      sliceName: Prospecting Opportunities
+      uuid: 700c64b0-179d-4a99-8061-3dbf660c88bf
+      width: 4
+    parents:
+    - ROOT_ID
+    - GRID_ID
+    - ROW-Icz478Oeg
+    type: CHART
+  DASHBOARD_VERSION_KEY: v2
+  DIVIDER--lq1SYAUrN:
+    children: []
+    id: DIVIDER--lq1SYAUrN
+    meta: {}
+    parents:
+    - ROOT_ID
+    - GRID_ID
+    type: DIVIDER
+  DIVIDER-GM4WAtkytl:
+    children: []
+    id: DIVIDER-GM4WAtkytl
+    meta: {}
+    parents:
+    - ROOT_ID
+    - GRID_ID
+    type: DIVIDER
+  DIVIDER-O75eZF1akY:
+    children: []
+    id: DIVIDER-O75eZF1akY
+    meta: {}
+    parents:
+    - ROOT_ID
+    - GRID_ID
+    type: DIVIDER
+  DIVIDER-dtObBL3jW_:
+    children: []
+    id: DIVIDER-dtObBL3jW_
+    meta: {}
+    parents:
+    - ROOT_ID
+    - GRID_ID
+    type: DIVIDER
+  DIVIDER-nls7cW_K27:
+    children: []
+    id: DIVIDER-nls7cW_K27
+    meta: {}
+    parents:
+    - ROOT_ID
+    - GRID_ID
+    type: DIVIDER
+  DIVIDER-oiOVr_ff2M:
+    children: []
+    id: DIVIDER-oiOVr_ff2M
+    meta: {}
+    parents:
+    - ROOT_ID
+    - GRID_ID
+    type: DIVIDER
+  DIVIDER-xAwqwF8aLx:
+    children: []
+    id: DIVIDER-xAwqwF8aLx
+    meta: {}
+    parents:
+    - ROOT_ID
+    - GRID_ID
+    type: DIVIDER
+  GRID_ID:
+    children:
+    - DIVIDER-nls7cW_K27
+    - HEADER-wqJeDNFNQP
+    - DIVIDER-xAwqwF8aLx
+    - ROW-KthIXn-ZG
+    - ROW-Icz478Oeg
+    - ROW-pNsjvQq_R
+    - DIVIDER-dtObBL3jW_
+    - ROW-D_eCuTt5u
+    - DIVIDER-O75eZF1akY
+    - HEADER-dcKHqWeLGb
+    - DIVIDER-oiOVr_ff2M
+    - ROW-ebixkX_Nb
+    - ROW-7Odi8iDjgs
+    - DIVIDER-GM4WAtkytl
+    - HEADER-qmNQI9R_0i
+    - DIVIDER--lq1SYAUrN
+    - ROW-8d6skx5Hw
+    id: GRID_ID
+    parents:
+    - ROOT_ID
+    type: GRID
+  HEADER-dcKHqWeLGb:
+    children: []
+    id: HEADER-dcKHqWeLGb
+    meta:
+      background: BACKGROUND_TRANSPARENT
+      headerSize: LARGE_HEADER
+      text: Detailed Performance
+    parents:
+    - ROOT_ID
+    - GRID_ID
+    type: HEADER
+  HEADER-qmNQI9R_0i:
+    children: []
+    id: HEADER-qmNQI9R_0i
+    meta:
+      background: BACKGROUND_TRANSPARENT
+      headerSize: LARGE_HEADER
+      text: In The Pipe
+    parents:
+    - ROOT_ID
+    - GRID_ID
+    type: HEADER
+  HEADER-wqJeDNFNQP:
+    children: []
+    id: HEADER-wqJeDNFNQP
+    meta:
+      background: BACKGROUND_TRANSPARENT
+      headerSize: LARGE_HEADER
+      text: Overall Performance
+    parents:
+    - ROOT_ID
+    - GRID_ID
+    type: HEADER
+  HEADER_ID:
+    id: HEADER_ID
+    meta:
+      text: CRM Sales Performance
+    type: HEADER
+  ROOT_ID:
+    children:
+    - GRID_ID
+    id: ROOT_ID
+    type: ROOT
+  ROW-7Odi8iDjgs:
+    children:
+    - CHART-explore-6-1
+    id: ROW-7Odi8iDjgs
+    meta:
+      '0': ROOT_ID
+      background: BACKGROUND_TRANSPARENT
+    parents:
+    - ROOT_ID
+    - GRID_ID
+    type: ROW
+  ROW-8d6skx5Hw:
+    children:
+    - CHART-explore-14-1
+    id: ROW-8d6skx5Hw
+    meta:
+      '0': ROOT_ID
+      background: BACKGROUND_TRANSPARENT
+    parents:
+    - ROOT_ID
+    - GRID_ID
+    type: ROW
+  ROW-D_eCuTt5u:
+    children:
+    - CHART-explore-3-1
+    - CHART-explore-4-1
+    id: ROW-D_eCuTt5u
+    meta:
+      background: BACKGROUND_TRANSPARENT
+    parents:
+    - ROOT_ID
+    - GRID_ID
+    type: ROW
+  ROW-Icz478Oeg:
+    children:
+    - CHART-explore-10-1
+    - CHART-explore-9-1
+    - CHART-explore-12-1
+    id: ROW-Icz478Oeg
+    meta:
+      background: BACKGROUND_TRANSPARENT
+    parents:
+    - ROOT_ID
+    - GRID_ID
+    type: ROW
+  ROW-KthIXn-ZG:
+    children:
+    - CHART-explore-1-1
+    - CHART-explore-8-1
+    - CHART-explore-11-1
+    id: ROW-KthIXn-ZG
+    meta:
+      background: BACKGROUND_TRANSPARENT
+    parents:
+    - ROOT_ID
+    - GRID_ID
+    type: ROW
+  ROW-ebixkX_Nb:
+    children:
+    - CHART-explore-5-1
+    - CHART-explore-13-1
+    id: ROW-ebixkX_Nb
+    meta:
+      background: BACKGROUND_TRANSPARENT
+    parents:
+    - ROOT_ID
+    - GRID_ID
+    type: ROW
+  ROW-pNsjvQq_R:
+    children:
+    - CHART-explore-2-1
+    - CHART-explore-7-1
+    id: ROW-pNsjvQq_R
+    meta:
+      background: BACKGROUND_TRANSPARENT
+    parents:
+    - ROOT_ID
+    - GRID_ID
+    type: ROW
+metadata:
+  chart_configuration:
+    '2':
+      id: 2
+      crossFilters:
+        scope: global
+        chartsInScope:
+        - 1
+        - 3
+        - 4
+        - 5
+        - 6
+        - 7
+        - 8
+        - 11
+        - 12
+        - 13
+        - 14
+    '3':
+      id: 3
+      crossFilters:
+        scope: global
+        chartsInScope:
+        - 1
+        - 2
+        - 4
+        - 5
+        - 6
+        - 7
+        - 8
+        - 11
+        - 12
+        - 13
+        - 14
+    '4':
+      id: 4
+      crossFilters:
+        scope: global
+        chartsInScope:
+        - 1
+        - 2
+        - 3
+        - 5
+        - 6
+        - 7
+        - 8
+        - 11
+        - 12
+        - 13
+        - 14
+    '5':
+      id: 5
+      crossFilters:
+        scope: global
+        chartsInScope:
+        - 1
+        - 2
+        - 3
+        - 4
+        - 6
+        - 7
+        - 8
+        - 11
+        - 12
+        - 13
+        - 14
+    '6':
+      id: 6
+      crossFilters:
+        scope: global
+        chartsInScope:
+        - 1
+        - 2
+        - 3
+        - 4
+        - 5
+        - 7
+        - 8
+        - 11
+        - 12
+        - 13
+        - 14
+    '7':
+      id: 7
+      crossFilters:
+        scope: global
+        chartsInScope:
+        - 1
+        - 2
+        - 3
+        - 4
+        - 5
+        - 6
+        - 8
+        - 11
+        - 12
+        - 13
+        - 14
+    '13':
+      id: 13
+      crossFilters:
+        scope: global
+        chartsInScope:
+        - 1
+        - 2
+        - 3
+        - 4
+        - 5
+        - 6
+        - 7
+        - 8
+        - 11
+        - 12
+        - 14
+    '14':
+      id: 14
+      crossFilters:
+        scope: global
+        chartsInScope:
+        - 1
+        - 2
+        - 3
+        - 4
+        - 5
+        - 6
+        - 7
+        - 8
+        - 11
+        - 12
+        - 13
+  global_chart_configuration:
+    scope:
+      rootPath:
+      - ROOT_ID
+      excluded:
+      - 9
+      - 10
+    chartsInScope:
+    - 1
+    - 2
+    - 3
+    - 4
+    - 5
+    - 6
+    - 7
+    - 8
+    - 11
+    - 12
+    - 13
+    - 14
+  color_scheme: bnbColors
+  label_colors: {}
+  refresh_frequency: 0
+  expanded_slices: {}
+  timed_refresh_immune_slices: []
+  cross_filters_enabled: true
+  default_filters: '{}'
+  shared_label_colors:
+    total_revenue: '#5BCACE'
+    West: '#29696B'
+    Central: '#F4B02A'
+    East: '#792EB2'
+    SUM(total_revenue): '#29696B'
+    AVG(quarter_over_quarter_growth): '#5BCACE'
+    employment: '#F1826A'
+    entertainment: '#921E50'
+    finance: '#9C3498'
+    marketing: '#C32F0E'
+    medical: '#C96EC6'
+    retail: '#9D63CA'
+    services: '#B27700'
+    software: '#E4679D'
+    technolgy: '#9C3498'
+    telecommunications: '#9C3498'
+  color_scheme_domain:
+  - '#29696B'
+  - '#5BCACE'
+  - '#F4B02A'
+  - '#F1826A'
+  - '#792EB2'
+  - '#C96EC6'
+  - '#921E50'
+  - '#B27700'
+  - '#9C3498'
+  - '#9C3498'
+  - '#E4679D'
+  - '#C32F0E'
+  - '#9D63CA'
+  native_filter_configuration: []
+version: 1.0.0

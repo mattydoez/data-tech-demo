@@ -29,5 +29,17 @@ superset fab create-admin --username ${SUPERSET_ADMIN} --password ${SUPERSET_PAS
 # Initialize Superset
 superset init
 
+# Import databases
+superset import-database -p /app/assets/databases/warehouse.yaml
+
+# Import datasets
+superset import-dataset -p /app/assets/datasets/*.yaml
+
+# Import charts
+superset import-chart -p /app/assets/charts/*.yaml
+
+# Import dashboards
+superset import-dashboard -p /app/assets/dashboards/*.yaml
+
 # Start the Superset server
 exec gunicorn --bind "0.0.0.0:8088" --access-logfile '-' --error-logfile '-' --workers 1 --worker-class gthread --threads 20 --timeout 60 --limit-request-line 0 --limit-request-field_size 0 "superset.app:create_app()"

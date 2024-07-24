@@ -1,0 +1,127 @@
+slice_name: Product Win Rates
+description: null
+certified_by: null
+certification_details: null
+viz_type: table
+params:
+  datasource: 3__table
+  viz_type: table
+  query_mode: aggregate
+  groupby:
+  - product_name
+  time_grain_sqla: P1D
+  temporal_columns_lookup: {}
+  metrics:
+  - aggregate: AVG
+    column:
+      advanced_data_type: null
+      certification_details: null
+      certified_by: null
+      column_name: product_win_rate
+      description: null
+      expression: null
+      filterable: true
+      groupby: true
+      id: 55
+      is_certified: false
+      is_dttm: false
+      python_date_format: null
+      type: NUMERIC
+      type_generic: 0
+      verbose_name: null
+      warning_markdown: null
+    datasourceWarning: false
+    expressionType: SIMPLE
+    hasCustomLabel: false
+    label: AVG(product_win_rate)
+    optionName: metric_4qir3y0u2tp_pmp1ngr7tk
+    sqlExpression: null
+  - aggregate: SUM
+    column:
+      advanced_data_type: null
+      certification_details: null
+      certified_by: null
+      column_name: won_deals
+      description: null
+      expression: null
+      filterable: true
+      groupby: true
+      id: 53
+      is_certified: false
+      is_dttm: false
+      python_date_format: null
+      type: NUMERIC
+      type_generic: 0
+      verbose_name: null
+      warning_markdown: null
+    datasourceWarning: false
+    expressionType: SIMPLE
+    hasCustomLabel: false
+    label: SUM(won_deals)
+    optionName: metric_0jh2kj3ij23o_9bug4mv8m47
+    sqlExpression: null
+  - aggregate: SUM
+    column:
+      advanced_data_type: null
+      certification_details: null
+      certified_by: null
+      column_name: all_deals
+      description: null
+      expression: null
+      filterable: true
+      groupby: true
+      id: 54
+      is_certified: false
+      is_dttm: false
+      python_date_format: null
+      type: NUMERIC
+      type_generic: 0
+      verbose_name: null
+      warning_markdown: null
+    datasourceWarning: false
+    expressionType: SIMPLE
+    hasCustomLabel: false
+    label: SUM(all_deals)
+    optionName: metric_9il86ads8jp_w82khkimzl9
+    sqlExpression: null
+  all_columns: []
+  percent_metrics: []
+  adhoc_filters: []
+  order_by_cols: []
+  row_limit: 1000
+  server_page_length: 10
+  order_desc: true
+  show_totals: true
+  table_timestamp_format: smart_date
+  include_search: true
+  show_cell_bars: true
+  color_pn: true
+  allow_rearrange_columns: true
+  column_config:
+    product_name:
+      horizontalAlign: left
+      truncateLongCells: false
+    AVG(product_win_rate):
+      horizontalAlign: center
+      alignPositiveNegative: false
+      showCellBars: false
+      d3NumberFormat: ',.1%'
+    SUM(won_deals):
+      showCellBars: false
+      colorPositiveNegative: false
+      horizontalAlign: center
+    SUM(all_deals):
+      horizontalAlign: center
+      showCellBars: false
+  conditional_formatting:
+  - column: SUM(won_deals)
+    colorScheme: '#ACE1C4'
+    operator: None
+  extra_form_data: {}
+  dashboards:
+  - 1
+query_context: '{"datasource":{"id":3,"type":"table"},"force":false,"queries":[{"filters":[],"extras":{"time_grain_sqla":"P1D","having":"","where":""},"applied_time_extras":{},"columns":["product_name"],"metrics":[{"aggregate":"AVG","column":{"advanced_data_type":null,"certification_details":null,"certified_by":null,"column_name":"product_win_rate","description":null,"expression":null,"filterable":true,"groupby":true,"id":55,"is_certified":false,"is_dttm":false,"python_date_format":null,"type":"NUMERIC","type_generic":0,"verbose_name":null,"warning_markdown":null},"datasourceWarning":false,"expressionType":"SIMPLE","hasCustomLabel":false,"label":"AVG(product_win_rate)","optionName":"metric_4qir3y0u2tp_pmp1ngr7tk","sqlExpression":null},{"aggregate":"SUM","column":{"advanced_data_type":null,"certification_details":null,"certified_by":null,"column_name":"won_deals","description":null,"expression":null,"filterable":true,"groupby":true,"id":53,"is_certified":false,"is_dttm":false,"python_date_format":null,"type":"NUMERIC","type_generic":0,"verbose_name":null,"warning_markdown":null},"datasourceWarning":false,"expressionType":"SIMPLE","hasCustomLabel":false,"label":"SUM(won_deals)","optionName":"metric_0jh2kj3ij23o_9bug4mv8m47","sqlExpression":null},{"aggregate":"SUM","column":{"advanced_data_type":null,"certification_details":null,"certified_by":null,"column_name":"all_deals","description":null,"expression":null,"filterable":true,"groupby":true,"id":54,"is_certified":false,"is_dttm":false,"python_date_format":null,"type":"NUMERIC","type_generic":0,"verbose_name":null,"warning_markdown":null},"datasourceWarning":false,"expressionType":"SIMPLE","hasCustomLabel":false,"label":"SUM(all_deals)","optionName":"metric_9il86ads8jp_w82khkimzl9","sqlExpression":null}],"orderby":[[{"aggregate":"AVG","column":{"advanced_data_type":null,"certification_details":null,"certified_by":null,"column_name":"product_win_rate","description":null,"expression":null,"filterable":true,"groupby":true,"id":55,"is_certified":false,"is_dttm":false,"python_date_format":null,"type":"NUMERIC","type_generic":0,"verbose_name":null,"warning_markdown":null},"datasourceWarning":false,"expressionType":"SIMPLE","hasCustomLabel":false,"label":"AVG(product_win_rate)","optionName":"metric_4qir3y0u2tp_pmp1ngr7tk","sqlExpression":null},false]],"annotation_layers":[],"row_limit":1000,"series_limit":0,"order_desc":true,"url_params":{},"custom_params":{},"custom_form_data":{},"post_processing":[]},{"filters":[],"extras":{"time_grain_sqla":"P1D","having":"","where":""},"applied_time_extras":{},"columns":[],"metrics":[{"aggregate":"AVG","column":{"advanced_data_type":null,"certification_details":null,"certified_by":null,"column_name":"product_win_rate","description":null,"expression":null,"filterable":true,"groupby":true,"id":55,"is_certified":false,"is_dttm":false,"python_date_format":null,"type":"NUMERIC","type_generic":0,"verbose_name":null,"warning_markdown":null},"datasourceWarning":false,"expressionType":"SIMPLE","hasCustomLabel":false,"label":"AVG(product_win_rate)","optionName":"metric_4qir3y0u2tp_pmp1ngr7tk","sqlExpression":null},{"aggregate":"SUM","column":{"advanced_data_type":null,"certification_details":null,"certified_by":null,"column_name":"won_deals","description":null,"expression":null,"filterable":true,"groupby":true,"id":53,"is_certified":false,"is_dttm":false,"python_date_format":null,"type":"NUMERIC","type_generic":0,"verbose_name":null,"warning_markdown":null},"datasourceWarning":false,"expressionType":"SIMPLE","hasCustomLabel":false,"label":"SUM(won_deals)","optionName":"metric_0jh2kj3ij23o_9bug4mv8m47","sqlExpression":null},{"aggregate":"SUM","column":{"advanced_data_type":null,"certification_details":null,"certified_by":null,"column_name":"all_deals","description":null,"expression":null,"filterable":true,"groupby":true,"id":54,"is_certified":false,"is_dttm":false,"python_date_format":null,"type":"NUMERIC","type_generic":0,"verbose_name":null,"warning_markdown":null},"datasourceWarning":false,"expressionType":"SIMPLE","hasCustomLabel":false,"label":"SUM(all_deals)","optionName":"metric_9il86ads8jp_w82khkimzl9","sqlExpression":null}],"annotation_layers":[],"row_limit":0,"row_offset":0,"series_limit":0,"url_params":{},"custom_params":{},"custom_form_data":{},"post_processing":[]}],"form_data":{"datasource":"3__table","viz_type":"table","query_mode":"aggregate","groupby":["product_name"],"time_grain_sqla":"P1D","temporal_columns_lookup":{},"metrics":[{"aggregate":"AVG","column":{"advanced_data_type":null,"certification_details":null,"certified_by":null,"column_name":"product_win_rate","description":null,"expression":null,"filterable":true,"groupby":true,"id":55,"is_certified":false,"is_dttm":false,"python_date_format":null,"type":"NUMERIC","type_generic":0,"verbose_name":null,"warning_markdown":null},"datasourceWarning":false,"expressionType":"SIMPLE","hasCustomLabel":false,"label":"AVG(product_win_rate)","optionName":"metric_4qir3y0u2tp_pmp1ngr7tk","sqlExpression":null},{"aggregate":"SUM","column":{"advanced_data_type":null,"certification_details":null,"certified_by":null,"column_name":"won_deals","description":null,"expression":null,"filterable":true,"groupby":true,"id":53,"is_certified":false,"is_dttm":false,"python_date_format":null,"type":"NUMERIC","type_generic":0,"verbose_name":null,"warning_markdown":null},"datasourceWarning":false,"expressionType":"SIMPLE","hasCustomLabel":false,"label":"SUM(won_deals)","optionName":"metric_0jh2kj3ij23o_9bug4mv8m47","sqlExpression":null},{"aggregate":"SUM","column":{"advanced_data_type":null,"certification_details":null,"certified_by":null,"column_name":"all_deals","description":null,"expression":null,"filterable":true,"groupby":true,"id":54,"is_certified":false,"is_dttm":false,"python_date_format":null,"type":"NUMERIC","type_generic":0,"verbose_name":null,"warning_markdown":null},"datasourceWarning":false,"expressionType":"SIMPLE","hasCustomLabel":false,"label":"SUM(all_deals)","optionName":"metric_9il86ads8jp_w82khkimzl9","sqlExpression":null}],"all_columns":[],"percent_metrics":[],"adhoc_filters":[],"order_by_cols":[],"row_limit":1000,"server_page_length":10,"order_desc":true,"show_totals":true,"table_timestamp_format":"smart_date","include_search":true,"show_cell_bars":true,"color_pn":true,"allow_rearrange_columns":true,"column_config":{"product_name":{"horizontalAlign":"left","truncateLongCells":false},"AVG(product_win_rate)":{"horizontalAlign":"center","alignPositiveNegative":false,"showCellBars":false,"d3NumberFormat":",.1%"},"SUM(won_deals)":{"showCellBars":false,"colorPositiveNegative":false,"horizontalAlign":"center"},"SUM(all_deals)":{"horizontalAlign":"center","showCellBars":false}},"conditional_formatting":[{"column":"SUM(won_deals)","colorScheme":"#ACE1C4","operator":"None"}],"extra_form_data":{},"dashboards":[1],"force":false,"result_format":"json","result_type":"full"},"result_format":"json","result_type":"full"}'
+cache_timeout: null
+uuid: c364ed38-cac5-490c-a62a-257541537c44
+version: 1.0.0
+dataset_uuid: 966b3dec-7a72-4db4-880d-d900afc9b083

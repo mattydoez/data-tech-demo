@@ -2,7 +2,7 @@
   
     
 
-  create  table "company_dw"."dev_crm_sales_dbt"."product_win_rates__dbt_tmp"
+  create  table "company_dw"."dev_crm_sales_dbt_crm_sales_dbt"."product_win_rates__dbt_tmp"
   
   
     as
@@ -23,7 +23,7 @@ WITH win_counts AS (
             end) AS all_deals
     FROM
     (SELECT *
-    FROM "company_dw"."dev_crm_sales_dbt"."crm_int_kpi" a
+    FROM "company_dw"."dev_crm_sales_dbt_crm_sales_dbt"."crm_int_kpi" a
     LEFT JOIN dev_global_dim.dim_date b ON a.ts_close_date = b.date_actual) AS virtual_table
     GROUP BY product_name
     ORDER BY won_deals DESC )

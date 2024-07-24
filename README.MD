@@ -1,76 +1,131 @@
-# E-Commerce Data Analytics Suite
+# Modern Data Tech Stack with Docker
 
-This project is an analytics suite for a fictional e-commerce company. The company sells various products on its website. The suite includes data generation, ETL orchestration, data modeling, and visualization.
+This project demonstrates how to build a local data tech stack using Docker. The stack includes PostgreSQL for databases, Airflow for orchestrating workflows, dbt for data transformations, and Superset for data visualization. Each component is containerized for ease of setup and management.
 
-## Stack
+## Prerequisites
 
-- Airflow
-- Docker & Docker-Compose
-- dbt core
-- Superset
+- Docker
+- Docker Compose
 
-## Setup
+## Getting Started
 
 ### Environment Variables
-Rename `.envexample` file to `.env` and set your desired environment variables. Ensure you do not commit files containing sensitive information like passwords.
 
-### System Requirements
-* [Docker](https://docs.docker.com/engine/install/)
-* [Docker-Compose](https://docs.docker.com/compose/install/)
+Create a `.env` file in the project root to set up the required environment variables:
 
-### Building and Running Containers
-With Docker engine and Docker-Compose installed, change directory to the root folder of the project (where `docker-compose.yml` is located) and run:
+```
+POSTGRES_USER=your_postgres_user
+POSTGRES_PASSWORD=your_postgres_password
+SUPERSET_ADMIN=your_superset_admin
+SUPERSET_PASSWORD=your_superset_password
+SUPERSET_SECRET_KEY=your_superset_secret_key
+```
 
-docker-compose up –build
+# Project Structure
+```
+├── README.MD
+│   ├── data_generator.py
+│   ├── docker-compose.yml
+│   ├── etl_env_init.py
+│   ├── external_data
+│   ├── generator
+│   ├── import_core_data.sh
+│   ├── import_raw_data.py
+│   ├── postgres_database
+│   ├── predictions
+│   ├── product_generator_dag.py
+│   ├── run_data_generation.py
+│   └── sub_biz_generators
+├── airflow
+│   ├── Dockerfile
+│   ├── airflow.cfg
+│   ├── dags
+│   ├── entrypoint.sh
+│   ├── requirements.txt
+│   ├── scripts
+│   └── webserver_config.py
+├── data
+│   ├── crm_sales_data
+├── dbt
+│   ├── analyses
+│   ├── dbt_packages
+│   ├── dbt_project.yml
+│   ├── macros
+│   ├── models
+│   ├── packages.yml
+│   ├── profiles.yml
+│   ├── requirements.txt
+│   ├── seeds
+│   ├── snapshots
+│   ├── target
+│   └── tests
+├── docker-compose.yml
+├── postgres_datawarehouse
+│   └── postgresql.conf
+└── superset
+    ├── Dockerfile
+    ├── init_superset.sh
+    └── superset_config.py
+```
+### Setting Up Services
 
-### Demo Credentials
-Demo credentials are set in the .env file mentioned above. For Airflow, they are by default:
-* AIRFLOW_USER=airflow
-* AIRFLOW_PASSWORD=airflow
+1. **Build and Start Services**
 
-### Ports Exposed Locally
-* Airflow: 8080
-* Superset: 8088
-* PostgreSQL Database: 5432
+   ```bash
+   docker-compose up --build
 
-## dbt Core
+2. Access Services
+	•	Airflow: http://localhost:8080
+	•	Superset: http://localhost:8088
 
-If you'd like to run your dbt core models outside of Airflow, you can:
-1. Create a Python virtual environment:
-    ```
-    python3 -m venv .venv
-    ```
-2. Activate it:
-    ```
-    source .venv/bin/activate
-    ```
-3. Install the requirements found under `dbt/requirements.txt`:
-    ```
-    pip install -r dbt/requirements.txt
-    ```
-4. Run dbt commands, such as:
-    ```
-    dbt compile
-    ```
+### Services Overview
+#### PostgreSQL:
+### Services Overview
 
-## General Workflow
+- **PostgreSQL**:
+  - **Airflow DB**: Used by Airflow for metadata.
+  - **Company DW**: Data warehouse for storing and processing data.
+  - **Superset DB**: Used by Superset for metadata and storing dashboard data.
+  - **Exposed Ports**:
+    - Airflow DB: `5433`
+    - Company DW: `5435`
+    - Superset DB: `5434`
 
-1. Generate test data and set up the PostgreSQL database with schemas for raw data and data warehouse.
-2. Use Airflow to orchestrate ETL tasks.
-3. Use dbt to transform and model the data.
-4. Explore and visualize the data using Superset.
+- **Airflow**:
+  - Orchestrates workflows.
+  - Contains several services: `airflow-scheduler`, `airflow-webserver`, `airflow-worker`, `airflow-init`.
+  - Airflow webserver is accessible at port `8080`.
+  - **Resources**:
+    - [Airflow Documentation](https://airflow.apache.org/docs/)
 
-### Airflow DAGs
+- **Redis**:
+  - Message broker for Airflow's CeleryExecutor.
+  - **Exposed Port**: `6379`
+  - **Resources**:
+    - [Redis Documentation](https://redis.io/documentation)
 
-Once the containers are running, open the Airflow GUI (locally at `localhost:8080`) to view and manage the ETL workflows (DAGs). The following workflows are defined:
-- **initialize_etl_environment**: Initializes the ETL environment by creating necessary database objects. Run only once.
-- **import_main_data**: Imports data from the raw schema to the staging area in the data warehouse.
-- **run_dbt_models**: Transforms the data using dbt and loads it into the data warehouse.
+- **dbt**:
+  - Transforms data in the data warehouse.
+  - Run dbt commands within the `dbt-serve` service.
+  - **Resources**:
+    - [dbt Documentation](https://docs.getdbt.com/docs/introduction)
 
-### Superset Dashboards
+- **Superset**:
+  - Visualizes data stored in the data warehouse.
+  - Connects to the `superset_db` PostgreSQL instance.
+  - Superset is accessible at port `8088`.
+  - **Resources**:
+    - [Superset Documentation](https://superset.apache.org/docs/)
 
-After the DAGs have completed, analyze the data using Superset (locally at `localhost:8088`).
+### Data Ingestion and Transformation
 
-## Example Data
+- **Sample Data**: Located in the `data` folder.
+  - `accounts.csv`
+  - `sales_pipeline.csv`
+  - `sales_teams.csv`
+- **Airflow Service**: Ingests the sample data and runs dbt models located in the `dbt` folder.
+- **DBT Models**: Transform the ingested data in the data warehouse.
 
-The data used in this project is fictional and automatically generated. Any resemblance to real persons, living or dead, or actual products is purely coincidental.
+### Conclusion
+
+By following these steps, you can set up a robust data tech stack locally using Docker. This setup includes PostgreSQL for databases, Airflow for workflow orchestration, dbt for data transformation, and Superset for data visualization. Each service is containerized for easy management and deployment. Use the provided links to explore more about each service and enhance your data stack further.

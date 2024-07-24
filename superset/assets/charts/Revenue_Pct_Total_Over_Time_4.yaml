@@ -1,0 +1,85 @@
+slice_name: Revenue Pct Total Over Time
+description: null
+certified_by: null
+certification_details: null
+viz_type: echarts_area
+params:
+  datasource: 1__table
+  viz_type: echarts_area
+  slice_id: 4
+  x_axis: mmyyyy
+  time_grain_sqla: P1D
+  x_axis_sort_asc: true
+  x_axis_sort_series: name
+  x_axis_sort_series_ascending: true
+  metrics:
+  - total_revenue
+  groupby:
+  - regional_office
+  contributionMode: row
+  adhoc_filters:
+  - clause: WHERE
+    comparator: No filter
+    expressionType: SIMPLE
+    operator: TEMPORAL_RANGE
+    subject: ts_engage_date
+  timeseries_limit_metric:
+    aggregate: null
+    column: null
+    datasourceWarning: false
+    expressionType: SQL
+    hasCustomLabel: false
+    label: mmyyyy
+    optionName: metric_7ezho6xxfw7_x7i8p65ir0m
+    sqlExpression: mmyyyy
+  order_desc: false
+  row_limit: 10000
+  truncate_metric: true
+  show_empty_columns: true
+  comparison_type: values
+  annotation_layers: []
+  forecastPeriods: 10
+  forecastInterval: 0.8
+  x_axis_title: Month
+  x_axis_title_margin: 50
+  y_axis_title: Revenue Pct Total
+  y_axis_title_margin: 50
+  y_axis_title_position: Left
+  sort_series_type: avg
+  color_scheme: supersetColors
+  seriesType: line
+  opacity: 0.2
+  show_value: false
+  stack: Stack
+  only_total: true
+  show_extra_controls: false
+  markerEnabled: false
+  markerSize: 6
+  minorTicks: false
+  zoomable: false
+  show_legend: true
+  legendType: scroll
+  legendOrientation: top
+  x_axis_time_format: smart_date
+  rich_tooltip: true
+  tooltipSortByMetric: false
+  tooltipTimeFormat: smart_date
+  y_axis_format: SMART_NUMBER
+  logAxis: false
+  minorSplitLine: true
+  truncateXAxis: true
+  truncateYAxis: false
+  y_axis_bounds:
+  - null
+  - null
+  extra_form_data: {}
+  dashboards:
+  - 1
+query_context: '{"datasource":{"id":1,"type":"table"},"force":false,"queries":[{"filters":[{"col":"ts_engage_date","op":"TEMPORAL_RANGE","val":"No
+  filter"}],"extras":{"time_grain_sqla":"P1D","having":"","where":""},"applied_time_extras":{},"columns":[{"timeGrain":"P1D","columnType":"BASE_AXIS","sqlExpression":"mmyyyy","label":"mmyyyy","expressionType":"SQL"},"regional_office"],"metrics":["total_revenue"],"orderby":[[{"aggregate":null,"column":null,"datasourceWarning":false,"expressionType":"SQL","hasCustomLabel":false,"label":"mmyyyy","optionName":"metric_7ezho6xxfw7_x7i8p65ir0m","sqlExpression":"mmyyyy"},true]],"annotation_layers":[],"row_limit":10000,"series_columns":["regional_office"],"series_limit":0,"series_limit_metric":{"aggregate":null,"column":null,"datasourceWarning":false,"expressionType":"SQL","hasCustomLabel":false,"label":"mmyyyy","optionName":"metric_7ezho6xxfw7_x7i8p65ir0m","sqlExpression":"mmyyyy"},"order_desc":false,"url_params":{},"custom_params":{},"custom_form_data":{},"time_offsets":[],"post_processing":[{"operation":"pivot","options":{"index":["mmyyyy"],"columns":["regional_office"],"aggregates":{"total_revenue":{"operator":"mean"}},"drop_missing_columns":false}},{"operation":"rename","options":{"columns":{"total_revenue":null},"level":0,"inplace":true}},{"operation":"contribution","options":{"orientation":"row"}},{"operation":"flatten"}]}],"form_data":{"datasource":"1__table","viz_type":"echarts_area","slice_id":4,"x_axis":"mmyyyy","time_grain_sqla":"P1D","x_axis_sort_asc":true,"x_axis_sort_series":"name","x_axis_sort_series_ascending":true,"metrics":["total_revenue"],"groupby":["regional_office"],"contributionMode":"row","adhoc_filters":[{"clause":"WHERE","comparator":"No
+  filter","expressionType":"SIMPLE","operator":"TEMPORAL_RANGE","subject":"ts_engage_date"}],"timeseries_limit_metric":{"aggregate":null,"column":null,"datasourceWarning":false,"expressionType":"SQL","hasCustomLabel":false,"label":"mmyyyy","optionName":"metric_7ezho6xxfw7_x7i8p65ir0m","sqlExpression":"mmyyyy"},"order_desc":false,"row_limit":10000,"truncate_metric":true,"show_empty_columns":true,"comparison_type":"values","annotation_layers":[],"forecastPeriods":10,"forecastInterval":0.8,"x_axis_title":"Month","x_axis_title_margin":50,"y_axis_title":"Revenue
+  Pct Total","y_axis_title_margin":50,"y_axis_title_position":"Left","sort_series_type":"avg","color_scheme":"supersetColors","seriesType":"line","opacity":0.2,"show_value":false,"stack":"Stack","only_total":true,"show_extra_controls":false,"markerEnabled":false,"markerSize":6,"minorTicks":false,"zoomable":false,"show_legend":true,"legendType":"scroll","legendOrientation":"top","x_axis_time_format":"smart_date","rich_tooltip":true,"tooltipSortByMetric":false,"tooltipTimeFormat":"smart_date","y_axis_format":"SMART_NUMBER","logAxis":false,"minorSplitLine":true,"truncateXAxis":true,"truncateYAxis":false,"y_axis_bounds":[null,null],"extra_form_data":{},"dashboards":[1],"force":false,"result_format":"json","result_type":"full"},"result_format":"json","result_type":"full"}'
+cache_timeout: null
+uuid: 3146b7cf-98fe-4675-84c2-889217253ad1
+version: 1.0.0
+dataset_uuid: c7b2363d-9208-475a-9c2a-d007e681c306

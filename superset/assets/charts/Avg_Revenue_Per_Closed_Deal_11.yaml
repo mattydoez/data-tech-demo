@@ -1,0 +1,62 @@
+slice_name: Avg Revenue Per Closed Deal
+description: null
+certified_by: null
+certification_details: null
+viz_type: big_number_total
+params:
+  datasource: 1__table
+  viz_type: big_number_total
+  slice_id: 11
+  metric:
+    aggregate: null
+    column: null
+    datasourceWarning: false
+    expressionType: SQL
+    hasCustomLabel: true
+    label: Avg Revenue Per Won Deal
+    optionName: metric_0qdtimdzg91_tx8j155vhu
+    sqlExpression: sum(revenue) / count(*)
+  adhoc_filters:
+  - clause: WHERE
+    comparator: No filter
+    datasourceWarning: false
+    expressionType: SIMPLE
+    filterOptionName: filter_8zrykwh2afw_oz6t6vh1glp
+    isExtra: false
+    isNew: false
+    operator: TEMPORAL_RANGE
+    operatorId: TEMPORAL_RANGE
+    sqlExpression: null
+    subject: ts_close_date
+  - clause: WHERE
+    comparator:
+    - Won
+    datasourceWarning: false
+    expressionType: SIMPLE
+    filterOptionName: filter_o7xcj57jei_rzidvtoyng
+    isExtra: false
+    isNew: false
+    operator: IN
+    operatorId: IN
+    sqlExpression: null
+    subject: deal_stage
+  header_font_size: 0.4
+  subheader_font_size: 0.15
+  y_axis_format: SMART_NUMBER
+  currency_format:
+    symbol: USD
+  time_format: smart_date
+  conditional_formatting: []
+  extra_form_data: {}
+  dashboards:
+  - 1
+query_context: '{"datasource":{"id":1,"type":"table"},"force":false,"queries":[{"filters":[{"col":"ts_close_date","op":"TEMPORAL_RANGE","val":"No
+  filter"},{"col":"deal_stage","op":"IN","val":["Won"]}],"extras":{"having":"","where":""},"applied_time_extras":{},"columns":[],"metrics":[{"aggregate":null,"column":null,"datasourceWarning":false,"expressionType":"SQL","hasCustomLabel":true,"label":"Avg
+  Revenue Per Won Deal","optionName":"metric_0qdtimdzg91_tx8j155vhu","sqlExpression":"sum(revenue)
+  / count(*)"}],"annotation_layers":[],"series_limit":0,"order_desc":true,"url_params":{},"custom_params":{},"custom_form_data":{}}],"form_data":{"datasource":"1__table","viz_type":"big_number_total","slice_id":11,"metric":{"aggregate":null,"column":null,"datasourceWarning":false,"expressionType":"SQL","hasCustomLabel":true,"label":"Avg
+  Revenue Per Won Deal","optionName":"metric_0qdtimdzg91_tx8j155vhu","sqlExpression":"sum(revenue)
+  / count(*)"},"adhoc_filters":[{"clause":"WHERE","comparator":"No filter","datasourceWarning":false,"expressionType":"SIMPLE","filterOptionName":"filter_8zrykwh2afw_oz6t6vh1glp","isExtra":false,"isNew":false,"operator":"TEMPORAL_RANGE","operatorId":"TEMPORAL_RANGE","sqlExpression":null,"subject":"ts_close_date"},{"clause":"WHERE","comparator":["Won"],"datasourceWarning":false,"expressionType":"SIMPLE","filterOptionName":"filter_o7xcj57jei_rzidvtoyng","isExtra":false,"isNew":false,"operator":"IN","operatorId":"IN","sqlExpression":null,"subject":"deal_stage"}],"header_font_size":0.4,"subheader_font_size":0.15,"y_axis_format":"SMART_NUMBER","currency_format":{"symbol":"USD"},"time_format":"smart_date","conditional_formatting":[],"extra_form_data":{},"dashboards":[1],"force":false,"result_format":"json","result_type":"full"},"result_format":"json","result_type":"full"}'
+cache_timeout: null
+uuid: 44962a5d-642b-4b94-8b1d-760dcda77751
+version: 1.0.0
+dataset_uuid: c7b2363d-9208-475a-9c2a-d007e681c306

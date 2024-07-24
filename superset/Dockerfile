@@ -16,6 +16,9 @@ COPY init_superset.sh /app/init_superset.sh
 # Copy the Superset config file
 COPY superset_config.py /app/pythonpath/superset_config.py
 
+# Copy asset files
+COPY assets /app/assets
+
 # Ensure the script is executable
 RUN chmod +x /app/init_superset.sh
 

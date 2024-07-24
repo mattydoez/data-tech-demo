@@ -2,7 +2,7 @@
   
     
 
-  create  table "company_dw"."dev_global_dim"."dim_date__dbt_tmp"
+  create  table "company_dw"."dim_global_dim"."dim_date__dbt_tmp"
   
   
     as

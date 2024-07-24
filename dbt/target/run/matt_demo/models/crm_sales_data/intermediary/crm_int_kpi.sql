@@ -1,5 +1,5 @@
 
-  create view "company_dw"."dev_crm_sales_dbt"."crm_int_kpi__dbt_tmp"
+  create view "company_dw"."dev_crm_sales_dbt_crm_sales_dbt"."crm_int_kpi__dbt_tmp"
     
     
   as (
@@ -8,7 +8,7 @@
 with 
     pipelines as (
         select * 
-        from "company_dw"."dev_crm_sales_dbt"."crm_stg_sales_pipelines"
+        from "company_dw"."dev_crm_sales_dbt_crm_sales_dbt"."crm_stg_sales_pipelines"
     ),
     accounts as (
         select 
@@ -16,13 +16,13 @@ with
             industry, 
             num_employees, 
             annual_revenue_mm
-        from "company_dw"."dev_crm_sales_dbt"."crm_stg_accounts"
+        from "company_dw"."dev_crm_sales_dbt_crm_sales_dbt"."crm_stg_accounts"
     ), 
     products as (
         select 
              product_name,
              suggested_retail_price
-        from "company_dw"."dev_crm_sales_dbt"."crm_stg_products"
+        from "company_dw"."dev_crm_sales_dbt_crm_sales_dbt"."crm_stg_products"
     ),
     teams as (
         select 
@@ -30,7 +30,7 @@ with
             manager,
             team_name,
             regional_office 
-        from "company_dw"."dev_crm_sales_dbt"."crm_stg_sales_teams"
+        from "company_dw"."dev_crm_sales_dbt_crm_sales_dbt"."crm_stg_sales_teams"
     )
 select 
     p.*,

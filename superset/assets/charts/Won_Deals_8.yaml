@@ -1,0 +1,47 @@
+slice_name: Won Deals
+description: null
+certified_by: null
+certification_details: null
+viz_type: big_number_total
+params:
+  datasource: 1__table
+  viz_type: big_number_total
+  metric: count
+  adhoc_filters:
+  - expressionType: SIMPLE
+    subject: ts_close_date
+    operator: TEMPORAL_RANGE
+    operatorId: TEMPORAL_RANGE
+    comparator: No filter
+    clause: WHERE
+    sqlExpression: null
+    isExtra: false
+    isNew: false
+    datasourceWarning: false
+    filterOptionName: filter_8zrykwh2afw_oz6t6vh1glp
+  - expressionType: SIMPLE
+    subject: deal_stage
+    operator: IN
+    operatorId: IN
+    comparator:
+    - Won
+    clause: WHERE
+    sqlExpression: null
+    isExtra: false
+    isNew: false
+    datasourceWarning: false
+    filterOptionName: filter_o7xcj57jei_rzidvtoyng
+  header_font_size: 0.4
+  subheader_font_size: 0.15
+  y_axis_format: SMART_NUMBER
+  time_format: smart_date
+  extra_form_data: {}
+  dashboards:
+  - 1
+query_context: '{"datasource":{"id":1,"type":"table"},"force":false,"queries":[{"filters":[{"col":"ts_close_date","op":"TEMPORAL_RANGE","val":"No
+  filter"},{"col":"deal_stage","op":"IN","val":["Won"]}],"extras":{"having":"","where":""},"applied_time_extras":{},"columns":[],"metrics":["count"],"annotation_layers":[],"series_limit":0,"order_desc":true,"url_params":{},"custom_params":{},"custom_form_data":{}}],"form_data":{"datasource":"1__table","viz_type":"big_number_total","metric":"count","adhoc_filters":[{"expressionType":"SIMPLE","subject":"ts_close_date","operator":"TEMPORAL_RANGE","operatorId":"TEMPORAL_RANGE","comparator":"No
+  filter","clause":"WHERE","sqlExpression":null,"isExtra":false,"isNew":false,"datasourceWarning":false,"filterOptionName":"filter_8zrykwh2afw_oz6t6vh1glp"},{"expressionType":"SIMPLE","subject":"deal_stage","operator":"IN","operatorId":"IN","comparator":["Won"],"clause":"WHERE","sqlExpression":null,"isExtra":false,"isNew":false,"datasourceWarning":false,"filterOptionName":"filter_o7xcj57jei_rzidvtoyng"}],"header_font_size":0.4,"subheader_font_size":0.15,"y_axis_format":"SMART_NUMBER","time_format":"smart_date","extra_form_data":{},"dashboards":[1],"force":false,"result_format":"json","result_type":"full"},"result_format":"json","result_type":"full"}'
+cache_timeout: null
+uuid: 93eeff96-aadd-48f6-9fc6-572a6d17181c
+version: 1.0.0
+dataset_uuid: c7b2363d-9208-475a-9c2a-d007e681c306

@@ -34,7 +34,7 @@ wait_for_dbt_init = ExternalTaskWithinDaysSensor(
     task_id='wait_for_dbt_init',
     external_dag_id='run_dbt_init_tasks',
     external_task_id=None,
-    days=7,
+    days=14,
     mode='poke',
     timeout=3600,
     poke_interval=60,
@@ -47,7 +47,7 @@ generate_dbt_docs = BashOperator(
     dag=dag,
 )
 
-models_to_run = ['crm_stg_accounts', 'crm_stg_products', 'crm_stg_sales_pipelines', 'crm_stg_sales_teams', 'kpi']  # Specify the models to run for this DAG
+models_to_run = ['crm_stg_accounts', 'crm_stg_products', 'crm_stg_sales_pipelines', 'crm_stg_sales_teams', 'crm_int_kpi', 'kpi', 'product_win_rates', 'qoq_kpi']  # Specify the models to run for this DAG
 schema = 'dev_crm_sales_dbt'
 
 dbt_tasks = create_dbt_tasks(dag, models_to_run, schema)
