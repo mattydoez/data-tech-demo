@@ -1,5 +1,5 @@
 
-  create view "company_dw"."dev_crm_sales_dbt"."crm_stg_sales_teams__dbt_tmp"
+  create view "company_dw"."dev_crm_sales_dbt_crm_sales_dbt"."crm_stg_sales_teams__dbt_tmp"
     
     
   as (

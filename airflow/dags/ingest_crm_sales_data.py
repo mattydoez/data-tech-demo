@@ -30,6 +30,15 @@ def create_schema_if_not_exists():
     cursor.close()
     conn.close()
 
+def delete_existing_table(table_name):
+    hook = PostgresHook(postgres_conn_id='company_dw')
+    conn = hook.get_conn()
+    cursor = conn.cursor()
+    cursor.execute(f"DROP TABLE IF EXISTS crm_sales_data.{table_name} CASCADE;")
+    conn.commit()
+    cursor.close()
+    conn.close()
+
 def ingest_csv_to_postgres(file_path, table_name):
     hook = PostgresHook(postgres_conn_id='company_dw')
     conn = hook.get_conn()
@@ -62,6 +71,30 @@ with dag:
         python_callable=create_schema_if_not_exists
     )
 
+    delete_accounts = PythonOperator(
+        task_id='delete_accounts',
+        python_callable=delete_existing_table,
+        op_kwargs={'table_name': 'accounts'},
+    )
+
+    delete_products = PythonOperator(
+        task_id='delete_products',
+        python_callable=delete_existing_table,
+        op_kwargs={'table_name': 'products'},
+    )
+
+    delete_sales_pipeline = PythonOperator(
+        task_id='delete_sales_pipeline',
+        python_callable=delete_existing_table,
+        op_kwargs={'table_name': 'sales_pipeline'},
+    )
+
+    delete_sales_teams = PythonOperator(
+        task_id='delete_sales_teams',
+        python_callable=delete_existing_table,
+        op_kwargs={'table_name': 'sales_teams'},
+    )
+
     ingest_accounts = PythonOperator(
         task_id='ingest_accounts',
         python_callable=ingest_csv_to_postgres,
@@ -86,4 +119,8 @@ with dag:
         op_kwargs={'file_path': '/opt/airflow/data/crm_sales_data/sales_teams.csv', 'table_name': 'sales_teams'},
     )
 
-    create_schema >> [ingest_accounts, ingest_products, ingest_sales_pipeline, ingest_sales_teams]
+    create_schema >> [delete_accounts, delete_products, delete_sales_pipeline, delete_sales_teams]
+    delete_accounts >> ingest_accounts
+    delete_products >> ingest_products
+    delete_sales_pipeline >> ingest_sales_pipeline
+    delete_sales_teams >> ingest_sales_teams

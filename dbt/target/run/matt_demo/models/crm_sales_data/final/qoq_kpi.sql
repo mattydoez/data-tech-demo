@@ -2,7 +2,7 @@
   
     
 
-  create  table "company_dw"."dev_crm_sales_dbt"."qoq_kpi__dbt_tmp"
+  create  table "company_dw"."dev_crm_sales_dbt_crm_sales_dbt"."qoq_kpi__dbt_tmp"
   
   
     as
@@ -16,7 +16,7 @@ WITH quarterly_revenue AS (
         date_trunc('quarter', ts_close_date) AS quarter,
         SUM(revenue) AS total_revenue
     FROM
-        "company_dw"."dev_crm_sales_dbt"."crm_int_kpi"
+        "company_dw"."dev_crm_sales_dbt_crm_sales_dbt"."crm_int_kpi"
     GROUP BY
         date_trunc('quarter', ts_close_date)
     ORDER BY

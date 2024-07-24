@@ -34,7 +34,7 @@ select
     
     
         
-        SELECT * FROM "company_dw"."dev_crm_sales_dbt"."crm_stg_sales_teams" WHERE sales_agent = 'NaN' UNION ALL SELECT * FROM "company_dw"."dev_crm_sales_dbt"."crm_stg_sales_teams" WHERE manager = 'NaN' UNION ALL SELECT * FROM "company_dw"."dev_crm_sales_dbt"."crm_stg_sales_teams" WHERE regional_office = 'NaN' UNION ALL SELECT * FROM "company_dw"."dev_crm_sales_dbt"."crm_stg_sales_teams" WHERE team_name = 'NaN'
+        SELECT * FROM "company_dw"."dev_crm_sales_dbt_crm_sales_dbt"."crm_stg_sales_teams" WHERE sales_agent = 'NaN' UNION ALL SELECT * FROM "company_dw"."dev_crm_sales_dbt_crm_sales_dbt"."crm_stg_sales_teams" WHERE manager = 'NaN' UNION ALL SELECT * FROM "company_dw"."dev_crm_sales_dbt_crm_sales_dbt"."crm_stg_sales_teams" WHERE regional_office = 'NaN' UNION ALL SELECT * FROM "company_dw"."dev_crm_sales_dbt_crm_sales_dbt"."crm_stg_sales_teams" WHERE team_name = 'NaN'
     
 
       

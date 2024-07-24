@@ -22,10 +22,6 @@ with DAG(dag_id='run_dbt_init_tasks', default_args=default_args, schedule_interv
     task_id='dbt_deps',
   )
 
-  dbt_seed = DbtSeedOperator(
-    task_id='dbt_seed',
-  )
-
   models_to_run = ['dim_date']  # Specify the models to run for this DAG
   schema = 'dim'
 
@@ -38,4 +34,4 @@ with DAG(dag_id='run_dbt_init_tasks', default_args=default_args, schedule_interv
   )
   
 
-dbt_deps >> dbt_seed >> tuple(dbt_tasks.values()) >> generate_dbt_docs
+dbt_deps >>  tuple(dbt_tasks.values()) >> generate_dbt_docs

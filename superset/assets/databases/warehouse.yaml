@@ -1,0 +1,13 @@
+database_name: warehouse
+sqlalchemy_uri: postgresql+psycopg2://postgres:XXXXXXXXXX@host.docker.internal:5435/company_dw
+cache_timeout: null
+expose_in_sqllab: true
+allow_run_async: false
+allow_ctas: false
+allow_cvas: false
+allow_dml: false
+allow_file_upload: false
+extra:
+  allows_virtual_table_explore: true
+uuid: a0796904-bda0-42bb-bfdc-dd849fc44792
+version: 1.0.0

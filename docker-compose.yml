@@ -207,22 +207,6 @@ services:
       redis:
         condition: service_healthy
 
-  dbt-serve:
-    build: 
-      context: ./dbt_serve
-      dockerfile: Dockerfile
-    ports:
-      - "8001:8001"
-    volumes:
-      - ./dbt:/usr/app/dbt
-    environment:
-      DBT_PROFILES_DIR: /usr/app/dbt
-      DBT_PROJECT_DIR: /usr/app/dbt
-      POSTGRES_USER: ${POSTGRES_USER}
-      POSTGRES_PASSWORD: ${POSTGRES_PASSWORD} 
-    networks:
-      - default
-  
 
   superset_db:
     image: postgres:13

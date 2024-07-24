@@ -47,7 +47,7 @@ select
     
     
         
-        SELECT * FROM "company_dw"."dev_crm_sales_dbt"."crm_stg_sales_pipelines" WHERE opportunity_id = 'NaN' UNION ALL SELECT * FROM "company_dw"."dev_crm_sales_dbt"."crm_stg_sales_pipelines" WHERE sales_agent = 'NaN' UNION ALL SELECT * FROM "company_dw"."dev_crm_sales_dbt"."crm_stg_sales_pipelines" WHERE product_name = 'NaN' UNION ALL SELECT * FROM "company_dw"."dev_crm_sales_dbt"."crm_stg_sales_pipelines" WHERE company_name = 'NaN' UNION ALL SELECT * FROM "company_dw"."dev_crm_sales_dbt"."crm_stg_sales_pipelines" WHERE deal_stage = 'NaN'
+        SELECT * FROM "company_dw"."dev_crm_sales_dbt_crm_sales_dbt"."crm_stg_sales_pipelines" WHERE opportunity_id = 'NaN' UNION ALL SELECT * FROM "company_dw"."dev_crm_sales_dbt_crm_sales_dbt"."crm_stg_sales_pipelines" WHERE sales_agent = 'NaN' UNION ALL SELECT * FROM "company_dw"."dev_crm_sales_dbt_crm_sales_dbt"."crm_stg_sales_pipelines" WHERE product_name = 'NaN' UNION ALL SELECT * FROM "company_dw"."dev_crm_sales_dbt_crm_sales_dbt"."crm_stg_sales_pipelines" WHERE company_name = 'NaN' UNION ALL SELECT * FROM "company_dw"."dev_crm_sales_dbt_crm_sales_dbt"."crm_stg_sales_pipelines" WHERE deal_stage = 'NaN'
     
 
       
