@@ -1,6 +1,4 @@
-{{ config(
-    schema='crm_sales_dbt'
-) }}
+
 
 with raw_sales_teams as (
     select

@@ -1,8 +1,4 @@
-{{
-config(
-schema = 'crm_sales_dbt'
-)
-}}
+
 
 with 
     pipelines as (

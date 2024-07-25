@@ -1,6 +1,3 @@
-{{ config(
-    schema='crm_sales_dbt'
-) }}
 
 with raw_accounts as (
     select

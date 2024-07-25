@@ -1,8 +1,7 @@
 {{
 config(
 materialized = 'table',
-unique_key = 'date_key',
-schema = 'global_dim'
+unique_key = 'date_key'
 )
 }}
 
