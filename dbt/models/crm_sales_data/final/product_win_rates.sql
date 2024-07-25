@@ -1,7 +1,6 @@
 {{
 config(
-materialized = 'table',
-schema = 'crm_sales_dbt'
+materialized = 'table'
 )
 }}
 
