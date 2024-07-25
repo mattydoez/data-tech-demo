@@ -23,7 +23,7 @@ with DAG(dag_id='run_dbt_init_tasks', default_args=default_args, schedule_interv
   )
 
   models_to_run = ['dim_date']  # Specify the models to run for this DAG
-  schema = 'dev_dim'
+  schema = 'dev_global_dim'
 
   dbt_tasks = create_dbt_tasks(dag, models_to_run, schema)
 
